@@ -2,6 +2,8 @@ import pandas
 import requests
 import json
 
+from typing import Any, Dict, List, Union
+
 from urls import URLs
 
 # TODO: Add try-except blocks
@@ -9,6 +11,9 @@ from urls import URLs
 class Ozone():
     _search_aqi_url: str = URLs.search_aqi_url
     _find_stations_url: str = URLs.find_stations_url
+    _default_params: List[str] = [
+                'aqi', 'pm25', 'pm10', 'o3', 'co', 'no2','so2', 'dew', 'h',
+                'p', 't','w', 'wg']
 
     def __init__(self, token: str = ''):
         self.token: str = token
@@ -63,21 +68,60 @@ class Ozone():
             self,
             city: str,
             df: pandas.DataFrame = pandas.DataFrame(),
+            params: List[str] = None,
         ):
         """Get the air quality of a city
 
         Args:
             city (str): The name of the city
             df (pandas.DataFrame, optional): Existing dataframe, if one exists. Defaults to new empty pandas.DataFrame().
+            params (List[str], optional): The parameters to retrieve. Defaults to all parameters.
 
         Returns:
             pandas.DataFrame: The dataframe containing the air quality of the city
         """
+        if params == None:
+            params = self._default_params
         r = self._make_api_request(f'{self._search_aqi_url}/{city}/?token={self.token}')
         if self._check_status_code(r):
             # Get all the data.
             data_obj = json.loads(r.content)['data']
+            row = self._parse_data(data_obj, city, params)
+            df = df.append(row, ignore_index=True) # TODO: Don't use append. deprecated warning.
+        
+        return df
 
+    def _parse_data(self, data_obj, city: str, params: List[str]) -> Dict[str, Union[str, float]]:
+        """Parse the data from the API response
+
+        Args:
+            data_obj (dict): The data from the API response.
+
+        Returns:
+            dict: The parsed data.
+        """
+        row: Dict[str, Union[str, float]] = {} # A single row of data for the dataframe.
+        
+        try:
+            row['city'] = f'{city}'
+            row['city_coord'] = data_obj['city']['geo']
+            row['station'] = data_obj['city']['name']
+
+            row['dominant_pollutant'] = data_obj['dominentpol']
+
+            row['timestamp'] = data_obj['time']['s']
+            row['timestamp_timezone'] = data_obj['time']['tz']
+            
+            if 'aqi' in params:
+                row['aqi'] = float(data_obj['aqi'])
+                params.remove('aqi')
+            
+            for param in params:
+                row[param] = float(data_obj['iaqi'][param]['v'])
+        except KeyError:
+            pass # TODO: Add exception handling.
+
+        return row
 
 
 if __name__ == '__main__':
