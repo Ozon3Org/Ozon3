@@ -16,6 +16,8 @@ class Ozone():
     
     # TODO: Fix this method
     def _check_token_validity(self) -> None:
+        """Check if the token is valid
+        """
         test_city: str = 'london'
         r = self._make_api_request(f'{self._search_aqi_url}/{test_city}/?token={self.token}')
 
@@ -24,6 +26,14 @@ class Ozone():
                 print('Warning: Token may be invalid!')
 
     def _make_api_request(self, url: str) -> requests.Response:
+        """Make an API request
+
+        Args:
+            url (str): The url to make the request to.
+
+        Returns:
+            requests.Response: The response from the API.
+        """
         r = requests.get(url)
         return r
 
@@ -42,11 +52,13 @@ class Ozone():
         """Use this method to set your API token
 
         Args:
-            token (str): _description_
+            token (str): The new API token.
         """
         self.token = token
         self._check_token_validity()
 
+    # TODO: add feature to allow for selective data retrieval.
+    # make a seperate private method to deal with data parsing.
     def get_city_air(
             self,
             city: str,
