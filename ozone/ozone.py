@@ -117,20 +117,36 @@ class Ozone():
             
             
         if 'aqi' in params:
-            print('aqi', float(data_obj['aqi']))
             row['aqi'] = float(data_obj['aqi'])
+            # Remove the aqi parameter from the list to prevent reading twice.
             params.remove('aqi')
             
         for param in params:
             try:
                 row[param] = float(data_obj['iaqi'][param]['v'])
-                print(param, float(data_obj['iaqi'][param]['v']))
             except KeyError:
+                # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
 
         return row
 
+    def get_multiple_city_air(
+        self,
+        cities: List[str],
+        df: pandas.DataFrame = pandas.DataFrame(),
+        params: List[str] = [''],
+        ) -> pandas.DataFrame:
+        """Get multiple cities' air quality data
+
+        Args:
+            cities (list): A list of cities to get data for.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data.
+        """
+        for city in cities:
+            df = self.get_city_air(city, df, params)
+        return df
+
 if __name__ == '__main__':
-    test = Ozone(token = '0e0fc4695a0a368fc63ae484dcbfb58953a20985')
-    data = test.get_city_air('london')
-    print(data)
+    pass
