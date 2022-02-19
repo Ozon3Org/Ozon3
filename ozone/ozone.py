@@ -116,14 +116,14 @@ class Ozone():
         row['timestamp_timezone'] = data_obj['time']['tz']
             
             
-        if 'aqi' in params:
-            row['aqi'] = float(data_obj['aqi'])
-            # Remove the aqi parameter from the list to prevent reading twice.
-            params.remove('aqi')
-            
         for param in params:
+            
             try:
-                row[param] = float(data_obj['iaqi'][param]['v'])
+                if param == 'aqi': 
+                    # This is in different part of JSON object.
+                    row['aqi'] = float(data_obj['aqi'])
+                else:
+                    row[param] = float(data_obj['iaqi'][param]['v'])
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
