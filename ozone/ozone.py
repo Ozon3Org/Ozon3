@@ -1,10 +1,11 @@
 import pandas
+import numpy
 import requests
 import json
+from .urls import URLs
 
 from typing import Any, Dict, List, Union
 
-from urls import URLs
 
 # TODO: Add try-except blocks
 
@@ -104,27 +105,32 @@ class Ozone():
         # A single row of data for the dataframe.
         row: Dict[str, Union[str, float]] = {} 
         
-        try:
-            row['city'] = f'{city}'
-            row['city_coord'] = data_obj['city']['geo']
-            row['station'] = data_obj['city']['name']
 
-            row['dominant_pollutant'] = data_obj['dominentpol']
+        row['city'] = f'{city}'
+        row['city_coord'] = data_obj['city']['geo']
+        row['station'] = data_obj['city']['name']
 
-            row['timestamp'] = data_obj['time']['s']
-            row['timestamp_timezone'] = data_obj['time']['tz']
+        row['dominant_pollutant'] = data_obj['dominentpol']
+
+        row['timestamp'] = data_obj['time']['s']
+        row['timestamp_timezone'] = data_obj['time']['tz']
             
-            if 'aqi' in params:
-                row['aqi'] = float(data_obj['aqi'])
-                params.remove('aqi')
             
-            for param in params:
+        if 'aqi' in params:
+            print('aqi', float(data_obj['aqi']))
+            row['aqi'] = float(data_obj['aqi'])
+            params.remove('aqi')
+            
+        for param in params:
+            try:
                 row[param] = float(data_obj['iaqi'][param]['v'])
-        except KeyError:
-            pass # TODO: Add exception handling.
+                print(param, float(data_obj['iaqi'][param]['v']))
+            except KeyError:
+                row[param] = numpy.nan
 
         return row
 
 if __name__ == '__main__':
     test = Ozone(token = '0e0fc4695a0a368fc63ae484dcbfb58953a20985')
-    print(test.get_city_air('london'))
+    data = test.get_city_air('london')
+    print(data)
