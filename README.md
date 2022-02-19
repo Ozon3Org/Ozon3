@@ -8,6 +8,6 @@ I want to make it easy to get your hands on accurate air quality data for your p
 
 This package is a wrapper around an API provided by the World Air Quality Index project. Without them as well as the US EPA, Ozone would not exist. Please consider visiting the WAQI website and contributing to their project if you have time:
 
-(World Air Quality Index)[https://aqicn.org/contact/]
+[World Air Quality Index](https://aqicn.org/contact/)
 
 Enjoy!
