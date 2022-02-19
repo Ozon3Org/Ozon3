@@ -4,6 +4,7 @@ import requests
 import json
 from .urls import URLs
 
+
 from typing import Any, Dict, List, Union
 
 # TODO: Add try-except blocks
@@ -90,14 +91,14 @@ class Ozone:
             # Get all the data.
             data_obj = json.loads(r.content)["data"]
             row = self._parse_data(data_obj, city, params)
-            df = df.append(row, ignore_index=True)
-            # TODO: Don't use append. deprecated warning.
+
+            df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
 
         return df
 
     def _parse_data(
         self, data_obj: Any, city: str, params: List[str]
-    ) -> Dict[str, Union[str, float]]:
+    ) -> List[Dict[str, Union[str, float]]]:
         """Parse the data from the API response
 
         Args:
@@ -110,7 +111,8 @@ class Ozone:
         row: Dict[str, Union[str, float]] = {}
 
         row["city"] = f"{city}"
-        row["city_coord"] = data_obj["city"]["geo"]
+        row["latitude"] = data_obj["city"]["geo"][0]
+        row["longitude"] = data_obj["city"]["geo"][1]
         row["station"] = data_obj["city"]["name"]
 
         row["dominant_pollutant"] = data_obj["dominentpol"]
@@ -129,7 +131,7 @@ class Ozone:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
 
-        return row
+        return [row]
 
     def get_multiple_city_air(
         self,
@@ -148,6 +150,7 @@ class Ozone:
         for city in cities:
             df = self.get_city_air(city, df, params)
         return df
+
 
 
 if __name__ == "__main__":
