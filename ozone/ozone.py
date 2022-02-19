@@ -7,8 +7,6 @@ from .urls import URLs
 
 from typing import Any, Dict, List, Union
 
-# TODO: Add try-except blocks
-
 
 class Ozone:
     _search_aqi_url: str = URLs.search_aqi_url
