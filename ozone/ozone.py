@@ -70,16 +70,6 @@ class Ozone():
             df: pandas.DataFrame = pandas.DataFrame(),
             params: List[str] = None,
         ):
-        """Get the air quality of a city
-
-        Args:
-            city (str): The name of the city
-            df (pandas.DataFrame, optional): Existing dataframe, if one exists. Defaults to new empty pandas.DataFrame().
-            params (List[str], optional): The parameters to retrieve. Defaults to all parameters.
-
-        Returns:
-            pandas.DataFrame: The dataframe containing the air quality of the city
-        """
         if params == None:
             params = self._default_params
         r = self._make_api_request(f'{self._search_aqi_url}/{city}/?token={self.token}')
@@ -123,8 +113,5 @@ class Ozone():
 
         return row
 
-
 if __name__ == '__main__':
     pass
-    # test = Ozone('')
-    # print(test._check_token_validity())
