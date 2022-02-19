@@ -6,7 +6,6 @@ from .urls import URLs
 
 from typing import Any, Dict, List, Union
 
-
 # TODO: Add try-except blocks
 
 class Ozone():
@@ -89,10 +88,10 @@ class Ozone():
         return df
 
     def _parse_data(
-        self,
-        data_obj: Any,
-        city: str,
-        params: List[str]
+            self,
+            data_obj: Any,
+            city: str,
+            params: List[str]
         ) -> Dict[str, Union[str, float]]:
         """Parse the data from the API response
 
@@ -117,7 +116,6 @@ class Ozone():
             
             
         for param in params:
-            
             try:
                 if param == 'aqi': 
                     # This is in different part of JSON object.
@@ -131,10 +129,10 @@ class Ozone():
         return row
 
     def get_multiple_city_air(
-        self,
-        cities: List[str],
-        df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [''],
+            self,
+            cities: List[str],
+            df: pandas.DataFrame = pandas.DataFrame(),
+            params: List[str] = [''],
         ) -> pandas.DataFrame:
         """Get multiple cities' air quality data
 
