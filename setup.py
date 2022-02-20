@@ -10,7 +10,7 @@ setuptools.setup(
     license="GPLv3+",
     url="https://github.com/Milind220/Ozone",
     download_url="https://github.com/Milind220/Ozone/archive/refs/tags/v1.0.2.tar.gz",
-    version="1.0.2",
+    version="1.0.3",
     packages=setuptools.find_packages(),
     install_requires=[
         "numpy; python_version>='3'",
