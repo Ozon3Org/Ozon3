@@ -1,13 +1,4 @@
-import os
 import setuptools
-
-
-thelibFolder = os.path.dirname(os.path.realpath(__file__))
-requirementPath = thelibFolder + "/requirements.txt"
-install_requires = []
-if os.path.isfile(requirementPath):
-    with open(requirementPath) as f:
-        install_requires = f.read().splitlines()
 
 
 setuptools.setup(
@@ -21,7 +12,11 @@ setuptools.setup(
     download_url="https://github.com/Milind220/Ozone/archive/refs/tags/v1.0.2.tar.gz",
     version="1.0.2",
     packages=setuptools.find_packages(),
-    install_requires=install_requires,
+    install_requires=[
+        "numpy",
+        "pandas",
+        "requests",
+    ],
     python_requires=">=3.6",
     classifiers=[
         "Development Status :: 4 - Beta",  # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
