@@ -4,7 +4,6 @@ import requests
 import json
 from .urls import URLs
 
-
 from typing import Any, Dict, List, Union
 
 
@@ -56,6 +55,7 @@ class Ozone:
         return r
 
     def _check_status_code(self, r: requests.Response) -> bool:
+        """Check the status code of the response"""
         if r.status_code == 200:
             return True
         elif r.status_code == 401:
@@ -80,7 +80,17 @@ class Ozone:
         city: str,
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
-    ):
+    ) -> pandas.DataFrame:
+        """Get a city's air quality data
+
+        Args:
+            city (str): The city to get data for.
+            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            params (List[str], optional): A list of parameters to get data for.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data.
+        """
         if params == [""]:
             params = self._default_params
 
@@ -91,7 +101,6 @@ class Ozone:
             row = self._parse_data(data_obj, city, params)
 
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
-
         return df
 
     def _parse_data(
@@ -103,7 +112,7 @@ class Ozone:
             data_obj (dict): The data from the API response.
 
         Returns:
-            dict: The parsed data.
+            list: A list of dictionaries containing the data.
         """
         # A single row of data for the dataframe.
         row: Dict[str, Union[str, float]] = {}
@@ -112,9 +121,7 @@ class Ozone:
         row["latitude"] = data_obj["city"]["geo"][0]
         row["longitude"] = data_obj["city"]["geo"][1]
         row["station"] = data_obj["city"]["name"]
-
         row["dominant_pollutant"] = data_obj["dominentpol"]
-
         row["timestamp"] = data_obj["time"]["s"]
         row["timestamp_timezone"] = data_obj["time"]["tz"]
 
@@ -128,7 +135,6 @@ class Ozone:
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
-
         return [row]
 
     def get_multiple_city_air(
@@ -148,7 +154,6 @@ class Ozone:
         for city in cities:
             df = self.get_city_air(city, df, params)
         return df
-
 
 
 if __name__ == "__main__":
