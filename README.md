@@ -10,7 +10,7 @@ I want to make it easy to get your hands on accurate air quality data for your p
 
 [Getting your API token](#getting-your-api-token)
 
-[Getting started](#getting started)
+[Getting started](#getting-started)
 
 [Contributing and submitting PR's](#contributing-and-submitting-pull-requests)
 
