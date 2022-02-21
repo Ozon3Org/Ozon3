@@ -7,11 +7,16 @@ I want to make it easy to get your hands on accurate air quality data for your p
 #### Table of Contents
 
 [Install ozon3](#install-it-here)
+
 [Getting your API token](#getting-your-api-token)
+
 [Getting started](#getting started)
+
 [Contributing and submitting PR's](#contributing-and-submitting-pull-requests)
 
+
 [Attributions](#World-Air-Quality-Index-and-EPA-attribution)
+
 [License and TOS](#license-and-terms-of-service)
 
 ## Install it here!
