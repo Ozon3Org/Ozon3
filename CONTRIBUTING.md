@@ -91,6 +91,18 @@ Unsure where to begin contributing to Atom? You can start by looking through the
 
 Here's how you can get started:
 
+_SETUP_
+1. **Switch to the dev branch** of the Github repository. This is where all pre-release changes and additions are made. 
+2. **Fork the dev branch**. This creates your own personal copy of the project, which you access through your Github profile.
+3. **Clone your forked project**. This creates a copy on your computer where you can make all your changes.
+4. **Set your fork as the 'origin' remote** with `git remote add origin URL_OF_YOUR_FORK`.
+5. **Set the original project url as the 'upstream' remote** with `git remote add upstream https://github.com/Milind220/Ozone.git`. 
+6. **Pull from the original project's dev branch to make sure you're synced up** before you make your own changes. `git pull upstream dev`. Then switch to the dev branch on your computer with `git checkout dev`.
+7. Whoohoo! You can now make changes to the code!
+8. **Make sure to commit logical changes only**. Don't commit things that you're trying out and haven't tested.
+9. When you're done, **test out the changes that you've made to the package.** Proceed if all's good.
+10. **Push the changes to your forked repository**. 
+
 1. Follow the [styleguides](#styleguides)
 2. Write a detailed pull request (PR)
 
