@@ -45,7 +45,7 @@ data = foo.get_city_air('CITY_NAME')
 for many cities:
 
 ```sh
-data = foo.get_city_air([ARRAY OF CITY NAMES])
+data = foo.get_multiple_city_air([ARRAY OF CITY NAMES])
 ```
 
 ## Contributing and submitting Pull requests
