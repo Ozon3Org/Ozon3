@@ -102,11 +102,17 @@ _SETUP_
 8. **Make sure to commit logical changes only**. Don't commit things that you're trying out and haven't tested.
 9. When you're done, **test out the changes that you've made to the package.** Proceed if all's good.
 10. **Push the changes to your forked repository**. 
+11. Return to your forked repo on Github and click on `compare and pull request` to begin the PR.
+12. Describe your PR, Submit it and wait for it to be merged! 
 
-1. Follow the [styleguides](#styleguides)
-2. Write a detailed pull request (PR)
+
+#### Also
+* Follow the [styleguides](#styleguides)
+* Write a detailed pull request (PR)
 
 You may have to complete additional work, tests, or other changes before your pull request is accepted.
+
+#### :tada::+1: _CONGRATULATIONS YOU MADE A PULL REQUEST_ :tada::+1: 
 
 ## Styleguides
 
