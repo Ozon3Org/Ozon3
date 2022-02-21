@@ -4,13 +4,23 @@
 
 I want to make it easy to get your hands on accurate air quality data for your project, whatever it is. Ozone makes this as straightforward as typing out a few lines of code. Ozone uses the World Air Quality Index's API to fetch data, so you can trust the data you get to be accurate and reliable.
 
+#### Table of Contents
+
+[Install ozon3](#install-it-here)
+[Getting your API token](#getting-your-api-token)
+[Getting started](#getting started)
+[Contributing and submitting PR's](#contributing-and-submitting-pull-requests)
+
+[Attributions](#World-Air-Quality-Index-and-EPA-attribution)
+[License and TOS](#license-and-terms-of-service)
+
 ## Install it here!
 
 ```sh
 pip install ozon3
 ```
 
-## Getting your API token - IMPORTANT
+## Getting your API token
 
 To use Ozone, you must first request and get a your own unique API token. This is required to access for the underlying API to work.
 
@@ -32,6 +42,13 @@ for many cities:
 ```sh
 data = foo.get_city_air([ARRAY OF CITY NAMES])
 ```
+
+## Contributing and submitting Pull requests
+
+**We love PR's!**
+
+Take a look at the [CONTRIBUTING.md](https://github.com/Milind220/Ozone/blob/main/CONTRIBUTING.md) file for details on how to go about this!
+
 
 ## World Air Quality Index and EPA attribution
 
