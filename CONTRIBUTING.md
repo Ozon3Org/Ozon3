@@ -4,6 +4,8 @@
 
 The following is a set of guidelines for contributing to Ozon3 and its packages, which are hosted in it's GitHub [repository](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
+> **Note:** One very important thing is to make sure you only make PR's to the `dev` branch and not the `main` branch. The main branch is stable, and dev branch changes will be merged into it periodically once it's confirmed that they don't have any breaking changes.
+
 #### Table Of Contents
 
 [I don't want to read this whole thing, I just have a question!!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
@@ -23,7 +25,7 @@ The following is a set of guidelines for contributing to Ozon3 and its packages,
 
 ## I don't want to read this whole thing I just have a question!!!
 
-> **Note:** Please don't file an issue to ask a question. Search for your question in issues and see if it's already been answered. 
+> **Note:** Please don't file an issue to ask a question. Search for your question in issues and see if it's already been answered. Also check out the discussions tab to see if we've chatted about it before. Post it there if it's an idea, or in issues if there's a change to be made.
 
 ## What should I know before I get started?
 
@@ -90,6 +92,8 @@ Unsure where to begin contributing to Atom? You can start by looking through the
 ### Pull Requests (PR's)
 
 Here's how you can get started:
+
+> **Note:** One very important thing is to make sure you only make PR's to the `dev` branch and not the `main` branch. The main branch is stable, and dev branch changes will be merged into it periodically once it's confirmed that they don't have any breaking changes.
 
 _SETUP_
 1. Assign yourself an issue from the issues section of the repository. This makes sure that two people don't end up working on the same code concurrently.
