@@ -4,6 +4,8 @@
 
 The following is a set of guidelines for contributing to [Ozon3](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
+> **Note:** One very important thing is to make sure you only make PR's to the `dev` branch and not the `main` branch. The main branch is stable, and dev branch changes will be merged into it periodically once it's confirmed that they don't have any breaking changes.
+
 #### Table Of Contents
 
 [I don't want to read this whole thing, I just have a question!!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
@@ -23,7 +25,7 @@ The following is a set of guidelines for contributing to [Ozon3](https://github.
 
 ## I don't want to read this whole thing I just have a question!!!
 
-> **Note:** Please don't file an issue to ask a question. Search for your question in issues and see if it's already been answered. 
+> **Note:** Please don't file an issue to ask a question. Search for your question in issues and see if it's already been answered. Also check out the discussions tab to see if we've chatted about it before. Post it there if it's an idea, or in issues if there's a change to be made.
 
 ## What should I know before I get started?
 
@@ -91,19 +93,22 @@ Unsure where to begin contributing to Atom? You can start by looking through the
 
 Here's how you can get started:
 
+> **Note:** One very important thing is to make sure you only make PR's to the `dev` branch and not the `main` branch. The main branch is stable, and dev branch changes will be merged into it periodically once it's confirmed that they don't have any breaking changes.
+
 _SETUP_
-1. **Switch to the dev branch** of the Github repository. This is where all pre-release changes and additions are made. 
-2. **Fork the dev branch**. This creates your own personal copy of the project, which you access through your Github profile.
-3. **Clone your forked project**. This creates a copy on your computer where you can make all your changes.
-4. **Set your fork as the 'origin' remote** with `git remote add origin URL_OF_YOUR_FORK`.
-5. **Set the original project url as the 'upstream' remote** with `git remote add upstream https://github.com/Milind220/Ozone.git`. 
-6. **Pull from the original project's dev branch to make sure you're synced up** before you make your own changes. `git pull upstream dev`. Then switch to the dev branch on your computer with `git checkout dev`.
-7. Whoohoo! You can now make changes to the code!
-8. **Make sure to commit logical changes only**. Don't commit things that you're trying out and haven't tested.
-9. When you're done, **test out the changes that you've made to the package.** Proceed if all's good.
-10. **Push the changes to your forked repository**. 
-11. Return to your forked repo on Github and click on `compare and pull request` to begin the PR.
-12. Describe your PR, Submit it and wait for it to be merged! 
+1. Assign yourself an issue from the issues section of the repository. This makes sure that two people don't end up working on the same code concurrently.
+2. **Switch to the dev branch** of the Github repository. This is where all pre-release changes and additions are made. 
+3. **Fork the dev branch**. This creates your own personal copy of the project, which you access through your Github profile.
+4. **Clone your forked project**. This creates a copy on your computer where you can make all your changes.
+5. **Set your fork as the 'origin' remote** with `git remote add origin URL_OF_YOUR_FORK`.
+6. **Set the original project url as the 'upstream' remote** with `git remote add upstream https://github.com/Milind220/Ozone.git`. 
+7. **Pull from the original project's dev branch to make sure you're synced up** before you make your own changes. `git pull upstream dev`. Then switch to the dev branch on your computer with `git checkout dev`.
+8. Whoohoo! You can now make changes to the code!
+9. **Make sure to commit logical changes only**. Don't commit things that you're trying out and haven't tested.
+10. When you're done, **test out the changes that you've made to the package.** Proceed if all's good.
+11. **Push the changes to your forked repository**. 
+12. Return to your forked repo on Github and click on `compare and pull request` to begin the PR.
+13. Describe your PR, Submit it and wait for it to be merged! 
 
 
 #### Also
