@@ -35,7 +35,7 @@ Get your token [here](https://aqicn.org/data-platform/token/#/)!
 
 ## Getting started
 
-```sh
+```python
 import ozone as ooo
 
 o3 = ooo.Ozone('YOUR_PRIVATE_TOKEN')
@@ -44,7 +44,7 @@ data = o3.get_city_air('CITY_NAME')
 
 for many cities:
 
-```sh
+```python
 data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
 ```
 
