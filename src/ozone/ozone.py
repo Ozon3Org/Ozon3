@@ -130,12 +130,55 @@ class Ozone:
                 if param == "aqi":
                     # This is in different part of JSON object.
                     row["aqi"] = float(data_obj["aqi"])
+                    #This adds AQI_meaning and AQI_health_implications data
+                    row["AQI_meaning"], row["AQI_health_implications"] = self._AQI_meaning(
+                        row["aqi"])
                 else:
                     row[param] = float(data_obj["iaqi"][param]["v"])
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
         return [row]
+
+    def _AQI_meaning(self, aqi: float) -> str:
+        """Retrieve API Meaning and health implications
+
+                Args:
+                    row["aqi"] (float): parsed AQI data.
+
+                Returns:
+                    str: The meaning and health implication of the AQI data.
+                """
+
+        if aqi <= 50:
+            AQI_meaning = "Good"
+            AQI_health_implications = """Air quality is considered satisfactory, 
+            and air pollution poses little or no risk"""
+        elif 51 <= aqi <= 100:
+            AQI_meaning = "Moderate"
+            AQI_health_implications = """Air quality is acceptable; however, 
+            for some pollutants there may be a moderate health concern for a 
+            very small number of people who are unusually sensitive to air 
+            pollution."""
+        elif 101 <= aqi <= 150:
+            AQI_meaning = "Unhealthy for sensitive group"
+            AQI_health_implications = """Members of sensitive groups may experience 
+            health effects. The general public is not likely to be affected."""
+        elif 151 <= aqi <= 200:
+            AQI_meaning = "Unhealthy"
+            AQI_health_implications = """Everyone may begin to experience health effects; 
+            members of sensitive groups may experience more serious 
+            health effects."""
+        elif 201 <= aqi <= 300:
+            AQI_meaning = "Very Unhealthy"
+            AQI_health_implications = """Health warnings of emergency conditions. 
+            The entire population is more likely to be affected."""
+        elif aqi > 300:
+            AQI_meaning = "Hazardous"
+            AQI_health_implications = """Health alert: everyone may experience more serious health effects."""
+
+        return AQI_meaning, AQI_health_implications
+
 
     def get_multiple_city_air(
         self,
