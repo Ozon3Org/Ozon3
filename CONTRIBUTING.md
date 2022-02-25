@@ -2,7 +2,7 @@
 
 :tada::+1: First off, thanks for taking the time to contribute! :tada::+1:
 
-The following is a set of guidelines for contributing to Ozon3 and its packages, which are hosted in it's GitHub [repository](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to [Ozon3](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 > **Note:** One very important thing is to make sure you only make PR's to the `dev` branch and not the `main` branch. The main branch is stable, and dev branch changes will be merged into it periodically once it's confirmed that they don't have any breaking changes.
 
