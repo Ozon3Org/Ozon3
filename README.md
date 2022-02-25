@@ -53,7 +53,7 @@ data = foo.get_multiple_city_air([ARRAY OF CITY NAMES])
 ### Examples In Action
 ![Gif of ozone.get_city_air()](/src/media/ozone_get_city_air.gif)
 
-![Gif of ozone.get_multiple_city_air()](/src/media/ozone_get_multiple_city_air.gif)
+![Gif of ozone.get_multiple_city_air()](/src/media/ozone_get_multiple_city_air_updated.gif)
 
 ## Contributing and submitting Pull requests
 
