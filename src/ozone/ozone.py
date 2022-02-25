@@ -78,6 +78,7 @@ class Ozone:
     def get_city_air(
         self,
         city: str,
+        data_format: str = None,
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ) -> pandas.DataFrame:
@@ -101,7 +102,20 @@ class Ozone:
             row = self._parse_data(data_obj, city, params)
 
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
-        return df
+        if data_format == None:
+            return df
+        elif data_format == "csv":
+            df.to_csv(f"{city}_air_quality.csv", index=False)
+            return "csv file created!"
+        elif data_format == "json":
+            df.to_json(f"{city}_air_quality.json")
+            return "json file created!"
+        elif data_format == "xlsx":
+            df.to_excel(f"{city}_air_quality.xlsx",)
+            return "xlsx file created!"
+        else:
+            return pandas.DataFrame(data={
+                'Parameter Error': ['Invalid file format. Use any of: csv, json, xlsx'], })
 
     def _parse_data(
         self, data_obj: Any, city: str, params: List[str]
