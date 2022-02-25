@@ -38,14 +38,14 @@ Get your token [here](https://aqicn.org/data-platform/token/#/)!
 ```sh
 import ozone as ooo
 
-foo = ooo.Ozone('YOUR_TOKEN')
-data = foo.get_city_air('CITY_NAME')
+o3 = ooo.Ozone('YOUR_PRIVATE_TOKEN')
+data = o3.get_city_air('CITY_NAME')
 ```
 
 for many cities:
 
 ```sh
-data = foo.get_multiple_city_air([ARRAY OF CITY NAMES])
+data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
 ```
 
 ## Contributing and submitting Pull requests
