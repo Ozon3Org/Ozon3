@@ -231,8 +231,7 @@ class Ozone:
             None: Prints message of file saved to disk.
         """
         for city in cities:
-            # df = self.get_city_air(city, df, params)
-            df = pandas.concat([df, self.get_city_air(city)])
+            df = self.get_city_air(city, df, params)
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
