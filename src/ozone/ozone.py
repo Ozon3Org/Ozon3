@@ -4,7 +4,7 @@ import requests
 import json
 from .urls import URLs
 
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, List, Union, Tuple
 
 
 class Ozone:
@@ -132,7 +132,7 @@ class Ozone:
                     row["aqi"] = float(data_obj["aqi"])
                     #This adds AQI_meaning and AQI_health_implications data
                     row["AQI_meaning"], row["AQI_health_implications"] = self._AQI_meaning(
-                        row["aqi"])
+                        float(data_obj["aqi"]))
                 else:
                     row[param] = float(data_obj["iaqi"][param]["v"])
             except KeyError:
@@ -140,7 +140,7 @@ class Ozone:
                 row[param] = numpy.nan
         return [row]
 
-    def _AQI_meaning(self, aqi: float) -> str:
+    def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
         """Retrieve API Meaning and health implications
 
                 Args:
@@ -173,7 +173,7 @@ class Ozone:
             AQI_meaning = "Very Unhealthy"
             AQI_health_implications = """Health warnings of emergency conditions. 
             The entire population is more likely to be affected."""
-        elif aqi > 300:
+        else:
             AQI_meaning = "Hazardous"
             AQI_health_implications = """Health alert: everyone may experience more serious health effects."""
 
