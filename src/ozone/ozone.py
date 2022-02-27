@@ -2,9 +2,14 @@ import pandas
 import numpy
 import requests
 import json
+from ratelimit import limits, sleep_and_retry
 from .urls import URLs
 
 from typing import Any, Dict, List, Union, Tuple
+
+# 1000 calls per second is the limit allowed by API
+CALLS = 1000
+RATE_LIMIT = 1
 
 
 class Ozone:
@@ -42,6 +47,8 @@ class Ozone:
             if json.loads(r.content)["status"] != "ok":
                 print("Warning: Token may be invalid!")
 
+    @sleep_and_retry
+    @limits(calls=CALLS, period=RATE_LIMIT)
     def _make_api_request(self, url: str) -> requests.Response:
         """Make an API request
 
