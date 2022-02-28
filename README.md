@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3)
 <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
-![AUR last modified](https://img.shields.io/aur/last-modified/Ozone?color=green)
+![GitHub](https://img.shields.io/github/license/Milind220/Ozone)
 
 
 ## The simplest AQI API!
