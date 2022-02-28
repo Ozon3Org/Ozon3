@@ -192,6 +192,7 @@ class Ozone:
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
+            (If you selected another data format, this dataframe will be empty)
         """
         if params == [""]:
             params = self._default_params
@@ -219,8 +220,8 @@ class Ozone:
             data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data.
-            None: Prints message of file saved to disk.
+            pandas.DataFrame: The dataframe containing the data. (If you
+            selected another data format, this dataframe will be empty)
         """
         for city in cities:
             # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
