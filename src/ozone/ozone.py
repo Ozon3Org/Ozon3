@@ -181,7 +181,7 @@ class Ozone:
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
-    ):
+    ) -> pandas.DataFrame:
         """Get a city's air quality data
 
         Args:
@@ -211,7 +211,7 @@ class Ozone:
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
-    ):
+    ) -> pandas.DataFrame:
         """Get multiple cities' air quality data
 
         Args:
