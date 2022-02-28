@@ -92,15 +92,15 @@ class Ozone:
             return df
         elif data_format == "csv":
             df.to_csv("air_quality.csv", index=False)
-            print("csv file created!")
+            print("File saved to disk as air_quality.csv")
         elif data_format == "json":
             df.to_json("air_quality_data.json")
-            print("json file created!")
+            print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
             df.to_excel("air_quality_data.xlsx",)
-            print("Excel file created!")
+            print("File saved to disk as air_quality_data.xlsx")    
         else:
-            print("Invalid file format. Use any of: csv, json, xlsx")
+            print("Invalid file format. Use any of: csv, json, xlsx, df")
         return pandas.DataFrame()
 
     def _parse_data(
