@@ -76,10 +76,8 @@ class Ozone:
         self._check_token_validity()
 
     def _format_output(
-        self,
-        data_format: str = 'df',
-        df: pandas.DataFrame = pandas.DataFrame(),
-    ) -> Union[pandas.DataFrame, None]: 
+        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
+    ) -> pandas.DataFrame:
         """Format output data
 
         Args:
@@ -90,7 +88,7 @@ class Ozone:
             pandas.DataFrame: The dataframe containing the air quality data.
             None: print the string response of file type created.
         """
-        if data_format == 'df':
+        if data_format == "df":
             return df
         elif data_format == "csv":
             df.to_csv("air_quality.csv", index=False)
@@ -103,7 +101,7 @@ class Ozone:
             print("Excel file created!")
         else:
             print("Invalid file format. Use any of: csv, json, xlsx")
-        return None
+        return pandas.DataFrame()
 
     def _parse_data(
         self, data_obj: Any, city: str, params: List[str]
@@ -133,8 +131,10 @@ class Ozone:
                     # This is in different part of JSON object.
                     row["aqi"] = float(data_obj["aqi"])
                     # This adds AQI_meaning and AQI_health_implications data
-                    row["AQI_meaning"], row["AQI_health_implications"] = self._AQI_meaning(
-                        float(data_obj["aqi"]))
+                    (
+                        row["AQI_meaning"],
+                        row["AQI_health_implications"],
+                    ) = self._AQI_meaning(float(data_obj["aqi"]))
                 else:
                     row[param] = float(data_obj["iaqi"][param]["v"])
             except KeyError:
@@ -154,37 +154,31 @@ class Ozone:
 
         if aqi <= 50:
             AQI_meaning = "Good"
-            AQI_health_implications = """Air quality is considered satisfactory, 
-            and air pollution poses little or no risk"""
+            AQI_health_implications = "Air quality is considered satisfactory, and air pollution poses little or no risk"
         elif 51 <= aqi <= 100:
             AQI_meaning = "Moderate"
-            AQI_health_implications = """Air quality is acceptable; however, 
-            for some pollutants there may be a moderate health concern for a 
-            very small number of people who are unusually sensitive to air 
-            pollution."""
+            AQI_health_implications = "Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution."
         elif 101 <= aqi <= 150:
             AQI_meaning = "Unhealthy for sensitive group"
-            AQI_health_implications = """Members of sensitive groups may experience 
-            health effects. The general public is not likely to be affected."""
+            AQI_health_implications = "Members of sensitive groups may experience health effects. The general public is not likely to be affected."
         elif 151 <= aqi <= 200:
             AQI_meaning = "Unhealthy"
-            AQI_health_implications = """Everyone may begin to experience health effects; 
-            members of sensitive groups may experience more serious 
-            health effects."""
+            AQI_health_implications = "Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects."
         elif 201 <= aqi <= 300:
             AQI_meaning = "Very Unhealthy"
-            AQI_health_implications = """Health warnings of emergency conditions. 
-            The entire population is more likely to be affected."""
+            AQI_health_implications = "Health warnings of emergency conditions. The entire population is more likely to be affected."
         else:
             AQI_meaning = "Hazardous"
-            AQI_health_implications = """Health alert: everyone may experience more serious health effects."""
+            AQI_health_implications = (
+                "Health alert: everyone may experience more serious health effects."
+            )
 
         return AQI_meaning, AQI_health_implications
 
     def get_city_air(
         self,
         city: str,
-        data_format: str = 'df',
+        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ):
@@ -202,8 +196,7 @@ class Ozone:
         if params == [""]:
             params = self._default_params
 
-        r = self._make_api_request(
-            f"{self._search_aqi_url}/{city}/?token={self.token}")
+        r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         if self._check_status_code(r):
             # Get all the data.
             data_obj = json.loads(r.content)["data"]
@@ -215,7 +208,7 @@ class Ozone:
     def get_multiple_city_air(
         self,
         cities: List[str],
-        data_format: str = 'df',
+        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ):
@@ -231,8 +224,8 @@ class Ozone:
         """
         for city in cities:
             # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
-            df = pandas.DataFrame(self.get_city_air(city=city, df=df, params=params)) 
-            
+            df = pandas.DataFrame(self.get_city_air(city=city, df=df, params=params))
+
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
