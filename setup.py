@@ -10,12 +10,14 @@ setuptools.setup(
     license="GPLv3+",
     url="https://github.com/Milind220/Ozone",
     version="1.1.0",
+    download_url="https://github.com/Milind220/Ozone/archive/refs/tags/v1.1.0.tar.gz",
     packages=setuptools.find_packages(),
     install_requires=[
         "numpy; python_version>='3'",
         "pandas; python_version>='3'",
         "requests; python_version>='3'",
         "openpyxl; python_version>='3'",
+        "ratelimit; python_version>='3'"
     ],
     python_requires=">=3.6",
     classifiers=[
