@@ -83,7 +83,7 @@ Enhancement/feature suggestions are tracked as [GitHub issues](https://guides.gi
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to Atom? You can start by looking through these  `first-contribution`, `beginner`, `help-wanted` issues:
+Unsure where to begin contributing to Ozone? You can start by looking through these  `first-contribution`, `beginner`, `help-wanted` issues:
 
 * `first-contribution`  should only require a few lines of code. Or are improvements are documentation.
 * `beginner` issues are a step up, and may involve a couple of methods/tests.
