@@ -82,67 +82,33 @@ class Ozone:
         self.token = token
         self._check_token_validity()
 
-    def get_city_air(
-        self,
-        city: str,
-        data_format: str = None,
-        df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""],
-
-    ) -> pandas.DataFrame:
-        """Get a city's air quality data
-
-        Args:
-            city (str): The city to get data for.
-            data_format (str,None): File format or None.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
-            params (List[str], optional): A list of parameters to get data for.
-
-        Returns:
-            pandas.DataFrame: The dataframe containing the data.
-        """
-        if params == [""]:
-            params = self._default_params
-
-        r = self._make_api_request(
-            f"{self._search_aqi_url}/{city}/?token={self.token}")
-        if self._check_status_code(r):
-            # Get all the data.
-            data_obj = json.loads(r.content)["data"]
-            row = self._parse_data(data_obj, city, params)
-
-            df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
-        return self._format_output(data_format, df)
-
     def _format_output(
-        self,
-        data_format: str = None,
-        df: pandas.DataFrame = pandas.DataFrame(),
-    ):
+        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
+    ) -> pandas.DataFrame:
         """Format output data
 
         Args:
-            data_format (str,None): File format or None.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
             df (pandas.DataFrame,): Dataframe object of air quality data.
 
         Returns:
             pandas.DataFrame: The dataframe containing the air quality data.
             None: print the string response of file type created.
         """
-
-        if data_format == None:
+        if data_format == "df":
             return df
         elif data_format == "csv":
             df.to_csv("air_quality.csv", index=False)
-            print("csv file created!")
+            print("File saved to disk as air_quality.csv")
         elif data_format == "json":
             df.to_json("air_quality_data.json")
-            print("json file created!")
+            print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
             df.to_excel("air_quality_data.xlsx",)
-            print("Excel file created!")
+            print("File saved to disk as air_quality_data.xlsx")    
         else:
-            print("Invalid file format. Use any of: csv, json, xlsx")
+            print("Invalid file format. Use any of: csv, json, xlsx, df")
+        return pandas.DataFrame()
 
     def _parse_data(
         self, data_obj: Any, city: str, params: List[str]
@@ -172,8 +138,10 @@ class Ozone:
                     # This is in different part of JSON object.
                     row["aqi"] = float(data_obj["aqi"])
                     # This adds AQI_meaning and AQI_health_implications data
-                    row["AQI_meaning"], row["AQI_health_implications"] = self._AQI_meaning(
-                        float(data_obj["aqi"]))
+                    (
+                        row["AQI_meaning"],
+                        row["AQI_health_implications"],
+                    ) = self._AQI_meaning(float(data_obj["aqi"]))
                 else:
                     row[param] = float(data_obj["iaqi"][param]["v"])
             except KeyError:
@@ -193,37 +161,62 @@ class Ozone:
 
         if aqi <= 50:
             AQI_meaning = "Good"
-            AQI_health_implications = """Air quality is considered satisfactory, 
-            and air pollution poses little or no risk"""
+            AQI_health_implications = "Air quality is considered satisfactory, and air pollution poses little or no risk"
         elif 51 <= aqi <= 100:
             AQI_meaning = "Moderate"
-            AQI_health_implications = """Air quality is acceptable; however, 
-            for some pollutants there may be a moderate health concern for a 
-            very small number of people who are unusually sensitive to air 
-            pollution."""
+            AQI_health_implications = "Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution."
         elif 101 <= aqi <= 150:
             AQI_meaning = "Unhealthy for sensitive group"
-            AQI_health_implications = """Members of sensitive groups may experience 
-            health effects. The general public is not likely to be affected."""
+            AQI_health_implications = "Members of sensitive groups may experience health effects. The general public is not likely to be affected."
         elif 151 <= aqi <= 200:
             AQI_meaning = "Unhealthy"
-            AQI_health_implications = """Everyone may begin to experience health effects; 
-            members of sensitive groups may experience more serious 
-            health effects."""
+            AQI_health_implications = "Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects."
         elif 201 <= aqi <= 300:
             AQI_meaning = "Very Unhealthy"
-            AQI_health_implications = """Health warnings of emergency conditions. 
-            The entire population is more likely to be affected."""
+            AQI_health_implications = "Health warnings of emergency conditions. The entire population is more likely to be affected."
         else:
             AQI_meaning = "Hazardous"
-            AQI_health_implications = """Health alert: everyone may experience more serious health effects."""
+            AQI_health_implications = (
+                "Health alert: everyone may experience more serious health effects."
+            )
 
         return AQI_meaning, AQI_health_implications
+
+    def get_city_air(
+        self,
+        city: str,
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
+        params: List[str] = [""],
+    ) -> pandas.DataFrame:
+        """Get a city's air quality data
+
+        Args:
+            city (str): The city to get data for.
+            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            params (List[str], optional): A list of parameters to get data for.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data.
+            (If you selected another data format, this dataframe will be empty)
+        """
+        if params == [""]:
+            params = self._default_params
+
+        r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
+        if self._check_status_code(r):
+            # Get all the data.
+            data_obj = json.loads(r.content)["data"]
+            row = self._parse_data(data_obj, city, params)
+
+            df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
+        return self._format_output(data_format, df)
 
     def get_multiple_city_air(
         self,
         cities: List[str],
-        data_format: str = None,
+        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ) -> pandas.DataFrame:
@@ -231,14 +224,16 @@ class Ozone:
 
         Args:
             cities (list): A list of cities to get data for.
-            data_format (str,None): File format or None.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data.
-            None: Prints message of file saved to disk.
+            pandas.DataFrame: The dataframe containing the data. (If you
+            selected another data format, this dataframe will be empty)
         """
         for city in cities:
-            df = self.get_city_air(city, df, params)
+            # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
+            df = pandas.DataFrame(self.get_city_air(city=city, df=df, params=params))
+
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
