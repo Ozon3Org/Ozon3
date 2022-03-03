@@ -182,7 +182,7 @@ class Ozone:
 
         return AQI_meaning, AQI_health_implications
 
-    def get_lat_lon_air(
+    def get_location_air(
         self,
         lat: float,
         lon: float,
@@ -243,6 +243,30 @@ class Ozone:
             row = self._parse_data(data_obj, city, params)
 
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
+        return self._format_output(data_format, df)
+
+    def get_multiple_location_air(
+        self,
+        locations: List[Tuple],
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
+        params: List[str] = [""],
+    ) -> pandas.DataFrame:
+        """Get multiple locations air quality data
+
+        Args:
+            locations (list): A list of pair (latitude,longitude) to get data for.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data. (If you
+            selected another data format, this dataframe will be empty)
+        """
+        for loc in locations:
+            # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
+            df = pandas.DataFrame(self.get_lat_lon_air(loc[0], loc[1], df=df, params=params))
+
+        df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
     def get_multiple_city_air(
