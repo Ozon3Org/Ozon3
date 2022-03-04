@@ -182,7 +182,7 @@ class Ozone:
 
         return AQI_meaning, AQI_health_implications
 
-    def get_location_air(
+    def get_coordinate_air(
         self,
         lat: float,
         lon: float,
@@ -245,7 +245,7 @@ class Ozone:
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
         return self._format_output(data_format, df)
 
-    def get_multiple_location_air(
+    def get_multiple_coordinate_air(
         self,
         locations: List[Tuple],
         data_format: str = "df",
@@ -264,7 +264,7 @@ class Ozone:
         """
         for loc in locations:
             # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
-            df = pandas.DataFrame(self.get_lat_lon_air(loc[0], loc[1], df=df, params=params))
+            df = pandas.DataFrame(self.get_coordinate_air(loc[0], loc[1], df=df, params=params))
 
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
