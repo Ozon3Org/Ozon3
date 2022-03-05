@@ -182,6 +182,38 @@ class Ozone:
 
         return AQI_meaning, AQI_health_implications
 
+    def get_coordinate_air(
+        self,
+        lat: float,
+        lon: float,
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
+        params: List[str] = [""],
+    ) -> pandas.DataFrame:
+        """Get a location's air quality data by latitude and longitude
+
+        Args:
+            lat (float): Latitude 
+            lon (float): Longitude
+            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            params (List[str], optional): A list of parameters to get data for.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data.
+            (If you selected another data format, this dataframe will be empty)
+        """
+        if params == [""]:
+            params = self._default_params
+
+        r = self._make_api_request(f"{self._search_aqi_url}/geo:{lat};{lon}/?token={self.token}")
+        if self._check_status_code(r):
+            # Get all the data.
+            data_obj = json.loads(r.content)["data"]
+            row = self._parse_data(data_obj, "N/A", params)
+            df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
+        return self._format_output(data_format, df)
+
     def get_city_air(
         self,
         city: str,
@@ -211,6 +243,30 @@ class Ozone:
             row = self._parse_data(data_obj, city, params)
 
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
+        return self._format_output(data_format, df)
+
+    def get_multiple_coordinate_air(
+        self,
+        locations: List[Tuple],
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
+        params: List[str] = [""],
+    ) -> pandas.DataFrame:
+        """Get multiple locations air quality data
+
+        Args:
+            locations (list): A list of pair (latitude,longitude) to get data for.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data. (If you
+            selected another data format, this dataframe will be empty)
+        """
+        for loc in locations:
+            # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
+            df = pandas.DataFrame(self.get_coordinate_air(loc[0], loc[1], df=df, params=params))
+
+        df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
     def get_multiple_city_air(
