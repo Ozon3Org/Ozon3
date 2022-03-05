@@ -198,6 +198,7 @@ class Ozone:
             data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.
             params (List[str], optional): A list of parameters to get data for.
+            Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
@@ -228,6 +229,7 @@ class Ozone:
             data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.
             params (List[str], optional): A list of parameters to get data for.
+            Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
@@ -257,6 +259,9 @@ class Ozone:
         Args:
             locations (list): A list of pair (latitude,longitude) to get data for.
             data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            params (List[str], optional): A list of parameters to get data for.
+            Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
@@ -281,6 +286,9 @@ class Ozone:
         Args:
             cities (list): A list of cities to get data for.
             data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            params (List[str], optional): A list of parameters to get data for.
+            Gets all parameters by default.
+            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
