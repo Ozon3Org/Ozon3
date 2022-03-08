@@ -136,6 +136,7 @@ Commmits should be made in this format:
 * BREAKING CHANGE: For changes that introduce backwards incompatible updates
 * refactor: If you've rearranged/refactored existing code by splitting it into seperate files/methods/functions/classes
 * test: Any modification of tests
+* ci/cd: Any addition of continuous integration/deployement tasks, such as GitHub actions
 * chore: Things like version bumps, change in dependencies etc. Behind the scenes stuff that doesn't affect the API
 * docs: For entirely documentation related changes. README, CONTRIBUTING, CODE_OF_CONDUCT, and even docstrings in methods, all come under this
 * style: If your commit is solely to do with things like spaces instead of tabs, or " instead of '. This can be used if you've formatted code with black/flake8 and wish to make a commit
