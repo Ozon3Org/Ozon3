@@ -123,11 +123,30 @@ You may have to complete additional work, tests, or other changes before your pu
 
 ### Git Commit Messages
 
+Commmits should be made in this format: 
+
+```
+<type>[optional scope]: <description>
+
+<optional detailed description>
+```
+
+* fix: To show that a bug fix or patch has been made
+* feat: To show that a new feature/enhancement has been added
+* BREAKING CHANGE: For changes that introduce backwards incompatible updates
+* refactor: If you've rearranged/refactored existing code by splitting it into seperate files/methods/functions/classes
+* test: Any modification of tests
+* chore: Things like version bumps, change in dependencies etc. Behind the scenes stuff that doesn't affect the API
+* docs: For entirely documentation related changes. README, CONTRIBUTING, CODE_OF_CONDUCT, and even docstrings in methods, all come under this
+* style: If your commit is solely to do with things like spaces instead of tabs, or " instead of '. This can be used if you've formatted code with black/flake8 and wish to make a commit
+
+> **Note:** The above guidelines were added on 8th Mar, 2022. All commits before this time do not have these prefixes.
+
+Here are a few other tips: 
+
 * Use the present tense ("Add feature" not "Added feature")
 * Limit the first line to 72 characters or less
-* When only changing documentation, include `[Doc]` in the commit title
-* When making a bugfix, include `[BugFix]` in commit title.
-* Try and add descriptions where needed.
+* Add descriptions where needed, to explain your commit in more detail
 
 ### Python Styleguide
 * Follow the [pep8](https://www.python.org/dev/peps/pep-0008/) styleguide
