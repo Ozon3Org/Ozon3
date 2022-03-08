@@ -105,7 +105,7 @@ class Ozone:
             print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
             df.to_excel("air_quality_data.xlsx",)
-            print("File saved to disk as air_quality_data.xlsx")    
+            print("File saved to disk as air_quality_data.xlsx")
         else:
             print("Invalid file format. Use any of: csv, json, xlsx, df")
         return pandas.DataFrame()
@@ -207,7 +207,9 @@ class Ozone:
         if params == [""]:
             params = self._default_params
 
-        r = self._make_api_request(f"{self._search_aqi_url}/geo:{lat};{lon}/?token={self.token}")
+        r = self._make_api_request(
+            f"{self._search_aqi_url}/geo:{lat};{lon}/?token={self.token}"
+        )
         if self._check_status_code(r):
             # Get all the data.
             data_obj = json.loads(r.content)["data"]
@@ -278,7 +280,9 @@ class Ozone:
         """
         for loc in locations:
             # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
-            df = pandas.DataFrame(self.get_coordinate_air(loc[0], loc[1], df=df, params=params))
+            df = pandas.DataFrame(
+                self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
+            )
 
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
