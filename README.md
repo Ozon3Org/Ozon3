@@ -1,5 +1,10 @@
 # Ozone
 
+[![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3)
+<a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+![GitHub](https://img.shields.io/github/license/Milind220/Ozone)
+
+
 ## The simplest AQI API!
 
 I want to make it easy to get your hands on accurate air quality data for your project, whatever it is. Ozone makes this as straightforward as typing out a few lines of code. Ozone uses the World Air Quality Index's API to fetch data, so you can trust the data you get to be accurate and reliable.
