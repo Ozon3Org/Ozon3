@@ -25,7 +25,7 @@ The following is a set of guidelines for contributing to [Ozon3](https://github.
 
 ## I don't want to read this whole thing I just have a question!!!
 
-> **Note:** Please don't file an issue to ask a question. Search for your question in issues and see if it's already been answered. Also check out the discussions tab to see if we've chatted about it before. Post it there if it's an idea, or in issues if there's a change to be made.
+> **Note:** Please don't file an issue to ask a question. Search for your question in issues and see if it's already been answered. Also check out the [discussions](https://github.com/Milind220/Ozone/discussions) tab to see if we've chatted about it before. Post it there if it's an idea, or in issues if there's a change to be made.
 
 ## What should I know before I get started?
 
