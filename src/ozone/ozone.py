@@ -36,8 +36,7 @@ class Ozone:
         self._check_token_validity()
 
     def _check_token_validity(self) -> None:
-        """Check if the token is valid
-        """
+        """Check if the token is valid"""
         test_city: str = "london"
         r = self._make_api_request(
             f"{self._search_aqi_url}/{test_city}/?token={self.token}"
@@ -83,7 +82,9 @@ class Ozone:
         self._check_token_validity()
 
     def _format_output(
-        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
+        self,
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Format output data
 
@@ -104,7 +105,9 @@ class Ozone:
             df.to_json("air_quality_data.json")
             print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
-            df.to_excel("air_quality_data.xlsx",)
+            df.to_excel(
+                "air_quality_data.xlsx",
+            )
             print("File saved to disk as air_quality_data.xlsx")
         else:
             print("Invalid file format. Use any of: csv, json, xlsx, df")
@@ -152,12 +155,12 @@ class Ozone:
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
         """Retrieve API Meaning and health implications
 
-                Args:
-                    row["aqi"] (float): parsed AQI data.
+        Args:
+            row["aqi"] (float): parsed AQI data.
 
-                Returns:
-                    str: The meaning and health implication of the AQI data.
-                """
+        Returns:
+            str: The meaning and health implication of the AQI data.
+        """
 
         if aqi <= 50:
             AQI_meaning = "Good"
@@ -193,7 +196,7 @@ class Ozone:
         """Get a location's air quality data by latitude and longitude
 
         Args:
-            lat (float): Latitude 
+            lat (float): Latitude
             lon (float): Longitude
             data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.

@@ -1,3 +1,10 @@
+from dataclasses import dataclass
+
+
+# This prevents the data attributes in the class from being modified.
+# This is to ensure that a user/method doesn't accidentally modify the
+# endpoint urls stored here.
+@dataclass(frozen=True)
 class URLs:
 
     # Base API endpoint.
