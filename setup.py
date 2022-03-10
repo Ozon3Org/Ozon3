@@ -18,6 +18,9 @@ setuptools.setup(
         "requests; python_version>='3'",
         "openpyxl; python_version>='3'",
         "ratelimit; python_version>='3'"
+        "selenium; python_version>='3'"
+        "webdriver-manager; python_version>='3'"
+
     ],
     python_requires=">=3.6",
     classifiers=[
