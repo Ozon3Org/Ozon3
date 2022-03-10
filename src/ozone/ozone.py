@@ -349,7 +349,7 @@ class Ozone:
             dfa = pandas.DataFrame(
                 self.get_city_air(city=city, df=dfa, params=[air_param])
             )
-            result = float(dfa.loc[0, air_param])
+            result = float(dfa.loc[0, air_param]) # type: ignore
         except KeyError:
             print(
                 "Missing air quality parameter!\n"
