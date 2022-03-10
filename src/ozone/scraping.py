@@ -15,6 +15,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
+from .urls import URLs
+
 
 def create_selenium_web_driver(headless: bool, verbosity: bool):
     if verbosity:
@@ -81,7 +83,7 @@ class AirDataHistory:
 
 
 class AirHistoryScraper:
-    _main_url: str = 'https://aqicn.org/data-platform/register/'
+    _main_url: str = URLs.historical_data_url
     allowed_gases = ["PM2.5",
                      "PM10",
                      "O3",
@@ -182,10 +184,4 @@ class AirHistoryScraper:
             self.history_data.append(AirDataHistory(flattened_table, air_type, start_date, end_date))
 
         return self.history_data
-
-
-scraper = AirHistoryScraper()
-data = scraper.execute("London")
-for item in zip(*data):
-    print(item)
 
