@@ -4,7 +4,7 @@ import requests
 import json
 from ratelimit import limits, sleep_and_retry
 from .urls import URLs
-
+from .scraping import AirHistoryScraper, AirDataHistory
 from typing import Any, Dict, List, Union, Tuple
 
 # 1000 calls per second is the limit allowed by API
@@ -240,6 +240,16 @@ class Ozone:
         for city in cities:
             df = self.get_city_air(city, df, params)
         df.reset_index(inplace=True, drop=True)
+        return self._format_output(data_format, df)
+
+    def get_historical_data(self, search_query: str,
+                            data_format: str = None) -> pandas.DataFrame:
+        scraper: AirHistoryScraper = AirHistoryScraper()
+        all_tables: List[AirDataHistory] = scraper.execute(search_query=search_query)
+
+        header: List[str] = [table.air for table in all_tables]
+        data_rows: List[Tuple[int]] = [row for row in zip(*all_tables)]
+        df = pandas.DataFrame(data_rows, columns=header)
         return self._format_output(data_format, df)
 
 

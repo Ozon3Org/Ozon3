@@ -28,7 +28,7 @@ def create_selenium_web_driver(headless: bool, verbosity: bool):
     return browser
 
 
-# model wide object for use by other scrapers
+# model level object available for use by other scrapers
 _SELENIUM_WEB_DRIVER = create_selenium_web_driver(headless=True, verbosity=True)
 
 
