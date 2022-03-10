@@ -22,6 +22,7 @@ class URLs:
         search_aqi_url (str): The endpoint used for retrieving air quality data.
         find_stations_url (str): The endpoint used for retrieving a collection of air quality measuring stations.
     """
+
     # Base API endpoint.
     _base_url: str = "https://api.waqi.info/"
 

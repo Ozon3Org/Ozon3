@@ -35,6 +35,7 @@ class Ozone:
     Attributes:
         token (str): The private API token for the WAQI API service.
     """
+
     _search_aqi_url: str = URLs.search_aqi_url
     _find_stations_url: str = URLs.find_stations_url
     _default_params: List[str] = [
@@ -109,9 +110,7 @@ class Ozone:
         self._check_token_validity()
 
     def _format_output(
-        self,
-        data_format: str = "df",
-        df: pandas.DataFrame = pandas.DataFrame(),
+        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Format output data
 
@@ -132,9 +131,7 @@ class Ozone:
             df.to_json("air_quality_data.json")
             print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
-            df.to_excel(
-                "air_quality_data.xlsx",
-            )
+            df.to_excel("air_quality_data.xlsx",)
             print("File saved to disk as air_quality_data.xlsx")
         else:
             print("Invalid file format. Use any of: csv, json, xlsx, df")
@@ -335,11 +332,7 @@ class Ozone:
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
-    def get_specific_parameter(
-        self,
-        city: str,
-        air_param: str = "",
-        ) -> float:
+    def get_specific_parameter(self, city: str, air_param: str = "",) -> float:
         """Get specific parameter as a float
 
         Args:
@@ -353,13 +346,18 @@ class Ozone:
         result: float = 0.0
         try:
             dfa: pandas.DataFrame = pandas.DataFrame()
-            dfa = pandas.DataFrame(self.get_city_air(city=city, df=dfa, params=[air_param]))
+            dfa = pandas.DataFrame(
+                self.get_city_air(city=city, df=dfa, params=[air_param])
+            )
             result = float(dfa.loc[0, air_param])
         except KeyError:
-            print("Missing air quality parameter!\n" + 
-                   "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)")
-        
+            print(
+                "Missing air quality parameter!\n"
+                + "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)"
+            )
+
         return result
+
 
 if __name__ == "__main__":
     pass
