@@ -40,6 +40,11 @@ class DateOutOfRange(Exception):
 
 
 class AirDataHistory:
+    """
+    A class which encapsulates the historical table data retrieved by scraping and is
+    specific for any gas: ["PM2.5", "PM10", "O3", "NO2", "SO2", "CO"]
+
+    """
 
     def __init__(self, data: List[int], air_type: str, start_date: datetime.datetime, end_date: datetime.datetime):
         self.start_date: datetime.datetime = start_date
@@ -170,11 +175,15 @@ class AirHistoryScraper:
         return data, start_date, end_date
 
     def execute(self, search_query: str)-> List[AirDataHistory]:
+        """ initiates the scraping process for historical data
+            Args:
+                search_query (str): The query location
+
+            Returns:
+                List[AirDataHistory]: a list of AirDataHistory objects
         """
 
-        :param search_query:
-        :return:
-        """
+        print("fetching historical data please wait...")
         self.handle_search_form(search_query)
         table, buttons = self.get_table_and_buttons()
         data, start_date, end_date = self.extract_from_table(table, buttons)
