@@ -1,3 +1,16 @@
+"""Ozone module for the Ozone package.
+
+This module contains the main Ozone class, which is used for all live-data
+collection done by the Ozone package.
+
+This module should be used only as a part of the Ozone package, and should not
+be run directly.
+
+Attributes (module level):
+    CALLS (int=1000): The number of calls per second allowed by the WAQI API is 1000.
+    RATE_LIMIT (int=1): The time period in seconds for the max number of calls is 1 second.
+"""
+
 import pandas
 import numpy
 import requests
@@ -8,11 +21,20 @@ from .urls import URLs
 from typing import Any, Dict, List, Union, Tuple
 
 # 1000 calls per second is the limit allowed by API
-CALLS = 1000
-RATE_LIMIT = 1
+CALLS: int = 1000
+RATE_LIMIT: int = 1
 
 
 class Ozone:
+    """Primary class for Ozone API
+    
+    This class contains all the methods used for live data collection.
+    This class should be instantiated, and methods should be called from the
+    instance. 
+    
+    Attributes:
+        token (str): The private API token for the WAQI API service.
+    """
     _search_aqi_url: str = URLs.search_aqi_url
     _find_stations_url: str = URLs.find_stations_url
     _default_params: List[str] = [
@@ -32,6 +54,11 @@ class Ozone:
     ]
 
     def __init__(self, token: str = ""):
+        """Initialises the class instance and sets the API token value
+        
+        Args:
+            token (str): The users private API token for the WAQI API.
+        """
         self.token: str = token
         self._check_token_validity()
 

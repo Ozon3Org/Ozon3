@@ -1,8 +1,8 @@
-# Contributing to Ozon3
+# Contributing to Ozone
 
 :tada::+1: First off, thanks for taking the time to contribute! :tada::+1:
 
-The following is a set of guidelines for contributing to [Ozon3](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to [Ozone](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 > **Note:** One very important thing is to make sure you only make PR's to the `dev` branch and not the `main` branch. The main branch is stable and should not be modified unless there's a new release.
 
@@ -30,7 +30,7 @@ The following is a set of guidelines for contributing to [Ozon3](https://github.
 ## What should I know before I get started?
 
 ### File Structure
-Ozon3 is currently an extremely simple package.
+Ozone is currently an extremely simple package.
 * The package itself is in the ```src/ozone``` directory.
 * [ozone.py](https://github.com/Milind220/Ozone/tree/main/src/ozone/ozone.py) contains the Ozone class that does most of the fetching of the data.
 * [urls.py](https://github.com/Milind220/Ozone/tree/main/src/ozone/urls.py) contains a URLs class with the API endpoints and base urls.
@@ -61,7 +61,7 @@ Consider providing additional context by answering these questions:
 
 * **Did the problem start happening recently** (e.g. after updating to a new version of Ozon3) or was this always a problem?
 * **Can you reliably reproduce the issue?** If not, provide details about how often the problem happens and under which conditions it normally happens.
-* **Which version of Ozon3 are you using?**
+* **Which version of Ozon3 are youeusing?**
 
 ### Suggesting Enhancements or Features
 
