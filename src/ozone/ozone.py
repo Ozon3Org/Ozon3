@@ -243,21 +243,13 @@ class Ozone:
         if params == [""]:
             params = self._default_params
 
-            r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
-            if self._check_status_code(r):
-                # Get all the data.
-                data_obj = json.loads(r.content)["data"]
-                row = self._parse_data(data_obj, city, params)
+        r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
+        if self._check_status_code(r):
+            # Get all the data.
+            data_obj = json.loads(r.content)["data"]
+            row = self._parse_data(data_obj, city, params)
 
-                df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
-
-        # if there is a specific data parameter, get_specific_air() will return a single row with specified data
-        else:
-            r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
-            if self._check_status_code(r):
-                data_obj = json.loads(r.content)["data"]
-                row = self.get_specific_air(data_obj, params)
-                df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
+            df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
 
         return self._format_output(data_format, df)
 
