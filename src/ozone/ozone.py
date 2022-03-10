@@ -335,6 +335,31 @@ class Ozone:
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
+    def get_specific_parameter(
+        self,
+        city: str,
+        air_param: str = "",
+        ) -> float:
+        """Get specific parameter as a float
+
+        Args:
+            city (string): A city to get the data for
+            air_param (string): A string containing the specified air quality parameter.
+            Gets all parameters by default.
+
+        Returns:
+            float: Value of the city's specified parameter            
+        """
+        result = float(0)
+        try:
+            dfa: pandas.DataFrame = pandas.DataFrame()
+            dfa = pandas.DataFrame(self.get_city_air(city=city, df=dfa, params=[air_param]))
+            result = float(dfa.loc[0, air_param])
+        except KeyError:
+            print("Missing air quality parameter!\n" + 
+                   "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)")
+        
+        return result
 
 if __name__ == "__main__":
     pass
