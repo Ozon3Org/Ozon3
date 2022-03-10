@@ -350,7 +350,7 @@ class Ozone:
         Returns:
             float: Value of the city's specified parameter            
         """
-        result = float(0)
+        result: float = 0.0
         try:
             dfa: pandas.DataFrame = pandas.DataFrame()
             dfa = pandas.DataFrame(self.get_city_air(city=city, df=dfa, params=[air_param]))
