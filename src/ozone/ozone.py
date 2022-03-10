@@ -250,7 +250,6 @@ class Ozone:
             row = self._parse_data(data_obj, city, params)
 
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
-
         return self._format_output(data_format, df)
 
     def get_multiple_coordinate_air(
@@ -312,13 +311,13 @@ class Ozone:
     def get_specific_parameter(
         self,
         city: str,
-        aqi_co_no2: str = "",
+        air_param: str = "",
         ) -> float:
         """Get specific parameter as a float
 
         Args:
             city (string): A city to get the data for
-            param (string): A string containing the specified parameter.
+            air_param (string): A string containing the specified air quality parameter.
             Gets all parameters by default.
 
         Returns:
@@ -327,8 +326,8 @@ class Ozone:
         result = float(0)
         try:
             dfa: pandas.DataFrame = pandas.DataFrame()
-            dfa = pandas.DataFrame(self.get_city_air(city=city, df=dfa, params=[aqi_co_no2]))
-            result = float(dfa.loc[0, aqi_co_no2])
+            dfa = pandas.DataFrame(self.get_city_air(city=city, df=dfa, params=[air_param]))
+            result = float(dfa.loc[0, air_param])
         except KeyError:
             print("Missing air quality parameter!\n" + 
                    "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)")
