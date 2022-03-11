@@ -27,14 +27,15 @@ RATE_LIMIT: int = 1
 
 class Ozone:
     """Primary class for Ozone API
-    
+
     This class contains all the methods used for live data collection.
     This class should be instantiated, and methods should be called from the
-    instance. 
-    
+    instance.
+
     Attributes:
         token (str): The private API token for the WAQI API service.
     """
+
     _search_aqi_url: str = URLs.search_aqi_url
     _find_stations_url: str = URLs.find_stations_url
     _default_params: List[str] = [
@@ -55,7 +56,7 @@ class Ozone:
 
     def __init__(self, token: str = ""):
         """Initialises the class instance and sets the API token value
-        
+
         Args:
             token (str): The users private API token for the WAQI API.
         """
@@ -146,10 +147,12 @@ class Ozone:
         """Parse the data from the API response
 
         Args:
-            data_obj (dict): The data from the API response.
+            data_obj (JSON object returned by json.loads): The data from the API response.
+            city (str): The city name.
+            params (List[str]): The parameters to parse.
 
         Returns:
-            list: A list of dictionaries containing the data.
+            list: A list containing a single dictionary with the data.
         """
         # A single row of data for the dataframe.
         row: Dict[str, Union[str, float]] = {}
@@ -177,6 +180,9 @@ class Ozone:
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
+
+        # Return a list containing the dictionary so that it can be used with
+        # pandas.concat method later.
         return [row]
 
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
@@ -339,7 +345,7 @@ class Ozone:
         self,
         city: str,
         air_param: str = "",
-        ) -> float:
+    ) -> float:
         """Get specific parameter as a float
 
         Args:
@@ -348,18 +354,26 @@ class Ozone:
             Gets all parameters by default.
 
         Returns:
-            float: Value of the city's specified parameter            
+            float: Value of the specified parameter for the given city.
         """
-        result = float(0)
+        result: float = 0.0
         try:
-            dfa: pandas.DataFrame = pandas.DataFrame()
-            dfa = pandas.DataFrame(self.get_city_air(city=city, df=dfa, params=[air_param]))
-            result = float(dfa.loc[0, air_param])
+            r = self._make_api_request(
+                f"{self._search_aqi_url}/{city}/?token={self.token}"
+            )
+            if self._check_status_code(r):
+                data_obj = json.loads(r.content)["data"]
+                row = self._parse_data(data_obj, city, [air_param])[0]
+                result = float(row[air_param])
+
         except KeyError:
-            print("Missing air quality parameter!\n" + 
-                   "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)")
-        
+            print(
+                "Missing air quality parameter!\n"
+                + "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)"
+            )
+
         return result
+
 
 if __name__ == "__main__":
     pass
