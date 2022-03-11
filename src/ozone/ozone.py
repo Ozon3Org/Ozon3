@@ -147,10 +147,12 @@ class Ozone:
         """Parse the data from the API response
 
         Args:
-            data_obj (dict): The data from the API response.
+            data_obj (JSON object returned by json.loads): The data from the API response.
+            city (str): The city name.
+            params (List[str]): The parameters to parse.
 
         Returns:
-            list: A list of dictionaries containing the data.
+            list: A list containing a single dictionary with the data.
         """
         # A single row of data for the dataframe.
         row: Dict[str, Union[str, float]] = {}
@@ -178,6 +180,9 @@ class Ozone:
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
+
+        # Return a list containing the dictionary so that it can be used with
+        # pandas.concat method later.
         return [row]
 
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
@@ -349,7 +354,7 @@ class Ozone:
             Gets all parameters by default.
 
         Returns:
-            float: Value of the city's specified parameter
+            float: Value of the specified parameter for the given city.
         """
         result: float = 0.0
         try:
