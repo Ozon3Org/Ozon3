@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to the API documentation for Ozone
 
 You can use the [editor on GitHub](https://github.com/Milind220/Ozone/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
