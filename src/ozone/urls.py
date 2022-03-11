@@ -14,10 +14,10 @@ from dataclasses import dataclass
 @dataclass(frozen=True)
 class URLs:
     """Class that contains the endpoint urls for the WAQI API
-    
+
     This class should not be instantiated. It only contains class level attributes,
     and no methods at all. It is a static dataclass.
-    
+
     Attributes:
         search_aqi_url (str): The endpoint used for retrieving air quality data.
         find_stations_url (str): The endpoint used for retrieving a collection of air quality measuring stations.
