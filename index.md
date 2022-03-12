@@ -53,7 +53,7 @@ o3.get_city_air(city='Hong Kong', params=['pm25', 'pm10', 'o3', 'dew'])
 
 #### For many cities
 ```python
-o3.get_multiple_city_air(['Hong Kong', 'London', 'New Delhi', 'Los Angeles'], ['no2', 'so2', 'aqi', 'co'])
+o3.get_multiple_city_air(cities=['Hong Kong', 'London', 'New Delhi', 'Los Angeles'], params=['no2', 'so2', 'aqi', 'co'])
 ```
 
 ##### Output:
