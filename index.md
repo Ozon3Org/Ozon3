@@ -4,8 +4,6 @@ Welcome to Ozone ☁️
 
 In this guide, I'll walk you through the process of installing the Ozone package, and getting started with fetching data. Then, I'll cover each of the methods available through the Ozone API.
 
-This documentation is still being completed. You can expect to see it by March 17th! Until then, have a look at Ozone's repository on Github - maybe the README can help you out!
-
 ### Step 0: Setup
 
 Before doing anything, we need to make sure that you have the Ozone package on your computer. The easiest way to get it is by using pip.
