@@ -32,6 +32,9 @@ class URLs:
     # For search for air quality measuring stations in area.
     find_stations_url: str = f"{_base_url}search/"
 
+    # For Map Queries
+    find_coordinates_url: str = f"{_base_url}map/"
+
 
 if __name__ == "__main__":
     pass
