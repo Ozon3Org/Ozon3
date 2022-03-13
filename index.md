@@ -65,9 +65,9 @@ o3.get_multiple_city_air(cities=['Hong Kong', 'London', 'New Delhi', 'Los Angele
 
 <img width="1045" alt="Screenshot 2022-03-12 at 8 32 46 PM" src="https://user-images.githubusercontent.com/68847270/158023272-2843d6b8-2d0f-46b1-b9da-f190f3034696.png">
 
-There you have it - customized air quality data for a list of cities!
 
-### Complete list of methods
+There you have it - Customized air quality data for a list of cities!
+
 
 ### Support or Contact
 
