@@ -17,8 +17,7 @@ setuptools.setup(
         "pandas; python_version>='3'",
         "requests; python_version>='3'",
         "openpyxl; python_version>='3'",
-        "ratelimit; python_version>='3'",
-        "itertools; python_version>='3'",
+        "ratelimit; python_version>='3'"
     ],
     python_requires=">=3.6",
     classifiers=[
