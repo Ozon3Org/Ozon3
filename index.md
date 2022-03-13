@@ -23,7 +23,7 @@ pip show ozon3
 ### Step 1: Get your API token
 
 Ozone uses the World Air Quality Index's API under the hood, to fetch air quality data. You need to get your own private API token to use Ozone's services.
-Getting the token is really easy, and takes only a couple minutes. Register for the WAQI API with your email [here](), and they'll send you your token within a few minutes. 
+Getting the token is really easy, and takes only a couple minutes. Register for the WAQI API with your email [here](https://aqicn.org/data-platform/token/#/), and they'll send you your token within a few minutes. 
 
 > **Note:** Your API token is only for you to use. Keep it private and try not to reveal it in publicly visible code.
 
