@@ -9,7 +9,7 @@
 
 I want to make it easy to get your hands on accurate air quality data for your project, whatever it is. Ozone makes this as straightforward as typing out a few lines of code. Ozone uses the World Air Quality Index's API to fetch data, so you can trust the data you get to be accurate and reliable. ✅ 📈
 
-You can view our complete documentation [here](https://milind220.github.io/Ozone/), from March 17th onwards!
+###### You can view our complete documentation [here](https://milind220.github.io/Ozone/)
 
 #### Table of Contents
 
