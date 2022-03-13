@@ -220,9 +220,7 @@ class Ozone:
         return AQI_meaning, AQI_health_implications
 
     def _locate_all_coordinates(
-        self,
-        lower_bound: Tuple[float, float],
-        upper_bound: Tuple[float, float]
+        self, lower_bound: Tuple[float, float], upper_bound: Tuple[float, float]
     ) -> List[Tuple]:
         """Get all locations between two pair of coordinates
 
@@ -235,21 +233,25 @@ class Ozone:
            upper_bound. If API request fails then returns [(-1, -1)].
         """
 
-        coordinates_flattened: List[float] = list(itertools.chain(lower_bound, upper_bound))
+        coordinates_flattened: List[float] = list(
+            itertools.chain(lower_bound, upper_bound)
+        )
         latlng: str = ",".join(map(str, coordinates_flattened))
         response = self._make_api_request(
             f"{URLs.find_coordinates_url}bounds/?token={self.token}&latlng={latlng}"
         )
         if self._check_status_code(response):
             data = json.loads(response.content)["data"]
-            coordinates: List[Tuple] = [(element['lat'], element['lon']) for element in data]
+            coordinates: List[Tuple] = [
+                (element["lat"], element["lon"]) for element in data
+            ]
             return coordinates
 
         # This is a bit of a hack to ensure that the function always returns a
         # list of coordinates. Required to make mypy happy.
 
         # Return an invalid coordinate if API request fails.
-        return [(-1, -1)] 
+        return [(-1, -1)]
 
     def get_coordinate_air(
         self,
@@ -353,7 +355,7 @@ class Ozone:
         upper_bound: Tuple[float, float],
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""]
+        params: List[str] = [""],
     ) -> pandas.DataFrame:
         """Get air quality data for range of coordinates between lower_bound and upper_bound
 
@@ -369,8 +371,12 @@ class Ozone:
             pandas.DataFrame: The dataframe containing the data. (If you
             selected another data format, this dataframe will be empty)
         """
-        locations = self._locate_all_coordinates(lower_bound=lower_bound, upper_bound=upper_bound)
-        return self.get_multiple_coordinate_air(locations, data_format=data_format, df=df, params=params)
+        locations = self._locate_all_coordinates(
+            lower_bound=lower_bound, upper_bound=upper_bound
+        )
+        return self.get_multiple_coordinate_air(
+            locations, data_format=data_format, df=df, params=params
+        )
 
     def get_multiple_city_air(
         self,
