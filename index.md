@@ -63,7 +63,9 @@ o3.get_multiple_city_air(cities=['Hong Kong', 'London', 'New Delhi', 'Los Angele
 ##### Output:
 > **Note:** Ozone will return a Pandas dataframe by default, but you can also choose between CSV file, Excel file, JSON file if you prefer any of those. Simply use the data_format argument for this!
 
-<img width="1045" alt="Screenshot 2022-03-12 at 8 32 46 PM" src="https://user-images.githubusercontent.com/68847270/158023272-2843d6b8-2d0f-46b1-b9da-f190f3034696.png">
+
+<img width="1065" alt="Screenshot 2022-03-14 at 12 07 47 PM" src="https://user-images.githubusercontent.com/68847270/158118100-9365665b-088d-4b79-a130-48ba51b3d937.png">
+
 
 
 There you have it - Customized air quality data for a list of cities!
