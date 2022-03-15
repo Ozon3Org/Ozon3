@@ -7,6 +7,13 @@ filename: methods
 This page goes over all the methods that Ozone offers to fetch air quality data:
 
 * [get_city_air](#get_city_air) 
+* [get_multiple_city_air](#get_multiple_city_air)
+* [get_coordinate_air](#get_coordinate_air)
+* [get_multiple_coordinate_air](#get_multiple_coordinate_air)
+* [get_range_coordinates_air](#get_range_coordinates_air)
+* [get_specific_parameter](#get_specific_parameter)
+* [reset_token](#reset_token)
+
 
 ## To get air quality data using city names
 
@@ -32,7 +39,7 @@ An optional argument to specify the format that you want the data returned in. Y
 
 df - a Pandas dataframe. Selected by default  
 csv - A CSV file (saved to your local directory)  
-xslx - An Excel file (saved to your local directory)  
+xlsx - An Excel file (saved to your local directory)  
 json - A JSON file (saved to your local directory)  
 
 If this argument is left blank, a dataframe with the data is automatically returned
@@ -72,7 +79,7 @@ An optional argument to specify the format that you want the data returned in. Y
 
 df - a Pandas dataframe. Selected by default  
 csv - A CSV file (saved to your local directory)  
-xslx - An Excel file (saved to your local directory)  
+xlsx - An Excel file (saved to your local directory)  
 json - A JSON file (saved to your local directory)  
 
 If this argument is left blank, a dataframe with the data is automatically returned
@@ -87,6 +94,51 @@ For example:- You previously used this method to get data for Delhi. Now you wan
 
 An optional argument to specifiy which air quality parameters to get data for. If this is left blank then data for every air quality parameter is retrieved.  
 You can choose from the following - pm25, aqi, pm10, o3, co, no2, so2, dew, h, p, t, w, wg
+
+---
+
+### get_coordinate_air
+
+Gets the air quality data for the closest measuring station to the input coordinate pair (latitude-longitude). 
+
+#### Usage Example
+
+```python
+get_coordinate_air(lat=26.2041, long=28.0473, data_format='csv')
+```
+
+#### Arguments
+
+**lat** : float
+
+The latitude coordinate
+
+**long** : float
+
+The longitude coordinate
+
+**data_format** : str
+
+An optional argument to specify the format that you want the data returned in. You can choose between the following:
+
+df - a Pandas dataframe. Selected by default  
+csv - A CSV file (saved to your local directory)  
+xlsx - An Excel file (saved to your local directory)  
+json - A JSON file (saved to your local directory)  
+
+If this argument is left blank, a dataframe with the data is automatically returned
+
+**df** : pandas.Dataframe
+
+An optional argument to pass in a dataframe that you may have previously retrieved. 
+
+For example:- You previously used this method to get data for Delhi. Now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument as you fetch the new data for London.
+
+**params** List[str]
+
+An optional argument to specifiy which air quality parameters to get data for. If this is left blank then data for every air quality parameter is retrieved.  
+You can choose from the following - pm25, aqi, pm10, o3, co, no2, so2, dew, h, p, t, w, wg
+
 
 
 *A Description of more methods is coming soon!*
