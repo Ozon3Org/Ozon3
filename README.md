@@ -32,6 +32,8 @@ I want to make it easy to get your hands on accurate air quality data for your p
 pip install ozon3
 ```
 
+You can find more information on the PyPI page for Ozone [here](https://pypi.org/project/ozon3/).
+
 ## Getting your API token :atom:
 
 To use Ozone, you must first request and get a your own unique API token 🎫. This is required to access for the underlying API to work 👮🏼‍♂️.
