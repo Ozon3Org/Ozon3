@@ -118,7 +118,7 @@ class Ozone:
         """Format output data
 
         Args:
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame,): Dataframe object of air quality data.
 
         Returns:
@@ -266,7 +266,7 @@ class Ozone:
         Args:
             lat (float): Latitude
             lon (float): Longitude
-            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
@@ -299,7 +299,7 @@ class Ozone:
 
         Args:
             city (str): The city to get data for.
-            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
@@ -331,7 +331,7 @@ class Ozone:
 
         Args:
             locations (list): A list of pair (latitude,longitude) to get data for.
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
@@ -362,7 +362,7 @@ class Ozone:
         Args:
             lower_bound (tuple): start coordinate
             upper_bound (tuple): end coordinate
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
@@ -389,7 +389,7 @@ class Ozone:
 
         Args:
             cities (list): A list of cities to get data for.
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xslx'.
+            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
             df (pandas.DataFrame, optional): An existing dataframe to append the data to.
