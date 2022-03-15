@@ -4,7 +4,9 @@ layout: template
 filename: methods
 --- 
 
-This page goes over all the methods that Ozone offers to fet
+This page goes over all the methods that Ozone offers to fetch air quality data:
+
+* [get_city_air](#get_city_air) 
 
 ## To get air quality data using city names
 
@@ -46,7 +48,7 @@ For example:- You previously used this method to get data for Delhi. Now you wan
 An optional argument to specifiy which air quality parameters to get data for. If this is left blank then data for every air quality parameter is retrieved.  
 You can choose from the following - pm25, aqi, pm10, o3, co, no2, so2, dew, h, p, t, w, wg
 
-
+---
 
 ### get_multiple_city_air
 
