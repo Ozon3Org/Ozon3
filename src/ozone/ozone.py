@@ -188,7 +188,7 @@ class Ozone:
         return [row]
 
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
-        """Retrieve API Meaning and health implications
+        """Retrieve AQI meaning and health implications
 
         Args:
             row["aqi"] (float): parsed AQI data.
