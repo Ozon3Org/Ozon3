@@ -16,6 +16,7 @@ import numpy
 import requests
 import json
 import itertools
+import warnings
 from ratelimit import limits, sleep_and_retry
 from .urls import URLs
 
@@ -73,7 +74,7 @@ class Ozone:
 
         if self._check_status_code(r):
             if json.loads(r.content)["status"] != "ok":
-                print("Warning: Token may be invalid!")
+                warnings.warn("Token may be invalid!")
 
     @sleep_and_retry
     @limits(calls=CALLS, period=RATE_LIMIT)
