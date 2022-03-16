@@ -431,15 +431,15 @@ class Ozone:
             float: Value of the specified parameter for the given city.
         """
         result: float = 0.0
-        try:
-            r = self._make_api_request(
-                f"{self._search_aqi_url}/{city}/?token={self.token}"
-            )
-            if self._check_status_code(r):
-                data_obj = json.loads(r.content)["data"]
-                row = self._parse_data(data_obj, city, [air_param])[0]
-                result = float(row[air_param])
+        r = self._make_api_request(
+            f"{self._search_aqi_url}/{city}/?token={self.token}"
+        )
+        if self._check_status_code(r):
+            data_obj = json.loads(r.content)["data"]
+            row = self._parse_data(data_obj, city, [air_param])[0]
 
+        try:
+            result = float(row[air_param])
         except KeyError:
             print(
                 "Missing air quality parameter!\n"
