@@ -139,7 +139,7 @@ class Ozone:
             )
             print("File saved to disk as air_quality_data.xlsx")
         else:
-            print("Invalid file format. Use any of: csv, json, xlsx, df")
+            raise Exception(f'Invalid file format {data_format}. Use any of: csv, json, xlsx, df')
         return pandas.DataFrame()
 
     def _parse_data(
