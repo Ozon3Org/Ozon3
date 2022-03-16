@@ -430,13 +430,7 @@ class Ozone:
         Returns:
             float: Value of the specified parameter for the given city.
         """
-        result: float = 0.0
-        r = self._make_api_request(
-            f"{self._search_aqi_url}/{city}/?token={self.token}"
-        )
-        if self._check_status_code(r):
-            data_obj = json.loads(r.content)["data"]
-            row = self._parse_data(data_obj, city, [air_param])[0]
+        row = self.get_city_air(city, params=[air_param])
 
         try:
             result = float(row[air_param])
