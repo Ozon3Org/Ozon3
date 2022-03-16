@@ -196,7 +196,7 @@ class Ozone:
             str: The meaning and health implication of the AQI data.
         """
 
-        if aqi <= 50:
+        if 0 <= aqi <= 50:
             AQI_meaning = "Good"
             AQI_health_implications = "Air quality is considered satisfactory, and air pollution poses little or no risk"
         elif 51 <= aqi <= 100:
@@ -211,11 +211,13 @@ class Ozone:
         elif 201 <= aqi <= 300:
             AQI_meaning = "Very Unhealthy"
             AQI_health_implications = "Health warnings of emergency conditions. The entire population is more likely to be affected."
-        else:
+        elif 301 <= aqi <= 500:
             AQI_meaning = "Hazardous"
             AQI_health_implications = (
                 "Health alert: everyone may experience more serious health effects."
             )
+        else:
+            raise Exception(f'{aqi} is not valid air quality index value. Should be between 0 to 500.')
 
         return AQI_meaning, AQI_health_implications
 
