@@ -314,7 +314,14 @@ class Ozone:
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         if self._check_status_code(r):
             # Get all the data.
-            data_obj = json.loads(r.content)["data"]
+            response_content = json.loads(r.content)
+            status, data_obj = response_content['status'], response_content['data']
+            if status != 'ok':
+                if data_obj == 'Unknown station':
+                    raise Exception(f'There is no known AQI station for the city "{city}"')
+
+                raise Exception(f'There is a problem with city "{city}", the returned data: {data_obj}')
+
             row = self._parse_data(data_obj, city, params)
 
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
