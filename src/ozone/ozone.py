@@ -445,6 +445,7 @@ class Ozone:
                 "Missing air quality parameter!\n"
                 + "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)"
             )
+            raise
 
         return result
 
