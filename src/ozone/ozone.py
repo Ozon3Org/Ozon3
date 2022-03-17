@@ -435,10 +435,10 @@ class Ozone:
         try:
             result = float(row[air_param])
         except KeyError:
-        	raise Exception("Missing air quality parameter!\n" +
-                             "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)")
+        	raise Exception(f'Missing air quality parameter "{air_param}"\n' +
+                             'Try another air quality parameters: "aqi", "no2", or "co"')
 
-            
+
 
         return result
 
