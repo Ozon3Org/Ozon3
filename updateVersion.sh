@@ -16,7 +16,7 @@ fi
 
 if [ "$1" != "major" ] && [ "$1" != "minor" ] && [ "$1" != "patch" ]; then
 echo "Incorrect argument provided"
-echo "Your argument must be either major, minor or patch (Case sensivite)"
+echo "Your argument must be either major, minor or patch (Case sensitive)"
 exit
 fi
 
