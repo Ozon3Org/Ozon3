@@ -112,9 +112,7 @@ class Ozone:
         self._check_token_validity()
 
     def _format_output(
-        self,
-        data_format: str = "df",
-        df: pandas.DataFrame = pandas.DataFrame(),
+        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Format output data
 
@@ -135,12 +133,12 @@ class Ozone:
             df.to_json("air_quality_data.json")
             print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
-            df.to_excel(
-                "air_quality_data.xlsx",
-            )
+            df.to_excel("air_quality_data.xlsx",)
             print("File saved to disk as air_quality_data.xlsx")
         else:
-            raise Exception(f'Invalid file format {data_format}. Use any of: csv, json, xlsx, df')
+            raise Exception(
+                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
+            )
         return pandas.DataFrame()
 
     def _parse_data(
@@ -218,7 +216,9 @@ class Ozone:
                 "Health alert: everyone may experience more serious health effects."
             )
         else:
-            raise Exception(f'{aqi} is not valid air quality index value. Should be between 0 to 500.')
+            raise Exception(
+                f"{aqi} is not valid air quality index value. Should be between 0 to 500."
+            )
 
         return AQI_meaning, AQI_health_implications
 
@@ -318,12 +318,16 @@ class Ozone:
         if self._check_status_code(r):
             # Get all the data.
             response_content = json.loads(r.content)
-            status, data_obj = response_content['status'], response_content['data']
-            if status != 'ok':
-                if data_obj == 'Unknown station':
-                    raise Exception(f'There is no known AQI station for the city "{city}"')
+            status, data_obj = response_content["status"], response_content["data"]
+            if status != "ok":
+                if data_obj == "Unknown station":
+                    raise Exception(
+                        f'There is no known AQI station for the city "{city}"'
+                    )
 
-                raise Exception(f'There is a problem with city "{city}", the returned data: {data_obj}')
+                raise Exception(
+                    f'There is a problem with city "{city}", the returned data: {data_obj}'
+                )
 
             row = self._parse_data(data_obj, city, params)
 
@@ -415,11 +419,7 @@ class Ozone:
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
-    def get_specific_parameter(
-        self,
-        city: str,
-        air_param: str = "",
-    ) -> float:
+    def get_specific_parameter(self, city: str, air_param: str = "",) -> float:
         """Get specific parameter as a float
 
         Args:
@@ -435,10 +435,10 @@ class Ozone:
         try:
             result = float(row[air_param])
         except KeyError:
-        	raise Exception(f'Missing air quality parameter "{air_param}"\n' +
-                             'Try another air quality parameters: "aqi", "no2", or "co"')
-
-
+            raise Exception(
+                f'Missing air quality parameter "{air_param}"\n'
+                + 'Try another air quality parameters: "aqi", "no2", or "co"'
+            )
 
         return result
 
