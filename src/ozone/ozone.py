@@ -16,6 +16,7 @@ import numpy
 import requests
 import json
 import itertools
+import warnings
 from ratelimit import limits, sleep_and_retry
 from .urls import URLs
 
@@ -73,7 +74,7 @@ class Ozone:
 
         if self._check_status_code(r):
             if json.loads(r.content)["status"] != "ok":
-                print("Warning: Token may be invalid!")
+                warnings.warn("Token may be invalid!")
 
     @sleep_and_retry
     @limits(calls=CALLS, period=RATE_LIMIT)
@@ -111,9 +112,7 @@ class Ozone:
         self._check_token_validity()
 
     def _format_output(
-        self,
-        data_format: str = "df",
-        df: pandas.DataFrame = pandas.DataFrame(),
+        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Format output data
 
@@ -134,12 +133,12 @@ class Ozone:
             df.to_json("air_quality_data.json")
             print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
-            df.to_excel(
-                "air_quality_data.xlsx",
-            )
+            df.to_excel("air_quality_data.xlsx",)
             print("File saved to disk as air_quality_data.xlsx")
         else:
-            print("Invalid file format. Use any of: csv, json, xlsx, df")
+            raise Exception(
+                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
+            )
         return pandas.DataFrame()
 
     def _parse_data(
@@ -187,7 +186,7 @@ class Ozone:
         return [row]
 
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
-        """Retrieve API Meaning and health implications
+        """Retrieve AQI meaning and health implications
 
         Args:
             row["aqi"] (float): parsed AQI data.
@@ -196,7 +195,7 @@ class Ozone:
             str: The meaning and health implication of the AQI data.
         """
 
-        if aqi <= 50:
+        if 0 <= aqi <= 50:
             AQI_meaning = "Good"
             AQI_health_implications = "Air quality is considered satisfactory, and air pollution poses little or no risk"
         elif 51 <= aqi <= 100:
@@ -211,10 +210,14 @@ class Ozone:
         elif 201 <= aqi <= 300:
             AQI_meaning = "Very Unhealthy"
             AQI_health_implications = "Health warnings of emergency conditions. The entire population is more likely to be affected."
-        else:
+        elif 301 <= aqi <= 500:
             AQI_meaning = "Hazardous"
             AQI_health_implications = (
                 "Health alert: everyone may experience more serious health effects."
+            )
+        else:
+            raise Exception(
+                f"{aqi} is not valid air quality index value. Should be between 0 to 500."
             )
 
         return AQI_meaning, AQI_health_implications
@@ -314,7 +317,18 @@ class Ozone:
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         if self._check_status_code(r):
             # Get all the data.
-            data_obj = json.loads(r.content)["data"]
+            response_content = json.loads(r.content)
+            status, data_obj = response_content["status"], response_content["data"]
+            if status != "ok":
+                if data_obj == "Unknown station":
+                    raise Exception(
+                        f'There is no known AQI station for the city "{city}"'
+                    )
+
+                raise Exception(
+                    f'There is a problem with city "{city}", the returned data: {data_obj}'
+                )
+
             row = self._parse_data(data_obj, city, params)
 
             df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
@@ -405,11 +419,7 @@ class Ozone:
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
-    def get_specific_parameter(
-        self,
-        city: str,
-        air_param: str = "",
-    ) -> float:
+    def get_specific_parameter(self, city: str, air_param: str = "",) -> float:
         """Get specific parameter as a float
 
         Args:
@@ -420,20 +430,14 @@ class Ozone:
         Returns:
             float: Value of the specified parameter for the given city.
         """
-        result: float = 0.0
-        try:
-            r = self._make_api_request(
-                f"{self._search_aqi_url}/{city}/?token={self.token}"
-            )
-            if self._check_status_code(r):
-                data_obj = json.loads(r.content)["data"]
-                row = self._parse_data(data_obj, city, [air_param])[0]
-                result = float(row[air_param])
+        row = self.get_city_air(city, params=[air_param])
 
+        try:
+            result = float(row[air_param])
         except KeyError:
-            print(
-                "Missing air quality parameter!\n"
-                + "Try: get_specific_parameter(`city name`, `aqi` or `no2` or `co`)"
+            raise Exception(
+                f'Missing air quality parameter "{air_param}"\n'
+                + 'Try another air quality parameters: "aqi", "no2", or "co"'
             )
 
         return result
