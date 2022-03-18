@@ -77,7 +77,7 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 [World Air Quality Index](https://aqicn.org/contact/)
 
-[United States Environmental Protection Agency](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiBwZWSyYv2AhVkkNgFHaqsCWAQjBB6BAgaEAE&url=https%3A%2F%2Fwww.epa.gov%2Faboutepa&usg=AOvVaw2WGGvbn5P-QCjOB57cEcm5)
+[United States Environmental Protection Agency](https://www.epa.gov/aboutepa)
 
 ## LICENSE and Terms of Services 📰
 
