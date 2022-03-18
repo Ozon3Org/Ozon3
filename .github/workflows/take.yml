@@ -1,0 +1,15 @@
+name: Assign issue to contributor
+on:
+  issue_comment:
+    types: [created, edited]
+
+
+jobs:
+  assign:
+    name: Take an issue
+    runs-on: ubuntu-latest
+    steps:
+     - name: take the issue
+       uses: kowshik-noor/take-action@beer-comment
+       env:
+        GITHUB_TOKEN: ${{ github.token }}
