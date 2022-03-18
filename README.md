@@ -34,7 +34,7 @@ pip install ozon3
 
 You can find more information on the PyPI page for Ozone [here](https://pypi.org/project/ozon3/) (called as Ozon3 on PyPI).
 
-## Getting your API token :atom:
+## Getting your API token 
 
 To use Ozone, you must first request and get a your own unique API token 🎫. This is required to access for the underlying API to work 👮🏼‍♂️.
 
