@@ -17,11 +17,14 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
   * [Reporting Bugs](#reporting-bugs)
   * [Suggesting Enhancements or Feature](#suggesting-enhancements-or-features)
   * [Your First Code Contribution](#your-first-code-contribution)
+  * [How to get an issue assigned to you](#how-to-get-an-issue-assigned-to-you)
   * [Pull Requests](#pull-requests)
 
 [Styleguides](#styleguides)
   * [Git Commit Messages](#git-commit-messages)
   * [Python Styleguide](#python-styleguide)
+
+[Github Branching Model](#github-branching-model)
 
 ## I don't want to read this whole thing I just have a question!!!
 
@@ -89,6 +92,12 @@ Unsure where to begin contributing to Ozone? You can start by looking through th
 * `beginner` issues are a step up, and may involve a couple of methods/tests.
 * `help-wanted` issues are slightly trickier and require more code and logic.
 
+### How to get an issue assigned to you
+
+**If you find an issue that you'd like to tackle - get it assigned to yourself by commenting on it with:**
+
+    Hold my beer, I got this
+
 ### Pull Requests (PR's)
 
 Here's how you can get started:
@@ -153,3 +162,10 @@ Here are a few other tips:
 * Follow the [pep8](https://www.python.org/dev/peps/pep-0008/) styleguide
 * Format with flake8 and black
 * Add docstrings as shown in existing code
+
+## Github Branching Model
+
+Ozone branches are created using a Github branching model. In this branching model, each branch serves a purpose and offers team members a shared undestanding  of the branching system.
+
+See more information on this branching model [here](https://github.com/Milind220/Ozone/discussions/24).
+
