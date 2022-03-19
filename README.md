@@ -33,7 +33,7 @@ I want to make it easy to get your hands on accurate air quality data for your p
 pip install ozon3
 ```
 
-You can find more information on the PyPI page for Ozone [here](https://pypi.org/project/ozon3/) (called as Ozon3 on PyPI).
+You can find more information on the PyPI page for Ozone [here](https://pypi.org/project/ozon3/) (called ozon3 on PyPI).
 
 ## Getting your API token 
 
