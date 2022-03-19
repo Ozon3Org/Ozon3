@@ -17,6 +17,7 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
   * [Reporting Bugs](#reporting-bugs)
   * [Suggesting Enhancements or Feature](#suggesting-enhancements-or-features)
   * [Your First Code Contribution](#your-first-code-contribution)
+  * [How to get an issue assigned to you](#how-to-get-an-issue-assigned-to-you)
   * [Pull Requests](#pull-requests)
 
 [Styleguides](#styleguides)
@@ -90,6 +91,12 @@ Unsure where to begin contributing to Ozone? You can start by looking through th
 * `first-contribution`  should only require a few lines of code. Or are improvements are documentation.
 * `beginner` issues are a step up, and may involve a couple of methods/tests.
 * `help-wanted` issues are slightly trickier and require more code and logic.
+
+### How to get an issue assigned to you
+
+**If you find an issue that you'd like to tackle - get it assigned to yourself by commenting on it with:**
+
+    Hold my beer, I got this
 
 ### Pull Requests (PR's)
 
