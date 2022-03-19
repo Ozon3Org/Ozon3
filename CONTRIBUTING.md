@@ -23,6 +23,8 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
   * [Git Commit Messages](#git-commit-messages)
   * [Python Styleguide](#python-styleguide)
 
+[Github Branching Model](#github-branching-model)
+
 ## I don't want to read this whole thing I just have a question!!!
 
 > **Note:** Please don't file an issue to ask a question. Search for your question in issues and see if it's already been answered. Also check out the [discussions](https://github.com/Milind220/Ozone/discussions) tab to see if we've chatted about it before. Post it there if it's an idea, or in issues if there's a change to be made.
@@ -153,3 +155,10 @@ Here are a few other tips:
 * Follow the [pep8](https://www.python.org/dev/peps/pep-0008/) styleguide
 * Format with flake8 and black
 * Add docstrings as shown in existing code
+
+## Github Branching Model
+
+Ozone branches are created using a Github branching model. In this branching model, each branch serves a purpose and offers team members a shared undestanding  of the branching system.
+
+See more information on this branching model [here](https://github.com/Milind220/Ozone/discussions/24).
+
