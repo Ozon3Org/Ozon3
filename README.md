@@ -93,4 +93,4 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 Enjoy using Ozone!
 🥳 🍾 🚀
 
-#### _Created by [Milind Sharma]()_
+#### _Created by [Milind Sharma](https://github.com/Milind220)_
