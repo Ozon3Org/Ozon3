@@ -21,6 +21,7 @@ I want to make it easy to get your hands on accurate air quality data for your p
 
 [Contributing and submitting PR's](#contributing-and-submitting-pull-requests)
 
+[Semantic Versioning System](#semantic-versioning-system)
 
 [Attributions](#World-Air-Quality-Index-and-EPA-attribution)
 
@@ -70,6 +71,11 @@ data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
 
 Take a look at the [CONTRIBUTING.md](https://github.com/Milind220/Ozone/blob/main/CONTRIBUTING.md) file for details on how to go about this!
 
+## Semantic Versioning System
+
+Ozone uses a semantic versioning system to increment its release version number. Using this model, changes in version numbers can help indicate the meaning of modified code for each version.
+
+See more information on semantic versioning [here](https://github.com/Milind220/Ozone/discussions/26).
 
 ## World Air Quality Index and EPA attribution
 
