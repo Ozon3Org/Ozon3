@@ -3,6 +3,8 @@ numpy==1.22.2
 requests==2.27.1
 openpyxl
 ratelimit==2.2.1
+
 mypy
 flake8
 black
+pre-commit
