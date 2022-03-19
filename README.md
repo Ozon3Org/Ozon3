@@ -67,6 +67,11 @@ data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
 
 ![Gif of ozone.get_multiple_city_air()](/src/media/ozone_get_multiple_city_air_updated.gif)
 
+
+Sample output:
+<img width="1065" alt="blehblhe" src="https://user-images.githubusercontent.com/68847270/159113134-e7e2d76d-c64d-4f96-83c4-e85d8c76b503.png">
+
+
 ## Contributing and submitting Pull requests
 
 **We love PR's!**
