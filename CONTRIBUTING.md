@@ -1,36 +1,38 @@
 # Contributing to Ozone
 
+:tada::+1: First off, thanks for taking the time to contribute! :tada::+1:
+
+It might not be obvious but we appreciate all forms of contribution.
+
 The following is a set of guidelines for contributing to [Ozone](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment. Feel free to propose changes to this document in a pull request.
 
 > **Important note:** Make sure you make PRs to `dev` branch, not `main`. See [below](#making-a-pull-request) for more information.
 
 #### Table of Contents
 
-- [WAYS TO CONTRIBUTE](#ways-to-contribute)
+- [How Can I Contribute?](#how-can-i-contribute)
 
   - [Reporting bugs](#reporting-bugs)
   - [Suggesting enhancements/features](#suggesting-enhancements/features)
   - [Making a pull request](#making-a-pull-request)
   - [Get an issue assigned to you](#get-an-issue-assigned-to-you)
 
-- [SETTING UP LOCAL DEVELOPMENT ENVIRONMENT](#setting-up-local-development-environment)
+- [Setting Up Local Development Environment](#setting-up-local-development-environment)
 
   - [Getting a local copy](#getting-a-local-copy)
   - [Setting up a development environment](#setting-up-a-development-environment)
   - [Pushing changes and opening a pull request](#pushing-changes-and-opening-a-pull-request)
 
-- [STYLE GUIDES](#style-guides)
+- [Style Guides](#style-guides)
 
   - [Commit message style guide](#git-commit-messages)
   - [Python style guide](#python-style-guide)
 
-- [GITHUB BRANCHING MODEL](#github-branching-model)
+- [Github Branching Model](#github-branching-model)
 
 
 
-## WAYS TO CONTRIBUTE
-
-First off, thanks for taking the time to contribute! It might not be obvious but we appreciate all forms of contribution. :tada::+1:
+## How Can I Contribute?
 
 ### Reporting bugs
 
@@ -80,7 +82,7 @@ If you find an issue that you'd like to tackle - get it assigned to yourself by 
 Hold my beer, I got this
 ```
 
-## SETTING UP LOCAL DEVELOPMENT ENVIRONMENT
+## Setting Up Local Development Environment
 
 ### Getting a local copy
 
@@ -155,7 +157,7 @@ Hold my beer, I got this
 
 
 
-## STYLE GUIDES
+## Style Guides
 
 ### Git commit messages
 
@@ -193,7 +195,7 @@ Here are a few other tips:
 
 
 
-## GITHUB BRANCHING MODEL
+## Github Branching Model
 
 Ozone branches are created using a Github branching model. In this branching model, each branch serves a purpose and offers team members a shared undestanding  of the branching system.
 
