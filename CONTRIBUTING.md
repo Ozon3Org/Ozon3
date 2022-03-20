@@ -42,10 +42,10 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
 
 3. Include in the body of the issue:
 
-   - Expected behavior: What do you expect should happen?
-   - Actual behavior: What actually happened and why it's a problem?
-   - Steps to reproduce the problem. Be very specific. Give example code block. Other contributors want to run it in their device to make sure they see what you saw. Having detailed steps and examples can make it easier to demonstrate and track down a problem.
-   - Version information: What version of Python you're using? What version of Ozone? Do you install through `pip` or by cloning the Github repository? What is your OS and what version?
+   - **Expected behavior**: What do you expect should happen?
+   - **Actual behavior**: What actually happened and why it's a problem?
+   - **Steps to reproduce the problem**. Be very specific. Give example code block. Other contributors want to run it in their device to make sure they see what you saw. Having detailed steps and examples can make it easier to demonstrate and track down a problem.
+   - **Version information**: What version of Python you're using? What version of Ozone? Do you install through `pip` or by cloning the Github repository? What is your OS and what version?
 
    You can include screenshots/GIFs, if relevant.
 
@@ -60,7 +60,7 @@ Additionally, you can also confirm other people's bug report by running their pr
 3. Lay out the details of your suggestion in the body issue. Make sure to also:
 
    - Describe the current behavior and explain what would you like to see instead.
-   - Explain why your suggestion would be useful.
+   - Explain why your suggestion would be useful for Ozone users.
 
 ### Making a pull request
 
@@ -145,7 +145,7 @@ Hold my beer, I got this
 
 4. Your local development environment is ready to use. Feel free to code away. Make sure to only commit logical changes that are already tested. Don't commit things you just try out and haven't tested.
 
-5. When you're done coding, **test out the changes that you've made to the package.** Proceed if all is good.
+5. When you're done coding, again, **test out the changes that you've made to the package.** Proceed if all is good.
 
 ### Pushing changes and opening a pull request
 
