@@ -3,6 +3,7 @@ repos:
     rev: 'v0.941'  # Use the sha / tag to point at specific version
     hooks:
     -   id: mypy
+        additional_dependencies: ['types-requests', 'types-urllib3']
 -   repo: https://github.com/psf/black
     rev: '22.1.0'
     hooks:
