@@ -8,7 +8,8 @@ be run directly.
 
 Attributes (module level):
     CALLS (int=1000): The number of calls per second allowed by the WAQI API is 1000.
-    RATE_LIMIT (int=1): The time period in seconds for the max number of calls is 1 second.
+    RATE_LIMIT (int=1): The time period in seconds for the max number of calls is
+        1 second.
 """
 
 import pandas
@@ -119,7 +120,8 @@ class Ozone:
         """Format output data
 
         Args:
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame,): Dataframe object of air quality data.
 
         Returns:
@@ -151,7 +153,8 @@ class Ozone:
         """Parse the data from the API response
 
         Args:
-            data_obj (JSON object returned by json.loads): The data from the API response.
+            data_obj (JSON object returned by json.loads): The data from the API's
+                response.
             city (str): The city name.
             params (List[str]): The parameters to parse.
 
@@ -290,8 +293,10 @@ class Ozone:
         Args:
             lat (float): Latitude
             lon (float): Longitude
-            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format for data. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -323,8 +328,10 @@ class Ozone:
 
         Args:
             city (str): The city to get data for.
-            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format for data. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -347,7 +354,8 @@ class Ozone:
                     )
 
                 raise Exception(
-                    f'There is a problem with city "{city}", the returned data: {data_obj}'
+                    f'There is a problem with city "{city}", '
+                    "the returned data: {data_obj}"
                 )
 
             row = self._parse_data(data_obj, city, params)
@@ -366,8 +374,10 @@ class Ozone:
 
         Args:
             locations (list): A list of pair (latitude,longitude) to get data for.
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -376,7 +386,8 @@ class Ozone:
             selected another data format, this dataframe will be empty)
         """
         for loc in locations:
-            # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
+            # This just makes sure that it's always a returns a pandas.DataFrame.
+            # Makes mypy happy.
             df = pandas.DataFrame(
                 self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
             )
@@ -397,8 +408,10 @@ class Ozone:
         Args:
             lower_bound (tuple): start coordinate
             upper_bound (tuple): end coordinate
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -424,17 +437,20 @@ class Ozone:
 
         Args:
             cities (list): A list of cities to get data for.
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
             selected another data format, this dataframe will be empty)
         """
         for city in cities:
-            # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
+            # This just makes sure that it's always a returns a pandas.DataFrame.
+            # Makes mypy happy.
             df = pandas.DataFrame(self.get_city_air(city=city, df=df, params=params))
 
         df.reset_index(inplace=True, drop=True)
