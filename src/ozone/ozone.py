@@ -112,7 +112,9 @@ class Ozone:
         self._check_token_validity()
 
     def _format_output(
-        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
+        self,
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Format output data
 
@@ -133,7 +135,9 @@ class Ozone:
             df.to_json("air_quality_data.json")
             print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
-            df.to_excel("air_quality_data.xlsx",)
+            df.to_excel(
+                "air_quality_data.xlsx",
+            )
             print("File saved to disk as air_quality_data.xlsx")
         else:
             raise Exception(
@@ -419,7 +423,11 @@ class Ozone:
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
-    def get_specific_parameter(self, city: str, air_param: str = "",) -> float:
+    def get_specific_parameter(
+        self,
+        city: str,
+        air_param: str = "",
+    ) -> float:
         """Get specific parameter as a float
 
         Args:
