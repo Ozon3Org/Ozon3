@@ -201,19 +201,35 @@ class Ozone:
 
         if 0 <= aqi <= 50:
             AQI_meaning = "Good"
-            AQI_health_implications = "Air quality is considered satisfactory, and air pollution poses little or no risk"
+            AQI_health_implications = (
+                "Air quality is considered satisfactory, "
+                "and air pollution poses little or no risk"
+            )
         elif 51 <= aqi <= 100:
             AQI_meaning = "Moderate"
-            AQI_health_implications = "Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution."
+            AQI_health_implications = (
+                "Air quality is acceptable; however, for some pollutants "
+                "there may be a moderate health concern for a very small "
+                "number of people who are unusually sensitive to air pollution."
+            )
         elif 101 <= aqi <= 150:
             AQI_meaning = "Unhealthy for sensitive group"
-            AQI_health_implications = "Members of sensitive groups may experience health effects. The general public is not likely to be affected."
+            AQI_health_implications = (
+                "Members of sensitive groups may experience health effects. "
+                "The general public is not likely to be affected."
+            )
         elif 151 <= aqi <= 200:
             AQI_meaning = "Unhealthy"
-            AQI_health_implications = "Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects."
+            AQI_health_implications = (
+                "Everyone may begin to experience health effects; members of "
+                "sensitive groups may experience more serious health effects."
+            )
         elif 201 <= aqi <= 300:
             AQI_meaning = "Very Unhealthy"
-            AQI_health_implications = "Health warnings of emergency conditions. The entire population is more likely to be affected."
+            AQI_health_implications = (
+                "Health warnings of emergency conditions. "
+                "The entire population is more likely to be affected."
+            )
         elif 301 <= aqi <= 500:
             AQI_meaning = "Hazardous"
             AQI_health_implications = (
@@ -221,7 +237,8 @@ class Ozone:
             )
         else:
             raise Exception(
-                f"{aqi} is not valid air quality index value. Should be between 0 to 500."
+                f"{aqi} is not valid air quality index value. "
+                "Should be between 0 to 500."
             )
 
         return AQI_meaning, AQI_health_implications
