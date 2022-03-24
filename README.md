@@ -29,6 +29,8 @@ I want to make it easy to get your hands on accurate air quality data for your p
 
 [License and TOS](#license-and-terms-of-service)
 
+[Contributors](#contributors)
+
 ## Install it here!
 
 ```sh
@@ -67,6 +69,22 @@ data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
 
 ![Gif of ozone.get_multiple_city_air()](/src/media/ozone_get_multiple_city_air_updated.gif)
 
+### Air Quality Parameters
+
+Ozone can fetch the following parameters:
+
+ * `aqi`: air quality index, a measurement of air quality that tells you how clean or polluted the air is
+ * `pm25`: fine particulate matter, a measure of 2.5 micrometers or smaller particles in the air
+ * `pm10`: respirable particulate matter, a measure of 10 micrometers or smaller particles in the air
+ * `o3`: a measure of ground level ozone concentrations in the air
+ * `co`: a measure of carbon monoxide concentrations in the air 
+ * `no2`: a measure of nitrogen dioxide concentrations in the air
+ * `so2`: a measure of sulfur dioxide concentrations in the air
+ * `dew`: dew point, the temperature the air needs to be cooled to in order to reach 100% relative humidity
+ * `h`: relative humidity, a measure of moisture in the atmosphere
+ * `p`: atmospheric pressure, a measure of the weight of atoms and molecules that make up the layers in the atmosphere
+ * `t`: temperature, a measure of thermal energy in one or a combined substance at a given time
+ * `w`: wind speed, a measure of air in motion
 
 Sample output:
 <img width="1065" alt="blehblhe" src="https://user-images.githubusercontent.com/68847270/159113134-e7e2d76d-c64d-4f96-83c4-e85d8c76b503.png">
@@ -96,6 +114,14 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 1. Ozone is licensed under the GNU GENERAL PUBLIC LICENSE v3.0, and so it cannot be used for closed-source software or for monetary gain.
 2. The WAQI API, which Ozone uses to provide data, has it's own [Acceptable Usage Policy](https://aqicn.org/api/tos/). Please refer to it for more details.
+
+## Contributors
+
+Contributions of any kind are welcome and these are our amazing contributors.
+
+<a href="https://github.com/Milind220/Ozone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Milind220/Ozone" />
+</a>
 
 Enjoy using Ozone!
 🥳 🍾 🚀

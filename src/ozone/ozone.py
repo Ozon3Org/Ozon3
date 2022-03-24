@@ -8,7 +8,8 @@ be run directly.
 
 Attributes (module level):
     CALLS (int=1000): The number of calls per second allowed by the WAQI API is 1000.
-    RATE_LIMIT (int=1): The time period in seconds for the max number of calls is 1 second.
+    RATE_LIMIT (int=1): The time period in seconds for the max number of calls is
+        1 second.
 """
 
 import pandas
@@ -112,12 +113,15 @@ class Ozone:
         self._check_token_validity()
 
     def _format_output(
-        self, data_format: str = "df", df: pandas.DataFrame = pandas.DataFrame(),
+        self,
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Format output data
 
         Args:
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame,): Dataframe object of air quality data.
 
         Returns:
@@ -133,7 +137,9 @@ class Ozone:
             df.to_json("air_quality_data.json")
             print("File saved to disk as air_quality_data.json")
         elif data_format == "xlsx":
-            df.to_excel("air_quality_data.xlsx",)
+            df.to_excel(
+                "air_quality_data.xlsx",
+            )
             print("File saved to disk as air_quality_data.xlsx")
         else:
             raise Exception(
@@ -147,7 +153,8 @@ class Ozone:
         """Parse the data from the API response
 
         Args:
-            data_obj (JSON object returned by json.loads): The data from the API response.
+            data_obj (JSON object returned by json.loads): The data from the API's
+                response.
             city (str): The city name.
             params (List[str]): The parameters to parse.
 
@@ -197,19 +204,35 @@ class Ozone:
 
         if 0 <= aqi <= 50:
             AQI_meaning = "Good"
-            AQI_health_implications = "Air quality is considered satisfactory, and air pollution poses little or no risk"
+            AQI_health_implications = (
+                "Air quality is considered satisfactory, "
+                "and air pollution poses little or no risk"
+            )
         elif 51 <= aqi <= 100:
             AQI_meaning = "Moderate"
-            AQI_health_implications = "Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution."
+            AQI_health_implications = (
+                "Air quality is acceptable; however, for some pollutants "
+                "there may be a moderate health concern for a very small "
+                "number of people who are unusually sensitive to air pollution."
+            )
         elif 101 <= aqi <= 150:
             AQI_meaning = "Unhealthy for sensitive group"
-            AQI_health_implications = "Members of sensitive groups may experience health effects. The general public is not likely to be affected."
+            AQI_health_implications = (
+                "Members of sensitive groups may experience health effects. "
+                "The general public is not likely to be affected."
+            )
         elif 151 <= aqi <= 200:
             AQI_meaning = "Unhealthy"
-            AQI_health_implications = "Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects."
+            AQI_health_implications = (
+                "Everyone may begin to experience health effects; members of "
+                "sensitive groups may experience more serious health effects."
+            )
         elif 201 <= aqi <= 300:
             AQI_meaning = "Very Unhealthy"
-            AQI_health_implications = "Health warnings of emergency conditions. The entire population is more likely to be affected."
+            AQI_health_implications = (
+                "Health warnings of emergency conditions. "
+                "The entire population is more likely to be affected."
+            )
         elif 301 <= aqi <= 500:
             AQI_meaning = "Hazardous"
             AQI_health_implications = (
@@ -217,7 +240,8 @@ class Ozone:
             )
         else:
             raise Exception(
-                f"{aqi} is not valid air quality index value. Should be between 0 to 500."
+                f"{aqi} is not valid air quality index value. "
+                "Should be between 0 to 500."
             )
 
         return AQI_meaning, AQI_health_implications
@@ -269,8 +293,10 @@ class Ozone:
         Args:
             lat (float): Latitude
             lon (float): Longitude
-            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format for data. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -302,8 +328,10 @@ class Ozone:
 
         Args:
             city (str): The city to get data for.
-            data_format (str): File format for data. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format for data. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -326,7 +354,8 @@ class Ozone:
                     )
 
                 raise Exception(
-                    f'There is a problem with city "{city}", the returned data: {data_obj}'
+                    f'There is a problem with city "{city}", '
+                    "the returned data: {data_obj}"
                 )
 
             row = self._parse_data(data_obj, city, params)
@@ -345,8 +374,10 @@ class Ozone:
 
         Args:
             locations (list): A list of pair (latitude,longitude) to get data for.
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -355,7 +386,8 @@ class Ozone:
             selected another data format, this dataframe will be empty)
         """
         for loc in locations:
-            # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
+            # This just makes sure that it's always a returns a pandas.DataFrame.
+            # Makes mypy happy.
             df = pandas.DataFrame(
                 self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
             )
@@ -376,8 +408,10 @@ class Ozone:
         Args:
             lower_bound (tuple): start coordinate
             upper_bound (tuple): end coordinate
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
 
@@ -403,23 +437,30 @@ class Ozone:
 
         Args:
             cities (list): A list of cities to get data for.
-            data_format (str): File format. Defaults to 'df'. Choose from 'csv', 'json', 'xlsx'.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
-            df (pandas.DataFrame, optional): An existing dataframe to append the data to.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
             selected another data format, this dataframe will be empty)
         """
         for city in cities:
-            # This just makes sure that it's always a returns a pd.DataFrame. Makes mypy happy.
+            # This just makes sure that it's always a returns a pandas.DataFrame.
+            # Makes mypy happy.
             df = pandas.DataFrame(self.get_city_air(city=city, df=df, params=params))
 
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
 
-    def get_specific_parameter(self, city: str, air_param: str = "",) -> float:
+    def get_specific_parameter(
+        self,
+        city: str,
+        air_param: str = "",
+    ) -> float:
         """Get specific parameter as a float
 
         Args:
