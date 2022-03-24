@@ -29,6 +29,8 @@ I want to make it easy to get your hands on accurate air quality data for your p
 
 [License and TOS](#license-and-terms-of-service)
 
+[Contributors](#contributors)
+
 ## Install it here!
 
 ```sh
@@ -96,6 +98,14 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 1. Ozone is licensed under the GNU GENERAL PUBLIC LICENSE v3.0, and so it cannot be used for closed-source software or for monetary gain.
 2. The WAQI API, which Ozone uses to provide data, has it's own [Acceptable Usage Policy](https://aqicn.org/api/tos/). Please refer to it for more details.
+
+## Contributors
+
+Contributions of any kind are welcome and these are our amazing contributors.
+
+<a href="https://github.com/Milind220/Ozone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Milind220/Ozone" />
+</a>
 
 Enjoy using Ozone!
 🥳 🍾 🚀
