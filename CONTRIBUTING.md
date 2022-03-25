@@ -23,7 +23,7 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
   - [Setting up a development environment](#setting-up-a-development-environment)
   - [Pushing changes and opening a pull request](#pushing-changes-and-opening-a-pull-request)
 
-- [World Air Quality Index's API](#world-air-quality-index's-api)
+- [World Air Quality Index's API](#world-air-quality-indexs-api)
 
 - [Style Guides](#style-guides)
 
