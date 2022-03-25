@@ -18,12 +18,12 @@ In this file, the classes stored provide the URL for the other files to use.
 ### `ozone.py`
 In this file, the classes are stored with the purpose of creating data for the end user. The classes in this file depend on the classes in `urls.py`.
 
-This file generates the required token to access the data, makes a request to the API, retrieves the data, and parses it.
+This file processes the required token to access the data, makes a request to the API, retrieves the data, and parses it.
 
 ## Dependency Management
 ### `setup.py`
 This file is used to set up the project and install the required dependencies.
-### `config.cfg`
+### `setup.cfg`
 This file contains the configuration specification. 
 ### `requirements.txt`
 The third-party dependencies are specified in this file.
