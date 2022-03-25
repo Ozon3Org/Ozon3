@@ -20,7 +20,10 @@ class URLs:
 
     Attributes:
         search_aqi_url (str): The endpoint used for retrieving air quality data.
-        find_stations_url (str): The endpoint used for retrieving a collection of air quality measuring stations.
+        find_stations_url (str): The endpoint used for
+         retrieving a collection of air quality measuring stations.
+        find_coordinates_url (str): The endpoint used for
+         retrieving geographical information
     """
 
     # Base API endpoint.
