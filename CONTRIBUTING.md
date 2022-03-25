@@ -23,6 +23,8 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
   - [Setting up a development environment](#setting-up-a-development-environment)
   - [Pushing changes and opening a pull request](#pushing-changes-and-opening-a-pull-request)
 
+- [World Air Quality Index's API](#world-air-quality-index's-api)
+
 - [Style Guides](#style-guides)
 
   - [Commit message style guide](#git-commit-messages)
@@ -154,6 +156,16 @@ Hold my beer, I got this
 2. Return to your forked repository on Github and click on `compare and pull request` to begin the PR. **Make sure the base branch is `dev`, not `main`.**
 
 3. Describe your PR, submit it and wait for it to be merged! You may be required to do additional work or changes before it is merged.
+
+
+
+## World Air Quality Index's API
+
+Ozone uses the World Air Quality Index's API under the hood to fetch its data. We have included some links to information about the API to help during contribution.
+
+* Find information on the World Air Quality Index website [here](https://waqi.info/)
+* Find information on different APIs used by Air Quality Programs [here](https://aqicn.org/api/)
+* Find information on the JSON API [here](https://aqicn.org/json-api/doc/)
 
 
 
