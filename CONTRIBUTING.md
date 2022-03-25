@@ -164,7 +164,8 @@ Hold my beer, I got this
 Ozone uses the World Air Quality Index's API under the hood to fetch its data. We have included some links to information about the API to help during contribution.
 
 * Find information on the World Air Quality Index website [here](https://waqi.info/)
-* Find information on API used by Air Quality Programs [here](https://aqicn.org/api/) 
+* Find information on different APIs used by Air Quality Programs [here](https://aqicn.org/api/)
+* Find information on the JSON API [here](https://aqicn.org/json-api/doc/)
 
 
 
