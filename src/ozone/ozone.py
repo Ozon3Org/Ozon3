@@ -148,8 +148,8 @@ class Ozone:
         return pandas.DataFrame()
 
     def _parse_data(
-        self, data_obj: Any, city: str, params: List[str]
-    ) -> List[Dict[str, Union[str, float]]]:
+        self, data_obj: Any, city: str, params: List[str] = [""]
+    ) -> Dict[str, Union[str, float]]:
         """Parse the data from the API response
 
         Args:
@@ -161,6 +161,9 @@ class Ozone:
         Returns:
             list: A list containing a single dictionary with the data.
         """
+        if params == [""]:
+            params = self._default_params
+
         # A single row of data for the dataframe.
         row: Dict[str, Union[str, float]] = {}
 
@@ -188,9 +191,7 @@ class Ozone:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
 
-        # Return a list containing the dictionary so that it can be used with
-        # pandas.concat method later.
-        return [row]
+        return row
 
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
         """Retrieve AQI meaning and health implications
@@ -310,11 +311,8 @@ class Ozone:
         r = self._make_api_request(
             f"{self._search_aqi_url}/geo:{lat};{lon}/?token={self.token}"
         )
-        if self._check_status_code(r):
-            # Get all the data.
-            data_obj = json.loads(r.content)["data"]
-            row = self._parse_data(data_obj, "N/A", params)
-            df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
+        row = self._get_parsed_data_row_dict(r, params=params)
+        df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
         return self._format_output(data_format, df)
 
     def get_city_air(
@@ -343,25 +341,42 @@ class Ozone:
             params = self._default_params
 
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
+        row = self._get_parsed_data_row_dict(r, city, params)
+        df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
+        return self._format_output(data_format, df)
+
+    def _get_parsed_data_row_dict(
+        self, r: requests.Response, city: str = "N/A", params=[""]
+    ):
         if self._check_status_code(r):
-            # Get all the data.
-            response_content = json.loads(r.content)
-            status, data_obj = response_content["status"], response_content["data"]
-            if status != "ok":
-                if data_obj == "Unknown station":
+            response = json.loads(r.content)
+
+            status = response.get("status")
+            data = response.get("data")
+
+            if status == "ok" and isinstance(data, dict):
+                return self._parse_data(data, city, params)
+
+            if isinstance(data, str):
+                if "Unknown station" in data:
+                    # Usually happens when WAQI does not have a station
+                    # for the searched city name.
                     raise Exception(
                         f'There is no known AQI station for the city "{city}"'
                     )
 
-                raise Exception(
-                    f'There is a problem with city "{city}", '
-                    "the returned data: {data_obj}"
-                )
+                if "Invalid geo position" in data:
+                    # Usually happens when WAQI can't parse the given
+                    # lat-lon coordinate.
 
-            row = self._parse_data(data_obj, city, params)
+                    # data is fortunately already informative
+                    raise Exception(f"{data}")
 
-            df = pandas.concat([df, pandas.DataFrame(row)], ignore_index=True)
-        return self._format_output(data_format, df)
+            # Catch-all exception for other not yet known cases
+            raise Exception(
+                f'There is a problem with city "{city}", '
+                f"the returned response: {response}"
+            )
 
     def get_multiple_coordinate_air(
         self,
@@ -471,7 +486,8 @@ class Ozone:
         Returns:
             float: Value of the specified parameter for the given city.
         """
-        row = self.get_city_air(city, params=[air_param])
+        r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
+        row = self._get_parsed_data_row_dict(r, city, [air_param])
 
         try:
             result = float(row[air_param])
