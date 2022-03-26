@@ -17,7 +17,7 @@ import numpy
 import requests
 import json
 import itertools
-import os
+from pathlib import Path
 import warnings
 from ratelimit import limits, sleep_and_retry
 from .urls import URLs
@@ -69,14 +69,10 @@ class Ozone:
             any output artifacts will be created
         """
         self.token: str = token
-        self.output_dir_path: str = os.path.join(output_path, "ozone_output")
         self._check_token_validity()
-        try:
-            print(f"attempting to create directory {self.output_dir_path}...")
-            os.mkdir(self.output_dir_path)
-        except FileExistsError:
-            print(f" directory {self.output_dir_path} already exists ")
-            pass
+
+        self.output_dir_path: Path = Path(output_path, "ozone_output")
+        self.output_dir_path.mkdir(exist_ok=True)
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -142,18 +138,16 @@ class Ozone:
         if data_format == "df":
             return df
         elif data_format == "csv":
-            df.to_csv(
-                os.path.join(self.output_dir_path, "air_quality.csv"), index=False
-            )
+            df.to_csv(Path(self.output_dir_path, "air_quality.csv"), index=False)
             print(f"File saved to disk at {self.output_dir_path} as air_quality.csv")
         elif data_format == "json":
-            df.to_json(os.path.join(self.output_dir_path, "air_quality_data.json"))
+            df.to_json(Path(self.output_dir_path, "air_quality_data.json"))
             print(
                 f"File saved to disk at {self.output_dir_path} as air_quality_data.json"
             )
         elif data_format == "xlsx":
             df.to_excel(
-                os.path.join(self.output_dir_path, "air_quality_data.xlsx"),
+                Path(self.output_dir_path, "air_quality_data.xlsx"),
             )
             print(
                 f"File saved to disk at {self.output_dir_path} as air_quality_data.xlsx"
