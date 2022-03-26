@@ -85,9 +85,9 @@ class Ozone:
             f"{self._search_aqi_url}/{test_city}/?token={self.token}"
         )
 
-        if self._check_status_code(r):
-            if json.loads(r.content)["status"] != "ok":
-                warnings.warn("Token may be invalid!")
+        self._check_status_code(r)
+        if json.loads(r.content)["status"] != "ok":
+            warnings.warn("Token may be invalid!")
 
     @sleep_and_retry
     @limits(calls=CALLS, period=RATE_LIMIT)
@@ -103,17 +103,16 @@ class Ozone:
         r = requests.get(url)
         return r
 
-    def _check_status_code(self, r: requests.Response) -> bool:
+    def _check_status_code(self, r: requests.Response) -> None:
         """Check the status code of the response"""
         if r.status_code == 200:
-            return True
+            pass
         elif r.status_code == 401:
             raise Exception("Unauthorized!")
         elif r.status_code == 404:
             raise Exception("Not Found!")
         elif r.status_code == 500:
             raise Exception("Internal Server Error!")
-        return False
 
     def reset_token(self, token: str) -> None:
         """Use this method to set your API token
@@ -286,12 +285,14 @@ class Ozone:
         response = self._make_api_request(
             f"{URLs.find_coordinates_url}bounds/?token={self.token}&latlng={latlng}"
         )
-        if self._check_status_code(response):
-            data = json.loads(response.content)["data"]
-            coordinates: List[Tuple] = [
-                (element["lat"], element["lon"]) for element in data
-            ]
-            return coordinates
+
+        self._check_status_code(response)
+
+        data = json.loads(response.content)["data"]
+        coordinates: List[Tuple] = [
+            (element["lat"], element["lon"]) for element in data
+        ]
+        return coordinates
 
         # This is a bit of a hack to ensure that the function always returns a
         # list of coordinates. Required to make mypy happy.
@@ -366,43 +367,41 @@ class Ozone:
     def _get_parsed_data_row_dict(
         self, r: requests.Response, city: str = "N/A", params=[""]
     ):
-        if self._check_status_code(r):
-            response = json.loads(r.content)
+        self._check_status_code(r)
+        response = json.loads(r.content)
 
-            status = response.get("status")
-            data = response.get("data")
+        status = response.get("status")
+        data = response.get("data")
 
-            if status == "ok" and isinstance(data, dict):
-                return self._parse_data(data, city, params)
+        if status == "ok" and isinstance(data, dict):
+            return self._parse_data(data, city, params)
 
-            if isinstance(data, str):
-                if "Unknown station" in data:
-                    # Usually happens when WAQI does not have a station
-                    # for the searched city name.
-                    raise Exception(
-                        f'There is no known AQI station for the city "{city}"'
-                    )
+        if isinstance(data, str):
+            if "Unknown station" in data:
+                # Usually happens when WAQI does not have a station
+                # for the searched city name.
+                raise Exception(f'There is no known AQI station for the city "{city}"')
 
-                if "Invalid geo position" in data:
-                    # Usually happens when WAQI can't parse the given
-                    # lat-lon coordinate.
+            if "Invalid geo position" in data:
+                # Usually happens when WAQI can't parse the given
+                # lat-lon coordinate.
 
-                    # data is fortunately already informative
-                    raise Exception(f"{data}")
+                # data is fortunately already informative
+                raise Exception(f"{data}")
 
-                if "Invalid key" in data:
-                    raise Exception("Your API token is invalid.")
+            if "Invalid key" in data:
+                raise Exception("Your API token is invalid.")
 
-                # Unlikely since rate limiter is already used,
-                # but included anyway for completeness.
-                if "Over quota" in data:
-                    raise Exception("Too many requests within short time.")
+            # Unlikely since rate limiter is already used,
+            # but included anyway for completeness.
+            if "Over quota" in data:
+                raise Exception("Too many requests within short time.")
 
-            # Catch-all exception for other not yet known cases
-            raise Exception(
-                f'There is a problem with city "{city}", '
-                f"the returned response: {response}"
-            )
+        # Catch-all exception for other not yet known cases
+        raise Exception(
+            f'There is a problem with city "{city}", '
+            f"the returned response: {response}"
+        )
 
     def get_multiple_coordinate_air(
         self,
