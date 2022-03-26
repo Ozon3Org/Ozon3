@@ -359,8 +359,8 @@ class Ozone:
         return self._format_output(data_format, df)
 
     def _get_parsed_data_row_dict(
-        self, r: requests.Response, city: str = "N/A", params=[""]
-    ):
+        self, r: requests.Response, city: str = "N/A", params: List[str] = [""]
+    ) -> dict:
         self._check_status_code(r)
         response = json.loads(r.content)
 
