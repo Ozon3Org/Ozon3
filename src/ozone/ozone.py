@@ -390,6 +390,14 @@ class Ozone:
                     # data is fortunately already informative
                     raise Exception(f"{data}")
 
+                if "Invalid key" in data:
+                    raise Exception("Your API token is invalid.")
+
+                # Unlikely since rate limiter is already used,
+                # but included anyway for completeness.
+                if "Over quota" in data:
+                    raise Exception("Too many requests within short time.")
+
             # Catch-all exception for other not yet known cases
             raise Exception(
                 f'There is a problem with city "{city}", '
