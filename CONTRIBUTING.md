@@ -181,15 +181,15 @@ Commmits should be made in this format:
 <optional detailed description>
 ```
 
-* fix: To show that a bug fix or patch has been made
-* feat: To show that a new feature/enhancement has been added
-* BREAKING CHANGE: For changes that introduce backwards-incompatible updates
-* refactor: If you've rearranged/refactored existing code by splitting it into seperate files/methods/functions/classes
-* test: Any modification of tests
-* ci/cd: Any addition of continuous integration/deployement tasks, such as GitHub actions
-* chore: Things like version bumps, change in dependencies etc. Behind the scenes stuff that doesn't affect the API
-* docs: For entirely documentation related changes. README, CONTRIBUTING, CODE_OF_CONDUCT, and even docstrings in methods, all come under this
-* style: If your commit is solely to do with things like spaces instead of tabs, or " instead of '. This can be used if you've formatted code with black/flake8 and wish to make a commit
+* `fix`: To show that a bug fix or patch has been made.
+* `feat`: To show that a new feature/enhancement has been added.
+* `BREAKING CHANGE`: For changes that introduce backward-incompatible updates. Backward-incompatibility happens when code that uses Ozone's **public** API needs to be modified to account for an update. (As opposed to code using Ozone's **private** or **internal-usage** API, which is not meant for public use)
+* `refactor`: If you've rearranged/refactored existing code by splitting it into separate files/methods/functions/classes, or by using a slightly different implementation detail, reasonably without changing functionality.
+* `test`: Any modification of tests.
+* `ci/cd`: Any changes related to continuous integration/deployment tasks, such as GitHub actions.
+* `chore`: For behind the scenes stuff that doesn't affect the Ozone's API. This could include things like version bumps, change in dependencies, etc.
+* `docs`: For entirely documentation related changes. README, CONTRIBUTING, CODE_OF_CONDUCT, and even docstrings in methods, all come under this.
+* `style`: For a commit that solely has to do with things like spaces instead of tabs, or " instead of ', etc. This can be used if you've formatted code with black/flake8 and wish to make a commit.
 
 > **Note:** The above guidelines were added on 8th Mar, 2022. All commits before this time do not have these prefixes.
 
