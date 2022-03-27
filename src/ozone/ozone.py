@@ -17,7 +17,7 @@ import numpy
 import requests
 import json
 import itertools
-import os
+from pathlib import Path
 import warnings
 from ratelimit import limits, sleep_and_retry
 from .urls import URLs
@@ -69,14 +69,10 @@ class Ozone:
             any output artifacts will be created
         """
         self.token: str = token
-        self.output_dir_path: str = os.path.join(output_path, "ozone_output")
         self._check_token_validity()
-        try:
-            print(f"attempting to create directory {self.output_dir_path}...")
-            os.mkdir(self.output_dir_path)
-        except FileExistsError:
-            print(f" directory {self.output_dir_path} already exists ")
-            pass
+
+        self.output_dir_path: Path = Path(output_path, "ozone_output")
+        self.output_dir_path.mkdir(exist_ok=True)
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -85,9 +81,9 @@ class Ozone:
             f"{self._search_aqi_url}/{test_city}/?token={self.token}"
         )
 
-        if self._check_status_code(r):
-            if json.loads(r.content)["status"] != "ok":
-                warnings.warn("Token may be invalid!")
+        self._check_status_code(r)
+        if json.loads(r.content)["status"] != "ok":
+            warnings.warn("Token may be invalid!")
 
     @sleep_and_retry
     @limits(calls=CALLS, period=RATE_LIMIT)
@@ -103,17 +99,18 @@ class Ozone:
         r = requests.get(url)
         return r
 
-    def _check_status_code(self, r: requests.Response) -> bool:
+    def _check_status_code(self, r: requests.Response) -> None:
         """Check the status code of the response"""
         if r.status_code == 200:
-            return True
+            pass
         elif r.status_code == 401:
             raise Exception("Unauthorized!")
         elif r.status_code == 404:
             raise Exception("Not Found!")
         elif r.status_code == 500:
             raise Exception("Internal Server Error!")
-        return False
+        else:
+            raise Exception(f"Error! Code {r.status_code}")
 
     def reset_token(self, token: str) -> None:
         """Use this method to set your API token
@@ -143,18 +140,16 @@ class Ozone:
         if data_format == "df":
             return df
         elif data_format == "csv":
-            df.to_csv(
-                os.path.join(self.output_dir_path, "air_quality.csv"), index=False
-            )
+            df.to_csv(Path(self.output_dir_path, "air_quality.csv"), index=False)
             print(f"File saved to disk at {self.output_dir_path} as air_quality.csv")
         elif data_format == "json":
-            df.to_json(os.path.join(self.output_dir_path, "air_quality_data.json"))
+            df.to_json(Path(self.output_dir_path, "air_quality_data.json"))
             print(
                 f"File saved to disk at {self.output_dir_path} as air_quality_data.json"
             )
         elif data_format == "xlsx":
             df.to_excel(
-                os.path.join(self.output_dir_path, "air_quality_data.xlsx"),
+                Path(self.output_dir_path, "air_quality_data.xlsx"),
             )
             print(
                 f"File saved to disk at {self.output_dir_path} as air_quality_data.xlsx"
@@ -286,12 +281,14 @@ class Ozone:
         response = self._make_api_request(
             f"{URLs.find_coordinates_url}bounds/?token={self.token}&latlng={latlng}"
         )
-        if self._check_status_code(response):
-            data = json.loads(response.content)["data"]
-            coordinates: List[Tuple] = [
-                (element["lat"], element["lon"]) for element in data
-            ]
-            return coordinates
+
+        self._check_status_code(response)
+
+        data = json.loads(response.content)["data"]
+        coordinates: List[Tuple] = [
+            (element["lat"], element["lon"]) for element in data
+        ]
+        return coordinates
 
         # This is a bit of a hack to ensure that the function always returns a
         # list of coordinates. Required to make mypy happy.
@@ -364,37 +361,43 @@ class Ozone:
         return self._format_output(data_format, df)
 
     def _get_parsed_data_row_dict(
-        self, r: requests.Response, city: str = "N/A", params=[""]
-    ):
-        if self._check_status_code(r):
-            response = json.loads(r.content)
+        self, r: requests.Response, city: str = "N/A", params: List[str] = [""]
+    ) -> dict:
+        self._check_status_code(r)
+        response = json.loads(r.content)
 
-            status = response.get("status")
-            data = response.get("data")
+        status = response.get("status")
+        data = response.get("data")
 
-            if status == "ok" and isinstance(data, dict):
-                return self._parse_data(data, city, params)
+        if status == "ok" and isinstance(data, dict):
+            return self._parse_data(data, city, params)
 
-            if isinstance(data, str):
-                if "Unknown station" in data:
-                    # Usually happens when WAQI does not have a station
-                    # for the searched city name.
-                    raise Exception(
-                        f'There is no known AQI station for the city "{city}"'
-                    )
+        if isinstance(data, str):
+            if "Unknown station" in data:
+                # Usually happens when WAQI does not have a station
+                # for the searched city name.
+                raise Exception(f'There is no known AQI station for the city "{city}"')
 
-                if "Invalid geo position" in data:
-                    # Usually happens when WAQI can't parse the given
-                    # lat-lon coordinate.
+            if "Invalid geo position" in data:
+                # Usually happens when WAQI can't parse the given
+                # lat-lon coordinate.
 
-                    # data is fortunately already informative
-                    raise Exception(f"{data}")
+                # data is fortunately already informative
+                raise Exception(f"{data}")
 
-            # Catch-all exception for other not yet known cases
-            raise Exception(
-                f'There is a problem with city "{city}", '
-                f"the returned response: {response}"
-            )
+            if "Invalid key" in data:
+                raise Exception("Your API token is invalid.")
+
+            # Unlikely since rate limiter is already used,
+            # but included anyway for completeness.
+            if "Over quota" in data:
+                raise Exception("Too many requests within short time.")
+
+        # Catch-all exception for other not yet known cases
+        raise Exception(
+            f'There is a problem with city "{city}", '
+            f"the returned response: {response}"
+        )
 
     def get_multiple_coordinate_air(
         self,
