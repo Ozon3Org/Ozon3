@@ -97,6 +97,30 @@ You can choose from the following - pm25, aqi, pm10, o3, co, no2, so2, dew, h, p
 
 ---
 
+### get_specific_parameter
+
+Get a single air quality parameter (example: CO or PM2.5) for a single city, and have it returned as a float.
+
+#### Usage Example
+
+```python
+get_specific_parameter('Shanghai', 'pm2.5')
+```
+
+#### Arguments
+
+**city** : str
+
+The name of the city that you wish to get air quality data for. This argument is required.
+
+**param** : str
+
+Used to pecifiy which air quality parameter to get data for. This argument is required.
+You can choose from the following - pm25, aqi, pm10, o3, co, no2, so2, dew, h, p, t, w, wg
+
+---
+## To get air quality data using geographical coordinates
+
 ### get_coordinate_air
 
 Gets the air quality data for the closest measuring station to the input coordinate pair (latitude-longitude). 
@@ -221,10 +245,24 @@ An optional argument to pass in a dataframe that you may have previously retriev
 
 For example:- You previously used this method to get data for Delhi. Now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument as you fetch the new data for London.
 
-**params** List[str]
+**params** : List[str]
 
 An optional argument to specifiy which air quality parameters to get data for. If this is left blank then data for every air quality parameter is retrieved.  
 You can choose from the following - pm25, aqi, pm10, o3, co, no2, so2, dew, h, p, t, w, wg
 
+---
+## Other methods
 
-*A Description of more methods is coming soon!*
+### reset_token
+
+Method to change your private API token, if you set an incorrect one at first. 
+
+#### Usage Example
+
+```python
+o3 = ooo.Ozone('INCORRECT_TOKEN')   # oh no! now what?
+
+o3.reset_token('YOUR_NEW_TOKEN')   # No worries!
+```
+
+***More features coming soon!***
