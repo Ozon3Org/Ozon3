@@ -109,6 +109,8 @@ class Ozone:
             raise Exception("Not Found!")
         elif r.status_code == 500:
             raise Exception("Internal Server Error!")
+        else:
+            raise Exception(f"Error! Code {r.status_code}")
 
     def reset_token(self, token: str) -> None:
         """Use this method to set your API token
