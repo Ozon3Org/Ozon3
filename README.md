@@ -113,7 +113,7 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 ## LICENSE and Terms of Services 📰
 
-1. Ozone is licensed under the GNU GENERAL PUBLIC LICENSE v3.0, and so it cannot be used for closed-source software or for monetary gain.
+1. Ozone is licensed under the GNU GENERAL PUBLIC LICENSE v3.0, and so it cannot be used for closed-source software or for monetary gain. Feel free to get in touch with [me](https://github.com/Milind220/) if you have any enquiries or requests related to the licensing of this package or of derivatives of it.
 2. The WAQI API, which Ozone uses to provide data, has it's own [Acceptable Usage Policy](https://aqicn.org/api/tos/). Please refer to it for more details.
 
 ## Contributors
