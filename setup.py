@@ -9,8 +9,8 @@ setuptools.setup(
     description="A package to get air quality data using the WAQI API",
     license="GPLv3+",
     url="https://github.com/Milind220/Ozone",
-    version="1.5.3",
-    download_url="https://github.com/Milind220/Ozone/archive/refs/tags/v1.5.3.tar.gz",
+    version="1.5.4",
+    download_url="https://github.com/Milind220/Ozone/archive/refs/tags/v1.5.4.tar.gz",
     packages=setuptools.find_packages(),
     install_requires=[
         "numpy; python_version>='3'",
