@@ -482,6 +482,8 @@ class Ozone:
             data_format (str): File format. Defaults to 'df'.
                 Choose from 'csv', 'json', 'xlsx'.
             params (List[str], optional): A list of parameters to get data for.
+								Choose from the following values:
+                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg" ]
             Gets all parameters by default.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
