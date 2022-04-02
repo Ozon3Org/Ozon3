@@ -315,6 +315,8 @@ class Ozone:
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
             Gets all parameters by default.
+								Choose from the following values:
+                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", 
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
