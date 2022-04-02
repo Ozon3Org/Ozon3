@@ -20,9 +20,9 @@ import itertools
 from pathlib import Path
 import warnings
 from ratelimit import limits, sleep_and_retry
-from .urls import URLs
-
 from typing import Any, Dict, List, Union, Tuple
+from .urls import URLs
+from .historical.collector import get_data
 
 # 1000 calls per second is the limit allowed by API
 CALLS: int = 1000
@@ -519,6 +519,23 @@ class Ozone:
             )
 
         return result
+
+    def get_historical_data(
+        self, data_format: str = "df", *, city: str = None, city_id: int = None
+    ) -> pandas.DataFrame:
+        """Get historical air quality data for a city
+
+        Args:
+            data_format (str, None): File format or None.
+            city (str): Name of the city. If given, the argument must be named.
+            city_id (int): City ID. If given, the argument must be named.
+                If not given, city argument must not be None.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data.
+        """
+        df = get_data(city, city_id)
+        return self._format_output(data_format, df)
 
 
 if __name__ == "__main__":
