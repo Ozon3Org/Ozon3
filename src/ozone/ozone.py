@@ -534,7 +534,7 @@ class Ozone:
         Returns:
             pandas.DataFrame: The dataframe containing the data.
         """
-        df = get_data(city, city_id)
+        df = get_data(city=city, city_id=city_id)
         return self._format_output(data_format, df)
 
 
