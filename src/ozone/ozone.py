@@ -511,6 +511,8 @@ class Ozone:
             city (string): A city to get the data for
             air_param (string): A string containing the specified air quality parameter.
             Gets all parameters by default.
+								Choose from the following values:
+                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", 
 
         Returns:
             float: Value of the specified parameter for the given city.
