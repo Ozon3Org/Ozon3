@@ -73,11 +73,11 @@ def get_data_from_id(city_id: int) -> pandas.DataFrame:
         parse_incoming_result(data) for data in backend_data
     ])
 
+    # Arrange to make most recent appear on top of DataFrame
+    result = result.sort_index(ascending = False, na_position = 'last')
+
     # Deduplicate because sometimes the backend sends duplicates
     result = result[~result.index.duplicated()]
-
-    # Arrange to make most recent appear on top of DataFrame
-    result = result.sort_index(ascending = False)
 
     # Reindex to make missing dates appear with value nan
     # Conditional is necessary to avoid error when trying to
