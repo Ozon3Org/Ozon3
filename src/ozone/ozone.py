@@ -564,11 +564,18 @@ class Ozone:
                 raise ValueError("If city_id is not specified, city must be specified.")
 
             # Take first search result
-            result = self.get_search_results_historical(city).iloc[0, :]
+            search_result = self.get_search_results_historical(city)
+            if len(search_result) == 0:
+                raise Exception(
+                    f'The search for city "{city}" returns no result. It is possible '
+                    "that the city does not have AQI station."
+                )
 
-            city_id = result["city_id"]
-            station_name = result["station_name"]
-            country_code = result["country_code"]
+            first_result = search_result.iloc[0, :]
+
+            city_id = first_result["city_id"]
+            station_name = first_result["station_name"]
+            country_code = first_result["country_code"]
 
             warnings.warn(
                 f'city_id was not supplied. Searching for "{city}" yields '
