@@ -44,14 +44,6 @@ def parse_incoming_result(json_object: dict) -> pandas.DataFrame:
         json_object["msg"]
     ).to_dict()
 
-    # Change unix timestamp back to datetime
-    RESULT = OUTPUT
-    for i, spec in enumerate(OUTPUT["species"]):
-        for j, val in enumerate(spec["values"]):
-            RESULT["species"][i]["values"][j]["t"]["datetime"] = datetime.fromtimestamp(
-                OUTPUT["species"][i]["values"][j]["t"]["d"]
-            )
-
     result_dict = {}
     for spec in OUTPUT["species"]:
         pollutant_name: str = spec["pol"]
