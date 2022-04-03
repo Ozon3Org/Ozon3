@@ -85,11 +85,14 @@ def get_data_from_id(city_id: int) -> pandas.DataFrame:
     # Reindex to make missing dates appear with value nan
     # Conditional is necessary to avoid error when trying to
     # reindex empty dataframe i.e. just in case the returned
-    #  response AQI data was empty.
+    # response AQI data was empty.
     if len(result) > 1:
         complete_days = pandas.date_range(
             result.index.min(), result.index.max(), freq="D"
         )
         result = result.reindex(complete_days, fill_value=None)
+
+        # Arrange to make most recent appear on top of DataFrame
+        result = result.sort_index(ascending=False, na_position="last")
 
     return result

@@ -576,8 +576,8 @@ class Ozone:
                 f'with country code "{country_code}". '
                 "Ozone will return air quality data from that station. "
                 "If you know this is not the correct city you intended, "
-                "you can use get_search_results method first to identify "
-                "the correct city ID."
+                "you can use get_search_results_historical method first to "
+                "identify the correct city ID."
             )
 
         df = get_data_from_id(city_id)
