@@ -19,10 +19,11 @@ import json
 import itertools
 from pathlib import Path
 import warnings
+import functools
 from ratelimit import limits, sleep_and_retry
 from typing import Any, Dict, List, Union, Tuple
 from .urls import URLs
-from .historical.collector import get_data
+from .historical._reverse_engineered import get_data_from_id
 
 # 1000 calls per second is the limit allowed by API
 CALLS: int = 1000
@@ -520,6 +521,30 @@ class Ozone:
 
         return result
 
+    def get_search_results_historical(self, city: str):
+        r = requests.get(f"https://search.waqi.info/nsearch/station/{city}")
+        res = r.json()
+
+        city_id, country_code, station_name, city_url, score = [], [], [], [], []
+
+        for candidate in res["results"]:
+            city_id.append(candidate["x"])
+            country_code.append(candidate["c"])
+            station_name.append(candidate["n"])
+            city_url.append(candidate["s"]["u"])
+            score.append(candidate["score"])
+
+        return pandas.DataFrame(
+            {
+                "city_id": city_id,
+                "country_code": country_code,
+                "station_name": station_name,
+                "city_url": city_url,
+                "score": score,
+            }
+        ).sort_values(by=["score"], ascending=False)
+
+    @functools.lru_cache(maxsize=128)
     def get_historical_data(
         self, data_format: str = "df", *, city: str = None, city_id: int = None
     ) -> pandas.DataFrame:
@@ -534,7 +559,28 @@ class Ozone:
         Returns:
             pandas.DataFrame: The dataframe containing the data.
         """
-        df = get_data(city=city, city_id=city_id)
+        if city_id is None:
+            if city is None:
+                raise ValueError("If city_id is not specified, city must be specified.")
+
+            # Take first search result
+            result = self.get_search_results_historical(city).iloc[0, :]
+
+            city_id = result["city_id"]
+            station_name = result["station_name"]
+            country_code = result["country_code"]
+
+            warnings.warn(
+                f'city_id was not supplied. Searching for "{city}" yields '
+                f'city ID {city_id} with station name "{station_name}", '
+                f'with country code "{country_code}". '
+                "Ozone will return air quality data from that station. "
+                "If you know this is not the correct city you intended, "
+                "you can use get_search_results method first to identify "
+                "the correct city ID."
+            )
+
+        df = get_data_from_id(city_id)
         return self._format_output(data_format, df)
 
 
