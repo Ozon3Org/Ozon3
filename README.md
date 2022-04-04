@@ -9,8 +9,8 @@
 
 
 ## The simplest AQI API
-
-I want to make it easy to get your hands on accurate air quality data for your project, whatever it is. Ozone makes this as straightforward as typing out a few lines of code. Ozone uses the World Air Quality Index's API to fetch data, so you can trust the data you get to be accurate and reliable. ✅ 📈
+Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozone can help you with.  
+With Ozone, just 4 lines of code are enough to get you the data you need. And the best part is that you can trust this data to be accurate and reliable, since the package uses the World Air Quality Index's API under the hood! ✅ 📈
 
 ###### You can view our complete documentation [here](https://milind220.github.io/Ozone/)
 
