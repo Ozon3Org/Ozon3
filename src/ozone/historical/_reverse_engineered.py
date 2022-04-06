@@ -23,6 +23,14 @@ def get_results_from_backend(city_id: int) -> List[Dict[str, Any]]:
 
     r = requests.get(event_data_url)
 
+    # Catch cases where the returned response is not a server-sent events,
+    # i.e. an error.
+    if "text/event-stream" not in r.headers["Content-Type"]:
+        raise Exception(
+            "Server does not return data stream. "
+            f'It is likely that city ID "{city_id}" does not exist.'
+        )
+
     client = SSEClient(r)
     result = []
 
