@@ -531,7 +531,7 @@ class Ozone:
             city_id.append(candidate["x"])
             country_code.append(candidate["c"])
             station_name.append(candidate["n"])
-            city_url.append(candidate["s"]["u"])
+            city_url.append(candidate["s"].get("u"))
             score.append(candidate["score"])
 
         return pandas.DataFrame(
