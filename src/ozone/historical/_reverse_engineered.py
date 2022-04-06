@@ -4,7 +4,8 @@ from datetime import datetime
 from typing import List, Dict, Any
 import js2py
 import pandas
-from sseclient import SSEClient as SSE
+import requests
+from sseclient import SSEClient
 
 # NOTE(lahdjirayhan):
 # The following variable is a long string, a source JS code that
@@ -20,10 +21,12 @@ _context.execute(_JS_FUNCS)
 def get_results_from_backend(city_id: int) -> List[Dict[str, Any]]:
     event_data_url = f"https://api.waqi.info/api/attsse/{city_id}/yd.json"
 
-    events = SSE(event_data_url)
+    r = requests.get(event_data_url)
+
+    client = SSEClient(r)
     result = []
 
-    for event in events:
+    for event in client.events():
         if event.event == "done":
             break
 
