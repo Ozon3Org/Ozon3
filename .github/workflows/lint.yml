@@ -1,0 +1,23 @@
+name: Lint with flake8
+on: [pull_request, push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@master
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        pip install flake8
+
+    - name: Lint using flake8
+      run: |
+        flake8 src/ozone
