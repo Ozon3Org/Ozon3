@@ -1,4 +1,4 @@
-name: Lint with flake8
+name: Lint with flake8 and black
 on: [pull_request, push]
 
 jobs:
@@ -16,8 +16,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install flake8
+        pip install flake8 black
 
-    - name: Lint using flake8
+    - name: Lint with flake8
       run: |
         flake8 src/ozone
+
+    - name: Check style with black
+      run: |
+        black --check src
