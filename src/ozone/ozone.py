@@ -314,9 +314,10 @@ class Ozone:
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
-            Gets all parameters by default.
-								Choose from the following values:
-                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg" ]
+                Choose from the following values:
+                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                 "p", "t", "w", "wg"]
+                Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
@@ -348,9 +349,10 @@ class Ozone:
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
-								Choose from the following values:
-                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg" ]
-            Gets all parameters by default.
+                Choose from the following values:
+                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                 "p", "t", "w", "wg"]
+                Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
@@ -419,9 +421,10 @@ class Ozone:
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
-								Choose from the following values:
-                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg" ]
-            Gets all parameters by default.
+                Choose from the following values:
+                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                 "p", "t", "w", "wg"]
+                Gets all parameters by default..
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
@@ -455,9 +458,10 @@ class Ozone:
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
-								Choose from the following values:
-                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg" ]
-            Gets all parameters by default.
+                Choose from the following values:
+                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                 "p", "t", "w", "wg"]
+                Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
@@ -484,9 +488,10 @@ class Ozone:
             data_format (str): File format. Defaults to 'df'.
                 Choose from 'csv', 'json', 'xlsx'.
             params (List[str], optional): A list of parameters to get data for.
-								Choose from the following values:
-                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg" ]
-            Gets all parameters by default.
+                Choose from the following values:
+                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                 "p", "t", "w", "wg"]
+                Gets all parameters by default.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
@@ -512,9 +517,10 @@ class Ozone:
         Args:
             city (string): A city to get the data for
             air_param (string): A string containing the specified air quality parameter.
-            Gets all parameters by default.
-								Choose from the following values:
-                    [ "aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg"  ]
+                Choose from the following values:
+                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                 "p", "t", "w", "wg"]
+                Gets all parameters by default.
 
         Returns:
             float: Value of the specified parameter for the given city.
