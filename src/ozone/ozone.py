@@ -19,7 +19,6 @@ import json
 import itertools
 from pathlib import Path
 import warnings
-import functools
 from ratelimit import limits, sleep_and_retry
 from typing import Any, Dict, List, Union, Tuple
 from .urls import URLs
@@ -521,7 +520,15 @@ class Ozone:
 
         return result
 
-    def get_search_results_historical(self, city: str):
+    def get_search_results_historical(self, city: str) -> pandas.DataFrame:
+        """Get available stations for a given city
+        Args:
+            city (str): Name of a city.
+
+        Returns:
+            pandas.DataFrame: Table of stations and their relevant information.
+
+        """
         r = requests.get(f"https://search.waqi.info/nsearch/station/{city}")
         res = r.json()
 
@@ -544,14 +551,14 @@ class Ozone:
             }
         ).sort_values(by=["score"], ascending=False)
 
-    @functools.lru_cache(maxsize=128)
     def get_historical_data(
         self, data_format: str = "df", *, city: str = None, city_id: int = None
     ) -> pandas.DataFrame:
         """Get historical air quality data for a city
 
         Args:
-            data_format (str, None): File format or None.
+            data_format (str): File format. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
             city (str): Name of the city. If given, the argument must be named.
             city_id (int): City ID. If given, the argument must be named.
                 If not given, city argument must not be None.
