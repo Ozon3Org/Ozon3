@@ -18,6 +18,8 @@ setuptools.setup(
         "requests; python_version>='3'",
         "openpyxl; python_version>='3'",
         "ratelimit; python_version>='3'",
+        "js2py; python_version>='3'",
+        "sseclient-py; python_version>='3'",
     ],
     python_requires=">=3.6",
     classifiers=[
