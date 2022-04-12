@@ -520,7 +520,7 @@ class Ozone:
 
         return result
 
-    def get_search_results_historical(self, city: str) -> pandas.DataFrame:
+    def get_city_station_options(self, city: str) -> pandas.DataFrame:
         """Get available stations for a given city
         Args:
             city (str): Name of a city.
@@ -571,7 +571,7 @@ class Ozone:
                 raise ValueError("If city_id is not specified, city must be specified.")
 
             # Take first search result
-            search_result = self.get_search_results_historical(city)
+            search_result = self.get_city_station_options(city)
             if len(search_result) == 0:
                 raise Exception(
                     f'The search for city "{city}" returns no result. It is possible '
