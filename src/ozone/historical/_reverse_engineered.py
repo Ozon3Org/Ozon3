@@ -99,3 +99,7 @@ def get_data_from_id(city_id: int) -> pandas.DataFrame:
         result = result.sort_index(ascending=False, na_position="last")
 
     return result
+
+
+if __name__ == "__main__":
+    pass
