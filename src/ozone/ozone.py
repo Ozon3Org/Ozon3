@@ -615,6 +615,70 @@ class Ozone:
         df = get_data_from_id(city_id)
         return self._format_output(data_format, df)
 
+    def get_city_forecast(
+        self,
+        city: str,
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
+        params: List[str] = [""],
+    ) -> pandas.DataFrame:
+        if params == [""]:
+            params = self._default_params
+
+        r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
+
+        # NOTE, FIXME, (lahdjirayhan) 2022/04/12
+        # The following implementation is (exactly) similar to that in
+        # _get_parsed_data_row_dict because
+        # **it takes in the same endpoint response, but takes out different data.**
+        # In the future, this internal Ozone implementation may be improved.
+        # Remove this comment when this duplication of code is addressed/decided.
+        self._check_status_code(r)
+        response = json.loads(r.content)
+
+        status = response.get("status")
+        data = response.get("data")
+
+        if status == "ok" and isinstance(data, dict):
+            # NOTE(lahdjirayhan)
+            # Can break if backend decides to send something not strictly
+            # conforming to documentation/usual behavior.
+            forecast = data["forecast"]["daily"]
+            dict_of_frames = {}
+            for pol, lst in forecast.items():
+                dict_of_frames[pol] = pandas.DataFrame(lst).set_index("day")
+
+            df = pandas.concat(dict_of_frames, axis=1)
+            df.index = pandas.to_datetime(df.index)
+            return self._format_output(data_format, df)
+
+        if isinstance(data, str):
+            if "Unknown station" in data:
+                # Usually happens when WAQI does not have a station
+                # for the searched city name.
+                raise Exception(f'There is no known AQI station for the city "{city}"')
+
+            if "Invalid geo position" in data:
+                # Usually happens when WAQI can't parse the given
+                # lat-lon coordinate.
+
+                # data is fortunately already informative
+                raise Exception(f"{data}")
+
+            if "Invalid key" in data:
+                raise Exception("Your API token is invalid.")
+
+            # Unlikely since rate limiter is already used,
+            # but included anyway for completeness.
+            if "Over quota" in data:
+                raise Exception("Too many requests within short time.")
+
+        # Catch-all exception for other not yet known cases
+        raise Exception(
+            f'There is a problem with city "{city}", '
+            f"the returned response: {response}"
+        )
+
 
 if __name__ == "__main__":
     pass
