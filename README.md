@@ -12,6 +12,8 @@
 Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozone can help you with.  
 With Ozone, just 4 lines of code are enough to get you the data you need. And the best part is that you can trust this data to be accurate and reliable, since the package uses the World Air Quality Index's API under the hood! ✅ 📈
 
+Use Ozone to **get real-time air quality data, or historical data from 2014 onwards**, and fetch air quality data **for anywhere in the world** in seconds.
+
 ###### You can view our complete documentation [here](https://milind220.github.io/Ozone/)
 
 #### Table of Contents
@@ -20,17 +22,17 @@ With Ozone, just 4 lines of code are enough to get you the data you need. And th
 
 [Getting your API token](#getting-your-api-token)
 
-[Getting started](#getting-started)
+[Getting started](#Getting-started)
 
-[Contributing and submitting PR's](#contributing-and-submitting-pull-requests)
+[Contributing and submitting PR's](#Contributing-and-submitting-pull-requests)
 
 [Semantic Versioning System](#semantic-versioning-system)
 
 [Attributions](#World-Air-Quality-Index-and-EPA-attribution)
 
-[License and TOS](#license-and-terms-of-service)
+[License and TOS](#License-and-terms-of-service)
 
-[Contributors](#contributors)
+[Contributors](#Contributors)
 
 ## Install it here!
 
@@ -50,17 +52,24 @@ Get your token [here](https://aqicn.org/data-platform/token/#/)!
 
 ## Getting started 🏃‍♂️
 
+### Real-time data
 ```python
 import ozone as ooo
 
 o3 = ooo.Ozone('YOUR_PRIVATE_TOKEN')
-data = o3.get_city_air('CITY_NAME')
+data = o3.get_city_air('New Delhi') 
 ```
 
 for many cities:
 
 ```python
-data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
+data = o3.get_multiple_city_air(['London', 'Hong Kong', 'New York'])     # As many locations as you need
+```
+
+### Historical data
+
+```python
+data = o3.get_historical_data(city='Houston', data_format='df')     # data from 2014 onwards!
 ```
 
 <hr>
