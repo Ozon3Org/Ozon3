@@ -24,15 +24,15 @@ Use Ozone to **get real-time air quality data, or historical data from 2014 onwa
 
 [Getting started](#getting-started)
 
-[Contributing and submitting PR's](#Contributing-and-submitting-pull-requests)
+[Contributing and submitting PR's](#contributing-and-submitting-pull-requests)
 
 [Semantic Versioning System](#semantic-versioning-system)
 
-[Attributions](#World-Air-Quality-Index-and-EPA-attribution)
+[Attributions](#world-air-quality-index-and-epa-attribution)
 
-[License and TOS](#License-and-terms-of-service)
+[License and TOS](#license-and-terms-of-service)
 
-[Contributors](#Contributors)
+[Contributors](#contributors)
 
 ## Install it here!
 
@@ -50,7 +50,7 @@ This is very easy to do, and takes no time at all as your token is generally ema
 
 Get your token [here](https://aqicn.org/data-platform/token/#/)!
 
-## Getting started 🏃‍♂️
+## Getting started
 
 ### Real-time data
 ```python
