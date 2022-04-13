@@ -22,7 +22,7 @@ Use Ozone to **get real-time air quality data, or historical data from 2014 onwa
 
 [Getting your API token](#getting-your-api-token)
 
-[Getting started](#Getting-started)
+[Getting started](#getting-started)
 
 [Contributing and submitting PR's](#Contributing-and-submitting-pull-requests)
 
