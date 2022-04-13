@@ -79,6 +79,7 @@ data = o3.get_historical_data(city='Houston', data_format='df')     # data from 
 
 ![Gif of ozone.get_multiple_city_air()](/src/media/ozone_get_multiple_city_air_updated.gif)
 
+![Gif of ozone.get_historical_data()](/src/media/ozone_historical_data.gif)
 ### Air Quality Parameters
 
 Ozone can fetch the following parameters:
