@@ -9,8 +9,10 @@
 
 
 ## The simplest AQI API
+Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozone can help you with.  
+With Ozone, just 4 lines of code are enough to get you the data you need. And the best part is that you can trust this data to be accurate and reliable, since the package uses the World Air Quality Index's API under the hood! ✅ 📈
 
-I want to make it easy to get your hands on accurate air quality data for your project, whatever it is. Ozone makes this as straightforward as typing out a few lines of code. Ozone uses the World Air Quality Index's API to fetch data, so you can trust the data you get to be accurate and reliable. ✅ 📈
+Use Ozone to **get real-time air quality data, or historical data from 2014 onwards**, and fetch air quality data **for anywhere in the world** in seconds.
 
 ###### You can view our complete documentation [here](https://milind220.github.io/Ozone/)
 
@@ -26,7 +28,7 @@ I want to make it easy to get your hands on accurate air quality data for your p
 
 [Semantic Versioning System](#semantic-versioning-system)
 
-[Attributions](#World-Air-Quality-Index-and-EPA-attribution)
+[Attributions](#world-air-quality-index-and-epa-attribution)
 
 [License and TOS](#license-and-terms-of-service)
 
@@ -48,19 +50,26 @@ This is very easy to do, and takes no time at all as your token is generally ema
 
 Get your token [here](https://aqicn.org/data-platform/token/#/)!
 
-## Getting started 🏃‍♂️
+## Getting started
 
+### Real-time data
 ```python
 import ozone as ooo
 
 o3 = ooo.Ozone('YOUR_PRIVATE_TOKEN')
-data = o3.get_city_air('CITY_NAME')
+data = o3.get_city_air('New Delhi') 
 ```
 
 for many cities:
 
 ```python
-data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
+data = o3.get_multiple_city_air(['London', 'Hong Kong', 'New York'])     # As many locations as you need
+```
+
+### Historical data
+
+```python
+data = o3.get_historical_data(city='Houston', data_format='df')     # data from 2014 onwards!
 ```
 
 <hr>
@@ -70,6 +79,7 @@ data = o3.get_multiple_city_air([ARRAY OF CITY NAMES])
 
 ![Gif of ozone.get_multiple_city_air()](/src/media/ozone_get_multiple_city_air_updated.gif)
 
+![Gif of ozone.get_historical_data()](/src/media/ozone_historical_data.gif)
 ### Air Quality Parameters
 
 Ozone can fetch the following parameters:
