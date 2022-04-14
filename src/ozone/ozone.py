@@ -650,11 +650,19 @@ class Ozone:
         city: str,
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""],
     ) -> pandas.DataFrame:
-        if params == [""]:
-            params = self._default_params
+        """Get a city's air quality forecast
 
+        Args:
+            city (str): The city to get data for.
+            data_format (str): File format for data. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data.
+            (If you selected another data format, this dataframe will be empty)"""
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         data_obj = self._check_and_get_data_obj(r)
 
