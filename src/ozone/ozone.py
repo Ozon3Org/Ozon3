@@ -602,7 +602,7 @@ class Ozone:
                 f'with country code "{country_code}". '
                 "Ozone will return air quality data from that station. "
                 "If you know this is not the correct city you intended, "
-                "you can use get_search_results_historical method first to "
+                "you can use get_city_station_options method first to "
                 "identify the correct city ID."
             )
 
