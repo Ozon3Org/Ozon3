@@ -227,6 +227,20 @@ class Ozone:
         return df
 
     def _check_and_get_data_obj(self, r: requests.Response, **check_debug_info) -> dict:
+        """Get data object from API response and throw error if any is encouuntered
+
+        Args:
+            r (requests.Response): Response object from API request.
+            **check_debug_info: Any debug info that can help make
+                exceptions in this method more informative. Give this argument in
+                format of e.g. `city="London"` to allow exceptions that can take
+                city names to show it instead of just generic exception message.
+
+        Returns:
+            dict: The data object i.e. the `data` part of the API response,
+                in dictionary format (already JSON-ified).
+
+        """
         self._check_status_code(r)
 
         response = json.loads(r.content)
