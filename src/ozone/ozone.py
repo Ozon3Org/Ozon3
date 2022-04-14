@@ -206,6 +206,45 @@ class Ozone:
 
         return row
 
+    def _get_parsed_data_row_dict(
+        self, r: requests.Response, city: str = "N/A", params: List[str] = [""]
+    ) -> dict:
+        self._check_status_code(r)
+        response = json.loads(r.content)
+
+        status = response.get("status")
+        data = response.get("data")
+
+        if status == "ok" and isinstance(data, dict):
+            return self._parse_data(data, city, params)
+
+        if isinstance(data, str):
+            if "Unknown station" in data:
+                # Usually happens when WAQI does not have a station
+                # for the searched city name.
+                raise Exception(f'There is no known AQI station for the city "{city}"')
+
+            if "Invalid geo position" in data:
+                # Usually happens when WAQI can't parse the given
+                # lat-lon coordinate.
+
+                # data is fortunately already informative
+                raise Exception(f"{data}")
+
+            if "Invalid key" in data:
+                raise Exception("Your API token is invalid.")
+
+            # Unlikely since rate limiter is already used,
+            # but included anyway for completeness.
+            if "Over quota" in data:
+                raise Exception("Too many requests within short time.")
+
+        # Catch-all exception for other not yet known cases
+        raise Exception(
+            f'There is a problem with city "{city}", '
+            f"the returned response: {response}"
+        )
+
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
         """Retrieve AQI meaning and health implications
 
@@ -365,45 +404,6 @@ class Ozone:
         row = self._get_parsed_data_row_dict(r, city, params)
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
         return self._format_output(data_format, df)
-
-    def _get_parsed_data_row_dict(
-        self, r: requests.Response, city: str = "N/A", params: List[str] = [""]
-    ) -> dict:
-        self._check_status_code(r)
-        response = json.loads(r.content)
-
-        status = response.get("status")
-        data = response.get("data")
-
-        if status == "ok" and isinstance(data, dict):
-            return self._parse_data(data, city, params)
-
-        if isinstance(data, str):
-            if "Unknown station" in data:
-                # Usually happens when WAQI does not have a station
-                # for the searched city name.
-                raise Exception(f'There is no known AQI station for the city "{city}"')
-
-            if "Invalid geo position" in data:
-                # Usually happens when WAQI can't parse the given
-                # lat-lon coordinate.
-
-                # data is fortunately already informative
-                raise Exception(f"{data}")
-
-            if "Invalid key" in data:
-                raise Exception("Your API token is invalid.")
-
-            # Unlikely since rate limiter is already used,
-            # but included anyway for completeness.
-            if "Over quota" in data:
-                raise Exception("Too many requests within short time.")
-
-        # Catch-all exception for other not yet known cases
-        raise Exception(
-            f'There is a problem with city "{city}", '
-            f"the returned response: {response}"
-        )
 
     def get_multiple_coordinate_air(
         self,
