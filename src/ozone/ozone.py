@@ -329,12 +329,6 @@ class Ozone:
         ]
         return coordinates
 
-        # This is a bit of a hack to ensure that the function always returns a
-        # list of coordinates. Required to make mypy happy.
-
-        # Return an invalid coordinate if API request fails.
-        return [(-1, -1)]
-
     def get_coordinate_air(
         self,
         lat: float,
