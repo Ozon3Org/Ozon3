@@ -32,14 +32,14 @@ RATE_LIMIT: int = 1
 class Ozone:
     """Primary class for Ozone API
 
-    This class contains all the methods used for live data collection.
+    This class contains all the methods used for data collection.
     This class should be instantiated, and methods should be called from the
     instance.
 
     Attributes:
         token (str): The private API token for the WAQI API service.
         output_dir_path (str): The path to the directory where
-        any output artifacts will be created
+            any output artifacts will be created
     """
 
     _search_aqi_url: str = URLs.search_aqi_url
