@@ -226,7 +226,7 @@ class Ozone:
         df.index = pandas.to_datetime(df.index)
         return df
 
-    def _check_and_get_data_obj(self, r: requests.Response) -> dict:
+    def _check_and_get_data_obj(self, r: requests.Response, **check_debug_info) -> dict:
         self._check_status_code(r)
 
         response = json.loads(r.content)
@@ -240,7 +240,15 @@ class Ozone:
             if "Unknown station" in data:
                 # Usually happens when WAQI does not have a station
                 # for the searched city name.
-                raise Exception("There is no known AQI station for the given query.")
+
+                # Check if a city name is provided so that user can get
+                # better exception message to aid them debug their program
+                city = check_debug_info.get("city")
+                city_info = f'\ncity: "{city}"' if city is not None else ""
+
+                raise Exception(
+                    "There is no known AQI station for the given query." + city_info
+                )
 
             if "Invalid geo position" in data:
                 # Usually happens when WAQI can't parse the given
@@ -411,7 +419,7 @@ class Ozone:
             params = self._default_params
 
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
-        data_obj = self._check_and_get_data_obj(r)
+        data_obj = self._check_and_get_data_obj(r, city=city)  # City is for traceback
 
         row = self._extract_live_data(data_obj, params=params)
         row["city"] = city
@@ -563,6 +571,12 @@ class Ozone:
             pandas.DataFrame: Table of stations and their relevant information.
 
         """
+        # NOTE, HACK, FIXME:
+        # This functionality was born together with historical data feature.
+        # This endpoint is outside WAQI API's specification, thus not using
+        # _check_and_get_data_obj private method above.
+        # If exists, alternative within API's spec is more than welcome to
+        # replace this implementation.
         r = requests.get(f"https://search.waqi.info/nsearch/station/{city}")
         res = r.json()
 
