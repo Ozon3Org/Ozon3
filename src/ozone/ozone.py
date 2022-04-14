@@ -72,7 +72,6 @@ class Ozone:
         self._check_token_validity()
 
         self.output_dir_path: Path = Path(output_path, "ozone_output")
-        self.output_dir_path.mkdir(exist_ok=True)
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -139,7 +138,10 @@ class Ozone:
         """
         if data_format == "df":
             return df
-        elif data_format == "csv":
+
+        self.output_dir_path.mkdir(exist_ok=True)
+
+        if data_format == "csv":
             df.to_csv(Path(self.output_dir_path, "air_quality.csv"), index=False)
             print(f"File saved to disk at {self.output_dir_path} as air_quality.csv")
         elif data_format == "json":
