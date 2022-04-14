@@ -272,10 +272,10 @@ class Ozone:
         """Retrieve AQI meaning and health implications
 
         Args:
-            row["aqi"] (float): parsed AQI data.
+            aqi (float): Air Quality Index (AQI) value.
 
         Returns:
-            str: The meaning and health implication of the AQI data.
+            str: The meaning and health implication of the AQI value.
         """
 
         if 0 <= aqi <= 50:
