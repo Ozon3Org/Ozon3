@@ -1,4 +1,10 @@
-# Ozone ☁️
+# Ozone 
+
+<div align=center
+
+![163585390-dbdf1d44-474d-4d1d-bb7f-31560e2157ca-2](https://user-images.githubusercontent.com/68847270/163665439-860ba833-d231-4ad7-8606-69a9588124c7.svg)
+
+</div>
 
 [![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3)
 <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
