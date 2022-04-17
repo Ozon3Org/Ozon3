@@ -2,7 +2,7 @@
 
 <div align=center
 
-![163585390-dbdf1d44-474d-4d1d-bb7f-31560e2157ca-2](https://user-images.githubusercontent.com/68847270/163665439-860ba833-d231-4ad7-8606-69a9588124c7.svg)
+![SVG of ozone logo](/src/media/ozone_logo.svg)
 
 </div>
 
