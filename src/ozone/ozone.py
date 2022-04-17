@@ -32,14 +32,14 @@ RATE_LIMIT: int = 1
 class Ozone:
     """Primary class for Ozone API
 
-    This class contains all the methods used for live data collection.
+    This class contains all the methods used for data collection.
     This class should be instantiated, and methods should be called from the
     instance.
 
     Attributes:
         token (str): The private API token for the WAQI API service.
         output_dir_path (str): The path to the directory where
-        any output artifacts will be created
+            any output artifacts will be created
     """
 
     _search_aqi_url: str = URLs.search_aqi_url
@@ -66,13 +66,12 @@ class Ozone:
         Args:
             token (str): The users private API token for the WAQI API.
             output_path (str): The path to the location where
-            any output artifacts will be created
+                any output artifacts will be created
         """
         self.token: str = token
         self._check_token_validity()
 
         self.output_dir_path: Path = Path(output_path, "ozone_output")
-        self.output_dir_path.mkdir(exist_ok=True)
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -139,7 +138,10 @@ class Ozone:
         """
         if data_format == "df":
             return df
-        elif data_format == "csv":
+
+        self.output_dir_path.mkdir(exist_ok=True)
+
+        if data_format == "csv":
             df.to_csv(Path(self.output_dir_path, "air_quality.csv"), index=False)
             print(f"File saved to disk at {self.output_dir_path} as air_quality.csv")
         elif data_format == "json":
@@ -160,27 +162,27 @@ class Ozone:
             )
         return pandas.DataFrame()
 
-    def _parse_data(
-        self, data_obj: Any, city: str, params: List[str] = [""]
+    def _extract_live_data(
+        self, data_obj: Any, params: List[str] = [""]
     ) -> Dict[str, Union[str, float]]:
-        """Parse the data from the API response
+        """Extract live AQI data from API response's 'data' part.
 
         Args:
-            data_obj (JSON object returned by json.loads): The data from the API's
-                response.
-            city (str): The city name.
+            data_obj (JSON object returned by json.loads): The 'data' part from
+                the API's response.
             params (List[str]): The parameters to parse.
 
         Returns:
-            list: A list containing a single dictionary with the data.
+            dict: Dictionary containing the data.
         """
         if params == [""]:
             params = self._default_params
 
-        # A single row of data for the dataframe.
+        # This dict will become a single row of data for the dataframe.
         row: Dict[str, Union[str, float]] = {}
 
-        row["city"] = f"{city}"
+        # City column can be added back later by the caller method.
+        row["city"] = numpy.nan
         row["latitude"] = data_obj["city"]["geo"][0]
         row["longitude"] = data_obj["city"]["geo"][1]
         row["station"] = data_obj["city"]["name"]
@@ -206,14 +208,88 @@ class Ozone:
 
         return row
 
+    def _extract_forecast_data(self, data_obj: Any) -> pandas.DataFrame:
+        """Extract forecast data from API response's 'data' part.
+
+        Args:
+            data_obj (JSON object returned by json.loads): The 'data' part from
+                the API's response.
+
+        Returns:
+            pandas.DataFrame: A dataframe containing the data."""
+        forecast = data_obj["forecast"]["daily"]
+        dict_of_frames = {}
+        for pol, lst in forecast.items():
+            dict_of_frames[pol] = pandas.DataFrame(lst).set_index("day")
+
+        df = pandas.concat(dict_of_frames, axis=1)
+        df.index = pandas.to_datetime(df.index)
+        return df
+
+    def _check_and_get_data_obj(self, r: requests.Response, **check_debug_info) -> dict:
+        """Get data object from API response and throw error if any is encouuntered
+
+        Args:
+            r (requests.Response): Response object from API request.
+            **check_debug_info: Any debug info that can help make
+                exceptions in this method more informative. Give this argument in
+                format of e.g. `city="London"` to allow exceptions that can take
+                city names to show it instead of just generic exception message.
+
+        Returns:
+            dict: The data object i.e. the `data` part of the API response,
+                in dictionary format (already JSON-ified).
+
+        """
+        self._check_status_code(r)
+
+        response = json.loads(r.content)
+        status = response.get("status")
+        data = response.get("data")
+
+        if status == "ok" and isinstance(data, dict):
+            return data
+
+        if isinstance(data, str):
+            if "Unknown station" in data:
+                # Usually happens when WAQI does not have a station
+                # for the searched city name.
+
+                # Check if a city name is provided so that user can get
+                # better exception message to aid them debug their program
+                city = check_debug_info.get("city")
+                city_info = f'\ncity: "{city}"' if city is not None else ""
+
+                raise Exception(
+                    "There is no known AQI station for the given query." + city_info
+                )
+
+            if "Invalid geo position" in data:
+                # Usually happens when WAQI can't parse the given
+                # lat-lon coordinate.
+
+                # data is fortunately already informative
+                raise Exception(f"{data}")
+
+            if "Invalid key" in data:
+                raise Exception("Your API token is invalid.")
+
+            # Unlikely since rate limiter is already used,
+            # but included anyway for completeness.
+            if "Over quota" in data:
+                raise Exception("Too many requests within short time.")
+
+        # Catch-all exception for other not yet known cases
+        raise Exception(f"Can't parse the returned response:\n{response}")
+
     def _AQI_meaning(self, aqi: float) -> Tuple[str, str]:
         """Retrieve AQI meaning and health implications
 
         Args:
-            row["aqi"] (float): parsed AQI data.
+            aqi (float): Air Quality Index (AQI) value.
 
         Returns:
-            str: The meaning and health implication of the AQI data.
+            str: The meaning and health implication of the AQI value.
         """
 
         if 0 <= aqi <= 50:
@@ -282,19 +358,12 @@ class Ozone:
             f"{URLs.find_coordinates_url}bounds/?token={self.token}&latlng={latlng}"
         )
 
-        self._check_status_code(response)
+        data = self._check_and_get_data_obj(response)
 
-        data = json.loads(response.content)["data"]
         coordinates: List[Tuple] = [
             (element["lat"], element["lon"]) for element in data
         ]
         return coordinates
-
-        # This is a bit of a hack to ensure that the function always returns a
-        # list of coordinates. Required to make mypy happy.
-
-        # Return an invalid coordinate if API request fails.
-        return [(-1, -1)]
 
     def get_coordinate_air(
         self,
@@ -329,7 +398,9 @@ class Ozone:
         r = self._make_api_request(
             f"{self._search_aqi_url}/geo:{lat};{lon}/?token={self.token}"
         )
-        row = self._get_parsed_data_row_dict(r, params=params)
+        data_obj = self._check_and_get_data_obj(r)
+
+        row = self._extract_live_data(data_obj, params=params)
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
         return self._format_output(data_format, df)
 
@@ -362,48 +433,13 @@ class Ozone:
             params = self._default_params
 
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
-        row = self._get_parsed_data_row_dict(r, city, params)
+        data_obj = self._check_and_get_data_obj(r, city=city)  # City is for traceback
+
+        row = self._extract_live_data(data_obj, params=params)
+        row["city"] = city
+
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
         return self._format_output(data_format, df)
-
-    def _get_parsed_data_row_dict(
-        self, r: requests.Response, city: str = "N/A", params: List[str] = [""]
-    ) -> dict:
-        self._check_status_code(r)
-        response = json.loads(r.content)
-
-        status = response.get("status")
-        data = response.get("data")
-
-        if status == "ok" and isinstance(data, dict):
-            return self._parse_data(data, city, params)
-
-        if isinstance(data, str):
-            if "Unknown station" in data:
-                # Usually happens when WAQI does not have a station
-                # for the searched city name.
-                raise Exception(f'There is no known AQI station for the city "{city}"')
-
-            if "Invalid geo position" in data:
-                # Usually happens when WAQI can't parse the given
-                # lat-lon coordinate.
-
-                # data is fortunately already informative
-                raise Exception(f"{data}")
-
-            if "Invalid key" in data:
-                raise Exception("Your API token is invalid.")
-
-            # Unlikely since rate limiter is already used,
-            # but included anyway for completeness.
-            if "Over quota" in data:
-                raise Exception("Too many requests within short time.")
-
-        # Catch-all exception for other not yet known cases
-        raise Exception(
-            f'There is a problem with city "{city}", '
-            f"the returned response: {response}"
-        )
 
     def get_multiple_coordinate_air(
         self,
@@ -526,14 +562,16 @@ class Ozone:
             float: Value of the specified parameter for the given city.
         """
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
-        row = self._get_parsed_data_row_dict(r, city, [air_param])
+        data_obj = self._check_and_get_data_obj(r)
+
+        row = self._extract_live_data(data_obj, [air_param])
 
         try:
             result = float(row[air_param])
         except KeyError:
             raise Exception(
                 f'Missing air quality parameter "{air_param}"\n'
-                + 'Try another air quality parameters: "aqi", "no2", or "co"'
+                'Try another air quality parameters: "aqi", "no2", or "co"'
             )
 
         return result
@@ -547,6 +585,12 @@ class Ozone:
             pandas.DataFrame: Table of stations and their relevant information.
 
         """
+        # NOTE, HACK, FIXME:
+        # This functionality was born together with historical data feature.
+        # This endpoint is outside WAQI API's specification, thus not using
+        # _check_and_get_data_obj private method above.
+        # If exists, alternative within API's spec is more than welcome to
+        # replace this implementation.
         r = requests.get(f"https://search.waqi.info/nsearch/station/{city}")
         res = r.json()
 
@@ -608,11 +652,35 @@ class Ozone:
                 f'with country code "{country_code}". '
                 "Ozone will return air quality data from that station. "
                 "If you know this is not the correct city you intended, "
-                "you can use get_search_results_historical method first to "
+                "you can use get_city_station_options method first to "
                 "identify the correct city ID."
             )
 
         df = get_data_from_id(city_id)
+        return self._format_output(data_format, df)
+
+    def get_city_forecast(
+        self,
+        city: str,
+        data_format: str = "df",
+        df: pandas.DataFrame = pandas.DataFrame(),
+    ) -> pandas.DataFrame:
+        """Get a city's air quality forecast
+
+        Args:
+            city (str): The city to get data for.
+            data_format (str): File format for data. Defaults to 'df'.
+                Choose from 'csv', 'json', 'xlsx'.
+            df (pandas.DataFrame, optional): An existing dataframe to
+                append the data to.
+
+        Returns:
+            pandas.DataFrame: The dataframe containing the data.
+            (If you selected another data format, this dataframe will be empty)"""
+        r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
+        data_obj = self._check_and_get_data_obj(r)
+
+        df = self._extract_forecast_data(data_obj)
         return self._format_output(data_format, df)
 
 
