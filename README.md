@@ -1,4 +1,10 @@
-# Ozone ☁️
+# Ozone 
+
+<div align=center
+
+![SVG of ozone logo](/src/media/ozone_logo.svg)
+
+</div>
 
 [![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3)
 <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
