@@ -1,0 +1,217 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:not%20a%20lat;not%20a%20lon/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 21 Apr 2022 01:07:44 GMT
+      Location:
+      - /feed/geo:not%20a%20lat;not%20a%20lon/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:not%20a%20lat;not%20a%20lon/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"error","data":"Invalid geo position - Can not parse ''not
+        a lat,not a lon''"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 21 Apr 2022 01:07:44 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "99.592\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '86'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:None;None/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 21 Apr 2022 01:07:45 GMT
+      Location:
+      - /feed/geo:None;None/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:None;None/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"error","data":"Invalid geo position - Can not parse ''None,None''"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 21 Apr 2022 01:07:45 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "78.482\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '76'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:nan;nan/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 21 Apr 2022 01:07:46 GMT
+      Location:
+      - /feed/geo:nan;nan/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:nan;nan/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"data\":{\"aqi\":999,\"idx\":3439,\"attributions\":[{\"url\":\"http://sthjt.shanxi.gov.cn/\",\"name\":\"Shanxi
+        Province Environmental Monitoring Center (\u5C71\u897F\u7701\u73AF\u5883\u76D1\u6D4B\u4E2D\u5FC3\u7AD9\u7F51\u7AD9\u9996\u9875)\"},{\"url\":\"https://waqi.info/\",\"name\":\"World
+        Air Quality Index Project\"}],\"city\":{\"geo\":[40.0758,113.2994],\"name\":\"Yungang
+        Hotel, Datong (\u5927\u540C\u4E91\u5188\u5BBE\u9986)\",\"url\":\"https://aqicn.org/city/china/datong/yungangbinguan\",\"location\":\"\"},\"dominentpol\":\"pm10\",\"iaqi\":{\"co\":{\"v\":4.6},\"dew\":{\"v\":-10},\"h\":{\"v\":15},\"no2\":{\"v\":11.9},\"o3\":{\"v\":23.6},\"p\":{\"v\":881.1},\"pm10\":{\"v\":999},\"pm25\":{\"v\":261},\"r\":{\"v\":99.6},\"so2\":{\"v\":5.6},\"t\":{\"v\":16.8},\"w\":{\"v\":4}},\"time\":{\"s\":\"2022-04-21
+        08:00:00\",\"tz\":\"+08:00\",\"v\":1650528000,\"iso\":\"2022-04-21T08:00:00+08:00\"},\"forecast\":{\"daily\":{\"o3\":[{\"avg\":8,\"day\":\"2022-04-19\",\"max\":21,\"min\":2},{\"avg\":18,\"day\":\"2022-04-20\",\"max\":29,\"min\":9},{\"avg\":17,\"day\":\"2022-04-21\",\"max\":22,\"min\":10},{\"avg\":8,\"day\":\"2022-04-22\",\"max\":22,\"min\":2},{\"avg\":18,\"day\":\"2022-04-23\",\"max\":26,\"min\":9},{\"avg\":4,\"day\":\"2022-04-24\",\"max\":18,\"min\":1},{\"avg\":1,\"day\":\"2022-04-25\",\"max\":1,\"min\":1},{\"avg\":1,\"day\":\"2022-04-26\",\"max\":1,\"min\":1}],\"pm10\":[{\"avg\":20,\"day\":\"2022-04-19\",\"max\":28,\"min\":10},{\"avg\":38,\"day\":\"2022-04-20\",\"max\":46,\"min\":19},{\"avg\":253,\"day\":\"2022-04-21\",\"max\":396,\"min\":46},{\"avg\":45,\"day\":\"2022-04-22\",\"max\":58,\"min\":19},{\"avg\":208,\"day\":\"2022-04-23\",\"max\":396,\"min\":55},{\"avg\":396,\"day\":\"2022-04-24\",\"max\":396,\"min\":396},{\"avg\":330,\"day\":\"2022-04-25\",\"max\":396,\"min\":174},{\"avg\":144,\"day\":\"2022-04-26\",\"max\":396,\"min\":21},{\"avg\":68,\"day\":\"2022-04-27\",\"max\":116,\"min\":28}],\"pm25\":[{\"avg\":55,\"day\":\"2022-04-19\",\"max\":89,\"min\":21},{\"avg\":66,\"day\":\"2022-04-20\",\"max\":68,\"min\":40},{\"avg\":181,\"day\":\"2022-04-21\",\"max\":252,\"min\":68},{\"avg\":75,\"day\":\"2022-04-22\",\"max\":89,\"min\":42},{\"avg\":177,\"day\":\"2022-04-23\",\"max\":252,\"min\":76},{\"avg\":252,\"day\":\"2022-04-24\",\"max\":252,\"min\":252},{\"avg\":225,\"day\":\"2022-04-25\",\"max\":252,\"min\":174},{\"avg\":123,\"day\":\"2022-04-26\",\"max\":252,\"min\":42},{\"avg\":105,\"day\":\"2022-04-27\",\"max\":159,\"min\":68}],\"uvi\":[{\"avg\":1,\"day\":\"2022-04-19\",\"max\":7,\"min\":0},{\"avg\":1,\"day\":\"2022-04-20\",\"max\":7,\"min\":0},{\"avg\":1,\"day\":\"2022-04-21\",\"max\":6,\"min\":0},{\"avg\":1,\"day\":\"2022-04-22\",\"max\":7,\"min\":0},{\"avg\":1,\"day\":\"2022-04-23\",\"max\":7,\"min\":0},{\"avg\":1,\"day\":\"2022-04-24\",\"max\":7,\"min\":0},{\"avg\":2,\"day\":\"2022-04-25\",\"max\":7,\"min\":0}]}},\"debug\":{\"sync\":\"2022-04-21T09:30:25+09:00\"}}}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 21 Apr 2022 01:07:47 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "975.818\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '2421'
+    status:
+      code: 200
+      message: OK
+version: 1
