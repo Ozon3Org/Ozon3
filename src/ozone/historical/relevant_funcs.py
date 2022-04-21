@@ -1,15 +1,15 @@
-/** NOTE(lahdjirayhan):
-    This long string is excerpted from one of aqicn.org frontend's scripts.
-    It contains minimal number of relevant functions required to decipher backend-sent data.
-    A small number of variable names have been manually de-obfuscated.
-    Several comments has been made during de-obfuscation process to reduce mental workload.
-    -----
-    The last function i.e. gatekeep_convert_date_object_to_unix_seconds
-    is manually written. It's a wrapper that needs to be there to make it
-    possible to get out Date information out from JavaScript context
-    into Python context. See the function below for more information.
-*/
+# NOTE(lahdjirayhan):
+#     This long string is excerpted from one of aqicn.org frontend's scripts.
+#     It contains minimal number of relevant functions required to decipher backend-sent data.
+#     A small number of variable names have been manually de-obfuscated.
+#     Several comments has been made during de-obfuscation process to reduce mental workload.
+#     -----
+#     The last function i.e. gatekeep_convert_date_object_to_unix_seconds
+#     is manually written. It's a wrapper that needs to be there to make it
+#     possible to get out Date information out from JavaScript context
+#     into Python context. See the function below for more information.
 
+JS_FUNCS: str = """
 function checkValidDigitNumber(t) {
     return !isNaN(t) && parseInt(Number(t)) == t && !isNaN(parseInt(t, 10))
 }
@@ -167,3 +167,4 @@ function gatekeep_convert_date_object_to_unix_seconds(t) {
     }
     return RES
 }
+"""
