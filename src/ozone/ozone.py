@@ -12,17 +12,19 @@ Attributes (module level):
         1 second.
 """
 
-import pandas
-import numpy
-import requests
-import json
 import itertools
-from pathlib import Path
+import json
 import warnings
+from pathlib import Path
+from typing import Any, Dict, List, Tuple, Union
+
+import numpy
+import pandas
+import requests
 from ratelimit import limits, sleep_and_retry
-from typing import Any, Dict, List, Union, Tuple
-from .urls import URLs
+
 from .historical._reverse_engineered import get_data_from_id
+from .urls import URLs
 
 # 1000 calls per second is the limit allowed by API
 CALLS: int = 1000

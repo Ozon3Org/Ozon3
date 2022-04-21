@@ -1,21 +1,23 @@
 import json
-from pathlib import Path
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
 import js2py
 import pandas
 import requests
 from sseclient import SSEClient
 
+from .relevant_funcs import JS_FUNCS
+
 # NOTE(lahdjirayhan):
-# The following variable is a long string, a source JS code that
+# The JS_FUNCS variable is a long string, a source JS code that
 # is excerpted from one of aqicn.org frontend's scripts.
-# See relevant_funcs.js for more information.
-_JS_FUNCS = Path(__file__).parent.joinpath("relevant_funcs.js").read_text()
+# See relevant_funcs.py for more information.
+
 
 # Make js context where js code can be executed
 _context = js2py.EvalJs()
-_context.execute(_JS_FUNCS)
+_context.execute(JS_FUNCS)
 
 
 def get_results_from_backend(city_id: int) -> List[Dict[str, Any]]:
