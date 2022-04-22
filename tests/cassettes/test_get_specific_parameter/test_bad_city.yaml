@@ -1,0 +1,138 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//a%20definitely%20nonexistent%20city/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:27:11 GMT
+      Location:
+      - /feed/a%20definitely%20nonexistent%20city/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/a%20definitely%20nonexistent%20city/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"error","data":"Unknown station"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:27:11 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "84.841\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '43'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed///?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:27:12 GMT
+      Location:
+      - /feed/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"error","message":"404"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:27:12 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      content-length:
+      - '34'
+    status:
+      code: 200
+      message: OK
+version: 1
