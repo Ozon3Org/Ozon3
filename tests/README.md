@@ -2,7 +2,7 @@
 
 Directories:
 
-1. `cassettes/`: Location of vcrpy and pytest-vcr cassettes.
+1. `cassettes/`: Location of vcrpy and pytest-recording cassettes.
 
 Files:
 
