@@ -1,0 +1,225 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:0;0/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:26:44 GMT
+      Location:
+      - /feed/geo:0;0/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:0;0/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":{"aqi":165,"idx":12826,"attributions":[{"url":"https://gh.usembassy.gov/","name":"Accra
+        Air Quality Monitor - US EPA","logo":"US-StateDepartment.png"},{"url":"https://waqi.info/","name":"World
+        Air Quality Index Project"}],"city":{"geo":[5.580642,-0.170724],"name":"Accra
+        US Embassy, Ghana","url":"https://aqicn.org/city/ghana/accra/us-embassy","location":""},"dominentpol":"pm25","iaqi":{"dew":{"v":24},"h":{"v":88},"p":{"v":1011},"pm25":{"v":165},"t":{"v":26},"w":{"v":3.6},"wg":{"v":11.8}},"time":{"s":"2022-04-22
+        00:00:00","tz":"+00:00","v":1650585600,"iso":"2022-04-22T00:00:00Z"},"forecast":{"daily":{"o3":[{"avg":6,"day":"2022-04-20","max":22,"min":1},{"avg":3,"day":"2022-04-21","max":6,"min":1},{"avg":6,"day":"2022-04-22","max":13,"min":1},{"avg":4,"day":"2022-04-23","max":10,"min":1},{"avg":5,"day":"2022-04-24","max":19,"min":1},{"avg":1,"day":"2022-04-25","max":2,"min":1},{"avg":1,"day":"2022-04-26","max":1,"min":1},{"avg":1,"day":"2022-04-27","max":1,"min":1}],"pm10":[{"avg":26,"day":"2022-04-20","max":37,"min":15},{"avg":29,"day":"2022-04-21","max":45,"min":12},{"avg":28,"day":"2022-04-22","max":44,"min":12},{"avg":28,"day":"2022-04-23","max":51,"min":9},{"avg":24,"day":"2022-04-24","max":39,"min":10},{"avg":18,"day":"2022-04-25","max":40,"min":1},{"avg":1,"day":"2022-04-26","max":1,"min":1},{"avg":1,"day":"2022-04-27","max":1,"min":1}],"pm25":[{"avg":55,"day":"2022-04-20","max":71,"min":30},{"avg":56,"day":"2022-04-21","max":78,"min":28},{"avg":60,"day":"2022-04-22","max":98,"min":27},{"avg":59,"day":"2022-04-23","max":102,"min":15},{"avg":46,"day":"2022-04-24","max":80,"min":1},{"avg":1,"day":"2022-04-25","max":1,"min":1},{"avg":1,"day":"2022-04-26","max":1,"min":1},{"avg":1,"day":"2022-04-27","max":1,"min":1}]}},"debug":{"sync":"2022-04-22T10:12:55+09:00"}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:26:45 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "466.888\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '1816'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:50;0/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:26:45 GMT
+      Location:
+      - /feed/geo:50;0/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:50;0/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":{"aqi":57,"idx":8620,"attributions":[{"url":"http://www.airnormand.fr/","name":"Air
+        Normand and Air C.O.M.","logo":"France-AirNormand.png"},{"url":"https://waqi.info/","name":"World
+        Air Quality Index Project"}],"city":{"geo":[49.5142141381999,0.100861111709392],"name":"Ville-haute
+        EREA Genevoix, Le Havre, France","url":"https://aqicn.org/city/france/le-havre/ville-haute-erea-genevoix","location":""},"dominentpol":"pm25","iaqi":{"dew":{"v":6},"h":{"v":81},"no2":{"v":4.6},"o3":{"v":27.7},"p":{"v":1005},"pm10":{"v":23},"pm25":{"v":57},"so2":{"v":0.6},"t":{"v":9},"w":{"v":4.1}},"time":{"s":"2022-04-22
+        03:00:00","tz":"+02:00","v":1650596400,"iso":"2022-04-22T03:00:00+02:00"},"forecast":{"daily":{"o3":[{"avg":28,"day":"2022-04-21","max":39,"min":19},{"avg":23,"day":"2022-04-22","max":30,"min":16},{"avg":27,"day":"2022-04-23","max":36,"min":20},{"avg":28,"day":"2022-04-24","max":33,"min":23},{"avg":29,"day":"2022-04-25","max":29,"min":24}],"pm10":[{"avg":15,"day":"2022-04-21","max":18,"min":11},{"avg":20,"day":"2022-04-22","max":27,"min":14},{"avg":16,"day":"2022-04-23","max":22,"min":9},{"avg":18,"day":"2022-04-24","max":25,"min":8},{"avg":26,"day":"2022-04-25","max":29,"min":26}],"pm25":[{"avg":53,"day":"2022-04-21","max":59,"min":44},{"avg":65,"day":"2022-04-22","max":79,"min":52},{"avg":55,"day":"2022-04-23","max":70,"min":32},{"avg":54,"day":"2022-04-24","max":64,"min":28},{"avg":52,"day":"2022-04-25","max":62,"min":52}],"uvi":[{"avg":0,"day":"2022-04-21","max":4,"min":0},{"avg":0,"day":"2022-04-22","max":2,"min":0},{"avg":0,"day":"2022-04-23","max":3,"min":0},{"avg":1,"day":"2022-04-24","max":4,"min":0},{"avg":0,"day":"2022-04-25","max":4,"min":0},{"avg":1,"day":"2022-04-26","max":4,"min":0}]}},"debug":{"sync":"2022-04-22T10:13:48+09:00"}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:26:46 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "353.567\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '1791'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:40;-75/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:26:46 GMT
+      Location:
+      - /feed/geo:40;-75/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:40;-75/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":{"aqi":22,"idx":10168,"attributions":[{"url":"http://www.nj.gov/dep/daq/","name":"NJDEP/DAQ
+        - New Jersey Department of Environmental Protection - Division of Air Quality","logo":"US-NJDEC.png"},{"url":"http://www.airnow.gov/","name":"Air
+        Now - US EPA"},{"url":"https://waqi.info/","name":"World Air Quality Index
+        Project"}],"city":{"geo":[39.934635,-75.126126],"name":"Camden Spruce St,
+        NewJersey, USA","url":"https://aqicn.org/city/usa/newjersey/camden-spruce-st","location":""},"dominentpol":"pm25","iaqi":{"co":{"v":5.6},"h":{"v":58.8},"no2":{"v":0.2},"o3":{"v":4.8},"p":{"v":1024.4},"pm25":{"v":22},"so2":{"v":1.5},"t":{"v":14.7},"w":{"v":5},"wg":{"v":10.2}},"time":{"s":"2022-04-21
+        20:00:00","tz":"-05:00","v":1650571200,"iso":"2022-04-21T20:00:00-05:00"},"forecast":{"daily":{"o3":[{"avg":18,"day":"2022-04-19","max":19,"min":18},{"avg":9,"day":"2022-04-20","max":21,"min":1},{"avg":15,"day":"2022-04-21","max":23,"min":4},{"avg":11,"day":"2022-04-22","max":27,"min":4},{"avg":14,"day":"2022-04-23","max":22,"min":7},{"avg":18,"day":"2022-04-24","max":40,"min":12},{"avg":2,"day":"2022-04-25","max":18,"min":1},{"avg":1,"day":"2022-04-26","max":1,"min":1}],"pm10":[{"avg":4,"day":"2022-04-19","max":5,"min":4},{"avg":12,"day":"2022-04-20","max":32,"min":4},{"avg":9,"day":"2022-04-21","max":27,"min":5},{"avg":15,"day":"2022-04-22","max":19,"min":8},{"avg":10,"day":"2022-04-23","max":15,"min":5},{"avg":23,"day":"2022-04-24","max":41,"min":9},{"avg":6,"day":"2022-04-25","max":10,"min":1},{"avg":1,"day":"2022-04-26","max":1,"min":1}],"pm25":[{"avg":12,"day":"2022-04-19","max":13,"min":11},{"avg":33,"day":"2022-04-20","max":77,"min":10},{"avg":26,"day":"2022-04-21","max":73,"min":14},{"avg":47,"day":"2022-04-22","max":60,"min":20},{"avg":32,"day":"2022-04-23","max":49,"min":15},{"avg":42,"day":"2022-04-24","max":110,"min":1},{"avg":1,"day":"2022-04-25","max":1,"min":1},{"avg":1,"day":"2022-04-26","max":1,"min":1}],"uvi":[{"avg":2,"day":"2022-04-21","max":6,"min":0},{"avg":2,"day":"2022-04-22","max":8,"min":0},{"avg":1,"day":"2022-04-23","max":3,"min":0},{"avg":2,"day":"2022-04-24","max":7,"min":0},{"avg":1,"day":"2022-04-25","max":6,"min":0},{"avg":0,"day":"2022-04-26","max":0,"min":0}]}},"debug":{"sync":"2022-04-22T10:22:09+09:00"}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:26:47 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - 1.09533ms
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '2277'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,220 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:50;0/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:26:40 GMT
+      Location:
+      - /feed/geo:50;0/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:50;0/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":{"aqi":57,"idx":8620,"attributions":[{"url":"http://www.airnormand.fr/","name":"Air
+        Normand and Air C.O.M.","logo":"France-AirNormand.png"},{"url":"https://waqi.info/","name":"World
+        Air Quality Index Project"}],"city":{"geo":[49.5142141381999,0.100861111709392],"name":"Ville-haute
+        EREA Genevoix, Le Havre, France","url":"https://aqicn.org/city/france/le-havre/ville-haute-erea-genevoix","location":""},"dominentpol":"pm25","iaqi":{"dew":{"v":6},"h":{"v":81},"no2":{"v":4.6},"o3":{"v":27.7},"p":{"v":1005},"pm10":{"v":23},"pm25":{"v":57},"so2":{"v":0.6},"t":{"v":9},"w":{"v":4.1}},"time":{"s":"2022-04-22
+        03:00:00","tz":"+02:00","v":1650596400,"iso":"2022-04-22T03:00:00+02:00"},"forecast":{"daily":{"o3":[{"avg":28,"day":"2022-04-21","max":39,"min":19},{"avg":23,"day":"2022-04-22","max":30,"min":16},{"avg":27,"day":"2022-04-23","max":36,"min":20},{"avg":28,"day":"2022-04-24","max":33,"min":23},{"avg":29,"day":"2022-04-25","max":29,"min":24}],"pm10":[{"avg":15,"day":"2022-04-21","max":18,"min":11},{"avg":20,"day":"2022-04-22","max":27,"min":14},{"avg":16,"day":"2022-04-23","max":22,"min":9},{"avg":18,"day":"2022-04-24","max":25,"min":8},{"avg":26,"day":"2022-04-25","max":29,"min":26}],"pm25":[{"avg":53,"day":"2022-04-21","max":59,"min":44},{"avg":65,"day":"2022-04-22","max":79,"min":52},{"avg":55,"day":"2022-04-23","max":70,"min":32},{"avg":54,"day":"2022-04-24","max":64,"min":28},{"avg":52,"day":"2022-04-25","max":62,"min":52}],"uvi":[{"avg":0,"day":"2022-04-21","max":4,"min":0},{"avg":0,"day":"2022-04-22","max":2,"min":0},{"avg":0,"day":"2022-04-23","max":3,"min":0},{"avg":1,"day":"2022-04-24","max":4,"min":0},{"avg":0,"day":"2022-04-25","max":4,"min":0},{"avg":1,"day":"2022-04-26","max":4,"min":0}]}},"debug":{"sync":"2022-04-22T10:13:48+09:00"}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:26:41 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "302.386\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '1791'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:50;1/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:26:41 GMT
+      Location:
+      - /feed/geo:50;1/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:50;1/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":{"aqi":53,"idx":10088,"attributions":[{"url":"http://www.airnormand.fr/","name":"Air
+        Normand and Air C.O.M.","logo":"France-AirNormand.png"},{"url":"https://waqi.info/","name":"World
+        Air Quality Index Project"}],"city":{"geo":[49.9180080986299,1.07397213322362],"name":"Dieppe,
+        avenue Gambetta, Trafic, France","url":"https://aqicn.org/city/france/normandie/dieppe--avenue-gambetta--trafic","location":""},"dominentpol":"pm25","iaqi":{"h":{"v":92.5},"no2":{"v":10.1},"p":{"v":1005.9},"pm10":{"v":35},"pm25":{"v":53},"t":{"v":4.4},"w":{"v":0.3},"wg":{"v":0.2}},"time":{"s":"2022-04-22
+        02:00:00","tz":"+02:00","v":1650592800,"iso":"2022-04-22T02:00:00+02:00"},"forecast":{"daily":{"o3":[{"avg":32,"day":"2022-04-21","max":40,"min":25},{"avg":23,"day":"2022-04-22","max":33,"min":17},{"avg":28,"day":"2022-04-23","max":38,"min":20},{"avg":28,"day":"2022-04-24","max":34,"min":22},{"avg":28,"day":"2022-04-25","max":28,"min":24}],"pm10":[{"avg":14,"day":"2022-04-21","max":17,"min":9},{"avg":17,"day":"2022-04-22","max":23,"min":13},{"avg":14,"day":"2022-04-23","max":19,"min":7},{"avg":17,"day":"2022-04-24","max":20,"min":8},{"avg":21,"day":"2022-04-25","max":23,"min":21}],"pm25":[{"avg":49,"day":"2022-04-21","max":61,"min":28},{"avg":57,"day":"2022-04-22","max":72,"min":47},{"avg":48,"day":"2022-04-23","max":64,"min":25},{"avg":56,"day":"2022-04-24","max":65,"min":32},{"avg":57,"day":"2022-04-25","max":71,"min":57}],"uvi":[{"avg":0,"day":"2022-04-21","max":4,"min":0},{"avg":0,"day":"2022-04-22","max":3,"min":0},{"avg":0,"day":"2022-04-23","max":4,"min":0},{"avg":1,"day":"2022-04-24","max":4,"min":0},{"avg":0,"day":"2022-04-25","max":4,"min":0},{"avg":1,"day":"2022-04-26","max":4,"min":0}]}},"debug":{"sync":"2022-04-22T10:08:51+09:00"}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:26:42 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "205.204\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '1769'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//geo:lol;bruh/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 22 Apr 2022 01:26:43 GMT
+      Location:
+      - /feed/geo:lol;bruh/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/geo:lol;bruh/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"error","data":"Invalid geo position - Can not parse ''lol,bruh''"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:26:43 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "94.611\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '75'
+    status:
+      code: 200
+      message: OK
+version: 1

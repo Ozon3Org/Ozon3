@@ -1,0 +1,73 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/map/bounds/?latlng=51%2C-0.2%2C52%2C1&token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":[{"lat":51.45617,"lon":0.634889,"uid":3207,"aqi":"46","station":{"name":"Rochester
+        Stoke, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.544206,"lon":0.678408,"uid":3212,"aqi":"34","station":{"name":"Southend-on-Sea,
+        United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.518167,"lon":0.439548,"uid":3213,"aqi":"46","station":{"name":"Stanford-le-Hope
+        Roadside, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.54421,"lon":-0.175269,"uid":3166,"aqi":"34","station":{"name":"Camden
+        Kerbside, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.52253,"lon":-0.154611,"uid":3193,"aqi":"38","station":{"name":"London
+        Marylebone Road, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.486884,"lon":0.017901,"uid":7955,"aqi":"34","station":{"name":"Greenwich
+        - Woolwich Flyover, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.514525336231,"lon":-0.10451562633788,"uid":7949,"aqi":"46","station":{"name":"City
+        of London - Farringdon Street, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.5073509,"lon":-0.1277583,"uid":5724,"aqi":"52","station":{"name":"London","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.374264,"lon":0.54797,"uid":3169,"aqi":"38","station":{"name":"Chatham
+        Roadside, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.494648681305,"lon":0.13727911123218,"uid":7951,"aqi":"37","station":{"name":"Bexley
+        - Belvedere West, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.490610208215,"lon":0.15891449392752,"uid":7952,"aqi":"-","station":{"name":"Bexley
+        - Belvedere, United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.486957,"lon":0.095111,"uid":7954,"aqi":"27","station":{"name":"Greenwich
+        - Plumstead High Street, United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.483907253348,"lon":0.00040739693584974,"uid":10103,"aqi":"23","station":{"name":"Greenwich
+        - Trafalgar Road (Hoskins St), United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.57661,"lon":0.030858,"uid":8918,"aqi":"36","station":{"name":"Redbridge
+        - Gardner Close, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.449674,"lon":-0.037418,"uid":11653,"aqi":"32","station":{"name":"London
+        Honor Oak Park, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.5993,"lon":-0.068218,"uid":3179,"aqi":"-","station":{"name":"Haringey
+        Roadside, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.520787459334,"lon":0.20546070569404,"uid":7947,"aqi":"22","station":{"name":"Havering
+        - Rainham, United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.474954,"lon":-0.039641,"uid":7956,"aqi":"52","station":{"name":"Lewisham
+        - New Cross, United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.389286904505,"lon":-0.14166152477989,"uid":7959,"aqi":"42","station":{"name":"Sutton
+        - Beddington Lane north, United Kingdom","time":"2022-04-22T07:00:00+09:00"}},{"lat":51.515046167401,"lon":-0.0084184926564274,"uid":7948,"aqi":"44","station":{"name":"Tower
+        Hamlets - Blackwall, United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.527706619465,"lon":-0.12905320528252,"uid":7945,"aqi":"-","station":{"name":"Camden
+        - Euston Road, United Kingdom","time":"2022-04-22T05:00:00+09:00"}},{"lat":51.52229,"lon":-0.125889,"uid":3189,"aqi":"38","station":{"name":"London
+        Bloomsbury, United Kingdom","time":"2022-04-22T06:00:00+09:00"}},{"lat":51.513847178423,"lon":-0.077765681752,"uid":8919,"aqi":"-","station":{"name":"City
+        of London - Sir John Cass School, United Kingdom","time":"2022-04-20T12:00:00+09:00"}},{"lat":51.46603,"lon":0.184806,"uid":3188,"aqi":"37","station":{"name":"London
+        Bexley, United Kingdom","time":"2022-04-22T07:00:00+09:00"}},{"lat":51.456357,"lon":0.040725,"uid":7957,"aqi":"33","station":{"name":"Greenwich
+        - Westhorne Avenue, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.493774669582,"lon":0.010779623703256,"uid":10876,"aqi":"17","station":{"name":"Greenwich
+        - John Harrison Way, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.569484331524,"lon":0.082907474896495,"uid":9041,"aqi":"17","station":{"name":"Redbridge
+        - Ley Street, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.49467,"lon":-0.131931,"uid":10874,"aqi":"33","station":{"name":"London
+        Westminster, United Kingdom","time":"2022-04-22T07:00:00+09:00"}},{"lat":51.526454,"lon":-0.08491,"uid":7946,"aqi":"32","station":{"name":"Hackney
+        - Old Street, United Kingdom","time":"2022-04-22T08:00:00+09:00"}},{"lat":51.490532,"lon":0.074003,"uid":7953,"aqi":"42","station":{"name":"Greenwich
+        - A206 Burrage Grove, United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.410039,"lon":-0.127523,"uid":8923,"aqi":"34","station":{"name":"Croydon
+        - Norbury Manor, United Kingdom","time":"2022-04-22T09:00:00+09:00"}},{"lat":51.562376,"lon":-0.004898,"uid":11768,"aqi":"-","station":{"name":"Waltham
+        Forest Dawlish Rd, United Kingdom","time":"2022-04-22T01:00:00+09:00"}}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 22 Apr 2022 01:27:03 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "236.354\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '4997'
+    status:
+      code: 200
+      message: OK
+version: 1
