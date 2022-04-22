@@ -228,7 +228,9 @@ class Ozone:
         df.index = pandas.to_datetime(df.index)
         return df
 
-    def _check_and_get_data_obj(self, r: requests.Response, **check_debug_info) -> dict:
+    def _check_and_get_data_obj(
+        self, r: requests.Response, **check_debug_info
+    ) -> Union[dict, List[dict]]:
         """Get data object from API response and throw error if any is encouuntered
 
         Args:
@@ -239,8 +241,8 @@ class Ozone:
                 city names to show it instead of just generic exception message.
 
         Returns:
-            dict: The data object i.e. the `data` part of the API response,
-                in dictionary format (already JSON-ified).
+            Union[dict, List[dict]]: The data object i.e. the `data` part of the
+                API response, in dictionary or list format (already JSON-ified).
 
         """
         self._check_status_code(r)
@@ -249,8 +251,11 @@ class Ozone:
         status = response.get("status")
         data = response.get("data")
 
-        if status == "ok" and isinstance(data, dict):
-            return data
+        if status == "ok":
+            if isinstance(data, dict) or isinstance(data, list):
+                # Only return data if status is ok and data is either dict or list.
+                # Otherwise it gets to exception raisers below.
+                return data
 
         if isinstance(data, str):
             if "Unknown station" in data:
