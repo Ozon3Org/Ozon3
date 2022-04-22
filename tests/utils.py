@@ -4,9 +4,6 @@ import vcr
 from decouple import config
 from ozone import Ozone
 
-DEFAULT_OUTPUT_FOLDER = Path("ozone_output")
-DEFAULT_OUTPUT_FILE = DEFAULT_OUTPUT_FOLDER / "air_quality_data"
-
 
 # Filter out token in response headers
 def before_record_response(response):
@@ -40,3 +37,8 @@ vcr_kwargs = {
 WAQI_TOKEN = config("WAQI_TOKEN", default="DUMMY_TOKEN")
 with vcr.use_cassette("tests/cassettes/ozone_init.yaml", **vcr_kwargs):
     api = Ozone(WAQI_TOKEN)
+
+# Declare these here to be used globally
+# instead of repeatedly in each test file
+DEFAULT_OUTPUT_FOLDER = Path("ozone_output")
+DEFAULT_OUTPUT_FILE = DEFAULT_OUTPUT_FOLDER / "air_quality_data"
