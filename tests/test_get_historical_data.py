@@ -34,9 +34,6 @@ def test_arguments_not_named():
 @pytest.mark.vcr
 @pytest.mark.filterwarnings("ignore::UserWarning")
 def test_correct_data_format():
-    # There shouldn't be an output folder by default
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
     # Not specifying data format shouldn't create an output directory
     api.get_historical_data(city_id=5724)
     assert not DEFAULT_OUTPUT_FOLDER.exists()

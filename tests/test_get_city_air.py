@@ -89,9 +89,6 @@ def test_bad_data_format():
 
 @pytest.mark.vcr
 def test_correct_data_format():
-    # There shouldn't be an output folder by default
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
     # Not specifying data format shouldn't create an output directory
     api.get_city_air("london")
     assert not DEFAULT_OUTPUT_FOLDER.exists()

@@ -110,9 +110,6 @@ def test_bad_data_format():
 
 @pytest.mark.vcr
 def test_output_formats():
-    # There shouldn't be an output folder by default
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
     # Not specifying data format shouldn't create an output directory
     api.get_coordinate_air(51.51, -0.13)
     assert not DEFAULT_OUTPUT_FOLDER.exists()
