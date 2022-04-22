@@ -9,6 +9,9 @@
 #     possible to get out Date information out from JavaScript context
 #     into Python context. See the function below for more information.
 
+# flake8: noqa
+
+
 JS_FUNCS: str = """
 function checkValidDigitNumber(t) {
     return !isNaN(t) && parseInt(Number(t)) == t && !isNaN(parseInt(t, 10))
