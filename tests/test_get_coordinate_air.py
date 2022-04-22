@@ -25,7 +25,7 @@ def test_column_expected_contents():
 
     # London's coordinates
     assert result.at[0, "latitude"] == pytest.approx(51.507351)
-    assert result.at[0, "longitude"] == pytest.approx(-0.127759)
+    assert result.at[0, "longitude"] == pytest.approx(-0.1277583)
 
 
 @pytest.mark.vcr
@@ -85,9 +85,6 @@ def test_bad_coordinates():
     with pytest.raises(Exception, match="Invalid geo position"):
         api.get_coordinate_air(None, None)
 
-    with pytest.raises(Exception, match="Invalid geo position"):
-        api.get_coordinate_air(numpy.nan, numpy.nan)
-
     # Giving coordinates as string of numerics is fine,
     # even though it's not in accordance with Ozone's method definition.
     api.get_coordinate_air("51.51", "-0.13")
@@ -95,6 +92,9 @@ def test_bad_coordinates():
     # Giving nonsensical coordinates is also fine
     api.get_coordinate_air(5000, 5000)
     api.get_coordinate_air(-5000, -5000)
+
+    # Giving nan coordinates is also fine
+    api.get_coordinate_air(numpy.nan, numpy.nan)
 
 
 @pytest.mark.vcr
