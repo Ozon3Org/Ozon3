@@ -1,10 +1,12 @@
-# Ozone 
+
 
 <div align=center
 
-![SVG of ozone logo](/src/media/ozone_logo.svg)
+</br>
 
-</div>
+# Ozone 
+
+![SVG of ozone logo](/src/media/ozone_logo.svg)
 
 [![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3)
 <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
@@ -12,9 +14,10 @@
 [![Complete Documentation](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-orange.svg?style=flat)](https://www.buymeacoffee.com/MilindSharma)
 
-
-
 ## The simplest AQI API
+
+</div>
+
 Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozone can help you with.  
 With Ozone, just 4 lines of code are enough to get you the data you need. And the best part is that you can trust this data to be accurate and reliable, since the package uses the World Air Quality Index's API under the hood! ✅ 📈
 
