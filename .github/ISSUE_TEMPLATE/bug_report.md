@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: 'Create a report to help Ozone improve. Treat this template more as a guide
-  to filling a good issue, rather than a rulebook '
+  to filing a good issue, rather than something you have to fill completely every time.'
 title: "[BUG]"
 labels: bug
 assignees: ''
