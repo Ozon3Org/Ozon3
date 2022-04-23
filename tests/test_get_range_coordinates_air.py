@@ -25,8 +25,8 @@ def test_column_expected_contents():
     # Sanity check: make sure lat-lon are within range
     assert (result["latitude"] > LOWER_BOUND[0]).all()
     assert (result["latitude"] < UPPER_BOUND[0]).all()
-    assert (result["longitude"] < LOWER_BOUND[1]).all()
-    assert (result["longitude"] > UPPER_BOUND[1]).all()
+    assert (result["longitude"] > LOWER_BOUND[1]).all()
+    assert (result["longitude"] < UPPER_BOUND[1]).all()
 
     # Range of coordinates: no city was given, hence city must all be nan
     assert numpy.isnan(result["city"]).all()
