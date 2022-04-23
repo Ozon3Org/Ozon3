@@ -341,10 +341,8 @@ class Ozone:
                 "Health alert: everyone may experience more serious health effects."
             )
         else:
-            raise Exception(
-                f"{aqi} is not valid air quality index value. "
-                "Should be between 0 to 500."
-            )
+            AQI_meaning = "Invalid AQI value"
+            AQI_health_implications = "Invalid AQI value"
 
         return AQI_meaning, AQI_health_implications
 
