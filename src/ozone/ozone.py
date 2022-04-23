@@ -31,7 +31,7 @@ CALLS: int = 1000
 RATE_LIMIT: int = 1
 
 
-def as_float(x: Any) -> float:
+def _as_float(x: Any) -> float:
     """Convert x into a float. If unable, convert into numpy.nan instead.
 
     Naming and functionality inspired by R function as.numeric()"""
@@ -206,14 +206,14 @@ class Ozone:
             try:
                 if param == "aqi":
                     # This is in different part of JSON object.
-                    row["aqi"] = as_float(data_obj["aqi"])
+                    row["aqi"] = _as_float(data_obj["aqi"])
                     # This adds AQI_meaning and AQI_health_implications data
                     (
                         row["AQI_meaning"],
                         row["AQI_health_implications"],
-                    ) = self._AQI_meaning(as_float(data_obj["aqi"]))
+                    ) = self._AQI_meaning(_as_float(data_obj["aqi"]))
                 else:
-                    row[param] = as_float(data_obj["iaqi"][param]["v"])
+                    row[param] = _as_float(data_obj["iaqi"][param]["v"])
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
@@ -577,7 +577,7 @@ class Ozone:
         row = self._extract_live_data(data_obj, [air_param])
 
         try:
-            result = as_float(row[air_param])
+            result = _as_float(row[air_param])
         except KeyError:
             raise Exception(
                 f'Missing air quality parameter "{air_param}"\n'
