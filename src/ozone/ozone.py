@@ -31,6 +31,16 @@ CALLS: int = 1000
 RATE_LIMIT: int = 1
 
 
+def _as_float(x: Any) -> float:
+    """Convert x into a float. If unable, convert into numpy.nan instead.
+
+    Naming and functionality inspired by R function as.numeric()"""
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return numpy.nan
+
+
 class Ozone:
     """Primary class for Ozone API
 
@@ -196,14 +206,14 @@ class Ozone:
             try:
                 if param == "aqi":
                     # This is in different part of JSON object.
-                    row["aqi"] = float(data_obj["aqi"])
+                    row["aqi"] = _as_float(data_obj["aqi"])
                     # This adds AQI_meaning and AQI_health_implications data
                     (
                         row["AQI_meaning"],
                         row["AQI_health_implications"],
-                    ) = self._AQI_meaning(float(data_obj["aqi"]))
+                    ) = self._AQI_meaning(_as_float(data_obj["aqi"]))
                 else:
-                    row[param] = float(data_obj["iaqi"][param]["v"])
+                    row[param] = _as_float(data_obj["iaqi"][param]["v"])
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
@@ -336,10 +346,8 @@ class Ozone:
                 "Health alert: everyone may experience more serious health effects."
             )
         else:
-            raise Exception(
-                f"{aqi} is not valid air quality index value. "
-                "Should be between 0 to 500."
-            )
+            AQI_meaning = "Invalid AQI value"
+            AQI_health_implications = "Invalid AQI value"
 
         return AQI_meaning, AQI_health_implications
 
@@ -574,7 +582,7 @@ class Ozone:
         row = self._extract_live_data(data_obj, [air_param])
 
         try:
-            result = float(row[air_param])
+            result = _as_float(row[air_param])
         except KeyError:
             raise Exception(
                 f'Missing air quality parameter "{air_param}"\n'
