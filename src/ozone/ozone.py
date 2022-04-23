@@ -662,6 +662,12 @@ class Ozone:
                 "you can use get_city_station_options method first to "
                 "identify the correct city ID."
             )
+        else:
+            if city is not None:
+                warnings.warn(
+                    "Both arguments city and city_id were supplied. "
+                    "Only city_id will be used. city argument will be ignored."
+                )
 
         df = get_data_from_id(city_id)
         return self._format_output(data_format, df)
