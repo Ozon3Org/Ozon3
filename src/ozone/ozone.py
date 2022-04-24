@@ -31,6 +31,16 @@ CALLS: int = 1000
 RATE_LIMIT: int = 1
 
 
+def _as_float(x: Any) -> float:
+    """Convert x into a float. If unable, convert into numpy.nan instead.
+
+    Naming and functionality inspired by R function as.numeric()"""
+    try:
+        return float(x)
+    except (TypeError, ValueError):
+        return numpy.nan
+
+
 class Ozone:
     """Primary class for Ozone API
 
@@ -62,18 +72,27 @@ class Ozone:
         "wg",
     ]
 
-    def __init__(self, token: str = "", output_path: str = "."):
+    def __init__(
+        self, token: str = "", output_path: str = ".", file_name: str = "air_quality"
+    ):
         """Initialises the class instance and sets the API token value
 
         Args:
             token (str): The users private API token for the WAQI API.
             output_path (str): The path to the location where
+            file_name (str): Name of output file
                 any output artifacts will be created
         """
         self.token: str = token
         self._check_token_validity()
 
         self.output_dir_path: Path = Path(output_path, "ozone_output")
+        self.file_name = file_name
+
+        if self.file_name == "air_quality":
+            warnings.warn(
+                "You have not specified a custom save file name. Existing files with the same name may be overwritten!"
+            )
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -144,19 +163,21 @@ class Ozone:
         self.output_dir_path.mkdir(exist_ok=True)
 
         if data_format == "csv":
-            df.to_csv(Path(self.output_dir_path, "air_quality.csv"), index=False)
-            print(f"File saved to disk at {self.output_dir_path} as air_quality.csv")
-        elif data_format == "json":
-            df.to_json(Path(self.output_dir_path, "air_quality_data.json"))
+            df.to_csv(Path(self.output_dir_path, f"{self.file_name}.csv"), index=False)
             print(
-                f"File saved to disk at {self.output_dir_path} as air_quality_data.json"
+                f"File saved to disk at {self.output_dir_path} as {self.file_name}.csv"
+            )
+        elif data_format == "json":
+            df.to_json(Path(self.output_dir_path, f"{self.file_name}.json"))
+            print(
+                f"File saved to disk at {self.output_dir_path} as {self.file_name}.json"
             )
         elif data_format == "xlsx":
             df.to_excel(
-                Path(self.output_dir_path, "air_quality_data.xlsx"),
+                Path(self.output_dir_path, f"{self.file_name}.xlsx"),
             )
             print(
-                f"File saved to disk at {self.output_dir_path} as air_quality_data.xlsx"
+                f"File saved to disk at {self.output_dir_path} as {self.file_name}.xlsx"
             )
         else:
             raise Exception(
@@ -196,14 +217,14 @@ class Ozone:
             try:
                 if param == "aqi":
                     # This is in different part of JSON object.
-                    row["aqi"] = float(data_obj["aqi"])
+                    row["aqi"] = _as_float(data_obj["aqi"])
                     # This adds AQI_meaning and AQI_health_implications data
                     (
                         row["AQI_meaning"],
                         row["AQI_health_implications"],
-                    ) = self._AQI_meaning(float(data_obj["aqi"]))
+                    ) = self._AQI_meaning(_as_float(data_obj["aqi"]))
                 else:
-                    row[param] = float(data_obj["iaqi"][param]["v"])
+                    row[param] = _as_float(data_obj["iaqi"][param]["v"])
             except KeyError:
                 # Gets triggered if the parameter is not provided by station.
                 row[param] = numpy.nan
@@ -336,10 +357,8 @@ class Ozone:
                 "Health alert: everyone may experience more serious health effects."
             )
         else:
-            raise Exception(
-                f"{aqi} is not valid air quality index value. "
-                "Should be between 0 to 500."
-            )
+            AQI_meaning = "Invalid AQI value"
+            AQI_health_implications = "Invalid AQI value"
 
         return AQI_meaning, AQI_health_implications
 
@@ -474,11 +493,18 @@ class Ozone:
             selected another data format, this dataframe will be empty)
         """
         for loc in locations:
-            # This just makes sure that it's always a returns a pandas.DataFrame.
-            # Makes mypy happy.
-            df = pandas.DataFrame(
-                self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
-            )
+            try:
+                # This just makes sure that it's always a returns a pandas.DataFrame.
+                # Makes mypy happy.
+                df = pandas.DataFrame(
+                    self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
+                )
+            except Exception:
+                # NOTE: If we have custom exception we can catch it instead.
+                empty_row = pandas.DataFrame(
+                    {"latitude": [_as_float(loc[0])], "longitude": [_as_float(loc[1])]}
+                )
+                df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
@@ -543,9 +569,16 @@ class Ozone:
             selected another data format, this dataframe will be empty)
         """
         for city in cities:
-            # This just makes sure that it's always a returns a pandas.DataFrame.
-            # Makes mypy happy.
-            df = pandas.DataFrame(self.get_city_air(city=city, df=df, params=params))
+            try:
+                # This just makes sure that it's always a returns a pandas.DataFrame.
+                # Makes mypy happy.
+                df = pandas.DataFrame(
+                    self.get_city_air(city=city, df=df, params=params)
+                )
+            except Exception:
+                # NOTE: If we have custom exception we can catch it instead.
+                empty_row = pandas.DataFrame({"city": [city]})
+                df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
@@ -574,7 +607,7 @@ class Ozone:
         row = self._extract_live_data(data_obj, [air_param])
 
         try:
-            result = float(row[air_param])
+            result = _as_float(row[air_param])
         except KeyError:
             raise Exception(
                 f'Missing air quality parameter "{air_param}"\n'
