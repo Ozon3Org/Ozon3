@@ -42,7 +42,7 @@ def test_bad_city_input():
 
 
 @pytest.mark.vcr
-def test_bad_data_format_input():
+def test_output_data_format_bad_input():
     with pytest.raises(Exception, match="Invalid file format"):
         api.get_city_forecast("london", data_format="a definitely wrong data format")
 
@@ -51,7 +51,7 @@ def test_bad_data_format_input():
 
 
 @pytest.mark.vcr
-def test_correct_data_format_input():
+def test_output_data_formats_input():
     # Not specifying data format shouldn't create an output directory
     api.get_city_forecast("london")
     assert not DEFAULT_OUTPUT_FOLDER.exists()
