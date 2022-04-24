@@ -77,7 +77,20 @@ def test_nonexistent_requested_params():
 def test_bad_coordinates():
     # NOTE, ???
     # See test_get_multiple_city_air, same issue
-    api.get_multiple_coordinate_air([(50, 0), (50, 1), ("lol", "bruh")])
+    BAD_COORDS = [(50, 0), (50, 1), ("lol", "bruh"), ("51", "0")]
+    result = api.get_multiple_coordinate_air(BAD_COORDS)
+
+    # Lat-lon columns should remain float even when given bad coords
+    assert pd_types.is_float_dtype(result["latitude"])
+    assert pd_types.is_float_dtype(result["longitude"])
+
+    # Rows with bad coord should have nan entire row
+    assert result.iloc[2, :].isna().all()
+
+    # Rows with float-able string should be float, because
+    # WAQI supports such operation on their backend
+    assert result.at[3, "latitude"] == 51
+    assert result.at[3, "longitude"] == 0
 
 
 @pytest.mark.vcr

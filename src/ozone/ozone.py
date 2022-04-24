@@ -482,11 +482,18 @@ class Ozone:
             selected another data format, this dataframe will be empty)
         """
         for loc in locations:
-            # This just makes sure that it's always a returns a pandas.DataFrame.
-            # Makes mypy happy.
-            df = pandas.DataFrame(
-                self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
-            )
+            try:
+                # This just makes sure that it's always a returns a pandas.DataFrame.
+                # Makes mypy happy.
+                df = pandas.DataFrame(
+                    self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
+                )
+            except Exception:
+                # NOTE: If we have custom exception we can catch it instead.
+                empty_row = pandas.DataFrame(
+                    {"latitude": [_as_float(loc[0])], "longitude": [_as_float(loc[1])]}
+                )
+                df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)
@@ -551,9 +558,16 @@ class Ozone:
             selected another data format, this dataframe will be empty)
         """
         for city in cities:
-            # This just makes sure that it's always a returns a pandas.DataFrame.
-            # Makes mypy happy.
-            df = pandas.DataFrame(self.get_city_air(city=city, df=df, params=params))
+            try:
+                # This just makes sure that it's always a returns a pandas.DataFrame.
+                # Makes mypy happy.
+                df = pandas.DataFrame(
+                    self.get_city_air(city=city, df=df, params=params)
+                )
+            except Exception:
+                # NOTE: If we have custom exception we can catch it instead.
+                empty_row = pandas.DataFrame({"city": [city]})
+                df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
         return self._format_output(data_format, df)

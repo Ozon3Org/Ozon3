@@ -81,7 +81,15 @@ def test_bad_city():
     # for a lot of cities at once using this method only to get aborted
     # because there's one city that don't have AQI station (and raises
     # Exception).
-    api.get_multiple_city_air(["london", "paris", "a definitely nonexistent city"])
+    result = api.get_multiple_city_air(
+        ["london", "paris", "a definitely nonexistent city"]
+    )
+
+    # The third row should have the "nonexistent city name" intact ...
+    assert result.at[2, "city"] == "a definitely nonexistent city"
+
+    # ... and nothing else.
+    assert result.iloc[2, :].drop("city").isna().all()
 
 
 @pytest.mark.vcr
