@@ -91,7 +91,7 @@ class Ozone:
 
         if self.file_name == "air_quality":
             warnings.warn(
-                "You do not specify custom file name. Your old file can be overwritted"
+                "You have not specified a custom save file name. Existing files with the same name may be overwritten!"
             )
 
     def _check_token_validity(self) -> None:
