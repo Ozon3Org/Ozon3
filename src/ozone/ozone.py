@@ -161,6 +161,11 @@ class Ozone:
         if data_format == "df":
             return df
 
+        if data_format not in ["csv", "xlsx", "json"]:
+            raise Exception(
+                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
+            )
+
         self.output_dir_path.mkdir(exist_ok=True)
 
         if data_format == "csv":
@@ -180,10 +185,7 @@ class Ozone:
             print(
                 f"File saved to disk at {self.output_dir_path} as {self.file_name}.xlsx"
             )
-        else:
-            raise Exception(
-                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
-            )
+
         return pandas.DataFrame()
 
     def _extract_live_data(
