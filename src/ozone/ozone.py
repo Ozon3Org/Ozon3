@@ -246,7 +246,12 @@ class Ozone:
             dict_of_frames[pol] = pandas.DataFrame(lst).set_index("day")
 
         df = pandas.concat(dict_of_frames, axis=1)
+
+        # Convert to numeric while making non-numerics nan,
+        # and then convert to float, just in case there's int
+        df = df.apply(lambda x: pandas.to_numeric(x, errors="coerce")).astype(float)
         df.index = pandas.to_datetime(df.index)
+        df = df.reset_index().rename(columns={"day": "date"})
         return df
 
     def _check_and_get_data_obj(
