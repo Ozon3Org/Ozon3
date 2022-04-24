@@ -72,18 +72,27 @@ class Ozone:
         "wg",
     ]
 
-    def __init__(self, token: str = "", output_path: str = "."):
+    def __init__(
+        self, token: str = "", output_path: str = ".", file_name: str = "air_quality"
+    ):
         """Initialises the class instance and sets the API token value
 
         Args:
             token (str): The users private API token for the WAQI API.
             output_path (str): The path to the location where
+            file_name (str): Name of output file
                 any output artifacts will be created
         """
         self.token: str = token
         self._check_token_validity()
 
         self.output_dir_path: Path = Path(output_path, "ozone_output")
+        self.file_name = file_name
+
+        if self.file_name == "air_quality":
+            warnings.warn(
+                "You do not specify custom file name. Your old file can be overwritted"
+            )
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -154,19 +163,21 @@ class Ozone:
         self.output_dir_path.mkdir(exist_ok=True)
 
         if data_format == "csv":
-            df.to_csv(Path(self.output_dir_path, "air_quality.csv"), index=False)
-            print(f"File saved to disk at {self.output_dir_path} as air_quality.csv")
-        elif data_format == "json":
-            df.to_json(Path(self.output_dir_path, "air_quality_data.json"))
+            df.to_csv(Path(self.output_dir_path, f"{self.file_name}.csv"), index=False)
             print(
-                f"File saved to disk at {self.output_dir_path} as air_quality_data.json"
+                f"File saved to disk at {self.output_dir_path} as {self.file_name}.csv"
+            )
+        elif data_format == "json":
+            df.to_json(Path(self.output_dir_path, f"{self.file_name}.json"))
+            print(
+                f"File saved to disk at {self.output_dir_path} as {self.file_name}.json"
             )
         elif data_format == "xlsx":
             df.to_excel(
-                Path(self.output_dir_path, "air_quality_data.xlsx"),
+                Path(self.output_dir_path, f"{self.file_name}.xlsx"),
             )
             print(
-                f"File saved to disk at {self.output_dir_path} as air_quality_data.xlsx"
+                f"File saved to disk at {self.output_dir_path} as {self.file_name}.xlsx"
             )
         else:
             raise Exception(
