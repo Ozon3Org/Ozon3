@@ -15,20 +15,17 @@ def test_return_value_and_format():
 
 
 @pytest.mark.vcr
-def test_index_and_column_types():
+def test_column_types():
     result = api.get_city_forecast("london")
 
-    # The index contains date information
-    assert pd_types.is_datetime64_any_dtype(result.index)
+    # The date column contains date information
+    assert pd_types.is_datetime64_any_dtype(result["date"])
 
     # Check that all pollutants and statistics are in column
+    # and are of float type
     for param in ["pm25", "pm10", "o3", "uvi"]:
         for stat in ["min", "max", "avg"]:
-            assert (param, stat) in result
-
-    # Check that all columns are of float type
-    for col in result:
-        assert pd_types.is_float_dtype(result[col])
+            assert pd_types.is_float_dtype(result[(param, stat)])
 
 
 @pytest.mark.vcr
