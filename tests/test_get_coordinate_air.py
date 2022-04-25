@@ -3,7 +3,12 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import api, DEFAULT_OUTPUT_FOLDER, DEFAULT_OUTPUT_FILE
+from utils import (
+    api,
+    DEFAULT_OUTPUT_FOLDER,
+    DEFAULT_OUTPUT_FILE,
+    SUPPORTED_OUTPUT_FORMATS,
+)
 
 
 @pytest.mark.vcr
@@ -109,7 +114,8 @@ def test_output_data_format_bad():
 
 
 @pytest.mark.vcr
-def test_output_data_formats():
+@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
+def test_output_data_formats(fmt):
     # Not specifying data format shouldn't create an output directory
     api.get_coordinate_air(51.51, -0.13)
     assert not DEFAULT_OUTPUT_FOLDER.exists()

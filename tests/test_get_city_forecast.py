@@ -2,7 +2,12 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import api, DEFAULT_OUTPUT_FOLDER, DEFAULT_OUTPUT_FILE
+from utils import (
+    api,
+    DEFAULT_OUTPUT_FOLDER,
+    DEFAULT_OUTPUT_FILE,
+    SUPPORTED_OUTPUT_FORMATS,
+)
 
 
 @pytest.mark.vcr
@@ -51,12 +56,12 @@ def test_output_data_format_bad_input():
 
 
 @pytest.mark.vcr
-def test_output_data_formats_input():
+@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
+def test_output_data_formats(fmt):
     # Not specifying data format shouldn't create an output directory
     api.get_city_forecast("london")
     assert not DEFAULT_OUTPUT_FOLDER.exists()
 
     # Output files should be made
-    for fmt in ["xlsx", "csv", "json"]:
-        api.get_city_air("london", data_format=fmt)
-        assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()
+    api.get_city_air("london", data_format=fmt)
+    assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()
