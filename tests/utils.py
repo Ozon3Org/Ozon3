@@ -40,5 +40,7 @@ with vcr.use_cassette("tests/cassettes/ozone_init.yaml", **vcr_kwargs):
 
 # Declare these here to be used globally
 # instead of repeatedly in each test file
+SUPPORTED_OUTPUT_FORMATS = ["csv", "xlsx", "json"]
+
 DEFAULT_OUTPUT_FOLDER = Path("ozone_output")
-DEFAULT_OUTPUT_FILE = DEFAULT_OUTPUT_FOLDER / "air_quality_data"
+DEFAULT_OUTPUT_FILE = DEFAULT_OUTPUT_FOLDER / "air_quality"

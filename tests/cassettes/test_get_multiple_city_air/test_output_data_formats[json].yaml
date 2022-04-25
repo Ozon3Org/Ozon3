@@ -1,0 +1,450 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//london/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 25 Apr 2022 01:02:23 GMT
+      Location:
+      - /feed/london/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/london/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":{"aqi":35,"idx":5724,"attributions":[{"url":"http://uk-air.defra.gov.uk/","name":"UK-AIR,
+        air quality information resource - Defra, UK","logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"url":"https://londonair.org.uk/","name":"London
+        Air Quality Network - Environmental Research Group, King''s College London","logo":"UK-London-Kings-College.png"},{"url":"https://waqi.info/","name":"World
+        Air Quality Index Project"}],"city":{"geo":[51.5073509,-0.1277583],"name":"London","url":"https://aqicn.org/city/london","location":""},"dominentpol":"pm25","iaqi":{"co":{"v":2.2},"h":{"v":82.5},"no2":{"v":8},"o3":{"v":28.3},"p":{"v":1014.6},"pm10":{"v":24},"pm25":{"v":35},"so2":{"v":0.3},"t":{"v":7.5},"w":{"v":0.5}},"time":{"s":"2022-04-25
+        00:00:00","tz":"+01:00","v":1650844800,"iso":"2022-04-25T00:00:00+01:00"},"forecast":{"daily":{"o3":[{"avg":26,"day":"2022-04-22","max":36,"min":18},{"avg":29,"day":"2022-04-23","max":40,"min":20},{"avg":31,"day":"2022-04-24","max":39,"min":26},{"avg":27,"day":"2022-04-25","max":34,"min":24},{"avg":28,"day":"2022-04-26","max":40,"min":19},{"avg":29,"day":"2022-04-27","max":36,"min":20},{"avg":26,"day":"2022-04-28","max":27,"min":26}],"pm10":[{"avg":17,"day":"2022-04-22","max":21,"min":10},{"avg":20,"day":"2022-04-23","max":23,"min":17},{"avg":14,"day":"2022-04-24","max":19,"min":10},{"avg":12,"day":"2022-04-25","max":17,"min":9},{"avg":9,"day":"2022-04-26","max":12,"min":6},{"avg":12,"day":"2022-04-27","max":14,"min":9},{"avg":13,"day":"2022-04-28","max":14,"min":13}],"pm25":[{"avg":50,"day":"2022-04-22","max":62,"min":35},{"avg":61,"day":"2022-04-23","max":70,"min":54},{"avg":45,"day":"2022-04-24","max":57,"min":28},{"avg":35,"day":"2022-04-25","max":50,"min":29},{"avg":28,"day":"2022-04-26","max":36,"min":19},{"avg":30,"day":"2022-04-27","max":40,"min":25},{"avg":32,"day":"2022-04-28","max":32,"min":30}],"uvi":[{"avg":1,"day":"2022-04-23","max":4,"min":0},{"avg":1,"day":"2022-04-24","max":4,"min":0},{"avg":1,"day":"2022-04-25","max":3,"min":0},{"avg":1,"day":"2022-04-26","max":4,"min":0},{"avg":0,"day":"2022-04-27","max":2,"min":0},{"avg":1,"day":"2022-04-28","max":3,"min":0},{"avg":1,"day":"2022-04-29","max":2,"min":0}]}},"debug":{"sync":"2022-04-25T09:22:03+09:00"}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Apr 2022 01:02:23 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "60.751\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '2268'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//new%20delhi/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 25 Apr 2022 01:02:24 GMT
+      Location:
+      - /feed/new%20delhi/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/new%20delhi/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"data\":{\"aqi\":188,\"idx\":7024,\"attributions\":[{\"url\":\"http://worldweather.wmo.int\",\"name\":\"World
+        Meteorological Organization - surface synoptic observations (WMO-SYNOP)\"},{\"url\":\"https://in.usembassy.gov/embassy-consulates/new-delhi/air-quality-data/\",\"name\":\"U.S.
+        Embassy and Consulates' Air Quality Monitor in India\",\"logo\":\"US-StateDepartment.png\"},{\"url\":\"https://waqi.info/\",\"name\":\"World
+        Air Quality Index Project\"}],\"city\":{\"geo\":[28.63576,77.22445],\"name\":\"New
+        Delhi US Embassy, India (\u0928\u0908 \u0926\u093F\u0932\u094D\u0932\u0940
+        \u0905\u092E\u0947\u0930\u093F\u0915\u0940 \u0926\u0942\u0924\u093E\u0935\u093E\u0938)\",\"url\":\"https://aqicn.org/city/india/new-delhi/us-embassy\",\"location\":\"\"},\"dominentpol\":\"pm25\",\"iaqi\":{\"dew\":{\"v\":8},\"h\":{\"v\":28},\"p\":{\"v\":1005},\"pm25\":{\"v\":188},\"t\":{\"v\":28},\"w\":{\"v\":1},\"wg\":{\"v\":8.7}},\"time\":{\"s\":\"2022-04-25
+        06:00:00\",\"tz\":\"+05:30\",\"v\":1650866400,\"iso\":\"2022-04-25T06:00:00+05:30\"},\"forecast\":{\"daily\":{\"o3\":[{\"avg\":22,\"day\":\"2022-04-23\",\"max\":58,\"min\":1},{\"avg\":24,\"day\":\"2022-04-24\",\"max\":53,\"min\":8},{\"avg\":20,\"day\":\"2022-04-25\",\"max\":56,\"min\":3},{\"avg\":22,\"day\":\"2022-04-26\",\"max\":73,\"min\":1},{\"avg\":23,\"day\":\"2022-04-27\",\"max\":60,\"min\":1},{\"avg\":16,\"day\":\"2022-04-28\",\"max\":70,\"min\":1},{\"avg\":16,\"day\":\"2022-04-29\",\"max\":45,\"min\":1},{\"avg\":9,\"day\":\"2022-04-30\",\"max\":13,\"min\":9}],\"pm10\":[{\"avg\":73,\"day\":\"2022-04-23\",\"max\":73,\"min\":73},{\"avg\":75,\"day\":\"2022-04-24\",\"max\":87,\"min\":62},{\"avg\":94,\"day\":\"2022-04-25\",\"max\":123,\"min\":73},{\"avg\":123,\"day\":\"2022-04-26\",\"max\":123,\"min\":123},{\"avg\":80,\"day\":\"2022-04-27\",\"max\":123,\"min\":46},{\"avg\":106,\"day\":\"2022-04-28\",\"max\":123,\"min\":58},{\"avg\":59,\"day\":\"2022-04-29\",\"max\":95,\"min\":51},{\"avg\":93,\"day\":\"2022-04-30\",\"max\":123,\"min\":58},{\"avg\":80,\"day\":\"2022-05-01\",\"max\":123,\"min\":73}],\"pm25\":[{\"avg\":138,\"day\":\"2022-04-23\",\"max\":138,\"min\":138},{\"avg\":153,\"day\":\"2022-04-24\",\"max\":174,\"min\":138},{\"avg\":153,\"day\":\"2022-04-25\",\"max\":165,\"min\":138},{\"avg\":156,\"day\":\"2022-04-26\",\"max\":174,\"min\":138},{\"avg\":137,\"day\":\"2022-04-27\",\"max\":174,\"min\":89},{\"avg\":151,\"day\":\"2022-04-28\",\"max\":174,\"min\":138},{\"avg\":124,\"day\":\"2022-04-29\",\"max\":149,\"min\":89},{\"avg\":152,\"day\":\"2022-04-30\",\"max\":174,\"min\":138},{\"avg\":157,\"day\":\"2022-05-01\",\"max\":162,\"min\":138}],\"uvi\":[{\"avg\":0,\"day\":\"2022-04-24\",\"max\":0,\"min\":0},{\"avg\":2,\"day\":\"2022-04-25\",\"max\":8,\"min\":0},{\"avg\":2,\"day\":\"2022-04-26\",\"max\":8,\"min\":0},{\"avg\":2,\"day\":\"2022-04-27\",\"max\":9,\"min\":0},{\"avg\":2,\"day\":\"2022-04-28\",\"max\":8,\"min\":0},{\"avg\":4,\"day\":\"2022-04-29\",\"max\":9,\"min\":0}]}},\"debug\":{\"sync\":\"2022-04-25T09:49:14+09:00\"}}}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Apr 2022 01:02:25 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "144.114\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '2525'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//paris/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 25 Apr 2022 01:02:26 GMT
+      Location:
+      - /feed/paris/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/paris/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"data\":{\"aqi\":33,\"idx\":5722,\"attributions\":[{\"url\":\"https://www.airparif.asso.fr/\",\"name\":\"AirParif
+        - Association de surveillance de la qualit\xE9 de l'air en \xCEle-de-France\",\"logo\":\"Paris-Air-Parif.png\"},{\"url\":\"http://www.eea.europa.eu/themes/air/\",\"name\":\"European
+        Environment Agency\",\"logo\":\"Europe-EEA.png\"},{\"url\":\"https://waqi.info/\",\"name\":\"World
+        Air Quality Index Project\"}],\"city\":{\"geo\":[48.856614,2.3522219],\"name\":\"Paris\",\"url\":\"https://aqicn.org/city/paris\",\"location\":\"\"},\"dominentpol\":\"pm10\",\"iaqi\":{\"co\":{\"v\":0.1},\"h\":{\"v\":69.5},\"no2\":{\"v\":17.6},\"o3\":{\"v\":38.2},\"p\":{\"v\":1008.3},\"pm10\":{\"v\":33},\"pm25\":{\"v\":59},\"so2\":{\"v\":0.6},\"t\":{\"v\":13.1},\"w\":{\"v\":3}},\"time\":{\"s\":\"2022-04-25
+        00:00:00\",\"tz\":\"+02:00\",\"v\":1650844800,\"iso\":\"2022-04-25T00:00:00+02:00\"},\"forecast\":{\"daily\":{\"o3\":[{\"avg\":26,\"day\":\"2022-04-24\",\"max\":41,\"min\":13},{\"avg\":25,\"day\":\"2022-04-25\",\"max\":38,\"min\":12},{\"avg\":25,\"day\":\"2022-04-26\",\"max\":40,\"min\":12},{\"avg\":27,\"day\":\"2022-04-27\",\"max\":43,\"min\":14},{\"avg\":30,\"day\":\"2022-04-28\",\"max\":30,\"min\":24}],\"pm10\":[{\"avg\":18,\"day\":\"2022-04-24\",\"max\":20,\"min\":14},{\"avg\":19,\"day\":\"2022-04-25\",\"max\":25,\"min\":12},{\"avg\":19,\"day\":\"2022-04-26\",\"max\":27,\"min\":13},{\"avg\":17,\"day\":\"2022-04-27\",\"max\":24,\"min\":10},{\"avg\":14,\"day\":\"2022-04-28\",\"max\":16,\"min\":14}],\"pm25\":[{\"avg\":58,\"day\":\"2022-04-24\",\"max\":68,\"min\":50},{\"avg\":61,\"day\":\"2022-04-25\",\"max\":73,\"min\":42},{\"avg\":61,\"day\":\"2022-04-26\",\"max\":80,\"min\":44},{\"avg\":56,\"day\":\"2022-04-27\",\"max\":70,\"min\":36},{\"avg\":51,\"day\":\"2022-04-28\",\"max\":54,\"min\":51}],\"uvi\":[{\"avg\":0,\"day\":\"2022-04-24\",\"max\":2,\"min\":0},{\"avg\":1,\"day\":\"2022-04-25\",\"max\":4,\"min\":0},{\"avg\":0,\"day\":\"2022-04-26\",\"max\":2,\"min\":0},{\"avg\":1,\"day\":\"2022-04-27\",\"max\":4,\"min\":0},{\"avg\":1,\"day\":\"2022-04-28\",\"max\":5,\"min\":0},{\"avg\":1,\"day\":\"2022-04-29\",\"max\":5,\"min\":0}]}},\"debug\":{\"sync\":\"2022-04-25T09:41:52+09:00\"}}}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Apr 2022 01:02:26 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "77.611\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '1875'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//london/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 25 Apr 2022 01:02:27 GMT
+      Location:
+      - /feed/london/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/london/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: '{"status":"ok","data":{"aqi":35,"idx":5724,"attributions":[{"url":"http://uk-air.defra.gov.uk/","name":"UK-AIR,
+        air quality information resource - Defra, UK","logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"url":"https://londonair.org.uk/","name":"London
+        Air Quality Network - Environmental Research Group, King''s College London","logo":"UK-London-Kings-College.png"},{"url":"https://waqi.info/","name":"World
+        Air Quality Index Project"}],"city":{"geo":[51.5073509,-0.1277583],"name":"London","url":"https://aqicn.org/city/london","location":""},"dominentpol":"pm25","iaqi":{"co":{"v":2.2},"h":{"v":82.5},"no2":{"v":8},"o3":{"v":28.3},"p":{"v":1014.6},"pm10":{"v":24},"pm25":{"v":35},"so2":{"v":0.3},"t":{"v":7.5},"w":{"v":0.5}},"time":{"s":"2022-04-25
+        00:00:00","tz":"+01:00","v":1650844800,"iso":"2022-04-25T00:00:00+01:00"},"forecast":{"daily":{"o3":[{"avg":26,"day":"2022-04-22","max":36,"min":18},{"avg":29,"day":"2022-04-23","max":40,"min":20},{"avg":31,"day":"2022-04-24","max":39,"min":26},{"avg":27,"day":"2022-04-25","max":34,"min":24},{"avg":28,"day":"2022-04-26","max":40,"min":19},{"avg":29,"day":"2022-04-27","max":36,"min":20},{"avg":26,"day":"2022-04-28","max":27,"min":26}],"pm10":[{"avg":17,"day":"2022-04-22","max":21,"min":10},{"avg":20,"day":"2022-04-23","max":23,"min":17},{"avg":14,"day":"2022-04-24","max":19,"min":10},{"avg":12,"day":"2022-04-25","max":17,"min":9},{"avg":9,"day":"2022-04-26","max":12,"min":6},{"avg":12,"day":"2022-04-27","max":14,"min":9},{"avg":13,"day":"2022-04-28","max":14,"min":13}],"pm25":[{"avg":50,"day":"2022-04-22","max":62,"min":35},{"avg":61,"day":"2022-04-23","max":70,"min":54},{"avg":45,"day":"2022-04-24","max":57,"min":28},{"avg":35,"day":"2022-04-25","max":50,"min":29},{"avg":28,"day":"2022-04-26","max":36,"min":19},{"avg":30,"day":"2022-04-27","max":40,"min":25},{"avg":32,"day":"2022-04-28","max":32,"min":30}],"uvi":[{"avg":1,"day":"2022-04-23","max":4,"min":0},{"avg":1,"day":"2022-04-24","max":4,"min":0},{"avg":1,"day":"2022-04-25","max":3,"min":0},{"avg":1,"day":"2022-04-26","max":4,"min":0},{"avg":0,"day":"2022-04-27","max":2,"min":0},{"avg":1,"day":"2022-04-28","max":3,"min":0},{"avg":1,"day":"2022-04-29","max":2,"min":0}]}},"debug":{"sync":"2022-04-25T09:22:03+09:00"}}}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Apr 2022 01:02:27 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "67.851\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '2268'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//new%20delhi/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 25 Apr 2022 01:02:28 GMT
+      Location:
+      - /feed/new%20delhi/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/new%20delhi/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"data\":{\"aqi\":188,\"idx\":7024,\"attributions\":[{\"url\":\"http://worldweather.wmo.int\",\"name\":\"World
+        Meteorological Organization - surface synoptic observations (WMO-SYNOP)\"},{\"url\":\"https://in.usembassy.gov/embassy-consulates/new-delhi/air-quality-data/\",\"name\":\"U.S.
+        Embassy and Consulates' Air Quality Monitor in India\",\"logo\":\"US-StateDepartment.png\"},{\"url\":\"https://waqi.info/\",\"name\":\"World
+        Air Quality Index Project\"}],\"city\":{\"geo\":[28.63576,77.22445],\"name\":\"New
+        Delhi US Embassy, India (\u0928\u0908 \u0926\u093F\u0932\u094D\u0932\u0940
+        \u0905\u092E\u0947\u0930\u093F\u0915\u0940 \u0926\u0942\u0924\u093E\u0935\u093E\u0938)\",\"url\":\"https://aqicn.org/city/india/new-delhi/us-embassy\",\"location\":\"\"},\"dominentpol\":\"pm25\",\"iaqi\":{\"dew\":{\"v\":8},\"h\":{\"v\":28},\"p\":{\"v\":1005},\"pm25\":{\"v\":188},\"t\":{\"v\":28},\"w\":{\"v\":1},\"wg\":{\"v\":8.7}},\"time\":{\"s\":\"2022-04-25
+        06:00:00\",\"tz\":\"+05:30\",\"v\":1650866400,\"iso\":\"2022-04-25T06:00:00+05:30\"},\"forecast\":{\"daily\":{\"o3\":[{\"avg\":22,\"day\":\"2022-04-23\",\"max\":58,\"min\":1},{\"avg\":24,\"day\":\"2022-04-24\",\"max\":53,\"min\":8},{\"avg\":20,\"day\":\"2022-04-25\",\"max\":56,\"min\":3},{\"avg\":22,\"day\":\"2022-04-26\",\"max\":73,\"min\":1},{\"avg\":23,\"day\":\"2022-04-27\",\"max\":60,\"min\":1},{\"avg\":16,\"day\":\"2022-04-28\",\"max\":70,\"min\":1},{\"avg\":16,\"day\":\"2022-04-29\",\"max\":45,\"min\":1},{\"avg\":9,\"day\":\"2022-04-30\",\"max\":13,\"min\":9}],\"pm10\":[{\"avg\":73,\"day\":\"2022-04-23\",\"max\":73,\"min\":73},{\"avg\":75,\"day\":\"2022-04-24\",\"max\":87,\"min\":62},{\"avg\":94,\"day\":\"2022-04-25\",\"max\":123,\"min\":73},{\"avg\":123,\"day\":\"2022-04-26\",\"max\":123,\"min\":123},{\"avg\":80,\"day\":\"2022-04-27\",\"max\":123,\"min\":46},{\"avg\":106,\"day\":\"2022-04-28\",\"max\":123,\"min\":58},{\"avg\":59,\"day\":\"2022-04-29\",\"max\":95,\"min\":51},{\"avg\":93,\"day\":\"2022-04-30\",\"max\":123,\"min\":58},{\"avg\":80,\"day\":\"2022-05-01\",\"max\":123,\"min\":73}],\"pm25\":[{\"avg\":138,\"day\":\"2022-04-23\",\"max\":138,\"min\":138},{\"avg\":153,\"day\":\"2022-04-24\",\"max\":174,\"min\":138},{\"avg\":153,\"day\":\"2022-04-25\",\"max\":165,\"min\":138},{\"avg\":156,\"day\":\"2022-04-26\",\"max\":174,\"min\":138},{\"avg\":137,\"day\":\"2022-04-27\",\"max\":174,\"min\":89},{\"avg\":151,\"day\":\"2022-04-28\",\"max\":174,\"min\":138},{\"avg\":124,\"day\":\"2022-04-29\",\"max\":149,\"min\":89},{\"avg\":152,\"day\":\"2022-04-30\",\"max\":174,\"min\":138},{\"avg\":157,\"day\":\"2022-05-01\",\"max\":162,\"min\":138}],\"uvi\":[{\"avg\":0,\"day\":\"2022-04-24\",\"max\":0,\"min\":0},{\"avg\":2,\"day\":\"2022-04-25\",\"max\":8,\"min\":0},{\"avg\":2,\"day\":\"2022-04-26\",\"max\":8,\"min\":0},{\"avg\":2,\"day\":\"2022-04-27\",\"max\":9,\"min\":0},{\"avg\":2,\"day\":\"2022-04-28\",\"max\":8,\"min\":0},{\"avg\":4,\"day\":\"2022-04-29\",\"max\":9,\"min\":0}]}},\"debug\":{\"sync\":\"2022-04-25T09:49:14+09:00\"}}}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Apr 2022 01:02:28 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "696.002\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '2525'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed//paris/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 25 Apr 2022 01:02:29 GMT
+      Location:
+      - /feed/paris/?token=DUMMY_TOKEN
+      Server:
+      - nginx
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.27.1
+    method: GET
+    uri: https://api.waqi.info/feed/paris/?token=DUMMY_TOKEN
+  response:
+    body:
+      string: "{\"status\":\"ok\",\"data\":{\"aqi\":33,\"idx\":5722,\"attributions\":[{\"url\":\"https://www.airparif.asso.fr/\",\"name\":\"AirParif
+        - Association de surveillance de la qualit\xE9 de l'air en \xCEle-de-France\",\"logo\":\"Paris-Air-Parif.png\"},{\"url\":\"http://www.eea.europa.eu/themes/air/\",\"name\":\"European
+        Environment Agency\",\"logo\":\"Europe-EEA.png\"},{\"url\":\"https://waqi.info/\",\"name\":\"World
+        Air Quality Index Project\"}],\"city\":{\"geo\":[48.856614,2.3522219],\"name\":\"Paris\",\"url\":\"https://aqicn.org/city/paris\",\"location\":\"\"},\"dominentpol\":\"pm10\",\"iaqi\":{\"co\":{\"v\":0.1},\"h\":{\"v\":69.5},\"no2\":{\"v\":17.6},\"o3\":{\"v\":38.2},\"p\":{\"v\":1008.3},\"pm10\":{\"v\":33},\"pm25\":{\"v\":59},\"so2\":{\"v\":0.6},\"t\":{\"v\":13.1},\"w\":{\"v\":3}},\"time\":{\"s\":\"2022-04-25
+        00:00:00\",\"tz\":\"+02:00\",\"v\":1650844800,\"iso\":\"2022-04-25T00:00:00+02:00\"},\"forecast\":{\"daily\":{\"o3\":[{\"avg\":26,\"day\":\"2022-04-24\",\"max\":41,\"min\":13},{\"avg\":25,\"day\":\"2022-04-25\",\"max\":38,\"min\":12},{\"avg\":25,\"day\":\"2022-04-26\",\"max\":40,\"min\":12},{\"avg\":27,\"day\":\"2022-04-27\",\"max\":43,\"min\":14},{\"avg\":30,\"day\":\"2022-04-28\",\"max\":30,\"min\":24}],\"pm10\":[{\"avg\":18,\"day\":\"2022-04-24\",\"max\":20,\"min\":14},{\"avg\":19,\"day\":\"2022-04-25\",\"max\":25,\"min\":12},{\"avg\":19,\"day\":\"2022-04-26\",\"max\":27,\"min\":13},{\"avg\":17,\"day\":\"2022-04-27\",\"max\":24,\"min\":10},{\"avg\":14,\"day\":\"2022-04-28\",\"max\":16,\"min\":14}],\"pm25\":[{\"avg\":58,\"day\":\"2022-04-24\",\"max\":68,\"min\":50},{\"avg\":61,\"day\":\"2022-04-25\",\"max\":73,\"min\":42},{\"avg\":61,\"day\":\"2022-04-26\",\"max\":80,\"min\":44},{\"avg\":56,\"day\":\"2022-04-27\",\"max\":70,\"min\":36},{\"avg\":51,\"day\":\"2022-04-28\",\"max\":54,\"min\":51}],\"uvi\":[{\"avg\":0,\"day\":\"2022-04-24\",\"max\":2,\"min\":0},{\"avg\":1,\"day\":\"2022-04-25\",\"max\":4,\"min\":0},{\"avg\":0,\"day\":\"2022-04-26\",\"max\":2,\"min\":0},{\"avg\":1,\"day\":\"2022-04-27\",\"max\":4,\"min\":0},{\"avg\":1,\"day\":\"2022-04-28\",\"max\":5,\"min\":0},{\"avg\":1,\"day\":\"2022-04-29\",\"max\":5,\"min\":0}]}},\"debug\":{\"sync\":\"2022-04-25T09:41:52+09:00\"}}}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 25 Apr 2022 01:02:29 GMT
+      Server:
+      - nginx
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Gen-Time:
+      - "75.242\xC2\xB5s"
+      X-Powered-By:
+      - rxstreamer-waqi/1.3
+      content-length:
+      - '1875'
+    status:
+      code: 200
+      message: OK
+version: 1
