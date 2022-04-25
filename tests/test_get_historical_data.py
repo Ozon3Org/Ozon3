@@ -9,16 +9,17 @@ from utils import (
 )
 
 
+# Filterwarnings from: https://stackoverflow.com/a/58645998/11316205
 @pytest.mark.vcr
-@pytest.mark.filterwarnings(
-    "ignore::UserWarning"
-)  # https://stackoverflow.com/a/58645998/11316205
+@pytest.mark.slow
+@pytest.mark.filterwarnings("ignore::UserWarning")
 def test_return_value_and_format():
     result = api.get_historical_data(city="london")
     assert isinstance(result, pandas.DataFrame)
 
 
 @pytest.mark.vcr
+@pytest.mark.slow
 def test_warnings_on_input_combo():
     with pytest.warns(UserWarning, match="city_id was not supplied"):
         api.get_historical_data(city="london")
@@ -37,6 +38,7 @@ def test_arguments_not_named():
 
 
 @pytest.mark.vcr
+@pytest.mark.slow
 @pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
 @pytest.mark.filterwarnings("ignore::UserWarning")
 def test_output_data_formats(fmt):
