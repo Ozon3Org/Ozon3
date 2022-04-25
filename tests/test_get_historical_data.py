@@ -1,7 +1,12 @@
 import pandas
 import pytest
 
-from utils import api, DEFAULT_OUTPUT_FOLDER, DEFAULT_OUTPUT_FILE
+from utils import (
+    api,
+    DEFAULT_OUTPUT_FOLDER,
+    DEFAULT_OUTPUT_FILE,
+    SUPPORTED_OUTPUT_FORMATS,
+)
 
 
 # Filterwarnings from: https://stackoverflow.com/a/58645998/11316205
@@ -34,13 +39,13 @@ def test_arguments_not_named():
 
 @pytest.mark.vcr
 @pytest.mark.slow
+@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
 @pytest.mark.filterwarnings("ignore::UserWarning")
-def test_correct_data_format():
+def test_output_data_formats(fmt):
     # Not specifying data format shouldn't create an output directory
     api.get_historical_data(city_id=5724)
     assert not DEFAULT_OUTPUT_FOLDER.exists()
 
     # Check that output file is made
-    for fmt in ["xlsx", "csv", "json"]:
-        api.get_historical_data(city="london", data_format=fmt)
-        assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()
+    api.get_historical_data(city="london", data_format=fmt)
+    assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()

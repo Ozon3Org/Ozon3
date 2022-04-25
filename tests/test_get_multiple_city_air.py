@@ -3,7 +3,12 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import api, DEFAULT_OUTPUT_FOLDER, DEFAULT_OUTPUT_FILE
+from utils import (
+    api,
+    DEFAULT_OUTPUT_FOLDER,
+    DEFAULT_OUTPUT_FILE,
+    SUPPORTED_OUTPUT_FORMATS,
+)
 
 
 @pytest.mark.vcr
@@ -93,7 +98,7 @@ def test_bad_city():
 
 
 @pytest.mark.vcr
-def test_bad_data_format():
+def test_output_data_format_bad():
     with pytest.raises(Exception, match="Invalid file format"):
         api.get_multiple_city_air(
             ["london", "new delhi", "paris"],
@@ -105,12 +110,12 @@ def test_bad_data_format():
 
 
 @pytest.mark.vcr
-def test_correct_data_format():
+@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
+def test_output_data_formats(fmt):
     # Not specifying data format shouldn't create an output directory
     api.get_multiple_city_air(["london", "new delhi", "paris"])
     assert not DEFAULT_OUTPUT_FOLDER.exists()
 
     # Output files should be made
-    for fmt in ["xlsx", "csv", "json"]:
-        api.get_multiple_city_air(["london", "new delhi", "paris"], data_format=fmt)
-        assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()
+    api.get_multiple_city_air(["london", "new delhi", "paris"], data_format=fmt)
+    assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()

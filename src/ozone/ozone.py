@@ -91,7 +91,8 @@ class Ozone:
 
         if self.file_name == "air_quality":
             warnings.warn(
-                "You have not specified a custom save file name. Existing files with the same name may be overwritten!"
+                "You have not specified a custom save file name. "
+                "Existing files with the same name may be overwritten!"
             )
 
     def _check_token_validity(self) -> None:
@@ -160,6 +161,11 @@ class Ozone:
         if data_format == "df":
             return df
 
+        if data_format not in ["csv", "xlsx", "json"]:
+            raise Exception(
+                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
+            )
+
         self.output_dir_path.mkdir(exist_ok=True)
 
         if data_format == "csv":
@@ -179,10 +185,7 @@ class Ozone:
             print(
                 f"File saved to disk at {self.output_dir_path} as {self.file_name}.xlsx"
             )
-        else:
-            raise Exception(
-                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
-            )
+
         return pandas.DataFrame()
 
     def _extract_live_data(
@@ -246,7 +249,12 @@ class Ozone:
             dict_of_frames[pol] = pandas.DataFrame(lst).set_index("day")
 
         df = pandas.concat(dict_of_frames, axis=1)
+
+        # Convert to numeric while making non-numerics nan,
+        # and then convert to float, just in case there's int
+        df = df.apply(lambda x: pandas.to_numeric(x, errors="coerce")).astype(float)
         df.index = pandas.to_datetime(df.index)
+        df = df.reset_index().rename(columns={"day": "date"})
         return df
 
     def _check_and_get_data_obj(
