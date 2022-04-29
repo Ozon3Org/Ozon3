@@ -1,32 +1,88 @@
 # File Structure
-Refer to this file for explanations on the file layout, as well as where to locate certain files.
+This document is a reference primer on Ozone's files: what, where, and for what.
 
+- [src/](#src)
+  - [media/](#media)
+  - [ozone/](#ozone)
+    - [ozone.py](#ozonepy)
+    - [urls.py](#urlspy)
+    - [historical/](#historical)
+      - [relevant_funcs.py](#relevant_funcspy)
+      - [_reverse_engineered.py](#_reverse_engineeredpy)
+- [tests/](#tests)
+  - [cassettes/](#cassettes)
+  - [conftest.py](#conftestpy)
+  - [test_*.py](#test_py)
+  - [utils.py](#utilspy)
+- [.pre-commit-config.yaml](#pre-commit-configyaml)
+- [pyproject.toml, setup.py, and setup.cfg](#pyprojecttoml-setuppy-and-setupcfg)
+- [requirements.txt](#requirementstxt)
+- [updateVersion.sh](#updateversionsh)
 
-## Source Directory
-You can find the source code in the source directory.
-```
-src/ozone
-```
-Here, you will find the executable code files and classes. These include files like `__init__.py` (the executable file), `ozone.py` and `urls.py` (refer to **Classes** for more information).
+## src/
 
-## Classes
-In this repo, there are two main files where the classes are written. `ozone.py`, and `urls.py`. It is important to know the difference between them.
+This is the directory where main Ozone source code lives.
 
-### `urls.py`
-In this file, the classes stored provide the URL for the other files to use.
+### media/
 
-### `ozone.py`
-In this file, the classes are stored with the purpose of creating data for the end user. The classes in this file depend on the classes in `urls.py`.
+This subdirectory contains media related to Ozone's documentation (README). Included here are demo GIFs and Ozone logo.
 
-This file processes the required token to access the data, makes a request to the API, retrieves the data, and parses it.
+### ozone/
 
-## Dependency Management
-### `setup.py`
-This file is used to set up the project and install the required dependencies.
-### `setup.cfg`
-This file contains the configuration specification. 
-### `requirements.txt`
-The third-party dependencies are specified in this file.
+This module is where core Ozone code lives.
 
-## `src/media`
-If you come across `src/media`, you will find that it contains gifs. These are the files for the showcase gifs in the README.md.
+#### ozone.py
+
+Main module that contains Ozone's class definition.
+
+#### urls.py
+
+Helper module that contains definitions for WAQI API's URL endpoints.
+
+#### historical/
+
+This subfolder contains Python code relevant for historical data collection feature. It's mostly hack-ish and reverse-engineered from AQI's frontend website.
+
+##### relevant_funcs.py
+
+This file contains relevant JavaScript functions wrapped as one long triple-quoted Python string. These JavaScript functions are excerpted from AQI's frontend and are treated as black box that can convert server-sent data into readable format.
+
+##### _reverse_engineered.py
+
+This file contains most of code required to run the JavaScript functions and convert the result back into Python format that can be used by the rest of Ozone.
+
+## tests/
+
+This is where the test suite lives.
+
+### cassettes/
+
+This folder is where VCR.py cassettes are stored. Each folder here corresponds to one test file. Each file in each folder corresponds to one test function.
+
+### conftest.py
+
+Pytest global and configuration fixtures are defined here.
+
+### test_*.py
+
+These are test files. One test file is responsible for testing one of Ozone's public method.
+
+### utils.py
+
+Constants and objects that are used repeatedly throughout the entire test suite are defined here instead of in each file, to reduce repetitions and make it easier to change things if necessary.
+
+## .pre-commit-config.yaml
+
+Configuration file for pre-commit hooks. Specifies what pre-commit hooks to use, from which repository, and what version.
+
+## pyproject.toml, setup.py, and setup.cfg
+
+Files used for purposes of packaging and installation. Also contains package information for use in PyPI like version information, author name, PyPI category tags, etc.
+
+## requirements.txt
+
+Dependency requirement file for development. Non-developing users won't need to install packages in this file, as the installation process will install the user requirements automatically.
+
+## updateVersion.sh
+
+A custom shell script to automatically increment version. This is purely a convenience script so that each time Ozone needs a new release, we won't need to alter the version numbers in multiple places by hand.
