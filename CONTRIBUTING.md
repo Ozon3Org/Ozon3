@@ -189,6 +189,12 @@ Some tests are slow and marked accordingly. To skip tests that are marked as "sl
 pytest --skip-slow
 ```
 
+If you want to run only specific tests, refer to (pytest documentation)[https://docs.pytest.org/en/7.1.x/how-to/usage.html] for a more complete information. The following is an example for how to run only the test functions starting with the pattern `output_data_format`
+
+```sh
+pytest -k "output_data_format"
+```
+
 If any of your tests fail because of a VCR error such as `vcr.errors.CannotOverWriteExistingCassetteException` while running the above commands, that could mean the cassette needs to be updated. See [below](#adding-or-updating-cassettes) for information.
 
 ### Updating tests
