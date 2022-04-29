@@ -18,6 +18,12 @@ This document is a reference primer on Ozone's files: what, where, and for what.
 - [pyproject.toml, setup.py, and setup.cfg](#pyprojecttoml-setuppy-and-setupcfg)
 - [requirements.txt](#requirementstxt)
 - [updateVersion.sh](#updateversionsh)
+- [.github/](#github)
+  - [ISSUE_TEMPLATE/](#issue_template)
+  - [workflows/](#workflows)
+    - [lint.yml](#lintyml)
+    - [package-publish.yml](#package-publishyml)
+    - [take.yml](#takeyml)
 
 ## src/
 
@@ -86,3 +92,27 @@ Dependency requirement file for development. Non-developing users won't need to 
 ## updateVersion.sh
 
 A custom shell script to automatically increment version. This is purely a convenience script so that each time Ozone needs a new release, we won't need to alter the version numbers in multiple places by hand.
+
+## .github/
+
+This folder is related to GitHub repository and not necessarily part of Ozone package.
+
+### ISSUE_TEMPLATE/
+
+Files in this folder are templates meant for newly opened issues.
+
+### workflows/
+
+This folder contains configuration files for running GitHub actions and workflows, including CI/CD tools.
+
+#### lint.yml
+
+CI/CD tool: linter and style checker.
+
+#### package-publish.yml
+
+CI/CD tool: package and publish a release for each tags.
+
+#### take.yml
+
+GitHub workflow: allow users to claim an issue and get it assigned to themselves without maintainers having to explicitly perform the assigning.
