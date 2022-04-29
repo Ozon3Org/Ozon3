@@ -11,25 +11,23 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
 #### Table of Contents
 
 - [How Can I Contribute?](#how-can-i-contribute)
-
   - [Reporting bugs](#reporting-bugs)
-  - [Suggesting enhancements/features](#suggesting-enhancements/features)
+  - [Suggesting enhancements/features](#suggesting-enhancementsfeatures)
   - [Making a pull request](#making-a-pull-request)
   - [Get an issue assigned to you](#get-an-issue-assigned-to-you)
-
 - [Setting Up Local Development Environment](#setting-up-local-development-environment)
-
   - [Getting a local copy](#getting-a-local-copy)
   - [Setting up a development environment](#setting-up-a-development-environment)
   - [Pushing changes and opening a pull request](#pushing-changes-and-opening-a-pull-request)
-
+- [Test Suite](#test-suite)
+  - [Setting up and running tests](#setting-up-and-running-tests)
+  - [Updating tests](#updating-tests)
+  - [About the cassettes and pytest-recording](#about-the-cassettes-and-pytest-recording)
+  - [Adding or updating cassettes](#adding-or-updating-cassettes)
 - [World Air Quality Index's API](#world-air-quality-indexs-api)
-
 - [Style Guides](#style-guides)
-
-  - [Commit message style guide](#git-commit-messages)
+  - [Git commit messages](#git-commit-messages)
   - [Python style guide](#python-style-guide)
-
 - [Github Branching Model](#github-branching-model)
 
 
@@ -145,9 +143,15 @@ Hold my beer, I got this
 
    From this point on, pre-commit hooks will run linters and formatters automatically before every commit. If there's a problem, the commit will abort. You'll need to fix the problem before committing again.
 
+   > It's normal for pre-commit to take some time.
+
+   > When Black reformats a staged file, the pre-commit will fail. It is normal and expected. See [this discussion](https://github.com/Milind220/Ozone/discussions/85). Just stage the file and commit again, it should pass the second time.
+
 4. Your local development environment is ready to use. Feel free to code away. Make sure to only commit logical changes that are already tested. Don't commit things you just try out and haven't tested.
 
 5. When you're done coding, again, **test out the changes that you've made to the package.** Proceed if all is good.
+
+   > See [next section](#test-suite) for instructions about Ozone's test suite.
 
 ### Pushing changes and opening a pull request
 
@@ -156,6 +160,125 @@ Hold my beer, I got this
 2. Return to your forked repository on Github and click on `compare and pull request` to begin the PR. **Make sure the base branch is `dev`, not `main`.**
 
 3. Describe your PR, submit it and wait for it to be merged! You may be required to do additional work or changes before it is merged.
+
+## Test Suite
+
+Ozone has a test suite that lives in `tests/` directory, which has the following structure within:
+
+Directories:
+
+1. `cassettes/`: Location of vcrpy and pytest-recording cassettes.
+
+Files:
+
+1. `conftest.py`: Location of pytest global and configuration fixtures.
+2. `utils.py`: Location of global Python helper objects (i.e. constants and `Ozone` instance) to use in tests.
+3. `test_*.py`: Test files, each file is testing one public method.
+
+### Setting up and running tests
+
+After setting development environment as pointed out above, you should already have all necessary testing packages installed. To run all tests, invoke this command from the root directory.
+
+```sh
+pytest
+```
+
+Some tests are slow and marked accordingly. To skip tests that are marked as "slow", you can use
+
+```sh
+pytest --skip-slow
+```
+
+If any of your tests fail because of a VCR error such as `vcr.errors.CannotOverWriteExistingCassetteException` while running the above commands, that could mean the cassette needs to be updated. See [below](#adding-or-updating-cassettes) for information.
+
+### Updating tests
+
+Generally, tests should correspond to the necessary specification/expectation of Ozone users. Tests will help us identify if our code is still in line with such expectations.
+
+Tests should be updated when e.g.:
+- There is new expectation on how should Ozone behave. In this case, the tests need to be updated accordingly.
+- There is a new functionality. In this case, add necessary tests accordingly.
+- There is a new bug or previously unencountered or undocumented behavior. Add them to the existing tests when fixing it, to make sure the same bug will never slip past again in the future.
+
+### About the cassettes and pytest-recording
+
+This test suite is testing Ozone's functionality, therefore interaction with outside sources are mocked. Ozone uses pytest-recording plugin that uses vcrpy under the hood to record request-response pairs.
+
+These request-response pairs are stored as `.yaml` files in `tests/cassettes` directory. When an outbound request is made, pytest-recording will look for that request's response in the tests' `.yaml` file instead of actually letting the request go through to WAQI.
+
+The `tests/cassettes` directory is organized as follows:
+
+- Each folder per one test file.
+- Each `.yaml` file per one test function.
+
+For the purposes of this test suite, these request-response pairs are all **assumed** to be complete and correct. In the unlikely event that WAQI API changes their specifications, these request-response pairs need to be re-recorded. See the [next section](#adding-or-updating-cassettes).
+
+### Adding or updating cassettes
+
+By default, pytest-recording will only use existing cassettes for testing, and will raise error if there's a new interaction that is not contained in existing cassettes. This prevents "accidentally" making a request that is not already been mocked.
+
+Cassettes are generally assumed to be complete (covers all the request-response pairs ever needed by the test function) and correct (exactly similar to what WAQI API would send over the live wire). But sometimes, it might not always be the case.
+
+Sometimes when fixing a failing test (or updating a previously passing test), the next runs fail because of a vcr exception `vcr.errors.CannotOverWriteExistingCassetteException`. This is because the test makes a new HTTPS request that's not recorded in the corresponding cassette file. The cassette file thus needs to be updated.
+
+Before doing so, you'll want to test using live connection to confirm that the test actually pass and the failure is caused solely by an outdated cassette:
+
+```sh
+pytest --disable-recording
+```
+
+If your tests pass when using live connection, it means the cassettes indeed need update. Simply run one of these:
+
+```sh
+# Rewrite existing cassettes but disallow creating new cassette files
+# For modifying existing tests
+pytest --record-mode=rewrite
+
+# Create new cassette files but disallow modifying existing cassettes
+# For adding new tests
+pytest --record-mode=once
+```
+
+Alternatively, you can remove the `tests/cassettes` folder entirely and record from scratch:
+
+```sh
+# NOT RECOMMENDED, this is a nuclear option. For "if-all-else-fails"-type situation,
+# or when there's very significant change to the test suite file structures.
+rm -r tests/cassettes
+pytest --record-mode=once
+```
+
+After making changes to the cassettes, don't forget to save the cassettes into version control, for example by doing:
+
+```sh
+git commit tests/cassettes -m "test: Re-record cassettes for passing test XXX XXX XXX"
+```
+
+Note that doing a live request to WAQI requires a token to be supplied. The test suite loads the token from an environment variable. To set this environment variable, you can make a file named `.env` in Ozone root directory with the following content:
+
+```
+WAQI_TOKEN=insert_your_token_here
+```
+
+Or you can pass the environment variable to the shell environment. For example, in Git Bash you can do this when invoking pytest:
+
+```sh
+WAQI_TOKEN=insert_your_token_here pytest --disable-recording
+```
+
+Finally, after updating the cassettes, perform the test one more time to confirm that the cassettes don't cause problems:
+
+```sh
+# equivalent to just invoking "pytest"
+pytest --record-mode=none
+```
+
+> To have more confidence that the tests will not go over the wire, the `--block-network` flag can also be passed to block all network access.
+
+For more information:
+- [python-decouple homepage](https://github.com/henriquebastos/python-decouple) (used to collect `.env` variables)
+- [pytest-recording homepage](https://github.com/kiwicom/pytest-recording)
+- [VCRpy documentation about record modes](https://vcrpy.readthedocs.io/en/latest/usage.html#record-modes)
 
 
 
