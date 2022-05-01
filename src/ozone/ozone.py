@@ -711,6 +711,10 @@ class Ozone:
                 )
 
         df = get_data_from_id(city_id)
+
+        # Reset date index and rename the column appropriately
+        df = df.reset_index().rename(columns={"index": "date"})
+
         return self._format_output(data_format, df)
 
     def get_city_forecast(
