@@ -213,6 +213,9 @@ class Ozone:
         row["longitude"] = data_obj["city"]["geo"][1]
         row["station"] = data_obj["city"]["name"]
         row["dominant_pollutant"] = data_obj["dominentpol"]
+        if data_obj["dominentpol"] == "pm25":
+            # Ensures that pm2.5 is correctly labeled.
+            row["dominant_pollutant"] = "pm2.5"
         row["timestamp"] = data_obj["time"]["s"]
         row["timestamp_timezone"] = data_obj["time"]["tz"]
 
