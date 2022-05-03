@@ -714,6 +714,9 @@ class Ozone:
                 )
 
         df = get_data_from_id(city_id)
+        if "pm25" in df.columns:
+            # This ensures that pm25 data is labelled correctly.
+            df.rename(columns={"pm25": "pm2.5"}, inplace=True)
 
         # Reset date index and rename the column appropriately
         df = df.reset_index().rename(columns={"index": "date"})
