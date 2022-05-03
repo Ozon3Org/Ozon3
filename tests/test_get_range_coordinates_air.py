@@ -51,7 +51,7 @@ def test_column_types():
         "latitude",
         "longitude",
         "aqi",
-        "pm25",
+        "pm2.5",
         "pm10",
         "o3",
         "co",
@@ -71,12 +71,12 @@ def test_column_types():
 @pytest.mark.vcr
 def test_excluded_params():
     # Param should be really excluded when specified as such
-    custom_params = ["aqi", "pm25", "o3"]
+    custom_params = ["aqi", "pm2.5", "o3"]
     result = api.get_range_coordinates_air(
         LOWER_BOUND, UPPER_BOUND, params=custom_params
     )
     assert "pm10" not in result
-    assert "pm25" in result
+    assert "pm2.5" in result
 
 
 @pytest.mark.vcr

@@ -27,7 +27,7 @@ def test_column_types():
     # The date column contains date information
     assert pd_types.is_datetime64_any_dtype(result["date"])
 
-    HISTORICAL_COLUMNS = ["pm25", "pm10", "o3", "no2", "so2", "co"]
+    HISTORICAL_COLUMNS = ["pm2.5", "pm10", "o3", "no2", "so2", "co"]
     assert all([pd_types.is_float_dtype(result[col]) for col in HISTORICAL_COLUMNS])
 
 

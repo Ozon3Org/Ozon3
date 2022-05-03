@@ -28,7 +28,7 @@ def test_column_types():
 
     # Check that all pollutants and statistics are in column
     # and are of float type
-    for param in ["pm25", "pm10", "o3", "uvi"]:
+    for param in ["pm2.5", "pm10", "o3", "uvi"]:
         for stat in ["min", "max", "avg"]:
             assert pd_types.is_float_dtype(result[(param, stat)])
 
