@@ -745,6 +745,10 @@ class Ozone:
         data_obj = self._check_and_get_data_obj(r)
 
         df = self._extract_forecast_data(data_obj)
+        if "pm25" in df.columns:
+            # This ensures that pm25 data is labelled correctly.
+            df.rename(columns={"pm25": "pm2.5"}, inplace=True)
+
         return self._format_output(data_format, df)
 
 
