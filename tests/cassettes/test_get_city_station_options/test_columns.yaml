@@ -14,49 +14,49 @@ interactions:
     uri: https://search.waqi.info/nsearch/station/ukraine
   response:
     body:
-      string: "{\"dt\":\"12.582701ms\",\"term\":\"ukraine\",\"results\":[{\"s\":{\"a\":\"124\",\"t\":[\"2022-04-21
-        05:00:00\",\"+03:00\"],\"n\":[\"SteelDrum, Lviv\",\"vul.Kleparivska 18\"],\"u\":\"ukraine/lviv/steeldrum\"},\"n\":[\"SteelDrum,
-        Lviv, Ukraine\"],\"score\":6,\"x\":11795,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"86\",\"t\":[\"2022-04-21
-        04:00:00\",\"+03:00\"],\"n\":[\"Berezhans\\\\'ka Street, 3, Ternopil\"]},\"n\":[\"Berezhans'ka
-        Street, 3, Ternopil, Ukraine\"],\"score\":6,\"x\":11660,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"65\",\"t\":[\"2022-04-21
-        04:00:00\",\"+03:00\"],\"n\":[\"Velyka Diivska Street, 4, Dnipro\"],\"u\":\"ukraine/dnipro/velyka-diivska-street--4\"},\"n\":[\"Velyka
-        Diivska Street, 4, Dnipro, Ukraine\"],\"score\":6,\"x\":11770,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"58\",\"t\":[\"2022-04-21
-        04:00:00\",\"+03:00\"],\"n\":[\"Vokzalna Square, 2, Dnipro\"],\"u\":\"ukraine/dnipro/vokzalna-square--2\"},\"n\":[\"Vokzalna
-        Square, 2, Dnipro, Ukraine\"],\"score\":6,\"x\":11622,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"56\",\"t\":[\"2022-04-21
-        05:00:00\",\"+03:00\"],\"n\":[\"Televiziyna Street, Novooleksandrivka\"],\"u\":\"ukraine/novooleksandrivka/televiziyna-street/arendnyy-lane\"},\"n\":[\"Televiziyna
-        Street, Novooleksandrivka, Ukraine\"],\"score\":6,\"x\":11664,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"55\",\"t\":[\"2022-04-21
-        04:00:00\",\"+03:00\"],\"n\":[\"prospekt Miru, 20, Shepetivka\",\"Luftdaten
+      string: "{\"dt\":\"11.231355ms\",\"term\":\"ukraine\",\"results\":[{\"s\":{\"a\":\"30\",\"t\":[\"2022-05-03
+        19:00:00\",\"+03:00\"],\"n\":[\"vulicya Sim\\\\'yi Kulzhenkiv, 31, Kiyiv\"]},\"n\":[\"vulicya
+        Sim'yi Kulzhenkiv, 31, Kiyiv, Ukraine\"],\"score\":6,\"x\":11902,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"27\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"SteelDrum, Lviv\",\"vul.Kleparivska 18\"],\"u\":\"ukraine/lviv/steeldrum\"},\"n\":[\"SteelDrum,
+        Lviv, Ukraine\"],\"score\":6,\"x\":11795,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"18\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"50 Rok\u0456v Peremogy Street, Surs\\\\'ko-Lytovs\\\\'ke\"]},\"n\":[\"50
+        Rok\u0456v Peremogy Street, Surs'ko-Lytovs'ke, Ukraine\"],\"score\":6,\"x\":11627,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"17\",\"t\":[\"2022-05-03
+        19:00:00\",\"+03:00\"],\"n\":[\"bulvar Perova, 48, Kiyiv\"],\"u\":\"ukraine/kiyiv/bulvar-perova--48\"},\"n\":[\"bulvar
+        Perova, 48, Kiyiv, Ukraine\"],\"score\":6,\"x\":11884,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"16\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Hrushevs\\\\'koho Street, 8, Ternopil\"]},\"n\":[\"Hrushevs'koho
+        Street, 8, Ternopil, Ukraine\"],\"score\":6,\"x\":11659,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"13\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Velyka Diivska Street, 4, Dnipro\"],\"u\":\"ukraine/dnipro/velyka-diivska-street--4\"},\"n\":[\"Velyka
+        Diivska Street, 4, Dnipro, Ukraine\"],\"score\":6,\"x\":11770,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"13\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Televiziyna Street, Novooleksandrivka\"],\"u\":\"ukraine/novooleksandrivka/televiziyna-street/arendnyy-lane\"},\"n\":[\"Televiziyna
+        Street, Novooleksandrivka, Ukraine\"],\"score\":6,\"x\":11664,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"12\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Vokzalna Square, 2, Dnipro\"],\"u\":\"ukraine/dnipro/vokzalna-square--2\"},\"n\":[\"Vokzalna
+        Square, 2, Dnipro, Ukraine\"],\"score\":6,\"x\":11622,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"11\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"prospekt Miru, 20, Shepetivka\",\"Luftdaten
         #25838\"],\"u\":\"ukraine/shepetivka/prospekt-miru--20\"},\"n\":[\"prospekt
-        Miru, 20, Shepetivka, Ukraine\"],\"score\":6,\"x\":11885,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"54\",\"t\":[\"2022-04-20
-        22:00:00\",\"+03:00\"],\"n\":[\"ecorada2, Kryvoy Roh\",\"vul.Futbolna\"],\"u\":\"ukraine/kryvoy-roh/ecorada2\"},\"n\":[\"ecorada2,
-        Kryvoy Roh, Ukraine\"],\"score\":6,\"x\":11718,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"51\",\"t\":[\"2022-04-21
-        05:00:00\",\"+03:00\"],\"n\":[\"Urban Space 100, Ivano-Frankivsk\",\"\u0432\u0443\u043B.\u0413\u0440\u0443\u0448\u0435\u0432\u0441\u044C\u043A\u043E\u0433\u043E\"],\"u\":\"ukraine/ivano-frankivsk/urban-space-100\"},\"n\":[\"Urban
-        Space 100, Ivano-Frankivsk, Ukraine\"],\"score\":6,\"x\":11680,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"46\",\"t\":[\"2022-04-21
-        04:00:00\",\"+03:00\"],\"n\":[\"Alma-Atinska vulicya, 1, Chernivci\",\"Luftdaten
+        Miru, 20, Shepetivka, Ukraine\"],\"score\":6,\"x\":11885,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"10\",\"t\":[\"2022-05-03
+        12:00:00\",\"+03:00\"],\"n\":[\"MANLab, Kyiv\",\"Yuriya Illyenka, 63\"],\"u\":\"ukraine/kyiv/manlab\"},\"n\":[\"MANLab,
+        Kyiv, Ukraine\"],\"score\":6,\"x\":11723,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"10\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Vulytsya Pavla Nirinberha, 4-6, Dnipro\"],\"u\":\"ukraine/dnipro/vulytsya-pavla-nirinberha--4-6\"},\"n\":[\"Vulytsya
+        Pavla Nirinberha, 4-6, Dnipro, Ukraine\"],\"score\":6,\"x\":11623,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"10\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Pobeda-6, Geroev Avenue, 40, Dnipro\"],\"u\":\"ukraine/dnipro/pobeda-6--geroev-avenue--40\"},\"n\":[\"Pobeda-6,
+        Geroev Avenue, 40, Dnipro, Ukraine\"],\"score\":6,\"x\":11431,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"9\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Urban Space 100, Ivano-Frankivsk\",\"\u0432\u0443\u043B.\u0413\u0440\u0443\u0448\u0435\u0432\u0441\u044C\u043A\u043E\u0433\u043E\"],\"u\":\"ukraine/ivano-frankivsk/urban-space-100\"},\"n\":[\"Urban
+        Space 100, Ivano-Frankivsk, Ukraine\"],\"score\":6,\"x\":11680,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"9\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Alma-Atinska vulicya, 1, Chernivci\",\"Luftdaten
         #26750\"],\"u\":\"ukraine/chernivci/alma-atinska-vulicya--1\"},\"n\":[\"Alma-Atinska
-        vulicya, 1, Chernivci, Ukraine\"],\"score\":6,\"x\":11875,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"40\",\"t\":[\"2022-04-21
-        04:00:00\",\"+03:00\"],\"n\":[\"50 Rok\u0456v Peremogy Street, Surs\\\\'ko-Lytovs\\\\'ke\"]},\"n\":[\"50
-        Rok\u0456v Peremogy Street, Surs'ko-Lytovs'ke, Ukraine\"],\"score\":6,\"x\":11627,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"38\",\"t\":[\"2022-04-21
-        03:00:00\",\"+03:00\"],\"n\":[\"bulvar Perova, 48, Kiyiv\"],\"u\":\"ukraine/kiyiv/bulvar-perova--48\"},\"n\":[\"bulvar
-        Perova, 48, Kiyiv, Ukraine\"],\"score\":6,\"x\":11884,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"35\",\"t\":[\"2022-04-20
-        22:00:00\",\"+03:00\"],\"n\":[\"Pobeda-6, Geroev Avenue, 40, Dnipro\"],\"u\":\"ukraine/dnipro/pobeda-6--geroev-avenue--40\"},\"n\":[\"Pobeda-6,
-        Geroev Avenue, 40, Dnipro, Ukraine\"],\"score\":6,\"x\":11431,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"31\",\"t\":[\"2022-04-21
-        04:00:00\",\"+03:00\"],\"n\":[\"Vulytsya Pavla Nirinberha, 4-6, Dnipro\"],\"u\":\"ukraine/dnipro/vulytsya-pavla-nirinberha--4-6\"},\"n\":[\"Vulytsya
-        Pavla Nirinberha, 4-6, Dnipro, Ukraine\"],\"score\":6,\"x\":11623,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"18\",\"t\":[\"2022-04-21
-        05:00:00\",\"+03:00\"],\"n\":[\"ecorada1, Kryvyi Rih\",\"\u0427\u0435\u0441\u044C\u043A\u0430\"],\"u\":\"ukraine/kryvyi-rih/ecorada1\"},\"n\":[\"ecorada1,
-        Kryvyi Rih, Ukraine\"],\"score\":6,\"x\":11689,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":null,\"n\":[\"MANLab,
-        Kyiv\",\"Yuriya Illyenka, 63\"],\"u\":\"ukraine/kyiv/manlab\"},\"n\":[\"MANLab,
-        Kyiv, Ukraine\"],\"score\":6,\"x\":11723,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2019-11-10
-        12:00:00\",\"+03:00\"],\"n\":[\"Zayats, Zaporizhzhya\",\"Charivna\"],\"u\":\"ukraine/zaporizhzhya/zayats\"},\"n\":[\"Zayats,
-        Zaporizhzhya, Ukraine\"],\"score\":6,\"x\":11743,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2020-08-30
-        15:00:00\",\"+03:00\"],\"n\":[\"TsUM, Ivano-Frankivsk\",\"\u0432\u0443\u043B.\u0414\u043D\u0456\u0441\u0442\u0440\u043E\u0432\u043A\u0441\u044C\u043A\u0430\"],\"u\":\"ukraine/ivano-frankivsk/tsum\"},\"n\":[\"TsUM,
-        Ivano-Frankivsk, Ukraine\"],\"score\":6,\"x\":11683,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2019-10-07
-        14:00:00\",\"+03:00\"],\"n\":[\"Topolia-2, 23, Dnipro\"],\"u\":\"ukraine/dnipro/topolia-2--23\"},\"n\":[\"Topolia-2,
-        23, Dnipro, Ukraine\"],\"score\":6,\"x\":11728,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2022-03-30
-        02:00:00\",\"+03:00\"],\"n\":[\"APS 3001, Mikolayivka\"],\"u\":\"ukraine/mikolayivka/aps-3001\"},\"n\":[\"APS
-        3001, Mikolayivka, Ukraine\"],\"score\":6,\"x\":11879,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2020-10-13
+        vulicya, 1, Chernivci, Ukraine\"],\"score\":6,\"x\":11875,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"6\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"ecorada1, Kryvyi Rih\",\"\u0427\u0435\u0441\u044C\u043A\u0430\"],\"u\":\"ukraine/kryvyi-rih/ecorada1\"},\"n\":[\"ecorada1,
+        Kryvyi Rih, Ukraine\"],\"score\":6,\"x\":11689,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"5\",\"t\":[\"2022-05-03
+        20:00:00\",\"+03:00\"],\"n\":[\"Berezhans\\\\'ka Street, 3, Ternopil\"]},\"n\":[\"Berezhans'ka
+        Street, 3, Ternopil, Ukraine\"],\"score\":6,\"x\":11660,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2022-02-24
+        18:00:00\",\"+03:00\"],\"n\":[\"Novokrymskaya Street, 1, Dnipro\"],\"u\":\"ukraine/dnipro/novokrymskaya-street--1\"},\"n\":[\"Novokrymskaya
+        Street, 1, Dnipro, Ukraine\"],\"score\":6,\"x\":11453,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2020-10-13
         18:00:00\",\"+03:00\"],\"n\":[\"MEREZhA-868, Hlibivka\",\"Dzhyntamo-Bryz\"],\"u\":\"ukraine/hlibivka/merezha-868\"},\"n\":[\"MEREZhA-868,
-        Hlibivka, Ukraine\"],\"score\":6,\"x\":11792,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"}]}"
+        Hlibivka, Ukraine\"],\"score\":6,\"x\":11792,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2022-03-30
+        02:00:00\",\"+03:00\"],\"n\":[\"APS 3001, Mikolayivka\"],\"u\":\"ukraine/mikolayivka/aps-3001\"},\"n\":[\"APS
+        3001, Mikolayivka, Ukraine\"],\"score\":6,\"x\":11879,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2019-10-07
+        14:00:00\",\"+03:00\"],\"n\":[\"Topolia-2, 23, Dnipro\"],\"u\":\"ukraine/dnipro/topolia-2--23\"},\"n\":[\"Topolia-2,
+        23, Dnipro, Ukraine\"],\"score\":6,\"x\":11728,\"c\":\"UA\",\"z\":0,\"$\":\"realtime\"}]}"
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -65,17 +65,17 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 21 Apr 2022 01:07:31 GMT
+      - Tue, 03 May 2022 16:48:45 GMT
       Server:
       - nginx
       Transfer-Encoding:
       - chunked
       X-Gen-Time:
-      - 12.688106ms
+      - 11.348162ms
       X-Powered-By:
       - waqi-search/1.2
       content-length:
-      - '4643'
+      - '4630'
     status:
       code: 200
       message: OK
