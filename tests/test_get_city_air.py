@@ -62,7 +62,7 @@ def test_excluded_params():
     custom_params = ["aqi", "pm25", "o3"]
     result = api.get_city_air("london", params=custom_params)
     assert "pm10" not in result
-    assert "pm25" in result
+    assert "pm2.5" in result
 
 
 @pytest.mark.vcr
