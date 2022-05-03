@@ -221,11 +221,14 @@ class Ozone:
                 if param == "aqi":
                     # This is in different part of JSON object.
                     row["aqi"] = _as_float(data_obj["aqi"])
-                    # This adds AQI_meaning and AQI_health_implications data
+                    # This adds AQI_meaning and AQI_health_implications data.
                     (
                         row["AQI_meaning"],
                         row["AQI_health_implications"],
                     ) = self._AQI_meaning(_as_float(data_obj["aqi"]))
+                elif param == "pm25":
+                    # To ensure that pm2.5 data is labelled correctly.
+                    row["pm2.5"] = _as_float(data_obj["iaqi"]["pm25"]["v"])
                 else:
                     row[param] = _as_float(data_obj["iaqi"][param]["v"])
             except KeyError:
