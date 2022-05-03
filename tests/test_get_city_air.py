@@ -39,7 +39,7 @@ def test_column_types():
         "latitude",
         "longitude",
         "aqi",
-        "pm25",
+        "pm2.5",
         "pm10",
         "o3",
         "co",
