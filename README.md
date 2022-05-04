@@ -20,7 +20,11 @@ With Ozone, just 4 lines of code are enough to get you the data you need. And th
 
 Use Ozone to **get real-time air quality data, or historical data from 2014 onwards**, and fetch air quality data **for anywhere in the world** in seconds.
 
-###### You can view our complete documentation [here](https://milind220.github.io/Ozone/)
+
+
+_You can view our complete documentation [here](https://milind220.github.io/Ozone/)_
+
+_Don't forget to star Ozone repository if you found it helpful_
 
 #### Table of Contents
 
