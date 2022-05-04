@@ -1,4 +1,5 @@
 import pandas
+import pandas.api.types as pd_types
 import pytest
 
 from utils import (
@@ -16,6 +17,18 @@ from utils import (
 def test_return_value_and_format():
     result = api.get_historical_data(city="london")
     assert isinstance(result, pandas.DataFrame)
+
+
+@pytest.mark.vcr
+@pytest.mark.slow
+def test_column_types():
+    result = api.get_historical_data(city_id=5724)
+
+    # The date column contains date information
+    assert pd_types.is_datetime64_any_dtype(result["date"])
+
+    HISTORICAL_COLUMNS = ["pm2.5", "pm10", "o3", "no2", "so2", "co"]
+    assert all([pd_types.is_float_dtype(result[col]) for col in HISTORICAL_COLUMNS])
 
 
 @pytest.mark.vcr

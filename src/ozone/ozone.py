@@ -58,7 +58,7 @@ class Ozone:
     _find_stations_url: str = URLs.find_stations_url
     _default_params: List[str] = [
         "aqi",
-        "pm25",
+        "pm2.5",
         "pm10",
         "o3",
         "co",
@@ -213,6 +213,9 @@ class Ozone:
         row["longitude"] = data_obj["city"]["geo"][1]
         row["station"] = data_obj["city"]["name"]
         row["dominant_pollutant"] = data_obj["dominentpol"]
+        if data_obj["dominentpol"] == "pm25":
+            # Ensures that pm2.5 is correctly labeled.
+            row["dominant_pollutant"] = "pm2.5"
         row["timestamp"] = data_obj["time"]["s"]
         row["timestamp_timezone"] = data_obj["time"]["tz"]
 
@@ -221,11 +224,14 @@ class Ozone:
                 if param == "aqi":
                     # This is in different part of JSON object.
                     row["aqi"] = _as_float(data_obj["aqi"])
-                    # This adds AQI_meaning and AQI_health_implications data
+                    # This adds AQI_meaning and AQI_health_implications data.
                     (
                         row["AQI_meaning"],
                         row["AQI_health_implications"],
                     ) = self._AQI_meaning(_as_float(data_obj["aqi"]))
+                elif param == "pm2.5":
+                    # To ensure that pm2.5 data is labelled correctly.
+                    row["pm2.5"] = _as_float(data_obj["iaqi"]["pm25"]["v"])
                 else:
                     row[param] = _as_float(data_obj["iaqi"][param]["v"])
             except KeyError:
@@ -418,7 +424,7 @@ class Ozone:
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
                 Choose from the following values:
-                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
                  "p", "t", "w", "wg"]
                 Gets all parameters by default.
 
@@ -455,7 +461,7 @@ class Ozone:
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
                 Choose from the following values:
-                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
                  "p", "t", "w", "wg"]
                 Gets all parameters by default.
 
@@ -492,7 +498,7 @@ class Ozone:
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
                 Choose from the following values:
-                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
                  "p", "t", "w", "wg"]
                 Gets all parameters by default..
 
@@ -536,7 +542,7 @@ class Ozone:
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
                 Choose from the following values:
-                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
                  "p", "t", "w", "wg"]
                 Gets all parameters by default.
 
@@ -566,7 +572,7 @@ class Ozone:
                 Choose from 'csv', 'json', 'xlsx'.
             params (List[str], optional): A list of parameters to get data for.
                 Choose from the following values:
-                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
                  "p", "t", "w", "wg"]
                 Gets all parameters by default.
             df (pandas.DataFrame, optional): An existing dataframe to
@@ -602,7 +608,7 @@ class Ozone:
             city (string): A city to get the data for
             air_param (string): A string containing the specified air quality parameter.
                 Choose from the following values:
-                ["aqi", "pm25", "pm10", "o3", "co", "no2", "so2", "dew", "h",
+                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
                  "p", "t", "w", "wg"]
                 Gets all parameters by default.
 
@@ -711,6 +717,13 @@ class Ozone:
                 )
 
         df = get_data_from_id(city_id)
+        if "pm25" in df.columns:
+            # This ensures that pm25 data is labelled correctly.
+            df.rename(columns={"pm25": "pm2.5"}, inplace=True)
+
+        # Reset date index and rename the column appropriately
+        df = df.reset_index().rename(columns={"index": "date"})
+
         return self._format_output(data_format, df)
 
     def get_city_forecast(
@@ -735,6 +748,10 @@ class Ozone:
         data_obj = self._check_and_get_data_obj(r)
 
         df = self._extract_forecast_data(data_obj)
+        if "pm25" in df.columns:
+            # This ensures that pm25 data is labelled correctly.
+            df.rename(columns={"pm25": "pm2.5"}, inplace=True)
+
         return self._format_output(data_format, df)
 
 

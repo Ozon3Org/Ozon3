@@ -14,7 +14,7 @@ interactions:
     uri: https://search.waqi.info/nsearch/station/gibberish_nonexistent_place_name
   response:
     body:
-      string: '{"dt":"5.244025ms","term":"gibberish_nonexistent_place_name","results":[]}'
+      string: '{"dt":"4.531778ms","term":"gibberish_nonexistent_place_name","results":[]}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -23,13 +23,13 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 21 Apr 2022 01:07:33 GMT
+      - Tue, 03 May 2022 16:48:46 GMT
       Server:
       - nginx
       Transfer-Encoding:
       - chunked
       X-Gen-Time:
-      - 5.298954ms
+      - 4.584947ms
       X-Powered-By:
       - waqi-search/1.2
       content-length:

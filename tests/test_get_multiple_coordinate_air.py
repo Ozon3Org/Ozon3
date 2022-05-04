@@ -44,7 +44,7 @@ def test_column_types():
         "latitude",
         "longitude",
         "aqi",
-        "pm25",
+        "pm2.5",
         "pm10",
         "o3",
         "co",
@@ -64,10 +64,10 @@ def test_column_types():
 @pytest.mark.vcr
 def test_excluded_params():
     # Param should be really excluded when specified as such
-    custom_params = ["aqi", "pm25", "o3"]
+    custom_params = ["aqi", "pm2.5", "o3"]
     result = api.get_multiple_coordinate_air(COORDS, params=custom_params)
     assert "pm10" not in result
-    assert "pm25" in result
+    assert "pm2.5" in result
 
 
 @pytest.mark.vcr
@@ -82,7 +82,7 @@ def test_nonexistent_requested_params():
 def test_bad_coordinates():
     # NOTE, ???
     # See test_get_multiple_city_air, same issue
-    BAD_COORDS = [(50, 0), (50, 1), ("lol", "bruh"), ("51", "0")]
+    BAD_COORDS = [(50, 0), (50, 1), ("lol", "bruh"), ("50.805778", "0.271611")]
     result = api.get_multiple_coordinate_air(BAD_COORDS)
 
     # Lat-lon columns should remain float even when given bad coords
@@ -94,8 +94,8 @@ def test_bad_coordinates():
 
     # Rows with float-able string should be float, because
     # WAQI supports such operation on their backend
-    assert result.at[3, "latitude"] == 51
-    assert result.at[3, "longitude"] == 0
+    assert result.at[3, "latitude"] == 50.805778
+    assert result.at[3, "longitude"] == 0.271611
 
 
 @pytest.mark.vcr

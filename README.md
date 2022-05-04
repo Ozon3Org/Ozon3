@@ -12,6 +12,7 @@
 <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 ![GitHub](https://img.shields.io/github/license/Milind220/Ozone)
 [![Complete Documentation](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment)
+[![Dependency Review](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-orange.svg?style=flat)](https://www.buymeacoffee.com/MilindSharma)
 
 ## The simplest AQI API

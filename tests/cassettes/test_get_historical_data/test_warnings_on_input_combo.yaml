@@ -14,45 +14,45 @@ interactions:
     uri: https://search.waqi.info/nsearch/station/london
   response:
     body:
-      string: "{\"dt\":\"32.34701ms\",\"term\":\"london\",\"results\":[{\"s\":{\"a\":\"57\",\"t\":[\"2022-04-21
-        00:00:00\",\"+01:00\"],\"n\":[\"London\"],\"u\":\"london\"},\"n\":[\"London\"],\"score\":8,\"x\":5724,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"72\",\"t\":[\"2022-04-21
-        00:00:00\",\"+01:00\"],\"n\":[\"London Honor Oak Park\"],\"u\":\"united-kingdom/london-honor-oak-park\"},\"n\":[\"London
-        Honor Oak Park, United Kingdom\"],\"score\":7,\"x\":11653,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"48\",\"t\":[\"2022-04-21
-        00:00:00\",\"+01:00\"],\"n\":[\"London Teddington Bushy Park\"],\"u\":\"united-kingdom/london-teddington-bushy-park\"},\"n\":[\"London
-        Teddington Bushy Park, United Kingdom\"],\"score\":7,\"x\":3195,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"46\",\"t\":[\"2022-04-20
-        23:00:00\",\"+01:00\"],\"n\":[\"London Bexley\"],\"u\":\"united-kingdom/london-bexley\"},\"n\":[\"London
-        Bexley, United Kingdom\"],\"score\":7,\"x\":3188,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"46\",\"t\":[\"2022-04-20
-        23:00:00\",\"+01:00\"],\"n\":[\"London Harrow Stanmore\"],\"u\":\"united-kingdom/london-harrow-stanmore\"},\"n\":[\"London
-        Harrow Stanmore, United Kingdom\"],\"score\":7,\"x\":3192,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"43\",\"t\":[\"2022-04-20
-        22:00:00\",\"+01:00\"],\"n\":[\"London Harlington\"],\"u\":\"united-kingdom/london-harlington\"},\"n\":[\"London
-        Harlington, United Kingdom\"],\"score\":7,\"x\":3191,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"39\",\"t\":[\"2022-04-20
-        19:00:00\",\"-05:00\"],\"n\":[\"London, Ohio\"],\"u\":\"usa/ohio/london\"},\"n\":[\"London,
-        Ohio, USA\"],\"score\":7,\"x\":7930,\"c\":\"US\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"38\",\"t\":[\"2022-04-21
-        00:00:00\",\"+01:00\"],\"n\":[\"London Westminster\"],\"u\":\"united-kingdom/london-westminster\"},\"n\":[\"London
-        Westminster, United Kingdom\"],\"score\":7,\"x\":10874,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"34\",\"t\":[\"2022-04-20
-        20:00:00\",\"-05:00\"],\"n\":[\"London, Ontario\"],\"u\":\"canada/ontario/london\"},\"n\":[\"London,
-        Ontario, Canada\"],\"score\":7,\"x\":15,\"c\":\"CA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"34\",\"t\":[\"2022-04-20
-        23:00:00\",\"+01:00\"],\"n\":[\"London Marylebone Road\"],\"u\":\"united-kingdom/london-marylebone-road\"},\"n\":[\"London
-        Marylebone Road, United Kingdom\"],\"score\":7,\"x\":3193,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"33\",\"t\":[\"2022-04-20
-        19:00:00\",\"-05:00\"],\"n\":[\"Londonderry - Moose Hill, New Hampshire\"],\"u\":\"usa/new-hampshire/londonderry-moose-hill\"},\"n\":[\"Londonderry
-        - Moose Hill, New Hampshire, USA\"],\"score\":7,\"x\":7449,\"c\":\"US\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"32\",\"t\":[\"2022-04-20
-        22:00:00\",\"+01:00\"],\"n\":[\"London Bloomsbury\"],\"u\":\"united-kingdom/london-bloomsbury\"},\"n\":[\"London
-        Bloomsbury, United Kingdom\"],\"score\":7,\"x\":3189,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"1\",\"t\":[\"2022-04-21
-        00:00:00\",\"+01:00\"],\"n\":[\"London N. Kensington\"],\"u\":\"united-kingdom/london-n.-kensington\"},\"n\":[\"London
-        N. Kensington, United Kingdom\"],\"score\":7,\"x\":3194,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2021-12-13
+      string: "{\"dt\":\"26.598645ms\",\"term\":\"london\",\"results\":[{\"s\":{\"a\":\"59\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London\"],\"u\":\"london\"},\"n\":[\"London\"],\"score\":8,\"x\":5724,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"66\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Honor Oak Park\"],\"u\":\"united-kingdom/london-honor-oak-park\"},\"n\":[\"London
+        Honor Oak Park, United Kingdom\"],\"score\":7,\"x\":11653,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"63\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Bexley\"],\"u\":\"united-kingdom/london-bexley\"},\"n\":[\"London
+        Bexley, United Kingdom\"],\"score\":7,\"x\":3188,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"61\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Bloomsbury\"],\"u\":\"united-kingdom/london-bloomsbury\"},\"n\":[\"London
+        Bloomsbury, United Kingdom\"],\"score\":7,\"x\":3189,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"61\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Harrow Stanmore\"],\"u\":\"united-kingdom/london-harrow-stanmore\"},\"n\":[\"London
+        Harrow Stanmore, United Kingdom\"],\"score\":7,\"x\":3192,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"59\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Marylebone Road\"],\"u\":\"united-kingdom/london-marylebone-road\"},\"n\":[\"London
+        Marylebone Road, United Kingdom\"],\"score\":7,\"x\":3193,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"58\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Teddington Bushy Park\"],\"u\":\"united-kingdom/london-teddington-bushy-park\"},\"n\":[\"London
+        Teddington Bushy Park, United Kingdom\"],\"score\":7,\"x\":3195,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"57\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London N. Kensington\"],\"u\":\"united-kingdom/london-n.-kensington\"},\"n\":[\"London
+        N. Kensington, United Kingdom\"],\"score\":7,\"x\":3194,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"55\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Westminster\"],\"u\":\"united-kingdom/london-westminster\"},\"n\":[\"London
+        Westminster, United Kingdom\"],\"score\":7,\"x\":10874,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"51\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"London Harlington\"],\"u\":\"united-kingdom/london-harlington\"},\"n\":[\"London
+        Harlington, United Kingdom\"],\"score\":7,\"x\":3191,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"29\",\"t\":[\"2022-05-03
+        11:00:00\",\"-05:00\"],\"n\":[\"London, Ohio\"],\"u\":\"usa/ohio/london\"},\"n\":[\"London,
+        Ohio, USA\"],\"score\":7,\"x\":7930,\"c\":\"US\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"28\",\"t\":[\"2022-05-03
+        11:00:00\",\"-05:00\"],\"n\":[\"Londonderry - Moose Hill, New Hampshire\"],\"u\":\"usa/new-hampshire/londonderry-moose-hill\"},\"n\":[\"Londonderry
+        - Moose Hill, New Hampshire, USA\"],\"score\":7,\"x\":7449,\"c\":\"US\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"24\",\"t\":[\"2022-05-03
+        12:00:00\",\"-05:00\"],\"n\":[\"London, Ontario\"],\"u\":\"canada/ontario/london\"},\"n\":[\"London,
+        Ontario, Canada\"],\"score\":7,\"x\":15,\"c\":\"CA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2021-12-13
         15:00:00\",\"+01:00\"],\"n\":[\"London Eltham\"],\"u\":\"united-kingdom/london-eltham\"},\"n\":[\"London
-        Eltham, United Kingdom\"],\"score\":7,\"x\":3190,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2022-04-20
+        Eltham, United Kingdom\"],\"score\":7,\"x\":3190,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2022-05-03
         05:00:00\",\"+01:00\"],\"n\":[\"London Hillingdon Harmondsworth Os\"],\"u\":\"united-kingdom/london-hillingdon-harmondsworth-os\"},\"n\":[\"London
-        Hillingdon Harmondsworth Os, United Kingdom\"],\"score\":7,\"x\":3390,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"157\",\"t\":[\"2022-04-21
-        09:00:00\",\"+09:00\"],\"n\":[\"Palbong-dong, Iksan-si, Jeonbuk\",\"\uC775\uC0B0\uC2DC
+        Hillingdon Harmondsworth Os, United Kingdom\"],\"score\":7,\"x\":3390,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"82\",\"t\":[\"2022-05-04
+        00:00:00\",\"+09:00\"],\"n\":[\"Palbong-dong, Iksan-si, Jeonbuk\",\"\uC775\uC0B0\uC2DC
         \uD314\uBD09\uB3D9 \uC804\uBD81\"],\"u\":\"korea/jeonbuk/iksan-si\"},\"n\":[\"Palbong-dong,
-        Iksan-si, Jeonbuk, South Korea\"],\"score\":5,\"x\":1802,\"c\":\"KR\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"109\",\"t\":[\"2022-04-21
-        09:00:00\",\"+09:00\"],\"n\":[\"Wolpyeong-dong, Daejeon\",\"\uC6D4\uD3C9\uB3D9
+        Iksan-si, Jeonbuk, South Korea\"],\"score\":5,\"x\":1802,\"c\":\"KR\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"68\",\"t\":[\"2022-05-04
+        00:00:00\",\"+09:00\"],\"n\":[\"Wolpyeong-dong, Daejeon\",\"\uC6D4\uD3C9\uB3D9
         \uB300\uC804\"],\"u\":\"korea/daejeon/wolpyeong-dong\"},\"n\":[\"Wolpyeong-dong,
-        Daejeon, South Korea\"],\"score\":5,\"x\":4527,\"c\":\"KR\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"57\",\"t\":[\"2022-04-21
-        00:00:00\",\"+01:00\"],\"n\":[\"City of London - Farringdon Street\"],\"u\":\"united-kingdom/city-of-london-farringdon-street\"},\"n\":[\"City
-        of London - Farringdon Street, United Kingdom\"],\"score\":5,\"x\":7949,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"26\",\"t\":[\"2022-04-20
-        20:00:00\",\"-05:00\"],\"n\":[\"Hamilton Downtown, Ontario\"],\"u\":\"canada/ontario/hamilton-downtown\"},\"n\":[\"Hamilton
+        Daejeon, South Korea\"],\"score\":5,\"x\":4527,\"c\":\"KR\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"55\",\"t\":[\"2022-05-03
+        16:00:00\",\"+01:00\"],\"n\":[\"City of London - Farringdon Street\"],\"u\":\"united-kingdom/city-of-london-farringdon-street\"},\"n\":[\"City
+        of London - Farringdon Street, United Kingdom\"],\"score\":5,\"x\":7949,\"c\":\"GB\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"25\",\"t\":[\"2022-05-03
+        12:00:00\",\"-05:00\"],\"n\":[\"Hamilton Downtown, Ontario\"],\"u\":\"canada/ontario/hamilton-downtown\"},\"n\":[\"Hamilton
         Downtown, Ontario, Canada\"],\"score\":5,\"x\":10,\"c\":\"CA\",\"z\":0,\"$\":\"realtime\"},{\"s\":{\"a\":\"-\",\"t\":[\"2021-09-15
         20:00:00\",\"+02:00\"],\"n\":[\"East London, Buffalo City Metro\"],\"u\":\"south-africa/buffalo-city-metro/east-london\"},\"n\":[\"East
         London, Buffalo City Metro, South Africa\"],\"score\":5,\"x\":11407,\"c\":\"ZA\",\"z\":0,\"$\":\"realtime\"}]}"
@@ -64,13 +64,13 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 21 Apr 2022 01:09:13 GMT
+      - Tue, 03 May 2022 16:49:19 GMT
       Server:
       - nginx
       Transfer-Encoding:
       - chunked
       X-Gen-Time:
-      - 32.536366ms
+      - 26.710695ms
       X-Powered-By:
       - waqi-search/1.2
       content-length:
@@ -95,15 +95,28 @@ interactions:
     body:
       string: 'event: debug
 
+        data: "Fetching 2022-P5"
+
+
+        event: data
+
+        data: {"msg":{"now":"2022-05-03T14:52:11+01:00","st":458712,"ps":{"co":"1|0CaA","no2":"1|0VBh","o3":"1|0!31dh","pm10":"1|0ZDd","pm25":"1!59NF","so2":"1|0.3A"},"dh":24,"time":{"span":["2022-05-03T00:00:00Z","2022-05-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
+        Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"0ms"}},"status":"ok","cached":"2h57m8.551056591s"}
+
+
+        event: debug
+
         data: "Fetching 2022-P4"
 
 
         event: data
 
-        data: {"msg":{"now":"2022-04-20T22:21:53+01:00","st":457992,"ps":{"co":"1|0B2CAabDaCbAba2BaCACa","no2":"1|0LEFEcDjDaHMghEFdbeAc","o3":"1|0!32BbcDAhEbFiFBAFaJfae","pm10":"1|0OFBdCdCBaCMCnALNenaJ","pm25":"1!32PGjhgANDCNCrHP!36g!-34iP","so2":"1|0.3ABa5AB3AaBaABa"},"dh":24,"time":{"span":["2022-04-20T00:00:00Z","2022-04-20T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
+        data: {"msg":{"now":"2022-05-03T14:52:11+01:00","st":457992,"ps":{"co":"1|0B2CAabDaCbAba2Ba2B3aAaB5ABA","no2":"1|0LEFEcDjDaHMghECabedCAc2bGCaD2AC","o3":"1|0!32BbcDAhEbFiFBAFaJf2aAaCFiEdCbHe","pm10":"1|0OFBdCdCBaCMCndBYjhbGDfNeobKDBbA","pm25":"1!32PGjhgANDCNCrcC!49a!-34jKGePe!-32CHL2BC","so2":"1|0.3ABa5AB2Aa17A"},"dh":24,"time":{"span":["2022-05-01T00:00:00Z","2022-05-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"1ms"}},"status":"ok","cached":"3h47m21.703277846s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"1ms"}},"status":"ok","cached":"2h57m8.201154402s"}
 
 
         event: debug
@@ -116,7 +129,7 @@ interactions:
         data: {"msg":{"now":"2022-04-06T19:38:10+01:00","st":457248,"ps":{"co":"1|0.2BAaAa2BABa2AB2AIfdBCbBCb2a2ACEcaC","no2":"1|0XCInfaJc2FdeBJAgHak2DM2GjgiHhgeFCF","o3":"1|0ScEFBA2aEBbGbGkaBEaDcGFABCsbJ2ACBb","pm10":"1|0QPKrgCDOge2bcHBEb2DAT2FGcqtI2DueFC","pm25":"1!53!45C!-36bhb!31qadnDKbMqENK!28RPEA!-48!-34RKD!-48kRK","so2":"1|0.7AB2ABaABaB2a2ABA2B3A2aAa3A"},"dh":24,"time":{"span":["2022-04-03T00:00:00Z","2022-04-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"342h31m4.69956549s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"646h11m9.851879366s"}
 
 
         event: debug
@@ -129,7 +142,7 @@ interactions:
         data: {"msg":{"now":"2022-03-06T19:26:40Z","st":456576,"ps":{"co":"1|0FaCFaBCdADAb2afbHabcC2ADaA2abCAbAB","no2":"1|0HENcBkOaAbGieHEiFfGgAKDcAFhHdJDpgb","o3":"1|0WDBDBaAaAkCFDbBGcCeE2aCBeDcagcFECB","pm10":"1|0TDFdFnKlFBEB2dHgPde2AEjiJAdIaPNvfB","pm25":"1!42FCiAjPqAOCDBgEfKcD2AEruTIiQH!44E!-38Il","so2":"1|0B2Aa2ABaBa2AB4AaBa3ABAaABa2Bb2A"},"dh":24,"time":{"span":["2022-03-06T00:00:00Z","2022-03-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1085h42m34.699103397s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1389h22m39.851422535s"}
 
 
         event: debug
@@ -142,7 +155,7 @@ interactions:
         data: {"msg":{"now":"2022-02-06T19:39:29Z","st":455880,"ps":{"co":"1|0C2aFEcBAdFCBcabGeBdcBaA3BbDBAaCF2a","no2":"1|0.3ELEjFPrL2ElfGHkeHe2BbIdFrEbHDFfBk","o3":"1|0!28iaIc2adbibcGIe2CEiLCbhCEAHADeCBE2A","pm10":"1|0NdDFeDFLkPEIcmAMlkBfL2BcbBdFeAEFfGn","pm25":"1!33iGVsETOlWFZhzo!40!-38lcCw!47ImndmICbEDefj","so2":"1|0CbAB5ABABa2ABcB7ABbB2ABAb2A"},"dh":24,"time":{"span":["2022-02-06T00:00:00Z","2022-02-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1757h29m45.273786968s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"2061h9m50.426105565s"}
 
 
         event: debug
@@ -155,7 +168,7 @@ interactions:
         data: {"msg":{"now":"2022-01-06T17:48:21Z","st":453624,"ps":{"co":"1|0C4ABaAB3A2BbC2abBCBAaBabBABA2C2aGgDacbCABcCEFedBba2DeCbDEABC2AcAfAB2AdBAB2aA2BaACbaCcEcaABA","no2":"1|0!26ahMfADfKlaDFDaFfaiFaGCeEAdEAahIGgkSiaL2aDfjbMJhDfAmGQBoEoCXigEPkoVaecdTq2DbdABbHCKncjN2eDeBaD","o3":"1|0ZCeEaegDCabCeKBjKhEGbaDCeDEdDcCboJAmQaiIabEdbiEBEaIaboICGFblPAjCEAfKaeCeFagECacDCApJDaB2FgABcK","pm10":"1|0SAcCdGEaSdo2Bb2FfAEgcAcECab2BeCaFBgMBiGhbEBhaIFBbgBdCMJk2gCLBfdGIl!30AufgHecFaiFCfbHOBkbJfjEaFHi","pm25":"1!34aAFdHIB!51h!-43EjIEMhAJrh2cCGAhMaBjaOMr!31e!-27RrEFBsDVKg2edmNXWxudAWAD!-27RYv!78b!-72zdNoBLGoMGon!26PJwBVrmj2GS!-27","so2":"1|0AB6Aa3ABAaB11A2B2AcC2aBaABAB2AbBAa2B3AaCBabABa3ACbaEBA3aAbBAa2ACAb2Ba2AaAB2ABA"},"dh":24,"time":{"span":["2022-01-02T00:00:00Z","2022-01-02T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2503h20m53.775705233s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2807h0m58.928039571s"}
 
 
         event: debug
@@ -168,7 +181,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:19Z","st":451416,"ps":{"co":"1|0GE2AfcAFBbA2aBaB2ABa2A2aAaCACAaA2BAaB3ADbaCabABa2ABaABaBa2ABa4Ab2A2aBa2A2BE2AbACB2A2aABAbc2A","no2":"1|0YekdDaGOC2eGbacbdHE2DkeD2CAkLdDhaADfaKaCBGeABeCEaDAFhFda2DeAkdBAJaC!26ErtAaHcCDRBcjfGBAFgeFEfI2ah","o3":"1|0!30EicEeCADoCaLCgKCMADCndCgOgkDcEbDGbBhEceHCjEHAehHCebHBFcAb2BbadDBdTAOb!-28DFcBiHCAHtIjOhFlKIdeDACe","pm10":"1|0UFheEbCaCaBdEcdHcHDGCdnObGpdFafBABDcAaFaBAaDCfHfaCcDaAHfADgcdACIHIDIKe!-30g2BAFcGeGJsKEcAcDeEcGeAc","pm25":"1!57NunC2dAJICcFfiEbEIHTb!-27UDdvcdfBdBQIdmdCBKeBcadPpeJAIEhbkDCE2gaLGR2CBWAxqBDk!26PozQPzIFgAfCfcACBaA","so2":"1|0Eba2BA3a16AB5AaBa43ABAa4A2Ba5AaBA"},"dh":24,"time":{"span":["2021-10-03T00:00:00Z","2021-10-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"2649h51m55.703357433s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"2953h32m0.85570086s"}
 
 
         event: debug
@@ -181,7 +194,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:24Z","st":449232,"ps":{"co":"1|0FCA3B2A2aBCBdA2BAd3BA2aCBbd2aBaADBadaBABbB2ACbDcACbBAB2aAa2AB4Aa9AB13AFE2A","no2":"1|0RhbIBbJ2AebLMmeFeBLDefFgjDRiAFfdeDFCAkBGFAEfCgHBdBcAbHbAFGngDGIgGhdBFagadH2aLhC2dCAIA2bcDHbBekd","o3":"1|0!29ECBdcaACaD2bGcDcACfDaAKdAaFgDCaEheCD2gMHbkGAbcAF2AcHgdHGfIcHMbprWqEKbqDMHlhSq2AaFCImFCB2iKIEic","pm10":"1|0!35sBHcg2FebdHKdiCbCQIL!-28bAecNEla2BcdaBEcbBDBacDcAFcGai2BCaBIAbDAEAiacCACbdbGeDHce3aCAJhCDcEg2Fhe","pm25":"1!68!-31FNbuJBEacLPh!-27AbERY!61!-83bGkj!26asgBFqCgEAFdRDQeHvpPDfGFieAHaHNJdFBCcqJlA2dcDfGEfMFfAhiCNjEaMdAnVNun","so2":"1|0Ba5ACAbA2Bb4AB5AaBABAa3ABAFAgA2Ba5ABaA2BAaABABAa2ABca4ABAa3ABAa3ABaABAa4AEbaB"},"dh":24,"time":{"span":["2021-07-04T00:00:00Z","2021-07-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2649h51m50.74336297s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2953h31m55.895705228s"}
 
 
         event: debug
@@ -194,7 +207,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:30Z","st":447144,"ps":{"co":"1|0HBA2CAa2bEcE2aAcaAC2BAc3aB2ABDbBaCBABACAacAeAaBACb2ADAcBADaAbAbFcACaAdDBAB2Aaea2A%ACADCAB","no2":"1|0MBDGaDb2BFgCBEdidDIadFdCgFjABIEiAFjEa2IbgcICgCBAaJiD2Eck2BGbdFBNhjbEf2aHIDlKnJFbac2fOSG!-33hbI","o3":"1|0RBfdAFANagbdDHFABbiDEdAhLEjDgPcgDfNb2AeDCBcBGbaBcqWbAdFi2dm!30baDmNcBDAdFfbAGiKfEcFa2CaHqGECB","pm10":"1|0KBAJHBgcdHjMgBEjBAFabCaBbBbEDBbabCbdbEOBgCcbAbBRfFmCDHEgLGHrqALHBmcAdAFEDdhBaLBIqcFaEKPpsBH","pm25":"1!53sC!36bNmowRcVpcHvAlWKBbdLqdbHSkAEcPqnkG!37GpHiaidbZCKzbIdaiVUM!-60kRZ!33zjqhGfNBEDqVjPCE!-27iAGF2Z!-31!-31FN","so2":"1|0.3ABAaB2ACbaBACAa2CaAbaACD3AfaABa4AB2Aa2BaACDAdE2ABAaCabd3ACa5AaB2aB2AB2aBa3A2B2a2A"},"dh":24,"time":{"span":["2021-04-04T00:00:00Z","2021-04-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2649h51m44.470033782s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2953h31m49.622343949s"}
 
 
         event: debug
@@ -207,7 +220,7 @@ interactions:
         data: {"msg":{"now":"2021-01-06T19:09:19Z","st":444864,"ps":{"co":"1|0Fc2ABABbECb2abABaDba3AaAB2ACaAaCDCGcdabAaBAbABa3BbBCcBDC2aBaCaBaABDcaAaAaB2A2cABA3CbACaCAbAB","no2":"1|0YcfdEbABHAkOkbAFbAdeEIChCJbaBabeFJDFcfgFAeECjcHbAGDkGEeCH2adaEGcacbDFbjCaC2FdbgcbCFBjGfaJaIeB2d","o3":"1|0VdGAdabDeDBeBEeDdfTdC2aGfdB2DBa2AckiDbAFJ2Ec2Db3AbBgaFdjgB2JanNADdgdHDEcdDaJd2DBcABCdHdmDfDACA","pm10":"1|0KBCfGaEdFdbF2cC2aF2AdBAeADBAaCGebCF!28AqApDaCE2dEADcBcALhGBHMfjkMidC2DGcgACkFBbHdcaCDcfAc2DEAE!33rg","pm25":"1!31CbfRcGjOlkJfD2FJLeagHhgjRfIfEHjCBG!51!49!-56I!-40pacGfhDCHeLoFZpLINTgp!-36ZrAgOCNwgHnuHbdDPFiPKgsKeAUDNFIym","so2":"1|0DB2AbBbABbAC2a3ABCDAcaDBa2AbA3BcAB3Aab3ABCca2ABaACDAaDab2ACEC2bC2aCDdgC2aCcAaB2Aa2AHBbcB2bA"},"dh":24,"time":{"span":["2021-01-03T00:00:00Z","2021-01-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11261h59m55.700359107s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11565h40m0.852675043s"}
 
 
         event: debug
@@ -220,7 +233,7 @@ interactions:
         data: {"msg":{"now":"2020-12-31T18:40:16Z","st":442656,"ps":{"co":"1|0Fa5ABAda2AB5AaAB6ABABa5A2BaABAa6Aa11ADeBAaBAaA2BaAB2Aa3ABAaBaBaD2aDc2A","no2":"1|0RdeaBFKjaCBCB2aeIgdHeJGefb2AJCOubCHeH!27qtNAKyaFafGdeDCDEg2CBfaIKGkGiCacbdChBPNoeBfdQJiBjDeIcAIcfd","o3":"1|0GCGaLaBmHDEMqCdcAHBGBFEqeaBbMDW!-32DECAbYEKACDxueBKlkPdFAbCAgHb2aDEgAbBeabKacDEM2eDEblUjsL2BjaKadGA","pm10":"1|0MabBDBAcCbBEaf2AHebEaBDdcCbBFBUubaEdBIEbINGujAFkacO2cfDbBDeBEcHBeDabBfaFDgASUmnadgGCicFEbEabdBCf","pm25":"1!33deDbKIDbeHNsa2fNEiIadc2adCfPBUxgBJqO!28LeB!32d!-27!-39TX!-35mAL2DgHAgKiaEBRdgbaFcfwNKld!30!39q!-33FdjUH!-27pODAOHshCbf","so2":"1|0BaAEBa2Bbd8ABa2A3B2A2a2B2AaBaAaAaBA2BCaKhCeB2a2ACa2AbaDb2ABaBAaB3AaCBbaBAbABaBa4ABCB2A"},"dh":24,"time":{"span":["2020-10-04T00:00:00Z","2020-10-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11406h28m58.526923612s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11710h9m3.679254899s"}
 
 
         event: debug
@@ -233,7 +246,7 @@ interactions:
         data: {"msg":{"now":"2020-12-31T18:40:35Z","st":440472,"ps":{"co":"1|0F2AaAaBa4AB2aABAa7ABa4ABa3ABAaB5AaAB2Aa2AB3ABa6AaBaB2AB3AaBAaAaB4ABaA2Ba3A","no2":"1|0WJ3fMADadDglKHBmBbCA2Eag2Dc2ADad2aELgAlaGcCFEbEAEbieDCFBgCedAKEdFebcHChDaDFAEcfAdHGE2aobFAadeaB","o3":"1|0!31BACFfCD2ABElBaAcdNbCE2CmJigCAbFBDc2GECnjEABCAbFfHLmAdICbhEJdDbhgCebFGeFcDCaBdFfdbHM!32bt!-27dEdnCGaL","pm10":"1|0SdGBdBMWC2hijaNU!-28EdIBAEanBHqFcBcDFbGFgQkgc2bFabB2AdHab3B2DA2cAFkABbHBacJiAd2BaC2aJBIBdqBDcAabBD","pm25":"1!52zR2eDNUlTbmob!26!45!-65JbfiFHeoDWpAgAaNFyZFJnmlBAGAbDFhMKEmNCnjfCDeENlicHACADMQuHecGbBjaKdNdH!-31bCaHdeDb","so2":"1|0EDCAB2cABaBCcA2BaB4AB2ABaeBAa2A2aB2AC2aABaABaAaABAa4A2B2ABACbCA2bA3B7AaBaACB3Aa2baAEB"},"dh":24,"time":{"span":["2020-07-05T00:00:00Z","2020-07-05T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11406h28m39.056682896s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11710h8m44.208996074s"}
 
 
         event: debug
@@ -246,7 +259,7 @@ interactions:
         data: {"msg":{"st":438288,"ps":{"co":"1|0GcAB5ABbBAbCaBCBDBfb3A2D3aB3ACba2b2CAbBcACBAaBbABCB3aDbEbdCBbBb3BbaDb2aBCACaBabAB","no2":"1|0!30caEbsOFcDdAEmQsLHcLbedIsaJNAfbaACaKCgdnSdGBCoCHAHhBgc2HcaBgBDJBoHDhJgJdbljJfCGf2aQbCidge","o3":"1|0KRalHEdbBAKcE2eaDlAjaLCdGFIAbAcGbBbra2LDbBeGebIcbEABacdC2AdHafnLHbIAecJg2AdkGFBDAaeNdGFag","pm10":"1|0!41yaBebFHQyFeBdBGcHGSckcAIhnDHhbJACaQDaojCD2bLpbLcCgKaiaFAaCFhbNdbIBmBgEFaecEBEDeCBGa2Lele","pm25":"1!116!-60kBjgMLpImeaAMGhNBUJFo!-27!39qsoLkeZDbe!27LK!-38kbaAGIqbJeFkKIpb2BFDCkaUbHDbsbdeNCpfPgKQvGMGCTUj!-34u","so2":"1|0BABaAB2AB2aCBaAa2ABCAdACaC2Ba5AbBaBA2B2ACcFabaABbBdACaAaB2AB2Aa6A2a3A2B3ABa2BEda"},"dh":24,"time":{"span":["2020-03-29T00:00:00Z","2020-03-29T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"18059h55m24.925573951s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"18363h35m30.07796987s"}
 
 
         event: debug
@@ -259,7 +272,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:09:47+01:00","st":436080,"ps":{"co":"1|0BADb2aC2BabBAaDa2ABbaFA2bACAa2CbADAdEBA2aCBAbc2DdGbabaCc2AaABbE2BaeBaBAC2aAaBAabCaBAaCaBAa","no2":"1|0!29eT2hjVBABlTnDPeMkcrAZAjfgASeA2BnKNwRElHceJGJ!-30XCyOaga2jEBAaKJlKJGkcfgBEJCgBeKAfcIebBcbacFd","o3":"1|0ZfCdcKeFcDabHkBEAFeEAkjFTAjACblQAgbFdBf2ED2cGehcIkPkJfDJAcEhgPmAdVcEBdBeaDHA2eaIfH2dFbBgDA","pm10":"1|0SeLCgeEIgDfaBFbEb2abcNMglbBUvHMFlDBmKkKDjcCacCEKqXnFhB2cfEaHFnOJKewBc2CDAdBdFcFcdaAE2aB2DA","pm25":"1!47dNDkcCFhBaCoKDKcbcJuJSmrPA2gORkmUpNO!-27YkcodRdEVK!-51!42iFyOqCo2LMC!-29!35pR2vPdAGAhDFdELaAajD2C2APHa","so2":"1|0CaDb2aDAaBcCAaDbaABaAB2A2aAEAB4ABa2ACbAaABbBA2aCaA2aABbBa3A2CABca3ACA2aA2CbA2CAbd3AaA"},"dh":24,"time":{"span":["2019-12-29T00:00:00Z","2019-12-29T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"4ms"}},"status":"ok","cached":"13865h59m27.584369212s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"4ms"}},"status":"ok","cached":"14169h39m32.736756781s"}
 
 
         event: debug
@@ -272,7 +285,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:04+01:00","st":433872,"ps":{"co":"1|0DaB2AaAB2Aa3Aa3BAaBaABAbBbB5A2Bb2ABaA2BaABaBAB2Aa2B2AbAa2ABaC2DcB2AaAc2AaAb3AbB5AaCaADb2a","no2":"1|0SFGHIxGMDFmrEaFL!26!-40CoIh!33MojdedbBFCICfBDFifBGFaeBhbHOcCENBAJ!-29cBdgMAk2GmCRfcbDMmgEFKAcecnASafjNbeT2hj","o3":"1|0ZEeIHtFIBDjaAcGIFtfIac!30!-30Vxb2JhgEKBHmabCa2BeHkGgFCBGBdE!26cAC!-30cEabBbcDeEBcbdaLdEiHCbDdDcbahBGCcJfCdcK","pm10":"1|0PBDBCfBFba2cCaDGCmdJeGKFBkiBCcbEHaAcCGh2CfbacBFaAGc2BFPFiCsdEbfIbcAFfDCKjACFdHlFBGIkgHhbCebFCeLCge","pm25":"1!40SnENka2ABgCHfeKGunGdMOSdjqnSU!-29ELHFfcAbDAcelD2ABCBQcFJ!37Psb!-43hHDnIcbCGfCJGnCBPhHvc2GagigIGcfBHFdNDkc","so2":"1|0B2AaBAFdGcdAaA2B2aBaABaB2AC2BdAa3AB3Aa4ABaBaABaBaBa3AB6AGEBdDdeABb3AaA2BAaBbBCbAaCAaDb2a"},"dh":24,"time":{"span":["2019-10-06T00:00:00Z","2019-10-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"13865h59m9.858305427s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"14169h39m15.010697436s"}
 
 
         event: debug
@@ -285,7 +298,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:12+01:00","st":431688,"ps":{"co":"1|0IDAaAdACbC2baCAaCDAaBAaBaBAb2B2ca4AECBd2CbBAcC2a2CBda2BaCbAabCaBbBCAcbCD3aDaB2AaBCbc2ABA2aB2AaA","no2":"1|0!32LpiBFjOaCFCicIDGFcelUcabfkdNLfhdmEGSbfJlbHeciMEdBbVevbABDLfDOAEigAedEb2aKB2fRAdAcblTjdFeTvdFGHIxG","o3":"1|0!33gmKBFCcIeEcaCfm2NLFEexHaAd2bCFnAFDhGfdMBAdCDAhCGAFEDuBhGDAecSadhEA2cCDbAEAabIkfJEFMs2BCg!33!-29bEeIHtF","pm10":"1|0ZFnd2FZCiqA2aESMCdkbAQkgtEBgLIegcdIhG2AdbABANcbDaAgEacdCbaFAbCABFgBDaCkEDaCadECAbdaPFdoEHGmeBDBCfB","pm25":"1!36!31myIS!74E!-32!-45iPefQKJvDfL!44!-28!-41uEaEZYyzKgPdRCafDodB!31jdOL!-40hIEDsCabKDjEcDEBhBbdUtEcFAeDObgBfY2AtBGVxbSnENka","so2":"1|0.2C2aAa2AaA2B5AaAaBHAe2a2AaABaBaBAaCB2a6ABaAa2BbABa2BAaBbBaDABbA2a2B2aAB2ABaAaCb2AB5AaBAF"},"dh":24,"time":{"span":["2019-07-07T00:00:00Z","2019-07-07T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"16ms"}},"status":"ok","cached":"13865h59m2.081928528s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"16ms"}},"status":"ok","cached":"14169h39m7.234351887s"}
 
 
         event: debug
@@ -298,7 +311,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:19+01:00","st":429528,"ps":{"co":"1|0H2ACBA2aDAdBbBDbBDcCDeBFebaEBaDeaEcAaCaAaCBbCBc2AB2aBACB2Ade2A2a2EA$aBa2AbADaBa4ABCaAcCa","no2":"1|0V2FAbBGiDaBAhDSdhPpEGgCQkfoLQhKqlMGaDhFgBIClZCkhFBbCAcBPGc!-30c2eLahNbsOAEbCGfBGEAfEibaNcSgcq","o3":"1|0XaAhFfLadjbOJfaDfbChGEemGRac2fGD2bDfaJEC2dcgAHFGhGAbfhdcACRgHImKcDcECcCAFgKd2gFfF2GbcabIBA","pm10":"1|0PHENhbdabMihACbfELAHKyGNhncLHeEkEDgDCceDgNEaTEjdjCbHKAEGFAzBlgDCAiFDgGdGcbCdJGfDaB2aKeIKIv","pm25":"1!49Kd!37khmjd!27mktLceEOM!36N!-70U!34j!-35jDFIbG!27!-30CHI!-30BblNfO!34!34wp!-28BIbMV!30FLC!-51h!-28hiDJuDCDbCJieDBIMeECBFtZiQI!31!-80","so2":"1|0.3ABA2BbC3AaAC2aBa2BaBEDCBheACa2ABAaEdAaACa2Bba2BaACabA2Caba4AFadaB2ABa3ABABA2aABaBABA"},"dh":24,"time":{"span":["2019-03-31T00:00:00Z","2019-03-31T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"13865h58m55.695519418s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"14169h39m0.847946676s"}
 
 
         event: debug
@@ -311,7 +324,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:34+01:00","st":427320,"ps":{"co":"1|0F2ADAcAEAabA2aADAa2EebAaCABaABDdEcaCb3AbCABa2ABa2AEB2ba2BcACabAFca2AaCDbDBcaAbBAaBbDEeGbdA","no2":"1|0!37JHIO!-39F!28Dji2bqbQciJPxeFdDbiBDB!26iIanBEAFcFhMCfdnBc2CJdCjcDHEaNhkCOhCAdpMNmAImOFlOcjBhDCeLgeb","o3":"1|0VbdB2EcbIlHE2ad2abCcDCgACEaDdbajIMfqSEaCcDcAclaBPbdhfAKaEfQCgC2BnK2E2AofKkDNaAGdCABdgdAiFMc","pm10":"1|0SA2FJod2EWveCjGOgdIPscDdDicaDEKcIgBYpqFabd2FAKlHigFLTdnfdDgCEfdFIfEjEfFQiFMrdHg2AFdgOCgYjpe","pm25":"1!50aKOT!-28mJH!52!-53lEjIWclM!34!-35sHAC2laAMUFDhC!46!-31!-35aGBhECIUoQusO!26!45n!-29.2nOqd2ElPEhajAdK!26iCNmvHebABDg!27Jp!51r!-39A","so2":"1|0Ba7AB2Aa2AEAdCEcB2aBAa2A2B2AbAC2Aa3ABAa3Aa2ABCAda2BHCgaAaDbB3aBCcCB2ADeCA3aACbDAcA"},"dh":24,"time":{"span":["2018-12-30T00:00:00Z","2018-12-30T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h58m40.189392004s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m45.341814083s"}
 
 
         event: debug
@@ -324,7 +337,7 @@ interactions:
         data: {"msg":{"st":425112,"ps":{"co":"1|0DCAaAa3AaA3BaB2ABabB6Ab3BabA2B2AaBA2a2BABabBABa4ABa2ABA2aA2BAaBaACBbaBAaACabDFeEfE2a2ADBdB","no2":"1|0!34IB2InAlGqDLOHfIiHGaofUafQj!-27bCKFBctI!31asiB2beFHaCfhIEAjGhHfMjAGNhCoCFADaG2gLHbfLfdIGf!-27N!26bM!-38!27rcJ2HO!-39G","o3":"1|0!64qfaOgCgco2FCLCetJEAVyF2DKhu2eMGcPjCQiqlBI2bD2dFeAEHoJbD2cGdECRCDqEfbaHcfAbBF2GhfBahGBDAEfaCbaebGEc","pm10":"1|0!26da2HcEjBhJaCBeDg2CBDeABEQmgiC2DB2bcJCj3AcDADB2acBF2caABcHCaBDAGecChFeCbECeCc2BGbc2dJKdFoQncA2FJod","pm25":"1!64kaPVhQ!-32blTfDBgDnCIAQpbEL!31!-28ydDFDCahDQLzLmabFAFBe2AaCJfiBDfKMDkF2GpfGkFdCDCIgceFbGcfBJlTAJ!-30UlgaKOT!-28m","so2":"1|0FAb6AB5AB3AB2AaAbBAbAB3Aa2A2Ba2AaBaA2BA2aBAa2BaBaBb2AC3aAC3ABAbDA2aBAba4ABa6AaABaA"},"dh":24,"time":{"span":["2018-07-01T00:00:00Z","2018-10-07T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20328h8m33.539366905s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20631h48m38.691796114s"}
 
 
         event: debug
@@ -337,7 +350,7 @@ interactions:
         data: {"msg":{"st":422928,"ps":{"co":"1|0GbABEBabA2aBDAbC2aCc2ACa2BbcACFcDbadCB2ABb2AaA2B2AabA2Ba2AaBABb2Aa2AB3AaCAB2AaAaBABaBba4A","no2":"1|0!32NIbeIElCAncWBgLbNM!-31HgHeDIe!-27lP!37qIbdjMNjsKaneEeIKCGAtAQHoPxfRCNqamHBGgcfPnWmJfaCBh2a2ASbefc2a","o3":"1|0!27aGAbCbgeFiFBOaDABQngLmcEDjDFCaAbA2KMguBahIBJkabIAaDAjAWja2fDcEFhBCeIdAbfJcBdbAkbREBKU!-30eKcEX","pm10":"1|0RAEAeJLhaJMfdKlhbIRjIknabEbfeIDfKDGFEBrfGabdA3CIaLjcTgNbE!-29EKilACeOfbCf2AH2beaCcCJfCaGbAb2aC","pm25":"1!58Ab2fTVfOF!34sw!28v!-38B!31TqW!-27!-37HgEFbiHBgRGTPRl!-47hELAtJbdFLJ!28!-27gUHW!-30V!-30E!30w!-32cMnGDbCakFEDFneFeBdDKBHgALkfI","so2":"1|0D3AaOm2Ab2AEbaCbCA2aAC2ABac2ADaCba2ACBcBAa2Aa2AB4A2Bb4AaDbAa3ABaB2AB5ABAbBaBAB4AB"},"dh":24,"time":{"span":["2018-04-01T00:00:00Z","2018-07-01T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20328h8m26.622972876s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20631h48m31.775430646s"}
 
 
         event: debug
@@ -350,7 +363,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:40+01:00","st":420768,"ps":{"co":"1|0DBa2Bab2CBcAa2B2AaCbBADcAbAaBCabBAaABADaDbEb2ADa3bDA2BAbDAaAabaDAaAbBaC2aC2ACbDfBaAEb2BbaA","no2":"1|0!39FlNJphBOIrJjIJGdjWmdcMEFsJoDXiyBWuPca!31!-39Z!-30!30iKaLjfpmNKchdFKAp2BMGTmgDfehLaHF!-32AFJ!39xBrfOCHBmjd","o3":"1|0!27aEeadAdmMjRfdK2DClBcGEadjKGBgHgadGabdL2d3BAEhDEhGfDb3DcabaiOCceFjFaBaKABeAJaeEDoJCBeDfCF","pm10":"1|0SIDgDCjLKeB2bFpbFaMm2CdbLIkiCQoDFehHPIjmClOhEGIBfbi!28ncIqJFiPGQ!-33eBCgJbEkEeAJeHEcCc2FDjlaEi2A","pm25":"1!48JEgCV!-31!27ZySgCH!-38iEbGCMlfaKYqsDSqd2KsIXeiqCnQaKcEOgLy!65!-31iN!-37gGU2X!38!-75zFGxVaGbehDEAJlhQic!37I!-35iAda2D","so2":"1|0EBACaeaEBCdBbBDB2aEfBAFcadBaBEabaDdaCBFeCbEc2BCcaBcaB2A2a2BAB2ABD2a2Aa2Aa2BcaAaDaBAaA2BAaBb"},"dh":24,"time":{"span":["2018-04-01T00:00:00Z","2018-04-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h58m34.336400758s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m39.488845588s"}
 
 
         event: debug
@@ -363,7 +376,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:45+01:00","st":418560,"ps":{"co":"1|0CABaAC2AC2aC2aBABa2A2aDaBAbCdED3AeADbaDba2AEAbBcACAaBABaA2aAaFcBCA2aCAbFabeACAEb3a4ABbAa","no2":"1|0!35MjOtHBfRfAIjcDAJlCRvARfIgkGqTYaqN!-29eVdlPiAoHWfbFiaFBeLjdbEhAfATmIMKyBMne!30fH!-32CFaShAghejNhVAf!-32","o3":"1|0VD2aB2bBhHBcAaNAeqTaBAiHArKDFkabhJCGiOcqTkMhgbGAcCEGEAqHCDjEIBpAcNDBfeEabOcjgLbmaKaJGCbBqQ2C","pm10":"1|0.2NfDhEcCHdBQkBHFbGgmahJbFD2chNGDOCseKpaLiDkHJBdFfdAFDfEbfdDdDaPcaecaeOdmTmIiDCIOk2difEdbPdIt","pm25":"1!48MbaiGBCOlhRAHMAr!34l!-36BgMFGRninTEJ!26N!-35fM!-34APrIlOcRjOmkACDl!34jzcIeaB!30obhaBg!28wb!33!-28DdALI!31ujiojHlCQaG!-36","so2":"1|0DBbDd2BaDaAB2aA2Ba2AbAC2ABbBaBCADBRsD2bCcdaBE3aBaDBcDbAaBba2ADcCDabaDcbJaE3ACF2gdAD2IaoaAd"},"dh":24,"time":{"span":["2017-12-31T00:00:00Z","2017-12-31T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"8ms"}},"status":"ok","cached":"13865h58m29.606596741s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"8ms"}},"status":"ok","cached":"14169h38m34.759096901s"}
 
 
         event: debug
@@ -375,7 +388,7 @@ interactions:
 
         data: {"msg":{"st":416352,"ps":{"co":"1|0CA2BbCa2BbBbCBAb3BbBaA2aC2Bc2AaA2BaCA2a3AaB7ABAaB2ABaAa3ABa%Ba6ABAa6AB2Aa3A","no2":"1|0!33h!28KjOtp!28lKz!30!-34Jl2NceAafhFMedEjHDdbKqIEkCESwDZmHfClEAEbGKnhSgpQiId2C%!-31GNJFbjEjbKGNBAmcGbJGdeo","o3":"1|0!27EeAFZvAJnhEKi2fVHijFcbAGh3BEaCdC2BDg!47C!-45bAJaeJifFBkbSJOreOzdHDCBja%b2D2BJHbsFcfAGcDIsaPceFa","pm10":"1|0WdDAFJldFcabHdAfJKbhcdBcGECAebNjfNecbBdbKDnDHcBaBeBCPJwOgaSmX!-28dAeAa%lEIBaAcBAbICFeAdKOAGxDhg","pm25":"1!63lFEGSqiFfadIEejFOGoAiEbMbdeadG2aBFadEKh2EpEGabAbgCD!36C!-35U2B!38!-34lhKgnFe%!-28BVHcABGFiRIjeAd!29!32a!27!-81Iqh","so2":"1|0CaDBb2AaBABbDcC2aBABaABbACAaBa2BAaAbABA2aDbaCaBABbABAaCAbaBCbCb2ACA%bA2B2AbB2aABDaCcaBA2BA2a"},"dh":24,"time":{"span":["2017-07-01T00:00:00Z","2017-10-01T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20224h58m45.030478228s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20528h38m50.183022929s"}
 
 
         event: debug
@@ -388,7 +401,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:53+01:00","st":414168,"ps":{"co":"1|0EbCbA2BDab2BaBbCaBb3a2BaAC4AaAa5A2BA2a2BABABaBAaBAa2ABbB2aAB3ABa3AaBaCABaBAbA2aBaAa2A","no2":"1|0!50rYsAIe!27.2rHCeDiAaGVbpd2DkDNdKrcHaCagdDHSCdcmN2cb2EcPmANehiBIhOatDIaDFbldLBDCpDKTcAkfkgJIlZyBi","o3":"1|0!37cCiFcDKBjBaAdKebDdBK!26ynbcEdLBfaDABdHeabeMCehaiKGCFEt!70!-37nafBgfOcBcacBbCBDdAPkbJZD!-28!45!-39reAIhabHCE","pm10":"1|0YaLgBHBLavBCafcABFCHEnDEiAIAbBkRCEjEcB2AQnbjD2CAfabKfDJebeBdFAFgeDb!70!-67FecCDFCfCBLGbgnbeIFgaACd","pm25":"1!60F!28wHKBWh!-40eIBodHebMSEubPrDEIfDvZHBu!32kpaG!45!-28luGDSfkhbVmMCcDkBeBEWzkFbCJBdfC2GEhLDPNioydhIPBjDCl","so2":"1|0DbCbaCaC2a2BbCbAaABDabBCbaCaCbAaAaB2AaADBA2a2BAa2AaABaBA2aBCaC2a2ABaBA2aC2aCb4AB2AaAaBACbaA"},"dh":24,"time":{"span":["2017-07-02T00:00:00Z","2017-07-02T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"20ms"}},"status":"ok","cached":"13865h58m21.180298994s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"20ms"}},"status":"ok","cached":"14169h38m26.332850244s"}
 
 
         event: debug
@@ -400,7 +413,7 @@ interactions:
 
         data: {"msg":{"st":412032,"ps":{"co":"1|0.2CbFAcBaAaBbB2ABDbaBICcbeA2aA2BbBCbDbcA3BaAa2BaBaBcA2BACac8ACAaA3Ba2A2BAda2ACBa3Aa","no2":"1|0!32RdMP!-34.2HbhJpBDNHNkcdJLcgqAbdAaEeLOuLBkI2iBALEHcefcHDpKcgRbGgAcfbKEeKflEBJbcjeOEBjdCfIJAJBjq","o3":"1|0XjGhCAbIfOcB2fbBfAEac2ABFfTaheHIFlbDEnHeFd2bKCaHcfFHCbBCDcABeJ2bcHglBcMgcBIbDaCAdALehKBGcAd","pm10":"1|0!27BFMBtDeKW!-32.3AGPQakBXKqsMDwpICiCFCeOgGAJgGKio2BAge2cCEDmCIEDAfiJBAcEJCjaIBkecFDb2Iqd!27EwBaca","pm25":"1!72hJZDoDrLhfCbdQT!26H!-35H!60Nv!-36YA!-74s!29SxneOKZxMN!29jKL!-36zmLMokiCkNBoGCFALknLEQiBVM!-37HJL!-36ceF2B!31K!-37f!65D!-56aBeF","so2":"1|0CEcBDc2BAaCBd2ABCbaBDFb2c2AaBABaABbCabaB3ABACAbAB2AbaBaDB3aBa2ACbBA2aC2BbAaCAb2a2ABCaABAb"},"dh":24,"time":{"span":["2017-01-02T00:00:00Z","2017-04-02T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20224h58m42.630657742s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20528h38m47.783196203s"}
 
 
         event: debug
@@ -413,7 +426,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:58+01:00","st":409800,"ps":{"co":"1|0DaDb2aBa2AC2BABaD2ba4ABC2aCB2AcCabaA3B2AaBAcAD2aAE2acEaBDIfedAECdaAaCABAaACb2A2BcAaBICdbcb","no2":"1|0!47oUlbHAncIGfAFJjTqfaGgbL2IbjIg2CLPm!-28lMNhJB2gVmKCImpIFgbEhaMPXlsgbFIafAjGBCEhCFBajIPpew!49Ua2uh!-28","o3":"1|0SFebDGjKBcfBgAPCaAg2cEahcNFbodaPb2cMcCm2Ed2DdBGFBiHCagIagECsbACMfjDGCbQoHgce2aBAIKkQEabwbDADU","pm10":"1|0XbIAafEdeG2ADHbjHgBDabCJLchCLJDkmKhCmcLlJGiDJ2fD2biIA!30!-32AGfDR!40whwC!27BmfA2fECJBJgjLgeDoJpE!27Nhfnp","pm25":"1!63AIambRenKCaHMftIkMaJhEQXnoGU!34B!-33sNrCloVvHShgRmjAcbFX!-32RvEYij!40!54lo!-66J!63R!-43hcklFMLEXgrMj!-30EtCsI!53!41og!-36!-35","so2":"1|0GdEDbdB2A4BDBeDcaBA2B2A2a2BGcfdF2aBaCbBb2aFa2ABa2BbBcAC2aCHbAaB2Ededa2ABab2BbA3BcaABCB2Aba"},"dh":24,"time":{"span":["2017-01-01T00:00:00Z","2017-01-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h58m16.220558646s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m21.373093657s"}
 
 
         event: debug
@@ -425,7 +438,7 @@ interactions:
 
         data: {"msg":{"st":407592,"ps":{"co":"1|0F3AacFDaABadbDaBC2BcBAaDC2baBaDBabAaBbaDBbcbB3ABa3A2BaADcCaADaACA2acaABAaCaD2AaDAbdC4ABab","no2":"1|0!54oBGtJ!29wdfJblFQrdXNbyLFpaHaKBtcUeCdAbfc2ADRkhNBJeGscNUCpfdfd!35.2idemQaPA2h2FRCi!-31g2GEZdGkmMeAbKio","o3":"1|0XaFeGDb2fHdcCGfbDWbItgVobcdFfIBiaFBHFhcBaeLeDbGFBgcAaONojGgDJpDkHAjc!28iceJeUbFuhNkcTmFIfkaBDAcE","pm10":"1|0!26gBCcCGcbd2EeaDfaIGHoNghBDA2CehIBC2bDdAEcAEga2DI2BhjMBJClDfbH3acdIEBAgbADRdBdrCNfHaefBNjIiFhb","pm25":"1!59BeIqHRBAgFEfBeiB2KMpXsuBHFebJsIDcADElJCeCFkaCEOaN!-28jQFWKqgjFacdDejNPeCobcF!31BGsuKWiCgobgHBHjGbA","so2":"1|0Fa2AaAD2aC3AaBaA3Bac3ABaACcACAa3AaAa3BabC3AB2a3BbBaAaCBAaABaAbCAa3AaAaAB2A4B3ABCB2d"},"dh":24,"time":{"span":["2016-07-01T00:00:00Z","2016-10-02T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19312h59m33.702154337s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19616h39m38.854711069s"}
 
 
         event: debug
@@ -438,7 +451,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:10+01:00","st":405408,"ps":{"co":"1|0HbaAb3BbADb2A2aBDcAa3ABaACBbEcbCAB2aBCDe2aBABAaBA2aABCab6Aa3BAcCABAEda2ADCBbCdc2AGbcB2A","no2":"1|0!68miOkMjCegHNaEcvcWmABahdKh2JdnJmL!28FdqbHjAEqbKDOajFljaEDUghtdFCJFdeU!26oiVrnAHECodCAQFcAsgdZcKepB","o3":"1|0!29GgCBbi2FEsQeHhAGdFeC2AFhDCacFEfDFEgKHnra!33mcEcaAhAaEbaFbEF3d2CbcHjdPpUA2kBFEAfIjCdhQaACAgGbaF","pm10":"1|0!34bAcbabFibYoCDehAKfHDeiBFf2FDkDACHGFBpJbGAhlHFdcAadbcAJ2EbjceEaILcaQjdDdfFfBcBE2fG2DchbaMdBCgB","pm25":"1!83fJpehCLua!55!-40KACocKkEJdhDLpHKHpfDHBJTO!-38LJVourUAcfBfeajbT2GJqhjBcZUrhYcieGqBcBcKajkLJGmjAhTdGfBe","so2":"1|0FbAC4AaA2BaABabCbABaBACAaBab2A2Ba2BABa2Bba2ABCaABAcbABAaB5ABaAB2A2BABCAaAbaCabBAbaA2CbA2a"},"dh":24,"time":{"span":["2016-07-03T00:00:00Z","2016-07-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"13865h58m4.481032483s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"14169h38m9.633577604s"}
 
 
         event: debug
@@ -451,7 +464,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:17+01:00","st":403296,"ps":{"co":"1|0F2BbCcBCAacBDaB2Ffb2c2Aa2B2Ca2BAbcCBCBCgaABEabCdbACE2AaABAaca5A2BAbABAB2aABABCcb2A2BADba","no2":"1|0!44HBkRrbMgJkD2FbZM!-28lAnI2bMkaAaGdCGrDGMk!28rigWOasUtkAGTCdzcQDceNreHUpaLgmCDcLdgcJIBTwgba!27iDJmi","o3":"1|0TAqVhOaeabAciJbnAL2CbIEBACAdEbiB2GCagehCAN2cBbHDAcgjHAGHfEBababCbBlCFHBLgDdGdede2HC2abcACGg","pm10":"1|0ZFIrNjeEAJmCSoL!27LqmdrKBnSlEgIGiAEfeNbg!26rBfFMehGmeBKUbAlqMbdAHbBDGqWRGumAcMphBNDKAvCbdHDcJbA","pm25":"1!54H!30!-40UojNdGnF!30xN!67V!-50!-27eqDboMhBAIFeEAerQCB!35zPwKHcbCzfMJ!40Bcl!-38LeiHDUlaMi!41!45I!-45!-30dg!28!-32tA!37BTh!-38dtFHFLQfJ","so2":"1|0LABaceBCaA2bCbCFDeA2aBa2BbB6A2BABaCbBadDaBAaABaC2A3a2C2AfaAEbaBAbaB2ABA2BA2Ba2BCbAbAbA"},"dh":24,"time":{"span":["2016-04-03T00:00:00Z","2016-04-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h57m57.221321072s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m2.373864293s"}
 
 
         event: debug
@@ -463,7 +476,7 @@ interactions:
 
         data: {"msg":{"st":401016,"ps":{"co":"1|0E2B2A2aACcABA2B2aBACEcB2aAC2AaAFdcaCAa2ABa3AaCaAabACDacG4AaAba2AaAB2Aa2AB3Aa2AaAaAaDaBb$BaA","no2":"1|0!42VlEiGkIMsdQbCbAnhTLci!27eljfMBgiEcBMBkhCFCJACkpVhCOjqLVfoLcehNJceBjdEKDdBhgIbKcKsELmK2khQbRp$BjJ","o3":"1|0YfdToagHgHFbBAdFBdBefQjIiadGDcibaFCICAaHbBbFe2C2AbfHmCHefMFBcCEgBGAiAaHiIiciSiEaIa2B2aCAlKB$jCG","pm10":"1|0!28IOfncBGKrMake2HghGIDcFlAJModBUKkcfkcAbFaBHcicGAGabkHOlbKhbcAEGCecbIdEcaAeJEdPl2ebgLfdF!33smd$HlC","pm25":"1!66U!43s!-28efJW!-34!28dyoULodHKHpJfgMPthB!43!41!-36lksefAeGdKkagHcFJncP!37!-43GLgqcCJIFjhaQdACfcBQMtZpdrcQjflS!38wpi$Opf","so2":"1|0C3BAB2ABd3AaBAaA2BEbBba3BaAaCa2B2aAaB3ABbaCAaCbBaCAa2Aa2ABaABaABABaBa2AaB2AaB2AaBa2ABAB$aDB"},"dh":24,"time":{"span":["2015-10-01T00:00:00Z","2016-01-03T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19312h59m30.562428713s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m35.714970944s"}
 
 
         event: debug
@@ -476,7 +489,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:23+01:00","st":398808,"ps":{"co":"1|0Iaca2AB2aCaC2AFfCaAB2A2aAD2AcbFbABb2BcBAa5ABaCBA2aBbBaBAaAaCAa3AaBA2BAaCAcD2aCBcaCaAa4A3B","no2":"1|0!86pycgOEnDXufHeBMJfibMBeF!-31XCdnGXpCeiNMflHkFfiPpDMICjCdDhJeGDgnDKBaBbhHAcNDhgEGfIZvaKfBClafIb2aVmF","o3":"1|0!69!-32ca2cBDFHmifaEPcFarG2DcCcaEcALgStCabDNenjKdGDdJiDjGQfpBCAECc2bCBcCHha2DIcgDBABjLEjfABEBCea2DgdU","pm10":"1|0!44.2kLiaCaJebgBaDLBhcIe2aFjEAdCKdGkEaCdDBeaBbLFkACFic2BCfEaDAdHkHACcaAcbFKInABDeFDiHdeGAHdj2EDcIOf","pm25":"1!104!-27x!28sbgGeJaeHfDKadiRjbfOpJghBAVdiJdIabda2cg!27T!-30bCMhfCBFkDBDdaKrQcCAiBiaGPQugEAhPbdVewEFGBoACEBU!43s","so2":"1|0FBbBAB2Aa2BaBbAaBAaB3AaA2B2aABAaBbaE2aB2Aa2B3ABaBaABCbAbAabACA2a2AaAC2BaACBbBAc2CbBAb2aBaAaCAB"},"dh":24,"time":{"span":["2015-10-04T00:00:00Z","2015-10-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"13865h57m51.848268409s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"14169h37m57.00081895s"}
 
 
         event: debug
@@ -488,7 +501,7 @@ interactions:
 
         data: {"msg":{"st":396624,"ps":{"co":"1|0EBAaB2A$aAb$A2BabAOCdedC2bBABa4AaBCbBaCBa2A3BabAabBAaB3AaB2A2BcAB2AC2BbaC3aD2AaDA2aCaABacaA","no2":"1|0!35HgdbHE$YD!-30.2EICqBgCOBbMQxrEJQjifcAFLTCyHIfCberKLcn!27roFhJNoNfjJbA!27c!-28cJhMNKqoFWkrBNqLc!39fG!-29BMQJpybh","o3":"1|0!29cfBGAc$aJDBgHAlGFaBbcADbdhHCAabIEcabdLagF2eGIdbeBJqEDGcEAfBACBfHhHEjEFJanaBHpLajHfGHADfhLKY!-28kEd","pm10":"1|0UDaBbFd$!37B!-34bEDGjeBAMagDUxfIBUzDAfAIcBJjFcaFgEdBcbLABfdDcEdCbaHdEJEtBGCdFRmegJbJcgiECAKfcbBIK2kLi","pm25":"1!46JFGeJu$!100e!-79i2JPxm2BRbAH!49!-48pFeJgeHabKfDI!-27LDiEHdDhAgKNdibEeNsIAhJbCLS!-39EHkFO!29jsuScDEBr2BNGdkCDE!36!-27x!28s","so2":"1|0E2A2a2B$aCaA2BAbAa4A2C2aBAB2a2BAB2aAbABAbBa2ACBcEacBbA2BC2aB3AB2bBaACACbaCBcACaBbDB2aABAaBaAB"},"dh":24,"time":{"span":["2015-04-01T00:00:00Z","2015-07-05T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19312h59m28.695977263s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m33.848501003s"}
 
 
         event: debug
@@ -500,7 +513,7 @@ interactions:
 
         data: {"msg":{"st":394464,"ps":{"co":"1|0DBAD4ABbCACbBA$AcC2AEeEfDBcAabC2Aa2A2BCA2abCBdD2AaCBABcaba2CbC4AaCc2aADA2aCbADaCcBaABaABAaB","no2":"1|0TIKaGfDBanOAIdCjkCPKhDHwOh2DAbdhLKbjnTfFIkLbkCGmH2EmdPiGRlojQFaHegACLhCioBNbBFLqgQFElJoaEmOHgdb","o3":"1|0YEgmGKAEDadIeAFmiBcAEhCSkImP2bAGnFcDAaGhBEpTCkaHFDeDEa2fcDLEcabgK2ahaCaDEeibOIDfAlGgLBcHcD2cfBG","pm10":"1|0!28kaRdjDcBiIbBACFlDKRkKM!-31No2dcHcDKbImCAQaHaMnvXfoGa2deJbGFbkaBCFEeM2fJKb2hKHUfgaxFdFJtFdeEfHDaBb","pm25":"1!75!-33H!39puCcCtOaCcIBfIUZr!32S!-82TtatEMbeQIDpfVFSbN!29!-28!-46!47j!-37LbkaeHdHcKpbaDFOiVlab!38donPX!52m!-37E!-55k!27lX!-33FArFkQJFGe","so2":"1|0DAaCBa2ABc2BCaBbaABDbaFgDb2BCAabBaAbAa2BDaBa2ABdCB3AC2abDbaCBcDb3AaBAacBDabACaAC2A2Bb2AaB2A2a"},"dh":24,"time":{"span":["2015-01-01T00:00:00Z","2015-04-05T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19312h59m27.539407284s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m32.691910954s"}
 
 
         event: debug
@@ -513,7 +526,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:30+01:00","st":392256,"ps":{"co":"1|0FABcBACac2BaBAaDbaACdB|35GEbCbcAaAbAbABa2ADbACbaD2BaAaACbA","no2":"1|0!36ALtGCKfiDGmADCVkhaLrH|35.2Ek2AaPcfDLkBLDcbEnWeicEcDaBndKjB","o3":"1|0RgLbAcGcDhJADtBHE2CdDe|35lAcAICJ2bkaTiHJbEzTcqOFCdFAFbibGd","pm10":"1|0!34bElcBEaAcabcBNBAgaElKDB2eFIj!26gjgcDJLwDFfecHFDefEVCAfvVk2DCIeifABFCnBIAdcPjDGldaAbDbeFCeO","pm25":"1!69DLveCFAfdECoCXbe2fMuP2GhkLPm!51xylEFT!26!-50GSokCcNKbmI!46Ddt!-36!28kJFcTfrsiPIE!-31bNcdaZqEPwheDcFfhKLlL","so2":"1|0DABcBACAbABaBAaDabACbA|35DCbA2bAaCBAaADAaBAaDA2ab2ABAba2Bb"},"dh":24,"time":{"span":["2014-12-28T00:00:00Z","2014-12-28T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"3ms"}},"status":"ok","cached":"13865h57m44.41538436s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"3ms"}},"status":"ok","cached":"14169h37m49.56789445s"}
 
 
         event: debug
@@ -526,7 +539,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:34+01:00","st":390048,"ps":{"co":"1|0D2BAa2A2aAB4ABa4Aa2ABAa2AHeC2aB2AaBA$BabCcAEd2ACbA2Bb3A$DCc3ABa3BaAa2ABACBbaA$3AbBC2aABcB","no2":"1|0!48ELi!-46!31cEjFGfiKAMdNmtAiIkOfBdbGTFmAGDcAFk$KBpLdaZ!-27dCSneLfeImjcKXlHaN2gIHhcDmgSajIEiaDjDUbhbNCoALtG","o3":"1|0!29aIboFfbMgdVoFaCbScjfdMBhQlfMcfCbDcABadA$cHiBaKahDaB3CjMjCeADpMJiJdDAfdbIGCjDHAo2GibF2beHaJigLbA","pm10":"1|0QGAanLdCDbAFgACHcJgA2cD2ADfeAFGBedEBabId$bBfCA2bAbEFfaENlGhCgDKcLCNFmgAfMhfaEWACcfwRHmEdcHOfgbElc","pm25":"1!49LEb!-31YiMAfGIpdGLj!29nBeiEaEGmkbMNFklIHdbSl$fbnKbceAgGTtbP!32!-35LnBmK!26lZC!28W!-34wAm!27uiAD!54GElu!-44!39!27!-37oab2YtwDLve","so2":"1|0EB2AbB2Ab2A2BaBABaA2a2A2BABACBab2aC2AaBA$BABD2CjCdBCba2Bb2aABACb3A2BAbBbB$a2Ba2BbCRfj2AbACa2ABcB"},"dh":24,"time":{"span":["2014-10-05T00:00:00Z","2014-10-05T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h57m40.542226164s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h37m45.694759216s"}
 
 
         event: debug
@@ -538,7 +551,7 @@ interactions:
 
         data: {"msg":{"st":387864,"ps":{"co":"1|0EB2Aba2ABABDcaCE2aACABaBaAaABA2cACABaBbaAB2aBA$BABbB2bA$DBAa2A2B2aB2ABAb3Aa3ACaABAaA2BabCaC2AaA","no2":"1|0!50bqHijKEKcLkoMaUeufAOKEahaeEHPflgNCDadeiCEDAbaqSKDkaBekJBjIgKhPeE!-31!32hBFbfEalhKcGaFcDIhAGEolXEFLj!-46!32","o3":"1|0RdbP2bBJgACAE2cIdDAdcCAeaLg2ALk2F2GmfACcCbgIAaEShckFAfDnGAcGLfahDaMCAbdbFDhbdHlfOIecD2AdhIDCaIaqG","pm10":"1|0!45SbwqfCALeDFkBaLFqA!30ghfcLmdPIbh2g2GecACeAaBcKB2ALjgcCacABWqAcFb2aiJDhFdCEC2gDFfJeBDaDjGHieHbGAanL","pm25":"1!105!39k!-34!-42hafWiGKsDgQO!-34F!68j!-29hdV!-30g!33Vcr2qPLmfBCfgDIcQHeBZuoeAahbCAThbMcChzWPnLgfGBhvHFfYpGEVk!-30MTvmRALEb!-31Y","so2":"1|0GabFdABaCabB2aACBdA2BDaAa2AaBCAe2BAD2A3aCabBAbC2BaBaA2aACAbABC2BdCAa2BbaBAbCAa4AB2aBCAbBAC2AbA"},"dh":24,"time":{"span":["2014-04-01T00:00:00Z","2014-07-06T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19312h59m25.75296863s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19616h39m30.905499331s"}
 
 
         event: debug
@@ -551,16 +564,18 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:45+01:00","st":385704,"ps":{"co":"1|0EB3AaC2ACBAbA3abBEBd2Aa2BaEHhcBaCABAbA2BdABCabC2bCBaABEfaBaBCBAB$abaC2AcABADbEAaBc2aBABaB2ABca","no2":"1|0XG2a2ABDAOSy2AdcHfa!29gnbKsCMaAEem2CHcHgmCTAiKegIBCikRGnMIDdajhXJbmbzINqOLI!-32CKaHjNsaSCBAcgGFBbqHij","o3":"1|0!29cFdcEAfCimKMiICDnEpOABdNaAcemNEAeJEaACAmHCAFAka2ACEaFbDqIfALdkDNiGE2aqICKCnIaIbDbcbebdQ2bjeaOba","pm10":"1|0QEHicIHfcGNfkDcB2bDRGqeFgbEcbJfiGACDacaBC2aDcBEBDAlHadGbGdgOlbSJke$NjcSQG!-44dLfHagiaHDBIUbgkLSbwqf","pm25":"1!37JDadbAfOL!45p!-37Fh2DcG!40K!-44bDjgGeD!26p!-37MKEBHfhaJCeBcDKCJDyI2fSiIeg!27!-27a!34Nvg$Zqp!48!42J!-95hVoHalsAUHDS!51es!-31X!39k!-34!-42h","so2":"1|0GFh3AaCaDbABAbCAcCDBcaAaAD2bCBbAaCABAbACACab2A2BbaC2aCACaABA2BacAdBAbDAEdBC2AbCbaBaAB4ACacFcA"},"dh":24,"time":{"span":["2014-04-06T00:00:00Z","2014-04-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h57m29.686023657s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h37m34.838555087s"}
 
 
         event: done
 
-        data: "2.351814ms"
+        data: "2.579848ms"
 
 
         '
     headers:
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
       Access-Control-Allow-Origin:
       - '*'
       Cache-Control:
@@ -570,7 +585,7 @@ interactions:
       Content-Type:
       - text/event-stream; charset=UTF-8
       Date:
-      - Thu, 21 Apr 2022 01:09:14 GMT
+      - Tue, 03 May 2022 16:49:20 GMT
       Server:
       - nginx
     status:
@@ -593,15 +608,28 @@ interactions:
     body:
       string: 'event: debug
 
+        data: "Fetching 2022-P5"
+
+
+        event: data
+
+        data: {"msg":{"now":"2022-05-03T14:52:11+01:00","st":458712,"ps":{"co":"1|0CaA","no2":"1|0VBh","o3":"1|0!31dh","pm10":"1|0ZDd","pm25":"1!59NF","so2":"1|0.3A"},"dh":24,"time":{"span":["2022-05-03T00:00:00Z","2022-05-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
+        Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"0ms"}},"status":"ok","cached":"2h57m19.044051636s"}
+
+
+        event: debug
+
         data: "Fetching 2022-P4"
 
 
         event: data
 
-        data: {"msg":{"now":"2022-04-20T22:21:53+01:00","st":457992,"ps":{"co":"1|0B2CAabDaCbAba2BaCACa","no2":"1|0LEFEcDjDaHMghEFdbeAc","o3":"1|0!32BbcDAhEbFiFBAFaJfae","pm10":"1|0OFBdCdCBaCMCnALNenaJ","pm25":"1!32PGjhgANDCNCrHP!36g!-34iP","so2":"1|0.3ABa5AB3AaBaABa"},"dh":24,"time":{"span":["2022-04-20T00:00:00Z","2022-04-20T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
+        data: {"msg":{"now":"2022-05-03T14:52:11+01:00","st":457992,"ps":{"co":"1|0B2CAabDaCbAba2Ba2B3aAaB5ABA","no2":"1|0LEFEcDjDaHMghECabedCAc2bGCaD2AC","o3":"1|0!32BbcDAhEbFiFBAFaJf2aAaCFiEdCbHe","pm10":"1|0OFBdCdCBaCMCndBYjhbGDfNeobKDBbA","pm25":"1!32PGjhgANDCNCrcC!49a!-34jKGePe!-32CHL2BC","so2":"1|0.3ABa5AB2Aa17A"},"dh":24,"time":{"span":["2022-05-01T00:00:00Z","2022-05-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"1ms"}},"status":"ok","cached":"3h48m49.404282324s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"1ms"}},"status":"ok","cached":"2h57m18.694104486s"}
 
 
         event: debug
@@ -614,7 +642,7 @@ interactions:
         data: {"msg":{"now":"2022-04-06T19:38:10+01:00","st":457248,"ps":{"co":"1|0.2BAaAa2BABa2AB2AIfdBCbBCb2a2ACEcaC","no2":"1|0XCInfaJc2FdeBJAgHak2DM2GjgiHhgeFCF","o3":"1|0ScEFBA2aEBbGbGkaBEaDcGFABCsbJ2ACBb","pm10":"1|0QPKrgCDOge2bcHBEb2DAT2FGcqtI2DueFC","pm25":"1!53!45C!-36bhb!31qadnDKbMqENK!28RPEA!-48!-34RKD!-48kRK","so2":"1|0.7AB2ABaABaB2a2ABA2B3A2aAa3A"},"dh":24,"time":{"span":["2022-04-03T00:00:00Z","2022-04-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"342h32m32.400503148s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"646h11m20.344799341s"}
 
 
         event: debug
@@ -627,7 +655,7 @@ interactions:
         data: {"msg":{"now":"2022-03-06T19:26:40Z","st":456576,"ps":{"co":"1|0FaCFaBCdADAb2afbHabcC2ADaA2abCAbAB","no2":"1|0HENcBkOaAbGieHEiFfGgAKDcAFhHdJDpgb","o3":"1|0WDBDBaAaAkCFDbBGcCeE2aCBeDcagcFECB","pm10":"1|0TDFdFnKlFBEB2dHgPde2AEjiJAdIaPNvfB","pm25":"1!42FCiAjPqAOCDBgEfKcD2AEruTIiQH!44E!-38Il","so2":"1|0B2Aa2ABaBa2AB4AaBa3ABAaABa2Bb2A"},"dh":24,"time":{"span":["2022-03-06T00:00:00Z","2022-03-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1085h44m2.400009824s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1389h22m50.344322169s"}
 
 
         event: debug
@@ -640,7 +668,7 @@ interactions:
         data: {"msg":{"now":"2022-02-06T19:39:29Z","st":455880,"ps":{"co":"1|0C2aFEcBAdFCBcabGeBdcBaA3BbDBAaCF2a","no2":"1|0.3ELEjFPrL2ElfGHkeHe2BbIdFrEbHDFfBk","o3":"1|0!28iaIc2adbibcGIe2CEiLCbhCEAHADeCBE2A","pm10":"1|0NdDFeDFLkPEIcmAMlkBfL2BcbBdFeAEFfGn","pm25":"1!33iGVsETOlWFZhzo!40!-38lcCw!47ImndmICbEDefj","so2":"1|0CbAB5ABABa2ABcB7ABbB2ABAb2A"},"dh":24,"time":{"span":["2022-02-06T00:00:00Z","2022-02-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1757h31m12.974687315s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"2061h10m0.919026538s"}
 
 
         event: debug
@@ -653,7 +681,7 @@ interactions:
         data: {"msg":{"now":"2022-01-06T17:48:21Z","st":453624,"ps":{"co":"1|0C4ABaAB3A2BbC2abBCBAaBabBABA2C2aGgDacbCABcCEFedBba2DeCbDEABC2AcAfAB2AdBAB2aA2BaACbaCcEcaABA","no2":"1|0!26ahMfADfKlaDFDaFfaiFaGCeEAdEAahIGgkSiaL2aDfjbMJhDfAmGQBoEoCXigEPkoVaecdTq2DbdABbHCKncjN2eDeBaD","o3":"1|0ZCeEaegDCabCeKBjKhEGbaDCeDEdDcCboJAmQaiIabEdbiEBEaIaboICGFblPAjCEAfKaeCeFagECacDCApJDaB2FgABcK","pm10":"1|0SAcCdGEaSdo2Bb2FfAEgcAcECab2BeCaFBgMBiGhbEBhaIFBbgBdCMJk2gCLBfdGIl!30AufgHecFaiFCfbHOBkbJfjEaFHi","pm25":"1!34aAFdHIB!51h!-43EjIEMhAJrh2cCGAhMaBjaOMr!31e!-27RrEFBsDVKg2edmNXWxudAWAD!-27RYv!78b!-72zdNoBLGoMGon!26PJwBVrmj2GS!-27","so2":"1|0AB6Aa3ABAaB11A2B2AcC2aBaABAB2AbBAa2B3AaCBabABa3ACbaEBA3aAbBAa2ACAb2Ba2AaAB2ABA"},"dh":24,"time":{"span":["2022-01-02T00:00:00Z","2022-01-02T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2503h22m21.476603041s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2807h1m9.420934405s"}
 
 
         event: debug
@@ -666,7 +694,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:19Z","st":451416,"ps":{"co":"1|0GE2AfcAFBbA2aBaB2ABa2A2aAaCACAaA2BAaB3ADbaCabABa2ABaABaBa2ABa4Ab2A2aBa2A2BE2AbACB2A2aABAbc2A","no2":"1|0YekdDaGOC2eGbacbdHE2DkeD2CAkLdDhaADfaKaCBGeABeCEaDAFhFda2DeAkdBAJaC!26ErtAaHcCDRBcjfGBAFgeFEfI2ah","o3":"1|0!30EicEeCADoCaLCgKCMADCndCgOgkDcEbDGbBhEceHCjEHAehHCebHBFcAb2BbadDBdTAOb!-28DFcBiHCAHtIjOhFlKIdeDACe","pm10":"1|0UFheEbCaCaBdEcdHcHDGCdnObGpdFafBABDcAaFaBAaDCfHfaCcDaAHfADgcdACIHIDIKe!-30g2BAFcGeGJsKEcAcDeEcGeAc","pm25":"1!57NunC2dAJICcFfiEbEIHTb!-27UDdvcdfBdBQIdmdCBKeBcadPpeJAIEhbkDCE2gaLGR2CBWAxqBDk!26PozQPzIFgAfCfcACBaA","so2":"1|0Eba2BA3a16AB5AaBa43ABAa4A2Ba5AaBA"},"dh":24,"time":{"span":["2021-10-03T00:00:00Z","2021-10-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"2649h53m23.404232909s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"2953h32m11.348599764s"}
 
 
         event: debug
@@ -679,7 +707,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:24Z","st":449232,"ps":{"co":"1|0FCA3B2A2aBCBdA2BAd3BA2aCBbd2aBaADBadaBABbB2ACbDcACbBAB2aAa2AB4Aa9AB13AFE2A","no2":"1|0RhbIBbJ2AebLMmeFeBLDefFgjDRiAFfdeDFCAkBGFAEfCgHBdBcAbHbAFGngDGIgGhdBFagadH2aLhC2dCAIA2bcDHbBekd","o3":"1|0!29ECBdcaACaD2bGcDcACfDaAKdAaFgDCaEheCD2gMHbkGAbcAF2AcHgdHGfIcHMbprWqEKbqDMHlhSq2AaFCImFCB2iKIEic","pm10":"1|0!35sBHcg2FebdHKdiCbCQIL!-28bAecNEla2BcdaBEcbBDBacDcAFcGai2BCaBIAbDAEAiacCACbdbGeDHce3aCAJhCDcEg2Fhe","pm25":"1!68!-31FNbuJBEacLPh!-27AbERY!61!-83bGkj!26asgBFqCgEAFdRDQeHvpPDfGFieAHaHNJdFBCcqJlA2dcDfGEfMFfAhiCNjEaMdAnVNun","so2":"1|0Ba5ACAbA2Bb4AB5AaBABAa3ABAFAgA2Ba5ABaA2BAaABABAa2ABca4ABAa3ABAa3ABaABAa4AEbaB"},"dh":24,"time":{"span":["2021-07-04T00:00:00Z","2021-07-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2649h53m18.444216846s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2953h32m6.388588471s"}
 
 
         event: debug
@@ -692,7 +720,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:30Z","st":447144,"ps":{"co":"1|0HBA2CAa2bEcE2aAcaAC2BAc3aB2ABDbBaCBABACAacAeAaBACb2ADAcBADaAbAbFcACaAdDBAB2Aaea2A%ACADCAB","no2":"1|0MBDGaDb2BFgCBEdidDIadFdCgFjABIEiAFjEa2IbgcICgCBAaJiD2Eck2BGbdFBNhjbEf2aHIDlKnJFbac2fOSG!-33hbI","o3":"1|0RBfdAFANagbdDHFABbiDEdAhLEjDgPcgDfNb2AeDCBcBGbaBcqWbAdFi2dm!30baDmNcBDAdFfbAGiKfEcFa2CaHqGECB","pm10":"1|0KBAJHBgcdHjMgBEjBAFabCaBbBbEDBbabCbdbEOBgCcbAbBRfFmCDHEgLGHrqALHBmcAdAFEDdhBaLBIqcFaEKPpsBH","pm25":"1!53sC!36bNmowRcVpcHvAlWKBbdLqdbHSkAEcPqnkG!37GpHiaidbZCKzbIdaiVUM!-60kRZ!33zjqhGfNBEDqVjPCE!-27iAGF2Z!-31!-31FN","so2":"1|0.3ABAaB2ACbaBACAa2CaAbaACD3AfaABa4AB2Aa2BaACDAdE2ABAaCabd3ACa5AaB2aB2AB2aBa3A2B2a2A"},"dh":24,"time":{"span":["2021-04-04T00:00:00Z","2021-04-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2649h53m12.170835598s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2953h32m0.115209242s"}
 
 
         event: debug
@@ -705,7 +733,7 @@ interactions:
         data: {"msg":{"now":"2021-01-06T19:09:19Z","st":444864,"ps":{"co":"1|0Fc2ABABbECb2abABaDba3AaAB2ACaAaCDCGcdabAaBAbABa3BbBCcBDC2aBaCaBaABDcaAaAaB2A2cABA3CbACaCAbAB","no2":"1|0YcfdEbABHAkOkbAFbAdeEIChCJbaBabeFJDFcfgFAeECjcHbAGDkGEeCH2adaEGcacbDFbjCaC2FdbgcbCFBjGfaJaIeB2d","o3":"1|0VdGAdabDeDBeBEeDdfTdC2aGfdB2DBa2AckiDbAFJ2Ec2Db3AbBgaFdjgB2JanNADdgdHDEcdDaJd2DBcABCdHdmDfDACA","pm10":"1|0KBCfGaEdFdbF2cC2aF2AdBAeADBAaCGebCF!28AqApDaCE2dEADcBcALhGBHMfjkMidC2DGcgACkFBbHdcaCDcfAc2DEAE!33rg","pm25":"1!31CbfRcGjOlkJfD2FJLeagHhgjRfIfEHjCBG!51!49!-56I!-40pacGfhDCHeLoFZpLINTgp!-36ZrAgOCNwgHnuHbdDPFiPKgsKeAUDNFIym","so2":"1|0DB2AbBbABbAC2a3ABCDAcaDBa2AbA3BcAB3Aab3ABCca2ABaACDAaDab2ACEC2bC2aCDdgC2aCcAaB2Aa2AHBbcB2bA"},"dh":24,"time":{"span":["2021-01-03T00:00:00Z","2021-01-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11262h1m23.401157601s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11565h40m11.345559227s"}
 
 
         event: debug
@@ -718,7 +746,7 @@ interactions:
         data: {"msg":{"now":"2020-12-31T18:40:16Z","st":442656,"ps":{"co":"1|0Fa5ABAda2AB5AaAB6ABABa5A2BaABAa6Aa11ADeBAaBAaA2BaAB2Aa3ABAaBaBaD2aDc2A","no2":"1|0RdeaBFKjaCBCB2aeIgdHeJGefb2AJCOubCHeH!27qtNAKyaFafGdeDCDEg2CBfaIKGkGiCacbdChBPNoeBfdQJiBjDeIcAIcfd","o3":"1|0GCGaLaBmHDEMqCdcAHBGBFEqeaBbMDW!-32DECAbYEKACDxueBKlkPdFAbCAgHb2aDEgAbBeabKacDEM2eDEblUjsL2BjaKadGA","pm10":"1|0MabBDBAcCbBEaf2AHebEaBDdcCbBFBUubaEdBIEbINGujAFkacO2cfDbBDeBEcHBeDabBfaFDgASUmnadgGCicFEbEabdBCf","pm25":"1!33deDbKIDbeHNsa2fNEiIadc2adCfPBUxgBJqO!28LeB!32d!-27!-39TX!-35mAL2DgHAgKiaEBRdgbaFcfwNKld!30!39q!-33FdjUH!-27pODAOHshCbf","so2":"1|0BaAEBa2Bbd8ABa2A3B2A2a2B2AaBaAaAaBA2BCaKhCeB2a2ACa2AbaDb2ABaBAaB3AaCBbaBAbABaBa4ABCB2A"},"dh":24,"time":{"span":["2020-10-04T00:00:00Z","2020-10-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11406h30m26.227717557s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11710h9m14.172137422s"}
 
 
         event: debug
@@ -731,7 +759,7 @@ interactions:
         data: {"msg":{"now":"2020-12-31T18:40:35Z","st":440472,"ps":{"co":"1|0F2AaAaBa4AB2aABAa7ABa4ABa3ABAaB5AaAB2Aa2AB3ABa6AaBaB2AB3AaBAaAaB4ABaA2Ba3A","no2":"1|0WJ3fMADadDglKHBmBbCA2Eag2Dc2ADad2aELgAlaGcCFEbEAEbieDCFBgCedAKEdFebcHChDaDFAEcfAdHGE2aobFAadeaB","o3":"1|0!31BACFfCD2ABElBaAcdNbCE2CmJigCAbFBDc2GECnjEABCAbFfHLmAdICbhEJdDbhgCebFGeFcDCaBdFfdbHM!32bt!-27dEdnCGaL","pm10":"1|0SdGBdBMWC2hijaNU!-28EdIBAEanBHqFcBcDFbGFgQkgc2bFabB2AdHab3B2DA2cAFkABbHBacJiAd2BaC2aJBIBdqBDcAabBD","pm25":"1!52zR2eDNUlTbmob!26!45!-65JbfiFHeoDWpAgAaNFyZFJnmlBAGAbDFhMKEmNCnjfCDeENlicHACADMQuHecGbBjaKdNdH!-31bCaHdeDb","so2":"1|0EDCAB2cABaBCcA2BaB4AB2ABaeBAa2A2aB2AC2aABaABaAaABAa4A2B2ABACbCA2bA3B7AaBaACB3Aa2baAEB"},"dh":24,"time":{"span":["2020-07-05T00:00:00Z","2020-07-05T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11406h30m6.757464172s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11710h8m54.701880017s"}
 
 
         event: debug
@@ -744,7 +772,7 @@ interactions:
         data: {"msg":{"st":438288,"ps":{"co":"1|0GcAB5ABbBAbCaBCBDBfb3A2D3aB3ACba2b2CAbBcACBAaBbABCB3aDbEbdCBbBb3BbaDb2aBCACaBabAB","no2":"1|0!30caEbsOFcDdAEmQsLHcLbedIsaJNAfbaACaKCgdnSdGBCoCHAHhBgc2HcaBgBDJBoHDhJgJdbljJfCGf2aQbCidge","o3":"1|0KRalHEdbBAKcE2eaDlAjaLCdGFIAbAcGbBbra2LDbBeGebIcbEABacdC2AdHafnLHbIAecJg2AdkGFBDAaeNdGFag","pm10":"1|0!41yaBebFHQyFeBdBGcHGSckcAIhnDHhbJACaQDaojCD2bLpbLcCgKaiaFAaCFhbNdbIBmBgEFaecEBEDeCBGa2Lele","pm25":"1!116!-60kBjgMLpImeaAMGhNBUJFo!-27!39qsoLkeZDbe!27LK!-38kbaAGIqbJeFkKIpb2BFDCkaUbHDbsbdeNCpfPgKQvGMGCTUj!-34u","so2":"1|0BABaAB2AB2aCBaAa2ABCAdACaC2Ba5AbBaBA2B2ACcFabaABbBdACaAaB2AB2Aa6A2a3A2B3ABa2BEda"},"dh":24,"time":{"span":["2020-03-29T00:00:00Z","2020-03-29T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"18059h56m52.626344396s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"18363h35m40.570759681s"}
 
 
         event: debug
@@ -757,7 +785,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:09:47+01:00","st":436080,"ps":{"co":"1|0BADb2aC2BabBAaDa2ABbaFA2bACAa2CbADAdEBA2aCBAbc2DdGbabaCc2AaABbE2BaeBaBAC2aAaBAabCaBAaCaBAa","no2":"1|0!29eT2hjVBABlTnDPeMkcrAZAjfgASeA2BnKNwRElHceJGJ!-30XCyOaga2jEBAaKJlKJGkcfgBEJCgBeKAfcIebBcbacFd","o3":"1|0ZfCdcKeFcDabHkBEAFeEAkjFTAjACblQAgbFdBf2ED2cGehcIkPkJfDJAcEhgPmAdVcEBdBeaDHA2eaIfH2dFbBgDA","pm10":"1|0SeLCgeEIgDfaBFbEb2abcNMglbBUvHMFlDBmKkKDjcCacCEKqXnFhB2cfEaHFnOJKewBc2CDAdBdFcFcdaAE2aB2DA","pm25":"1!47dNDkcCFhBaCoKDKcbcJuJSmrPA2gORkmUpNO!-27YkcodRdEVK!-51!42iFyOqCo2LMC!-29!35pR2vPdAGAhDFdELaAajD2C2APHa","so2":"1|0CaDb2aDAaBcCAaDbaABaAB2A2aAEAB4ABa2ACbAaABbBA2aCaA2aABbBa3A2CABca3ACA2aA2CbA2CAbd3AaA"},"dh":24,"time":{"span":["2019-12-29T00:00:00Z","2019-12-29T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"4ms"}},"status":"ok","cached":"13866h0m55.285132077s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"4ms"}},"status":"ok","cached":"14169h39m43.229550812s"}
 
 
         event: debug
@@ -770,7 +798,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:04+01:00","st":433872,"ps":{"co":"1|0DaB2AaAB2Aa3Aa3BAaBaABAbBbB5A2Bb2ABaA2BaABaBAB2Aa2B2AbAa2ABaC2DcB2AaAc2AaAb3AbB5AaCaADb2a","no2":"1|0SFGHIxGMDFmrEaFL!26!-40CoIh!33MojdedbBFCICfBDFifBGFaeBhbHOcCENBAJ!-29cBdgMAk2GmCRfcbDMmgEFKAcecnASafjNbeT2hj","o3":"1|0ZEeIHtFIBDjaAcGIFtfIac!30!-30Vxb2JhgEKBHmabCa2BeHkGgFCBGBdE!26cAC!-30cEabBbcDeEBcbdaLdEiHCbDdDcbahBGCcJfCdcK","pm10":"1|0PBDBCfBFba2cCaDGCmdJeGKFBkiBCcbEHaAcCGh2CfbacBFaAGc2BFPFiCsdEbfIbcAFfDCKjACFdHlFBGIkgHhbCebFCeLCge","pm25":"1!40SnENka2ABgCHfeKGunGdMOSdjqnSU!-29ELHFfcAbDAcelD2ABCBQcFJ!37Psb!-43hHDnIcbCGfCJGnCBPhHvc2GagigIGcfBHFdNDkc","so2":"1|0B2AaBAFdGcdAaA2B2aBaABaB2AC2BdAa3AB3Aa4ABaBaABaBaBa3AB6AGEBdDdeABb3AaA2BAaBbBCbAaCAaDb2a"},"dh":24,"time":{"span":["2019-10-06T00:00:00Z","2019-10-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"13866h0m37.559061001s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"14169h39m25.503475477s"}
 
 
         event: debug
@@ -783,7 +811,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:12+01:00","st":431688,"ps":{"co":"1|0IDAaAdACbC2baCAaCDAaBAaBaBAb2B2ca4AECBd2CbBAcC2a2CBda2BaCbAabCaBbBCAcbCD3aDaB2AaBCbc2ABA2aB2AaA","no2":"1|0!32LpiBFjOaCFCicIDGFcelUcabfkdNLfhdmEGSbfJlbHeciMEdBbVevbABDLfDOAEigAedEb2aKB2fRAdAcblTjdFeTvdFGHIxG","o3":"1|0!33gmKBFCcIeEcaCfm2NLFEexHaAd2bCFnAFDhGfdMBAdCDAhCGAFEDuBhGDAecSadhEA2cCDbAEAabIkfJEFMs2BCg!33!-29bEeIHtF","pm10":"1|0ZFnd2FZCiqA2aESMCdkbAQkgtEBgLIegcdIhG2AdbABANcbDaAgEacdCbaFAbCABFgBDaCkEDaCadECAbdaPFdoEHGmeBDBCfB","pm25":"1!36!31myIS!74E!-32!-45iPefQKJvDfL!44!-28!-41uEaEZYyzKgPdRCafDodB!31jdOL!-40hIEDsCabKDjEcDEBhBbdUtEcFAeDObgBfY2AtBGVxbSnENka","so2":"1|0.2C2aAa2AaA2B5AaAaBHAe2a2AaABaBaBAaCB2a6ABaAa2BbABa2BAaBbBaDABbA2a2B2aAB2ABaAaCb2AB5AaBAF"},"dh":24,"time":{"span":["2019-07-07T00:00:00Z","2019-07-07T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"16ms"}},"status":"ok","cached":"13866h0m29.782676702s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"16ms"}},"status":"ok","cached":"14169h39m17.727089847s"}
 
 
         event: debug
@@ -796,7 +824,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:19+01:00","st":429528,"ps":{"co":"1|0H2ACBA2aDAdBbBDbBDcCDeBFebaEBaDeaEcAaCaAaCBbCBc2AB2aBACB2Ade2A2a2EA$aBa2AbADaBa4ABCaAcCa","no2":"1|0V2FAbBGiDaBAhDSdhPpEGgCQkfoLQhKqlMGaDhFgBIClZCkhFBbCAcBPGc!-30c2eLahNbsOAEbCGfBGEAfEibaNcSgcq","o3":"1|0XaAhFfLadjbOJfaDfbChGEemGRac2fGD2bDfaJEC2dcgAHFGhGAbfhdcACRgHImKcDcECcCAFgKd2gFfF2GbcabIBA","pm10":"1|0PHENhbdabMihACbfELAHKyGNhncLHeEkEDgDCceDgNEaTEjdjCbHKAEGFAzBlgDCAiFDgGdGcbCdJGfDaB2aKeIKIv","pm25":"1!49Kd!37khmjd!27mktLceEOM!36N!-70U!34j!-35jDFIbG!27!-30CHI!-30BblNfO!34!34wp!-28BIbMV!30FLC!-51h!-28hiDJuDCDbCJieDBIMeECBFtZiQI!31!-80","so2":"1|0.3ABA2BbC3AaAC2aBa2BaBEDCBheACa2ABAaEdAaACa2Bba2BaACabA2Caba4AFadaB2ABa3ABABA2aABaBABA"},"dh":24,"time":{"span":["2019-03-31T00:00:00Z","2019-03-31T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"13866h0m23.396258591s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"14169h39m11.340668517s"}
 
 
         event: debug
@@ -809,7 +837,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:34+01:00","st":427320,"ps":{"co":"1|0F2ADAcAEAabA2aADAa2EebAaCABaABDdEcaCb3AbCABa2ABa2AEB2ba2BcACabAFca2AaCDbDBcaAbBAaBbDEeGbdA","no2":"1|0!37JHIO!-39F!28Dji2bqbQciJPxeFdDbiBDB!26iIanBEAFcFhMCfdnBc2CJdCjcDHEaNhkCOhCAdpMNmAImOFlOcjBhDCeLgeb","o3":"1|0VbdB2EcbIlHE2ad2abCcDCgACEaDdbajIMfqSEaCcDcAclaBPbdhfAKaEfQCgC2BnK2E2AofKkDNaAGdCABdgdAiFMc","pm10":"1|0SA2FJod2EWveCjGOgdIPscDdDicaDEKcIgBYpqFabd2FAKlHigFLTdnfdDgCEfdFIfEjEfFQiFMrdHg2AFdgOCgYjpe","pm25":"1!50aKOT!-28mJH!52!-53lEjIWclM!34!-35sHAC2laAMUFDhC!46!-31!-35aGBhECIUoQusO!26!45n!-29.2nOqd2ElPEhajAdK!26iCNmvHebABDg!27Jp!51r!-39A","so2":"1|0Ba7AB2Aa2AEAdCEcB2aBAa2A2B2AbAC2Aa3ABAa3Aa2ABCAda2BHCgaAaDbB3aBCcCB2ADeCA3aACbDAcA"},"dh":24,"time":{"span":["2018-12-30T00:00:00Z","2018-12-30T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h0m7.890110007s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m55.834536663s"}
 
 
         event: debug
@@ -822,7 +850,7 @@ interactions:
         data: {"msg":{"st":425112,"ps":{"co":"1|0DCAaAa3AaA3BaB2ABabB6Ab3BabA2B2AaBA2a2BABabBABa4ABa2ABA2aA2BAaBaACBbaBAaACabDFeEfE2a2ADBdB","no2":"1|0!34IB2InAlGqDLOHfIiHGaofUafQj!-27bCKFBctI!31asiB2beFHaCfhIEAjGhHfMjAGNhCoCFADaG2gLHbfLfdIGf!-27N!26bM!-38!27rcJ2HO!-39G","o3":"1|0!64qfaOgCgco2FCLCetJEAVyF2DKhu2eMGcPjCQiqlBI2bD2dFeAEHoJbD2cGdECRCDqEfbaHcfAbBF2GhfBahGBDAEfaCbaebGEc","pm10":"1|0!26da2HcEjBhJaCBeDg2CBDeABEQmgiC2DB2bcJCj3AcDADB2acBF2caABcHCaBDAGecChFeCbECeCc2BGbc2dJKdFoQncA2FJod","pm25":"1!64kaPVhQ!-32blTfDBgDnCIAQpbEL!31!-28ydDFDCahDQLzLmabFAFBe2AaCJfiBDfKMDkF2GpfGkFdCDCIgceFbGcfBJlTAJ!-30UlgaKOT!-28m","so2":"1|0FAb6AB5AB3AB2AaAbBAbAB3Aa2A2Ba2AaBaA2BA2aBAa2BaBaBb2AC3aAC3ABAbDA2aBAba4ABa6AaABaA"},"dh":24,"time":{"span":["2018-07-01T00:00:00Z","2018-10-07T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20328h10m1.240075818s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20631h48m49.184503405s"}
 
 
         event: debug
@@ -835,7 +863,7 @@ interactions:
         data: {"msg":{"st":422928,"ps":{"co":"1|0GbABEBabA2aBDAbC2aCc2ACa2BbcACFcDbadCB2ABb2AaA2B2AabA2Ba2AaBABb2Aa2AB3AaCAB2AaAaBABaBba4A","no2":"1|0!32NIbeIElCAncWBgLbNM!-31HgHeDIe!-27lP!37qIbdjMNjsKaneEeIKCGAtAQHoPxfRCNqamHBGgcfPnWmJfaCBh2a2ASbefc2a","o3":"1|0!27aGAbCbgeFiFBOaDABQngLmcEDjDFCaAbA2KMguBahIBJkabIAaDAjAWja2fDcEFhBCeIdAbfJcBdbAkbREBKU!-30eKcEX","pm10":"1|0RAEAeJLhaJMfdKlhbIRjIknabEbfeIDfKDGFEBrfGabdA3CIaLjcTgNbE!-29EKilACeOfbCf2AH2beaCcCJfCaGbAb2aC","pm25":"1!58Ab2fTVfOF!34sw!28v!-38B!31TqW!-27!-37HgEFbiHBgRGTPRl!-47hELAtJbdFLJ!28!-27gUHW!-30V!-30E!30w!-32cMnGDbCakFEDFneFeBdDKBHgALkfI","so2":"1|0D3AaOm2Ab2AEbaCbCA2aAC2ABac2ADaCba2ACBcBAa2Aa2AB4A2Bb4AaDbAa3ABaB2AB5ABAbBaBAB4AB"},"dh":24,"time":{"span":["2018-04-01T00:00:00Z","2018-07-01T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20328h9m54.323690569s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20631h48m42.268146556s"}
 
 
         event: debug
@@ -848,7 +876,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:40+01:00","st":420768,"ps":{"co":"1|0DBa2Bab2CBcAa2B2AaCbBADcAbAaBCabBAaABADaDbEb2ADa3bDA2BAbDAaAabaDAaAbBaC2aC2ACbDfBaAEb2BbaA","no2":"1|0!39FlNJphBOIrJjIJGdjWmdcMEFsJoDXiyBWuPca!31!-39Z!-30!30iKaLjfpmNKchdFKAp2BMGTmgDfehLaHF!-32AFJ!39xBrfOCHBmjd","o3":"1|0!27aEeadAdmMjRfdK2DClBcGEadjKGBgHgadGabdL2d3BAEhDEhGfDb3DcabaiOCceFjFaBaKABeAJaeEDoJCBeDfCF","pm10":"1|0SIDgDCjLKeB2bFpbFaMm2CdbLIkiCQoDFehHPIjmClOhEGIBfbi!28ncIqJFiPGQ!-33eBCgJbEkEeAJeHEcCc2FDjlaEi2A","pm25":"1!48JEgCV!-31!27ZySgCH!-38iEbGCMlfaKYqsDSqd2KsIXeiqCnQaKcEOgLy!65!-31iN!-37gGU2X!38!-75zFGxVaGbehDEAJlhQic!37I!-35iAda2D","so2":"1|0EBACaeaEBCdBbBDB2aEfBAFcadBaBEabaDdaCBFeCbEc2BCcaBcaB2A2a2BAB2ABD2a2Aa2Aa2BcaAaDaBAaA2BAaBb"},"dh":24,"time":{"span":["2018-04-01T00:00:00Z","2018-04-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h0m2.037105602s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m49.981656449s"}
 
 
         event: debug
@@ -861,7 +889,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:45+01:00","st":418560,"ps":{"co":"1|0CABaAC2AC2aC2aBABa2A2aDaBAbCdED3AeADbaDba2AEAbBcACAaBABaA2aAaFcBCA2aCAbFabeACAEb3a4ABbAa","no2":"1|0!35MjOtHBfRfAIjcDAJlCRvARfIgkGqTYaqN!-29eVdlPiAoHWfbFiaFBeLjdbEhAfATmIMKyBMne!30fH!-32CFaShAghejNhVAf!-32","o3":"1|0VD2aB2bBhHBcAaNAeqTaBAiHArKDFkabhJCGiOcqTkMhgbGAcCEGEAqHCDjEIBpAcNDBfeEabOcjgLbmaKaJGCbBqQ2C","pm10":"1|0.2NfDhEcCHdBQkBHFbGgmahJbFD2chNGDOCseKpaLiDkHJBdFfdAFDfEbfdDdDaPcaecaeOdmTmIiDCIOk2difEdbPdIt","pm25":"1!48MbaiGBCOlhRAHMAr!34l!-36BgMFGRninTEJ!26N!-35fM!-34APrIlOcRjOmkACDl!34jzcIeaB!30obhaBg!28wb!33!-28DdALI!31ujiojHlCQaG!-36","so2":"1|0DBbDd2BaDaAB2aA2Ba2AbAC2ABbBaBCADBRsD2bCcdaBE3aBaDBcDbAaBba2ADcCDabaDcbJaE3ACF2gdAD2IaoaAd"},"dh":24,"time":{"span":["2017-12-31T00:00:00Z","2017-12-31T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"8ms"}},"status":"ok","cached":"13865h59m57.307306485s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"8ms"}},"status":"ok","cached":"14169h38m45.251845692s"}
 
 
         event: debug
@@ -873,7 +901,7 @@ interactions:
 
         data: {"msg":{"st":416352,"ps":{"co":"1|0CA2BbCa2BbBbCBAb3BbBaA2aC2Bc2AaA2BaCA2a3AaB7ABAaB2ABaAa3ABa%Ba6ABAa6AB2Aa3A","no2":"1|0!33h!28KjOtp!28lKz!30!-34Jl2NceAafhFMedEjHDdbKqIEkCESwDZmHfClEAEbGKnhSgpQiId2C%!-31GNJFbjEjbKGNBAmcGbJGdeo","o3":"1|0!27EeAFZvAJnhEKi2fVHijFcbAGh3BEaCdC2BDg!47C!-45bAJaeJifFBkbSJOreOzdHDCBja%b2D2BJHbsFcfAGcDIsaPceFa","pm10":"1|0WdDAFJldFcabHdAfJKbhcdBcGECAebNjfNecbBdbKDnDHcBaBeBCPJwOgaSmX!-28dAeAa%lEIBaAcBAbICFeAdKOAGxDhg","pm25":"1!63lFEGSqiFfadIEejFOGoAiEbMbdeadG2aBFadEKh2EpEGabAbgCD!36C!-35U2B!38!-34lhKgnFe%!-28BVHcABGFiRIjeAd!29!32a!27!-81Iqh","so2":"1|0CaDBb2AaBABbDcC2aBABaABbACAaBa2BAaAbABA2aDbaCaBABbABAaCAbaBCbCb2ACA%bA2B2AbB2aABDaCcaBA2BA2a"},"dh":24,"time":{"span":["2017-07-01T00:00:00Z","2017-10-01T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20225h0m12.731174851s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20528h39m0.6757643s"}
 
 
         event: debug
@@ -886,7 +914,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:53+01:00","st":414168,"ps":{"co":"1|0EbCbA2BDab2BaBbCaBb3a2BaAC4AaAa5A2BA2a2BABABaBAaBAa2ABbB2aAB3ABa3AaBaCABaBAbA2aBaAa2A","no2":"1|0!50rYsAIe!27.2rHCeDiAaGVbpd2DkDNdKrcHaCagdDHSCdcmN2cb2EcPmANehiBIhOatDIaDFbldLBDCpDKTcAkfkgJIlZyBi","o3":"1|0!37cCiFcDKBjBaAdKebDdBK!26ynbcEdLBfaDABdHeabeMCehaiKGCFEt!70!-37nafBgfOcBcacBbCBDdAPkbJZD!-28!45!-39reAIhabHCE","pm10":"1|0YaLgBHBLavBCafcABFCHEnDEiAIAbBkRCEjEcB2AQnbjD2CAfabKfDJebeBdFAFgeDb!70!-67FecCDFCfCBLGbgnbeIFgaACd","pm25":"1!60F!28wHKBWh!-40eIBodHebMSEubPrDEIfDvZHBu!32kpaG!45!-28luGDSfkhbVmMCcDkBeBEWzkFbCJBdfC2GEhLDPNioydhIPBjDCl","so2":"1|0DbCbaCaC2a2BbCbAaABDabBCbaCaCbAaAaB2AaADBA2a2BAa2AaABaBA2aBCaC2a2ABaBA2aC2aCb4AB2AaAaBACbaA"},"dh":24,"time":{"span":["2017-07-02T00:00:00Z","2017-07-02T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"20ms"}},"status":"ok","cached":"13865h59m48.881107328s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"20ms"}},"status":"ok","cached":"14169h38m36.825582304s"}
 
 
         event: debug
@@ -898,7 +926,7 @@ interactions:
 
         data: {"msg":{"st":412032,"ps":{"co":"1|0.2CbFAcBaAaBbB2ABDbaBICcbeA2aA2BbBCbDbcA3BaAa2BaBaBcA2BACac8ACAaA3Ba2A2BAda2ACBa3Aa","no2":"1|0!32RdMP!-34.2HbhJpBDNHNkcdJLcgqAbdAaEeLOuLBkI2iBALEHcefcHDpKcgRbGgAcfbKEeKflEBJbcjeOEBjdCfIJAJBjq","o3":"1|0XjGhCAbIfOcB2fbBfAEac2ABFfTaheHIFlbDEnHeFd2bKCaHcfFHCbBCDcABeJ2bcHglBcMgcBIbDaCAdALehKBGcAd","pm10":"1|0!27BFMBtDeKW!-32.3AGPQakBXKqsMDwpICiCFCeOgGAJgGKio2BAge2cCEDmCIEDAfiJBAcEJCjaIBkecFDb2Iqd!27EwBaca","pm25":"1!72hJZDoDrLhfCbdQT!26H!-35H!60Nv!-36YA!-74s!29SxneOKZxMN!29jKL!-36zmLMokiCkNBoGCFALknLEQiBVM!-37HJL!-36ceF2B!31K!-37f!65D!-56aBeF","so2":"1|0CEcBDc2BAaCBd2ABCbaBDFb2c2AaBABaABbCabaB3ABACAbAB2AbaBaDB3aBa2ACbBA2aC2BbAaCAb2a2ABCaABAb"},"dh":24,"time":{"span":["2017-01-02T00:00:00Z","2017-04-02T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20225h0m10.331467827s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20528h38m58.275930634s"}
 
 
         event: debug
@@ -911,7 +939,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:58+01:00","st":409800,"ps":{"co":"1|0DaDb2aBa2AC2BABaD2ba4ABC2aCB2AcCabaA3B2AaBAcAD2aAE2acEaBDIfedAECdaAaCABAaACb2A2BcAaBICdbcb","no2":"1|0!47oUlbHAncIGfAFJjTqfaGgbL2IbjIg2CLPm!-28lMNhJB2gVmKCImpIFgbEhaMPXlsgbFIafAjGBCEhCFBajIPpew!49Ua2uh!-28","o3":"1|0SFebDGjKBcfBgAPCaAg2cEahcNFbodaPb2cMcCm2Ed2DdBGFBiHCagIagECsbACMfjDGCbQoHgce2aBAIKkQEabwbDADU","pm10":"1|0XbIAafEdeG2ADHbjHgBDabCJLchCLJDkmKhCmcLlJGiDJ2fD2biIA!30!-32AGfDR!40whwC!27BmfA2fECJBJgjLgeDoJpE!27Nhfnp","pm25":"1!63AIambRenKCaHMftIkMaJhEQXnoGU!34B!-33sNrCloVvHShgRmjAcbFX!-32RvEYij!40!54lo!-66J!63R!-43hcklFMLEXgrMj!-30EtCsI!53!41og!-36!-35","so2":"1|0GdEDbdB2A4BDBeDcaBA2B2A2a2BGcfdF2aBaCbBb2aFa2ABa2BbBcAC2aCHbAaB2Ededa2ABab2BbA3BcaABCB2Aba"},"dh":24,"time":{"span":["2017-01-01T00:00:00Z","2017-01-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h59m43.921379132s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m31.865820838s"}
 
 
         event: debug
@@ -923,7 +951,7 @@ interactions:
 
         data: {"msg":{"st":407592,"ps":{"co":"1|0F3AacFDaABadbDaBC2BcBAaDC2baBaDBabAaBbaDBbcbB3ABa3A2BaADcCaADaACA2acaABAaCaD2AaDAbdC4ABab","no2":"1|0!54oBGtJ!29wdfJblFQrdXNbyLFpaHaKBtcUeCdAbfc2ADRkhNBJeGscNUCpfdfd!35.2idemQaPA2h2FRCi!-31g2GEZdGkmMeAbKio","o3":"1|0XaFeGDb2fHdcCGfbDWbItgVobcdFfIBiaFBHFhcBaeLeDbGFBgcAaONojGgDJpDkHAjc!28iceJeUbFuhNkcTmFIfkaBDAcE","pm10":"1|0!26gBCcCGcbd2EeaDfaIGHoNghBDA2CehIBC2bDdAEcAEga2DI2BhjMBJClDfbH3acdIEBAgbADRdBdrCNfHaefBNjIiFhb","pm25":"1!59BeIqHRBAgFEfBeiB2KMpXsuBHFebJsIDcADElJCeCFkaCEOaN!-28jQFWKqgjFacdDejNPeCobcF!31BGsuKWiCgobgHBHjGbA","so2":"1|0Fa2AaAD2aC3AaBaA3Bac3ABaACcACAa3AaAa3BabC3AB2a3BbBaAaCBAaABaAbCAa3AaAaAB2A4B3ABCB2d"},"dh":24,"time":{"span":["2016-07-01T00:00:00Z","2016-10-02T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19313h1m1.402964963s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19616h39m49.347421819s"}
 
 
         event: debug
@@ -936,7 +964,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:10+01:00","st":405408,"ps":{"co":"1|0HbaAb3BbADb2A2aBDcAa3ABaACBbEcbCAB2aBCDe2aBABAaBA2aABCab6Aa3BAcCABAEda2ADCBbCdc2AGbcB2A","no2":"1|0!68miOkMjCegHNaEcvcWmABahdKh2JdnJmL!28FdqbHjAEqbKDOajFljaEDUghtdFCJFdeU!26oiVrnAHECodCAQFcAsgdZcKepB","o3":"1|0!29GgCBbi2FEsQeHhAGdFeC2AFhDCacFEfDFEgKHnra!33mcEcaAhAaEbaFbEF3d2CbcHjdPpUA2kBFEAfIjCdhQaACAgGbaF","pm10":"1|0!34bAcbabFibYoCDehAKfHDeiBFf2FDkDACHGFBpJbGAhlHFdcAadbcAJ2EbjceEaILcaQjdDdfFfBcBE2fG2DchbaMdBCgB","pm25":"1!83fJpehCLua!55!-40KACocKkEJdhDLpHKHpfDHBJTO!-38LJVourUAcfBfeajbT2GJqhjBcZUrhYcieGqBcBcKajkLJGmjAhTdGfBe","so2":"1|0FbAC4AaA2BaABabCbABaBACAaBab2A2Ba2BABa2Bba2ABCaABAcbABAaB5ABaAB2A2BABCAaAbaCabBAbaA2CbA2a"},"dh":24,"time":{"span":["2016-07-03T00:00:00Z","2016-07-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"13865h59m32.181830328s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"14169h38m20.126280574s"}
 
 
         event: debug
@@ -949,7 +977,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:17+01:00","st":403296,"ps":{"co":"1|0F2BbCcBCAacBDaB2Ffb2c2Aa2B2Ca2BAbcCBCBCgaABEabCdbACE2AaABAaca5A2BAbABAB2aABABCcb2A2BADba","no2":"1|0!44HBkRrbMgJkD2FbZM!-28lAnI2bMkaAaGdCGrDGMk!28rigWOasUtkAGTCdzcQDceNreHUpaLgmCDcLdgcJIBTwgba!27iDJmi","o3":"1|0TAqVhOaeabAciJbnAL2CbIEBACAdEbiB2GCagehCAN2cBbHDAcgjHAGHfEBababCbBlCFHBLgDdGdede2HC2abcACGg","pm10":"1|0ZFIrNjeEAJmCSoL!27LqmdrKBnSlEgIGiAEfeNbg!26rBfFMehGmeBKUbAlqMbdAHbBDGqWRGumAcMphBNDKAvCbdHDcJbA","pm25":"1!54H!30!-40UojNdGnF!30xN!67V!-50!-27eqDboMhBAIFeEAerQCB!35zPwKHcbCzfMJ!40Bcl!-38LeiHDUlaMi!41!45I!-45!-30dg!28!-32tA!37BTh!-38dtFHFLQfJ","so2":"1|0LABaceBCaA2bCbCFDeA2aBa2BbB6A2BABaCbBadDaBAaABaC2A3a2C2AfaAEbaBAbaB2ABA2BA2Ba2BCbAbAbA"},"dh":24,"time":{"span":["2016-04-03T00:00:00Z","2016-04-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h59m24.922100087s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m12.866584864s"}
 
 
         event: debug
@@ -961,7 +989,7 @@ interactions:
 
         data: {"msg":{"st":401016,"ps":{"co":"1|0E2B2A2aACcABA2B2aBACEcB2aAC2AaAFdcaCAa2ABa3AaCaAabACDacG4AaAba2AaAB2Aa2AB3Aa2AaAaAaDaBb$BaA","no2":"1|0!42VlEiGkIMsdQbCbAnhTLci!27eljfMBgiEcBMBkhCFCJACkpVhCOjqLVfoLcehNJceBjdEKDdBhgIbKcKsELmK2khQbRp$BjJ","o3":"1|0YfdToagHgHFbBAdFBdBefQjIiadGDcibaFCICAaHbBbFe2C2AbfHmCHefMFBcCEgBGAiAaHiIiciSiEaIa2B2aCAlKB$jCG","pm10":"1|0!28IOfncBGKrMake2HghGIDcFlAJModBUKkcfkcAbFaBHcicGAGabkHOlbKhbcAEGCecbIdEcaAeJEdPl2ebgLfdF!33smd$HlC","pm25":"1!66U!43s!-28efJW!-34!28dyoULodHKHpJfgMPthB!43!41!-36lksefAeGdKkagHcFJncP!37!-43GLgqcCJIFjhaQdACfcBQMtZpdrcQjflS!38wpi$Opf","so2":"1|0C3BAB2ABd3AaBAaA2BEbBba3BaAaCa2B2aAaB3ABbaCAaCbBaCAa2Aa2ABaABaABABaBa2AaB2AaB2AaBa2ABAB$aDB"},"dh":24,"time":{"span":["2015-10-01T00:00:00Z","2016-01-03T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19313h0m58.263200408s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m46.207686004s"}
 
 
         event: debug
@@ -974,7 +1002,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:23+01:00","st":398808,"ps":{"co":"1|0Iaca2AB2aCaC2AFfCaAB2A2aAD2AcbFbABb2BcBAa5ABaCBA2aBbBaBAaAaCAa3AaBA2BAaCAcD2aCBcaCaAa4A3B","no2":"1|0!86pycgOEnDXufHeBMJfibMBeF!-31XCdnGXpCeiNMflHkFfiPpDMICjCdDhJeGDgnDKBaBbhHAcNDhgEGfIZvaKfBClafIb2aVmF","o3":"1|0!69!-32ca2cBDFHmifaEPcFarG2DcCcaEcALgStCabDNenjKdGDdJiDjGQfpBCAECc2bCBcCHha2DIcgDBABjLEjfABEBCea2DgdU","pm10":"1|0!44.2kLiaCaJebgBaDLBhcIe2aFjEAdCKdGkEaCdDBeaBbLFkACFic2BCfEaDAdHkHACcaAcbFKInABDeFDiHdeGAHdj2EDcIOf","pm25":"1!104!-27x!28sbgGeJaeHfDKadiRjbfOpJghBAVdiJdIabda2cg!27T!-30bCMhfCBFkDBDdaKrQcCAiBiaGPQugEAhPbdVewEFGBoACEBU!43s","so2":"1|0FBbBAB2Aa2BaBbAaBAaB3AaA2B2aABAaBbaE2aB2Aa2B3ABaBaABCbAbAabACA2a2AaAC2BaACBbBAc2CbBAb2aBaAaCAB"},"dh":24,"time":{"span":["2015-10-04T00:00:00Z","2015-10-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"13865h59m19.549035265s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"14169h38m7.493513581s"}
 
 
         event: debug
@@ -986,7 +1014,7 @@ interactions:
 
         data: {"msg":{"st":396624,"ps":{"co":"1|0EBAaB2A$aAb$A2BabAOCdedC2bBABa4AaBCbBaCBa2A3BabAabBAaB3AaB2A2BcAB2AC2BbaC3aD2AaDA2aCaABacaA","no2":"1|0!35HgdbHE$YD!-30.2EICqBgCOBbMQxrEJQjifcAFLTCyHIfCberKLcn!27roFhJNoNfjJbA!27c!-28cJhMNKqoFWkrBNqLc!39fG!-29BMQJpybh","o3":"1|0!29cfBGAc$aJDBgHAlGFaBbcADbdhHCAabIEcabdLagF2eGIdbeBJqEDGcEAfBACBfHhHEjEFJanaBHpLajHfGHADfhLKY!-28kEd","pm10":"1|0UDaBbFd$!37B!-34bEDGjeBAMagDUxfIBUzDAfAIcBJjFcaFgEdBcbLABfdDcEdCbaHdEJEtBGCdFRmegJbJcgiECAKfcbBIK2kLi","pm25":"1!46JFGeJu$!100e!-79i2JPxm2BRbAH!49!-48pFeJgeHabKfDI!-27LDiEHdDhAgKNdibEeNsIAhJbCLS!-39EHkFO!29jsuScDEBr2BNGdkCDE!36!-27x!28s","so2":"1|0E2A2a2B$aCaA2BAbAa4A2C2aBAB2a2BAB2aAbABAbBa2ACBcEacBbA2BC2aB3AB2bBaACACbaCBcACaBbDB2aABAaBaAB"},"dh":24,"time":{"span":["2015-04-01T00:00:00Z","2015-07-05T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19313h0m56.396705247s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m44.341154371s"}
 
 
         event: debug
@@ -998,7 +1026,7 @@ interactions:
 
         data: {"msg":{"st":394464,"ps":{"co":"1|0DBAD4ABbCACbBA$AcC2AEeEfDBcAabC2Aa2A2BCA2abCBdD2AaCBABcaba2CbC4AaCc2aADA2aCbADaCcBaABaABAaB","no2":"1|0TIKaGfDBanOAIdCjkCPKhDHwOh2DAbdhLKbjnTfFIkLbkCGmH2EmdPiGRlojQFaHegACLhCioBNbBFLqgQFElJoaEmOHgdb","o3":"1|0YEgmGKAEDadIeAFmiBcAEhCSkImP2bAGnFcDAaGhBEpTCkaHFDeDEa2fcDLEcabgK2ahaCaDEeibOIDfAlGgLBcHcD2cfBG","pm10":"1|0!28kaRdjDcBiIbBACFlDKRkKM!-31No2dcHcDKbImCAQaHaMnvXfoGa2deJbGFbkaBCFEeM2fJKb2hKHUfgaxFdFJtFdeEfHDaBb","pm25":"1!75!-33H!39puCcCtOaCcIBfIUZr!32S!-82TtatEMbeQIDpfVFSbN!29!-28!-46!47j!-37LbkaeHdHcKpbaDFOiVlab!38donPX!52m!-37E!-55k!27lX!-33FArFkQJFGe","so2":"1|0DAaCBa2ABc2BCaBbaABDbaFgDb2BCAabBaAbAa2BDaBa2ABdCB3AC2abDbaCBcDb3AaBAacBDabACaAC2A2Bb2AaB2A2a"},"dh":24,"time":{"span":["2015-01-01T00:00:00Z","2015-04-05T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19313h0m55.240118506s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m43.184554203s"}
 
 
         event: debug
@@ -1011,7 +1039,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:30+01:00","st":392256,"ps":{"co":"1|0FABcBACac2BaBAaDbaACdB|35GEbCbcAaAbAbABa2ADbACbaD2BaAaACbA","no2":"1|0!36ALtGCKfiDGmADCVkhaLrH|35.2Ek2AaPcfDLkBLDcbEnWeicEcDaBndKjB","o3":"1|0RgLbAcGcDhJADtBHE2CdDe|35lAcAICJ2bkaTiHJbEzTcqOFCdFAFbibGd","pm10":"1|0!34bElcBEaAcabcBNBAgaElKDB2eFIj!26gjgcDJLwDFfecHFDefEVCAfvVk2DCIeifABFCnBIAdcPjDGldaAbDbeFCeO","pm25":"1!69DLveCFAfdECoCXbe2fMuP2GhkLPm!51xylEFT!26!-50GSokCcNKbmI!46Ddt!-36!28kJFcTfrsiPIE!-31bNcdaZqEPwheDcFfhKLlL","so2":"1|0DABcBACAbABaBAaDabACbA|35DCbA2bAaCBAaADAaBAaDA2ab2ABAba2Bb"},"dh":24,"time":{"span":["2014-12-28T00:00:00Z","2014-12-28T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"3ms"}},"status":"ok","cached":"13865h59m12.116081083s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"3ms"}},"status":"ok","cached":"14169h38m0.060543759s"}
 
 
         event: debug
@@ -1024,7 +1052,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:34+01:00","st":390048,"ps":{"co":"1|0D2BAa2A2aAB4ABa4Aa2ABAa2AHeC2aB2AaBA$BabCcAEd2ACbA2Bb3A$DCc3ABa3BaAa2ABACBbaA$3AbBC2aABcB","no2":"1|0!48ELi!-46!31cEjFGfiKAMdNmtAiIkOfBdbGTFmAGDcAFk$KBpLdaZ!-27dCSneLfeImjcKXlHaN2gIHhcDmgSajIEiaDjDUbhbNCoALtG","o3":"1|0!29aIboFfbMgdVoFaCbScjfdMBhQlfMcfCbDcABadA$cHiBaKahDaB3CjMjCeADpMJiJdDAfdbIGCjDHAo2GibF2beHaJigLbA","pm10":"1|0QGAanLdCDbAFgACHcJgA2cD2ADfeAFGBedEBabId$bBfCA2bAbEFfaENlGhCgDKcLCNFmgAfMhfaEWACcfwRHmEdcHOfgbElc","pm25":"1!49LEb!-31YiMAfGIpdGLj!29nBeiEaEGmkbMNFklIHdbSl$fbnKbceAgGTtbP!32!-35LnBmK!26lZC!28W!-34wAm!27uiAD!54GElu!-44!39!27!-37oab2YtwDLve","so2":"1|0EB2AbB2Ab2A2BaBABaA2a2A2BABACBab2aC2AaBA$BABD2CjCdBCba2Bb2aABACb3A2BAbBbB$a2Ba2BbCRfj2AbACa2ABcB"},"dh":24,"time":{"span":["2014-10-05T00:00:00Z","2014-10-05T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h59m8.242912718s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h37m56.187380274s"}
 
 
         event: debug
@@ -1036,7 +1064,7 @@ interactions:
 
         data: {"msg":{"st":387864,"ps":{"co":"1|0EB2Aba2ABABDcaCE2aACABaBaAaABA2cACABaBbaAB2aBA$BABbB2bA$DBAa2A2B2aB2ABAb3Aa3ACaABAaA2BabCaC2AaA","no2":"1|0!50bqHijKEKcLkoMaUeufAOKEahaeEHPflgNCDadeiCEDAbaqSKDkaBekJBjIgKhPeE!-31!32hBFbfEalhKcGaFcDIhAGEolXEFLj!-46!32","o3":"1|0RdbP2bBJgACAE2cIdDAdcCAeaLg2ALk2F2GmfACcCbgIAaEShckFAfDnGAcGLfahDaMCAbdbFDhbdHlfOIecD2AdhIDCaIaqG","pm10":"1|0!45SbwqfCALeDFkBaLFqA!30ghfcLmdPIbh2g2GecACeAaBcKB2ALjgcCacABWqAcFb2aiJDhFdCEC2gDFfJeBDaDjGHieHbGAanL","pm25":"1!105!39k!-34!-42hafWiGKsDgQO!-34F!68j!-29hdV!-30g!33Vcr2qPLmfBCfgDIcQHeBZuoeAahbCAThbMcChzWPnLgfGBhvHFfYpGEVk!-30MTvmRALEb!-31Y","so2":"1|0GabFdABaCabB2aACBdA2BDaAa2AaBCAe2BAD2A3aCabBAbC2BaBaA2aACAbABC2BdCAa2BbaBAbCAa4AB2aBCAbBAC2AbA"},"dh":24,"time":{"span":["2014-04-01T00:00:00Z","2014-07-06T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19313h0m53.453639373s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19616h39m41.39813238s"}
 
 
         event: debug
@@ -1049,16 +1077,18 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:45+01:00","st":385704,"ps":{"co":"1|0EB3AaC2ACBAbA3abBEBd2Aa2BaEHhcBaCABAbA2BdABCabC2bCBaABEfaBaBCBAB$abaC2AcABADbEAaBc2aBABaB2ABca","no2":"1|0XG2a2ABDAOSy2AdcHfa!29gnbKsCMaAEem2CHcHgmCTAiKegIBCikRGnMIDdajhXJbmbzINqOLI!-32CKaHjNsaSCBAcgGFBbqHij","o3":"1|0!29cFdcEAfCimKMiICDnEpOABdNaAcemNEAeJEaACAmHCAFAka2ACEaFbDqIfALdkDNiGE2aqICKCnIaIbDbcbebdQ2bjeaOba","pm10":"1|0QEHicIHfcGNfkDcB2bDRGqeFgbEcbJfiGACDacaBC2aDcBEBDAlHadGbGdgOlbSJke$NjcSQG!-44dLfHagiaHDBIUbgkLSbwqf","pm25":"1!37JDadbAfOL!45p!-37Fh2DcG!40K!-44bDjgGeD!26p!-37MKEBHfhaJCeBcDKCJDyI2fSiIeg!27!-27a!34Nvg$Zqp!48!42J!-95hVoHalsAUHDS!51es!-31X!39k!-34!-42h","so2":"1|0GFh3AaCaDbABAbCAcCDBcaAaAD2bCBbAaCABAbACACab2A2BbaC2aCACaABA2BacAdBAbDAEdBC2AbCbaBaAB4ACacFcA"},"dh":24,"time":{"span":["2014-04-06T00:00:00Z","2014-04-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13865h58m57.386673829s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h37m45.331163517s"}
 
 
         event: done
 
-        data: "1.965496ms"
+        data: "2.183561ms"
 
 
         '
     headers:
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
       Access-Control-Allow-Origin:
       - '*'
       Cache-Control:
@@ -1068,7 +1098,7 @@ interactions:
       Content-Type:
       - text/event-stream; charset=UTF-8
       Date:
-      - Thu, 21 Apr 2022 01:10:42 GMT
+      - Tue, 03 May 2022 16:49:30 GMT
       Server:
       - nginx
     status:
@@ -1091,15 +1121,28 @@ interactions:
     body:
       string: 'event: debug
 
+        data: "Fetching 2022-P5"
+
+
+        event: data
+
+        data: {"msg":{"now":"2022-05-03T14:52:11+01:00","st":458712,"ps":{"co":"1|0CaA","no2":"1|0VBh","o3":"1|0!31dh","pm10":"1|0ZDd","pm25":"1!59NF","so2":"1|0.3A"},"dh":24,"time":{"span":["2022-05-03T00:00:00Z","2022-05-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
+        Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"0ms"}},"status":"ok","cached":"2h57m29.416928324s"}
+
+
+        event: debug
+
         data: "Fetching 2022-P4"
 
 
         event: data
 
-        data: {"msg":{"now":"2022-04-20T22:21:53+01:00","st":457992,"ps":{"co":"1|0B2CAabDaCbAba2BaCACa","no2":"1|0LEFEcDjDaHMghEFdbeAc","o3":"1|0!32BbcDAhEbFiFBAFaJfae","pm10":"1|0OFBdCdCBaCMCnALNenaJ","pm25":"1!32PGjhgANDCNCrHP!36g!-34iP","so2":"1|0.3ABa5AB3AaBaABa"},"dh":24,"time":{"span":["2022-04-20T00:00:00Z","2022-04-20T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
+        data: {"msg":{"now":"2022-05-03T14:52:11+01:00","st":457992,"ps":{"co":"1|0B2CAabDaCbAba2Ba2B3aAaB5ABA","no2":"1|0LEFEcDjDaHMghECabedCAc2bGCaD2AC","o3":"1|0!32BbcDAhEbFiFBAFaJf2aAaCFiEdCbHe","pm10":"1|0OFBdCdCBaCMCndBYjhbGDfNeobKDBbA","pm25":"1!32PGjhgANDCNCrcC!49a!-34jKGePe!-32CHL2BC","so2":"1|0.3ABa5AB2Aa17A"},"dh":24,"time":{"span":["2022-05-01T00:00:00Z","2022-05-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"1ms"}},"status":"ok","cached":"3h50m12.397293219s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"1ms"}},"status":"ok","cached":"2h57m29.066988584s"}
 
 
         event: debug
@@ -1112,7 +1155,7 @@ interactions:
         data: {"msg":{"now":"2022-04-06T19:38:10+01:00","st":457248,"ps":{"co":"1|0.2BAaAa2BABa2AB2AIfdBCbBCb2a2ACEcaC","no2":"1|0XCInfaJc2FdeBJAgHak2DM2GjgiHhgeFCF","o3":"1|0ScEFBA2aEBbGbGkaBEaDcGFABCsbJ2ACBb","pm10":"1|0QPKrgCDOge2bcHBEb2DAT2FGcqtI2DueFC","pm25":"1!53!45C!-36bhb!31qadnDKbMqENK!28RPEA!-48!-34RKD!-48kRK","so2":"1|0.7AB2ABaABaB2a2ABA2B3A2aAa3A"},"dh":24,"time":{"span":["2022-04-03T00:00:00Z","2022-04-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"342h33m55.393539433s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"646h11m30.717712609s"}
 
 
         event: debug
@@ -1125,7 +1168,7 @@ interactions:
         data: {"msg":{"now":"2022-03-06T19:26:40Z","st":456576,"ps":{"co":"1|0FaCFaBCdADAb2afbHabcC2ADaA2abCAbAB","no2":"1|0HENcBkOaAbGieHEiFfGgAKDcAFhHdJDpgb","o3":"1|0WDBDBaAaAkCFDbBGcCeE2aCBeDcagcFECB","pm10":"1|0TDFdFnKlFBEB2dHgPde2AEjiJAdIaPNvfB","pm25":"1!42FCiAjPqAOCDBgEfKcD2AEruTIiQH!44E!-38Il","so2":"1|0B2Aa2ABaBa2AB4AaBa3ABAaABa2Bb2A"},"dh":24,"time":{"span":["2022-03-06T00:00:00Z","2022-03-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1085h45m25.39306582s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1389h23m0.717225956s"}
 
 
         event: debug
@@ -1138,7 +1181,7 @@ interactions:
         data: {"msg":{"now":"2022-02-06T19:39:29Z","st":455880,"ps":{"co":"1|0C2aFEcBAdFCBcabGeBdcBaA3BbDBAaCF2a","no2":"1|0.3ELEjFPrL2ElfGHkeHe2BbIdFrEbHDFfBk","o3":"1|0!28iaIc2adbibcGIe2CEiLCbhCEAHADeCBE2A","pm10":"1|0NdDFeDFLkPEIcmAMlkBfL2BcbBdFeAEFfGn","pm25":"1!33iGVsETOlWFZhzo!40!-38lcCw!47ImndmICbEDefj","so2":"1|0CbAB5ABABa2ABcB7ABbB2ABAb2A"},"dh":24,"time":{"span":["2022-02-06T00:00:00Z","2022-02-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"1757h32m35.967772611s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"1ms"}},"status":"ok","cached":"2061h10m11.291899536s"}
 
 
         event: debug
@@ -1151,7 +1194,7 @@ interactions:
         data: {"msg":{"now":"2022-01-06T17:48:21Z","st":453624,"ps":{"co":"1|0C4ABaAB3A2BbC2abBCBAaBabBABA2C2aGgDacbCABcCEFedBba2DeCbDEABC2AcAfAB2AdBAB2aA2BaACbaCcEcaABA","no2":"1|0!26ahMfADfKlaDFDaFfaiFaGCeEAdEAahIGgkSiaL2aDfjbMJhDfAmGQBoEoCXigEPkoVaecdTq2DbdABbHCKncjN2eDeBaD","o3":"1|0ZCeEaegDCabCeKBjKhEGbaDCeDEdDcCboJAmQaiIabEdbiEBEaIaboICGFblPAjCEAfKaeCeFagECacDCApJDaB2FgABcK","pm10":"1|0SAcCdGEaSdo2Bb2FfAEgcAcECab2BeCaFBgMBiGhbEBhaIFBbgBdCMJk2gCLBfdGIl!30AufgHecFaiFCfbHOBkbJfjEaFHi","pm25":"1!34aAFdHIB!51h!-43EjIEMhAJrh2cCGAhMaBjaOMr!31e!-27RrEFBsDVKg2edmNXWxudAWAD!-27RYv!78b!-72zdNoBLGoMGon!26PJwBVrmj2GS!-27","so2":"1|0AB6Aa3ABAaB11A2B2AcC2aBaABAB2AbBAa2B3AaCBabABa3ACbaEBA3aAbBAa2ACAb2Ba2AaAB2ABA"},"dh":24,"time":{"span":["2022-01-02T00:00:00Z","2022-01-02T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2503h23m44.469697216s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2807h1m19.793812312s"}
 
 
         event: debug
@@ -1164,7 +1207,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:19Z","st":451416,"ps":{"co":"1|0GE2AfcAFBbA2aBaB2ABa2A2aAaCACAaA2BAaB3ADbaCabABa2ABaABaBa2ABa4Ab2A2aBa2A2BE2AbACB2A2aABAbc2A","no2":"1|0YekdDaGOC2eGbacbdHE2DkeD2CAkLdDhaADfaKaCBGeABeCEaDAFhFda2DeAkdBAJaC!26ErtAaHcCDRBcjfGBAFgeFEfI2ah","o3":"1|0!30EicEeCADoCaLCgKCMADCndCgOgkDcEbDGbBhEceHCjEHAehHCebHBFcAb2BbadDBdTAOb!-28DFcBiHCAHtIjOhFlKIdeDACe","pm10":"1|0UFheEbCaCaBdEcdHcHDGCdnObGpdFafBABDcAaFaBAaDCfHfaCcDaAHfADgcdACIHIDIKe!-30g2BAFcGeGJsKEcAcDeEcGeAc","pm25":"1!57NunC2dAJICcFfiEbEIHTb!-27UDdvcdfBdBQIdmdCBKeBcadPpeJAIEhbkDCE2gaLGR2CBWAxqBDk!26PozQPzIFgAfCfcACBaA","so2":"1|0Eba2BA3a16AB5AaBa43ABAa4A2Ba5AaBA"},"dh":24,"time":{"span":["2021-10-03T00:00:00Z","2021-10-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"2649h54m46.397339416s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"2953h32m21.721443172s"}
 
 
         event: debug
@@ -1177,7 +1220,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:24Z","st":449232,"ps":{"co":"1|0FCA3B2A2aBCBdA2BAd3BA2aCBbd2aBaADBadaBABbB2ACbDcACbBAB2aAa2AB4Aa9AB13AFE2A","no2":"1|0RhbIBbJ2AebLMmeFeBLDefFgjDRiAFfdeDFCAkBGFAEfCgHBdBcAbHbAFGngDGIgGhdBFagadH2aLhC2dCAIA2bcDHbBekd","o3":"1|0!29ECBdcaACaD2bGcDcACfDaAKdAaFgDCaEheCD2gMHbkGAbcAF2AcHgdHGfIcHMbprWqEKbqDMHlhSq2AaFCImFCB2iKIEic","pm10":"1|0!35sBHcg2FebdHKdiCbCQIL!-28bAecNEla2BcdaBEcbBDBacDcAFcGai2BCaBIAbDAEAiacCACbdbGeDHce3aCAJhCDcEg2Fhe","pm25":"1!68!-31FNbuJBEacLPh!-27AbERY!61!-83bGkj!26asgBFqCgEAFdRDQeHvpPDfGFieAHaHNJdFBCcqJlA2dcDfGEfMFfAhiCNjEaMdAnVNun","so2":"1|0Ba5ACAbA2Bb4AB5AaBABAa3ABAFAgA2Ba5ABaA2BAaABABAa2ABca4ABAa3ABAa3ABaABAa4AEbaB"},"dh":24,"time":{"span":["2021-07-04T00:00:00Z","2021-07-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2649h54m41.437336103s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2953h32m16.761426317s"}
 
 
         event: debug
@@ -1190,7 +1233,7 @@ interactions:
         data: {"msg":{"now":"2021-12-31T15:17:30Z","st":447144,"ps":{"co":"1|0HBA2CAa2bEcE2aAcaAC2BAc3aB2ABDbBaCBABACAacAeAaBACb2ADAcBADaAbAbFcACaAdDBAB2Aaea2A%ACADCAB","no2":"1|0MBDGaDb2BFgCBEdidDIadFdCgFjABIEiAFjEa2IbgcICgCBAaJiD2Eck2BGbdFBNhjbEf2aHIDlKnJFbac2fOSG!-33hbI","o3":"1|0RBfdAFANagbdDHFABbiDEdAhLEjDgPcgDfNb2AeDCBcBGbaBcqWbAdFi2dm!30baDmNcBDAdFfbAGiKfEcFa2CaHqGECB","pm10":"1|0KBAJHBgcdHjMgBEjBAFabCaBbBbEDBbabCbdbEOBgCcbAbBRfFmCDHEgLGHrqALHBmcAdAFEDdhBaLBIqcFaEKPpsBH","pm25":"1!53sC!36bNmowRcVpcHvAlWKBbdLqdbHSkAEcPqnkG!37GpHiaidbZCKzbIdaiVUM!-60kRZ!33zjqhGfNBEDqVjPCE!-27iAGF2Z!-31!-31FN","so2":"1|0.3ABAaB2ACbaBACAa2CaAbaACD3AfaABa4AB2Aa2BaACDAdE2ABAaCabd3ACa5AaB2aB2AB2aBa3A2B2a2A"},"dh":24,"time":{"span":["2021-04-04T00:00:00Z","2021-04-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2649h54m35.163962874s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"2953h32m10.488048038s"}
 
 
         event: debug
@@ -1203,7 +1246,7 @@ interactions:
         data: {"msg":{"now":"2021-01-06T19:09:19Z","st":444864,"ps":{"co":"1|0Fc2ABABbECb2abABaDba3AaAB2ACaAaCDCGcdabAaBAbABa3BbBCcBDC2aBaCaBaABDcaAaAaB2A2cABA3CbACaCAbAB","no2":"1|0YcfdEbABHAkOkbAFbAdeEIChCJbaBabeFJDFcfgFAeECjcHbAGDkGEeCH2adaEGcacbDFbjCaC2FdbgcbCFBjGfaJaIeB2d","o3":"1|0VdGAdabDeDBeBEeDdfTdC2aGfdB2DBa2AckiDbAFJ2Ec2Db3AbBgaFdjgB2JanNADdgdHDEcdDaJd2DBcABCdHdmDfDACA","pm10":"1|0KBCfGaEdFdbF2cC2aF2AdBAeADBAaCGebCF!28AqApDaCE2dEADcBcALhGBHMfjkMidC2DGcgACkFBbHdcaCDcfAc2DEAE!33rg","pm25":"1!31CbfRcGjOlkJfD2FJLeagHhgjRfIfEHjCBG!51!49!-56I!-40pacGfhDCHeLoFZpLINTgp!-36ZrAgOCNwgHnuHbdDPFiPKgsKeAUDNFIym","so2":"1|0DB2AbBbABbAC2a3ABCDAcaDBa2AbA3BcAB3Aab3ABCca2ABaACDAaDab2ACEC2bC2aCDdgC2aCcAaB2Aa2AHBbcB2bA"},"dh":24,"time":{"span":["2021-01-03T00:00:00Z","2021-01-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11262h2m46.394303338s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11565h40m21.718364523s"}
 
 
         event: debug
@@ -1216,7 +1259,7 @@ interactions:
         data: {"msg":{"now":"2020-12-31T18:40:16Z","st":442656,"ps":{"co":"1|0Fa5ABAda2AB5AaAB6ABABa5A2BaABAa6Aa11ADeBAaBAaA2BaAB2Aa3ABAaBaBaD2aDc2A","no2":"1|0RdeaBFKjaCBCB2aeIgdHeJGefb2AJCOubCHeH!27qtNAKyaFafGdeDCDEg2CBfaIKGkGiCacbdChBPNoeBfdQJiBjDeIcAIcfd","o3":"1|0GCGaLaBmHDEMqCdcAHBGBFEqeaBbMDW!-32DECAbYEKACDxueBKlkPdFAbCAgHb2aDEgAbBeabKacDEM2eDEblUjsL2BjaKadGA","pm10":"1|0MabBDBAcCbBEaf2AHebEaBDdcCbBFBUubaEdBIEbINGujAFkacO2cfDbBDeBEcHBeDabBfaFDgASUmnadgGCicFEbEabdBCf","pm25":"1!33deDbKIDbeHNsa2fNEiIadc2adCfPBUxgBJqO!28LeB!32d!-27!-39TX!-35mAL2DgHAgKiaEBRdgbaFcfwNKld!30!39q!-33FdjUH!-27pODAOHshCbf","so2":"1|0BaAEBa2Bbd8ABa2A3B2A2a2B2AaBaAaAaBA2BCaKhCeB2a2ACa2AbaDb2ABaBAaB3AaCBbaBAbABaBa4ABCB2A"},"dh":24,"time":{"span":["2020-10-04T00:00:00Z","2020-10-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11406h31m49.220922336s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11710h9m24.544924589s"}
 
 
         event: debug
@@ -1229,7 +1272,7 @@ interactions:
         data: {"msg":{"now":"2020-12-31T18:40:35Z","st":440472,"ps":{"co":"1|0F2AaAaBa4AB2aABAa7ABa4ABa3ABAaB5AaAB2Aa2AB3ABa6AaBaB2AB3AaBAaAaB4ABaA2Ba3A","no2":"1|0WJ3fMADadDglKHBmBbCA2Eag2Dc2ADad2aELgAlaGcCFEbEAEbieDCFBgCedAKEdFebcHChDaDFAEcfAdHGE2aobFAadeaB","o3":"1|0!31BACFfCD2ABElBaAcdNbCE2CmJigCAbFBDc2GECnjEABCAbFfHLmAdICbhEJdDbhgCebFGeFcDCaBdFfdbHM!32bt!-27dEdnCGaL","pm10":"1|0SdGBdBMWC2hijaNU!-28EdIBAEanBHqFcBcDFbGFgQkgc2bFabB2AdHab3B2DA2cAFkABbHBacJiAd2BaC2aJBIBdqBDcAabBD","pm25":"1!52zR2eDNUlTbmob!26!45!-65JbfiFHeoDWpAgAaNFyZFJnmlBAGAbDFhMKEmNCnjfCDeENlicHACADMQuHecGbBjaKdNdH!-31bCaHdeDb","so2":"1|0EDCAB2cABaBCcA2BaB4AB2ABaeBAa2A2aB2AC2aABaABaAaABAa4A2B2ABACbCA2bA3B7AaBaACB3Aa2baAEB"},"dh":24,"time":{"span":["2020-07-05T00:00:00Z","2020-07-05T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11406h31m29.750723141s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"5ms"}},"status":"ok","cached":"11710h9m5.074665103s"}
 
 
         event: debug
@@ -1242,7 +1285,7 @@ interactions:
         data: {"msg":{"st":438288,"ps":{"co":"1|0GcAB5ABbBAbCaBCBDBfb3A2D3aB3ACba2b2CAbBcACBAaBbABCB3aDbEbdCBbBb3BbaDb2aBCACaBabAB","no2":"1|0!30caEbsOFcDdAEmQsLHcLbedIsaJNAfbaACaKCgdnSdGBCoCHAHhBgc2HcaBgBDJBoHDhJgJdbljJfCGf2aQbCidge","o3":"1|0KRalHEdbBAKcE2eaDlAjaLCdGFIAbAcGbBbra2LDbBeGebIcbEABacdC2AdHafnLHbIAecJg2AdkGFBDAaeNdGFag","pm10":"1|0!41yaBebFHQyFeBdBGcHGSckcAIhnDHhbJACaQDaojCD2bLpbLcCgKaiaFAaCFhbNdbIBmBgEFaecEBEDeCBGa2Lele","pm25":"1!116!-60kBjgMLpImeaAMGhNBUJFo!-27!39qsoLkeZDbe!27LK!-38kbaAGIqbJeFkKIpb2BFDCkaUbHDbsbdeNCpfPgKQvGMGCTUj!-34u","so2":"1|0BABaAB2AB2aCBaAa2ABCAdACaC2Ba5AbBaBA2B2ACcFabaABbBdACaAaB2AB2Aa6A2a3A2B3ABa2BEda"},"dh":24,"time":{"span":["2020-03-29T00:00:00Z","2020-03-29T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"18059h58m15.619634545s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"18363h35m50.943537977s"}
 
 
         event: debug
@@ -1255,7 +1298,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:09:47+01:00","st":436080,"ps":{"co":"1|0BADb2aC2BabBAaDa2ABbaFA2bACAa2CbADAdEBA2aCBAbc2DdGbabaCc2AaABbE2BaeBaBAC2aAaBAabCaBAaCaBAa","no2":"1|0!29eT2hjVBABlTnDPeMkcrAZAjfgASeA2BnKNwRElHceJGJ!-30XCyOaga2jEBAaKJlKJGkcfgBEJCgBeKAfcIebBcbacFd","o3":"1|0ZfCdcKeFcDabHkBEAFeEAkjFTAjACblQAgbFdBf2ED2cGehcIkPkJfDJAcEhgPmAdVcEBdBeaDHA2eaIfH2dFbBgDA","pm10":"1|0SeLCgeEIgDfaBFbEb2abcNMglbBUvHMFlDBmKkKDjcCacCEKqXnFhB2cfEaHFnOJKewBc2CDAdBdFcFcdaAE2aB2DA","pm25":"1!47dNDkcCFhBaCoKDKcbcJuJSmrPA2gORkmUpNO!-27YkcodRdEVK!-51!42iFyOqCo2LMC!-29!35pR2vPdAGAhDFdELaAajD2C2APHa","so2":"1|0CaDb2aDAaBcCAaDbaABaAB2A2aAEAB4ABa2ACbAaABbBA2aCaA2aABbBa3A2CABca3ACA2aA2CbA2CAbd3AaA"},"dh":24,"time":{"span":["2019-12-29T00:00:00Z","2019-12-29T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"4ms"}},"status":"ok","cached":"13866h2m18.278432716s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"4ms"}},"status":"ok","cached":"14169h39m53.602320787s"}
 
 
         event: debug
@@ -1268,7 +1311,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:04+01:00","st":433872,"ps":{"co":"1|0DaB2AaAB2Aa3Aa3BAaBaABAbBbB5A2Bb2ABaA2BaABaBAB2Aa2B2AbAa2ABaC2DcB2AaAc2AaAb3AbB5AaCaADb2a","no2":"1|0SFGHIxGMDFmrEaFL!26!-40CoIh!33MojdedbBFCICfBDFifBGFaeBhbHOcCENBAJ!-29cBdgMAk2GmCRfcbDMmgEFKAcecnASafjNbeT2hj","o3":"1|0ZEeIHtFIBDjaAcGIFtfIac!30!-30Vxb2JhgEKBHmabCa2BeHkGgFCBGBdE!26cAC!-30cEabBbcDeEBcbdaLdEiHCbDdDcbahBGCcJfCdcK","pm10":"1|0PBDBCfBFba2cCaDGCmdJeGKFBkiBCcbEHaAcCGh2CfbacBFaAGc2BFPFiCsdEbfIbcAFfDCKjACFdHlFBGIkgHhbCebFCeLCge","pm25":"1!40SnENka2ABgCHfeKGunGdMOSdjqnSU!-29ELHFfcAbDAcelD2ABCBQcFJ!37Psb!-43hHDnIcbCGfCJGnCBPhHvc2GagigIGcfBHFdNDkc","so2":"1|0B2AaBAFdGcdAaA2B2aBaABaB2AC2BdAa3AB3Aa4ABaBaABaBaBa3AB6AGEBdDdeABb3AaA2BAaBbBCbAaCAaDb2a"},"dh":24,"time":{"span":["2019-10-06T00:00:00Z","2019-10-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"13866h2m0.552363742s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"14169h39m35.876247132s"}
 
 
         event: debug
@@ -1281,7 +1324,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:12+01:00","st":431688,"ps":{"co":"1|0IDAaAdACbC2baCAaCDAaBAaBaBAb2B2ca4AECBd2CbBAcC2a2CBda2BaCbAabCaBbBCAcbCD3aDaB2AaBCbc2ABA2aB2AaA","no2":"1|0!32LpiBFjOaCFCicIDGFcelUcabfkdNLfhdmEGSbfJlbHeciMEdBbVevbABDLfDOAEigAedEb2aKB2fRAdAcblTjdFeTvdFGHIxG","o3":"1|0!33gmKBFCcIeEcaCfm2NLFEexHaAd2bCFnAFDhGfdMBAdCDAhCGAFEDuBhGDAecSadhEA2cCDbAEAabIkfJEFMs2BCg!33!-29bEeIHtF","pm10":"1|0ZFnd2FZCiqA2aESMCdkbAQkgtEBgLIegcdIhG2AdbABANcbDaAgEacdCbaFAbCABFgBDaCkEDaCadECAbdaPFdoEHGmeBDBCfB","pm25":"1!36!31myIS!74E!-32!-45iPefQKJvDfL!44!-28!-41uEaEZYyzKgPdRCafDodB!31jdOL!-40hIEDsCabKDjEcDEBhBbdUtEcFAeDObgBfY2AtBGVxbSnENka","so2":"1|0.2C2aAa2AaA2B5AaAaBHAe2a2AaABaBaBAaCB2a6ABaAa2BbABa2BAaBbBaDABbA2a2B2aAB2ABaAaCb2AB5AaBAF"},"dh":24,"time":{"span":["2019-07-07T00:00:00Z","2019-07-07T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"16ms"}},"status":"ok","cached":"13866h1m52.775983763s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"16ms"}},"status":"ok","cached":"14169h39m28.099863923s"}
 
 
         event: debug
@@ -1294,7 +1337,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:19+01:00","st":429528,"ps":{"co":"1|0H2ACBA2aDAdBbBDbBDcCDeBFebaEBaDeaEcAaCaAaCBbCBc2AB2aBACB2Ade2A2a2EA$aBa2AbADaBa4ABCaAcCa","no2":"1|0V2FAbBGiDaBAhDSdhPpEGgCQkfoLQhKqlMGaDhFgBIClZCkhFBbCAcBPGc!-30c2eLahNbsOAEbCGfBGEAfEibaNcSgcq","o3":"1|0XaAhFfLadjbOJfaDfbChGEemGRac2fGD2bDfaJEC2dcgAHFGhGAbfhdcACRgHImKcDcECcCAFgKd2gFfF2GbcabIBA","pm10":"1|0PHENhbdabMihACbfELAHKyGNhncLHeEkEDgDCceDgNEaTEjdjCbHKAEGFAzBlgDCAiFDgGdGcbCdJGfDaB2aKeIKIv","pm25":"1!49Kd!37khmjd!27mktLceEOM!36N!-70U!34j!-35jDFIbG!27!-30CHI!-30BblNfO!34!34wp!-28BIbMV!30FLC!-51h!-28hiDJuDCDbCJieDBIMeECBFtZiQI!31!-80","so2":"1|0.3ABA2BbC3AaAC2aBa2BaBEDCBheACa2ABAaEdAaACa2Bba2BaACabA2Caba4AFadaB2ABa3ABABA2aABaBABA"},"dh":24,"time":{"span":["2019-03-31T00:00:00Z","2019-03-31T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"13866h1m46.389590771s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"14169h39m21.713443962s"}
 
 
         event: debug
@@ -1307,7 +1350,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:34+01:00","st":427320,"ps":{"co":"1|0F2ADAcAEAabA2aADAa2EebAaCABaABDdEcaCb3AbCABa2ABa2AEB2ba2BcACabAFca2AaCDbDBcaAbBAaBbDEeGbdA","no2":"1|0!37JHIO!-39F!28Dji2bqbQciJPxeFdDbiBDB!26iIanBEAFcFhMCfdnBc2CJdCjcDHEaNhkCOhCAdpMNmAImOFlOcjBhDCeLgeb","o3":"1|0VbdB2EcbIlHE2ad2abCcDCgACEaDdbajIMfqSEaCcDcAclaBPbdhfAKaEfQCgC2BnK2E2AofKkDNaAGdCABdgdAiFMc","pm10":"1|0SA2FJod2EWveCjGOgdIPscDdDicaDEKcIgBYpqFabd2FAKlHigFLTdnfdDgCEfdFIfEjEfFQiFMrdHg2AFdgOCgYjpe","pm25":"1!50aKOT!-28mJH!52!-53lEjIWclM!34!-35sHAC2laAMUFDhC!46!-31!-35aGBhECIUoQusO!26!45n!-29.2nOqd2ElPEhajAdK!26iCNmvHebABDg!27Jp!51r!-39A","so2":"1|0Ba7AB2Aa2AEAdCEcB2aBAa2A2B2AbAC2Aa3ABAa3Aa2ABCAda2BHCgaAaDbB3aBCcCB2ADeCA3aACbDAcA"},"dh":24,"time":{"span":["2018-12-30T00:00:00Z","2018-12-30T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h1m30.883474198s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h39m6.207299498s"}
 
 
         event: debug
@@ -1320,7 +1363,7 @@ interactions:
         data: {"msg":{"st":425112,"ps":{"co":"1|0DCAaAa3AaA3BaB2ABabB6Ab3BabA2B2AaBA2a2BABabBABa4ABa2ABA2aA2BAaBaACBbaBAaACabDFeEfE2a2ADBdB","no2":"1|0!34IB2InAlGqDLOHfIiHGaofUafQj!-27bCKFBctI!31asiB2beFHaCfhIEAjGhHfMjAGNhCoCFADaG2gLHbfLfdIGf!-27N!26bM!-38!27rcJ2HO!-39G","o3":"1|0!64qfaOgCgco2FCLCetJEAVyF2DKhu2eMGcPjCQiqlBI2bD2dFeAEHoJbD2cGdECRCDqEfbaHcfAbBF2GhfBahGBDAEfaCbaebGEc","pm10":"1|0!26da2HcEjBhJaCBeDg2CBDeABEQmgiC2DB2bcJCj3AcDADB2acBF2caABcHCaBDAGecChFeCbECeCc2BGbc2dJKdFoQncA2FJod","pm25":"1!64kaPVhQ!-32blTfDBgDnCIAQpbEL!31!-28ydDFDCahDQLzLmabFAFBe2AaCJfiBDfKMDkF2GpfGkFdCDCIgceFbGcfBJlTAJ!-30UlgaKOT!-28m","so2":"1|0FAb6AB5AB3AB2AaAbBAbAB3Aa2A2Ba2AaBaA2BA2aBAa2BaBaBb2AC3aAC3ABAbDA2aBAba4ABa6AaABaA"},"dh":24,"time":{"span":["2018-07-01T00:00:00Z","2018-10-07T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20328h11m24.233494961s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20631h48m59.557251329s"}
 
 
         event: debug
@@ -1333,7 +1376,7 @@ interactions:
         data: {"msg":{"st":422928,"ps":{"co":"1|0GbABEBabA2aBDAbC2aCc2ACa2BbcACFcDbadCB2ABb2AaA2B2AabA2Ba2AaBABb2Aa2AB3AaCAB2AaAaBABaBba4A","no2":"1|0!32NIbeIElCAncWBgLbNM!-31HgHeDIe!-27lP!37qIbdjMNjsKaneEeIKCGAtAQHoPxfRCNqamHBGgcfPnWmJfaCBh2a2ASbefc2a","o3":"1|0!27aGAbCbgeFiFBOaDABQngLmcEDjDFCaAbA2KMguBahIBJkabIAaDAjAWja2fDcEFhBCeIdAbfJcBdbAkbREBKU!-30eKcEX","pm10":"1|0RAEAeJLhaJMfdKlhbIRjIknabEbfeIDfKDGFEBrfGabdA3CIaLjcTgNbE!-29EKilACeOfbCf2AH2beaCcCJfCaGbAb2aC","pm25":"1!58Ab2fTVfOF!34sw!28v!-38B!31TqW!-27!-37HgEFbiHBgRGTPRl!-47hELAtJbdFLJ!28!-27gUHW!-30V!-30E!30w!-32cMnGDbCakFEDFneFeBdDKBHgALkfI","so2":"1|0D3AaOm2Ab2AEbaCbCA2aAC2ABac2ADaCba2ACBcBAa2Aa2AB4A2Bb4AaDbAa3ABaB2AB5ABAbBaBAB4AB"},"dh":24,"time":{"span":["2018-04-01T00:00:00Z","2018-07-01T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20328h11m17.317118562s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20631h48m52.640853111s"}
 
 
         event: debug
@@ -1346,7 +1389,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:40+01:00","st":420768,"ps":{"co":"1|0DBa2Bab2CBcAa2B2AaCbBADcAbAaBCabBAaABADaDbEb2ADa3bDA2BAbDAaAabaDAaAbBaC2aC2ACbDfBaAEb2BbaA","no2":"1|0!39FlNJphBOIrJjIJGdjWmdcMEFsJoDXiyBWuPca!31!-39Z!-30!30iKaLjfpmNKchdFKAp2BMGTmgDfehLaHF!-32AFJ!39xBrfOCHBmjd","o3":"1|0!27aEeadAdmMjRfdK2DClBcGEadjKGBgHgadGabdL2d3BAEhDEhGfDb3DcabaiOCceFjFaBaKABeAJaeEDoJCBeDfCF","pm10":"1|0SIDgDCjLKeB2bFpbFaMm2CdbLIkiCQoDFehHPIjmClOhEGIBfbi!28ncIqJFiPGQ!-33eBCgJbEkEeAJeHEcCc2FDjlaEi2A","pm25":"1!48JEgCV!-31!27ZySgCH!-38iEbGCMlfaKYqsDSqd2KsIXeiqCnQaKcEOgLy!65!-31iN!-37gGU2X!38!-75zFGxVaGbehDEAJlhQic!37I!-35iAda2D","so2":"1|0EBACaeaEBCdBbBDB2aEfBAFcadBaBEabaDdaCBFeCbEc2BCcaBcaB2A2a2BAB2ABD2a2Aa2Aa2BcaAaDaBAaA2BAaBb"},"dh":24,"time":{"span":["2018-04-01T00:00:00Z","2018-04-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h1m25.030555594s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h39m0.354276102s"}
 
 
         event: debug
@@ -1359,7 +1402,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:45+01:00","st":418560,"ps":{"co":"1|0CABaAC2AC2aC2aBABa2A2aDaBAbCdED3AeADbaDba2AEAbBcACAaBABaA2aAaFcBCA2aCAbFabeACAEb3a4ABbAa","no2":"1|0!35MjOtHBfRfAIjcDAJlCRvARfIgkGqTYaqN!-29eVdlPiAoHWfbFiaFBeLjdbEhAfATmIMKyBMne!30fH!-32CFaShAghejNhVAf!-32","o3":"1|0VD2aB2bBhHBcAaNAeqTaBAiHArKDFkabhJCGiOcqTkMhgbGAcCEGEAqHCDjEIBpAcNDBfeEabOcjgLbmaKaJGCbBqQ2C","pm10":"1|0.2NfDhEcCHdBQkBHFbGgmahJbFD2chNGDOCseKpaLiDkHJBdFfdAFDfEbfdDdDaPcaecaeOdmTmIiDCIOk2difEdbPdIt","pm25":"1!48MbaiGBCOlhRAHMAr!34l!-36BgMFGRninTEJ!26N!-35fM!-34APrIlOcRjOmkACDl!34jzcIeaB!30obhaBg!28wb!33!-28DdALI!31ujiojHlCQaG!-36","so2":"1|0DBbDd2BaDaAB2aA2Ba2AbAC2ABbBaBCADBRsD2bCcdaBE3aBaDBcDbAaBba2ADcCDabaDcbJaE3ACF2gdAD2IaoaAd"},"dh":24,"time":{"span":["2017-12-31T00:00:00Z","2017-12-31T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"8ms"}},"status":"ok","cached":"13866h1m20.300750676s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"8ms"}},"status":"ok","cached":"14169h38m55.624454905s"}
 
 
         event: debug
@@ -1371,7 +1414,7 @@ interactions:
 
         data: {"msg":{"st":416352,"ps":{"co":"1|0CA2BbCa2BbBbCBAb3BbBaA2aC2Bc2AaA2BaCA2a3AaB7ABAaB2ABaAa3ABa%Ba6ABAa6AB2Aa3A","no2":"1|0!33h!28KjOtp!28lKz!30!-34Jl2NceAafhFMedEjHDdbKqIEkCESwDZmHfClEAEbGKnhSgpQiId2C%!-31GNJFbjEjbKGNBAmcGbJGdeo","o3":"1|0!27EeAFZvAJnhEKi2fVHijFcbAGh3BEaCdC2BDg!47C!-45bAJaeJifFBkbSJOreOzdHDCBja%b2D2BJHbsFcfAGcDIsaPceFa","pm10":"1|0WdDAFJldFcabHdAfJKbhcdBcGECAebNjfNecbBdbKDnDHcBaBeBCPJwOgaSmX!-28dAeAa%lEIBaAcBAbICFeAdKOAGxDhg","pm25":"1!63lFEGSqiFfadIEejFOGoAiEbMbdeadG2aBFadEKh2EpEGabAbgCD!36C!-35U2B!38!-34lhKgnFe%!-28BVHcABGFiRIjeAd!29!32a!27!-81Iqh","so2":"1|0CaDBb2AaBABbDcC2aBABaABbACAaBa2BAaAbABA2aDbaCaBABbABAaCAbaBCbCb2ACA%bA2B2AbB2aABDaCcaBA2BA2a"},"dh":24,"time":{"span":["2017-07-01T00:00:00Z","2017-10-01T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20225h1m35.724625024s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20528h39m11.048322611s"}
 
 
         event: debug
@@ -1384,7 +1427,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:53+01:00","st":414168,"ps":{"co":"1|0EbCbA2BDab2BaBbCaBb3a2BaAC4AaAa5A2BA2a2BABABaBAaBAa2ABbB2aAB3ABa3AaBaCABaBAbA2aBaAa2A","no2":"1|0!50rYsAIe!27.2rHCeDiAaGVbpd2DkDNdKrcHaCagdDHSCdcmN2cb2EcPmANehiBIhOatDIaDFbldLBDCpDKTcAkfkgJIlZyBi","o3":"1|0!37cCiFcDKBjBaAdKebDdBK!26ynbcEdLBfaDABdHeabeMCehaiKGCFEt!70!-37nafBgfOcBcacBbCBDdAPkbJZD!-28!45!-39reAIhabHCE","pm10":"1|0YaLgBHBLavBCafcABFCHEnDEiAIAbBkRCEjEcB2AQnbjD2CAfabKfDJebeBdFAFgeDb!70!-67FecCDFCfCBLGbgnbeIFgaACd","pm25":"1!60F!28wHKBWh!-40eIBodHebMSEubPrDEIfDvZHBu!32kpaG!45!-28luGDSfkhbVmMCcDkBeBEWzkFbCJBdfC2GEhLDPNioydhIPBjDCl","so2":"1|0DbCbaCaC2a2BbCbAaABDabBCbaCaCbAaAaB2AaADBA2a2BAa2AaABaBA2aBCaC2a2ABaBA2aC2aCb4AB2AaAaBACbaA"},"dh":24,"time":{"span":["2017-07-02T00:00:00Z","2017-07-02T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"20ms"}},"status":"ok","cached":"13866h1m11.874440779s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"20ms"}},"status":"ok","cached":"14169h38m47.198145156s"}
 
 
         event: debug
@@ -1396,7 +1439,7 @@ interactions:
 
         data: {"msg":{"st":412032,"ps":{"co":"1|0.2CbFAcBaAaBbB2ABDbaBICcbeA2aA2BbBCbDbcA3BaAa2BaBaBcA2BACac8ACAaA3Ba2A2BAda2ACBa3Aa","no2":"1|0!32RdMP!-34.2HbhJpBDNHNkcdJLcgqAbdAaEeLOuLBkI2iBALEHcefcHDpKcgRbGgAcfbKEeKflEBJbcjeOEBjdCfIJAJBjq","o3":"1|0XjGhCAbIfOcB2fbBfAEac2ABFfTaheHIFlbDEnHeFd2bKCaHcfFHCbBCDcABeJ2bcHglBcMgcBIbDaCAdALehKBGcAd","pm10":"1|0!27BFMBtDeKW!-32.3AGPQakBXKqsMDwpICiCFCeOgGAJgGKio2BAge2cCEDmCIEDAfiJBAcEJCjaIBkecFDb2Iqd!27EwBaca","pm25":"1!72hJZDoDrLhfCbdQT!26H!-35H!60Nv!-36YA!-74s!29SxneOKZxMN!29jKL!-36zmLMokiCkNBoGCFALknLEQiBVM!-37HJL!-36ceF2B!31K!-37f!65D!-56aBeF","so2":"1|0CEcBDc2BAaCBd2ABCbaBDFb2c2AaBABaABbCabaB3ABACAbAB2AbaBaDB3aBa2ACbBA2aC2BbAaCAb2a2ABCaABAb"},"dh":24,"time":{"span":["2017-01-02T00:00:00Z","2017-04-02T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20225h1m33.324809918s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"20528h39m8.648504866s"}
 
 
         event: debug
@@ -1409,7 +1452,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:10:58+01:00","st":409800,"ps":{"co":"1|0DaDb2aBa2AC2BABaD2ba4ABC2aCB2AcCabaA3B2AaBAcAD2aAE2acEaBDIfedAECdaAaCABAaACb2A2BcAaBICdbcb","no2":"1|0!47oUlbHAncIGfAFJjTqfaGgbL2IbjIg2CLPm!-28lMNhJB2gVmKCImpIFgbEhaMPXlsgbFIafAjGBCEhCFBajIPpew!49Ua2uh!-28","o3":"1|0SFebDGjKBcfBgAPCaAg2cEahcNFbodaPb2cMcCm2Ed2DdBGFBiHCagIagECsbACMfjDGCbQoHgce2aBAIKkQEabwbDADU","pm10":"1|0XbIAafEdeG2ADHbjHgBDabCJLchCLJDkmKhCmcLlJGiDJ2fD2biIA!30!-32AGfDR!40whwC!27BmfA2fECJBJgjLgeDoJpE!27Nhfnp","pm25":"1!63AIambRenKCaHMftIkMaJhEQXnoGU!34B!-33sNrCloVvHShgRmjAcbFX!-32RvEYij!40!54lo!-66J!63R!-43hcklFMLEXgrMj!-30EtCsI!53!41og!-36!-35","so2":"1|0GdEDbdB2A4BDBeDcaBA2B2A2a2BGcfdF2aBaCbBb2aFa2ABa2BbBcAC2aCHbAaB2Ededa2ABab2BbA3BcaABCB2Aba"},"dh":24,"time":{"span":["2017-01-01T00:00:00Z","2017-01-01T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h1m6.914738422s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m42.238394309s"}
 
 
         event: debug
@@ -1421,7 +1464,7 @@ interactions:
 
         data: {"msg":{"st":407592,"ps":{"co":"1|0F3AacFDaABadbDaBC2BcBAaDC2baBaDBabAaBbaDBbcbB3ABa3A2BaADcCaADaACA2acaABAaCaD2AaDAbdC4ABab","no2":"1|0!54oBGtJ!29wdfJblFQrdXNbyLFpaHaKBtcUeCdAbfc2ADRkhNBJeGscNUCpfdfd!35.2idemQaPA2h2FRCi!-31g2GEZdGkmMeAbKio","o3":"1|0XaFeGDb2fHdcCGfbDWbItgVobcdFfIBiaFBHFhcBaeLeDbGFBgcAaONojGgDJpDkHAjc!28iceJeUbFuhNkcTmFIfkaBDAcE","pm10":"1|0!26gBCcCGcbd2EeaDfaIGHoNghBDA2CehIBC2bDdAEcAEga2DI2BhjMBJClDfbH3acdIEBAgbADRdBdrCNfHaefBNjIiFhb","pm25":"1!59BeIqHRBAgFEfBeiB2KMpXsuBHFebJsIDcADElJCeCFkaCEOaN!-28jQFWKqgjFacdDejNPeCobcF!31BGsuKWiCgobgHBHjGbA","so2":"1|0Fa2AaAD2aC3AaBaA3Bac3ABaACcACAa3AaAa3BabC3AB2a3BbBaAaCBAaABaAbCAa3AaAaAB2A4B3ABCB2d"},"dh":24,"time":{"span":["2016-07-01T00:00:00Z","2016-10-02T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19313h2m24.396385214s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19616h39m59.71997231s"}
 
 
         event: debug
@@ -1434,7 +1477,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:10+01:00","st":405408,"ps":{"co":"1|0HbaAb3BbADb2A2aBDcAa3ABaACBbEcbCAB2aBCDe2aBABAaBA2aABCab6Aa3BAcCABAEda2ADCBbCdc2AGbcB2A","no2":"1|0!68miOkMjCegHNaEcvcWmABahdKh2JdnJmL!28FdqbHjAEqbKDOajFljaEDUghtdFCJFdeU!26oiVrnAHECodCAQFcAsgdZcKepB","o3":"1|0!29GgCBbi2FEsQeHhAGdFeC2AFhDCacFEfDFEgKHnra!33mcEcaAhAaEbaFbEF3d2CbcHjdPpUA2kBFEAfIjCdhQaACAgGbaF","pm10":"1|0!34bAcbabFibYoCDehAKfHDeiBFf2FDkDACHGFBpJbGAhlHFdcAadbcAJ2EbjceEaILcaQjdDdfFfBcBE2fG2DchbaMdBCgB","pm25":"1!83fJpehCLua!55!-40KACocKkEJdhDLpHKHpfDHBJTO!-38LJVourUAcfBfeajbT2GJqhjBcZUrhYcieGqBcBcKajkLJGmjAhTdGfBe","so2":"1|0FbAC4AaA2BaABabCbABaBACAaBab2A2Ba2BABa2Bba2ABCaABAcbABAaB5ABaAB2A2BABCAaAbaCabBAbaA2CbA2a"},"dh":24,"time":{"span":["2016-07-03T00:00:00Z","2016-07-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"13866h0m55.175312122s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"7ms"}},"status":"ok","cached":"14169h38m30.498828805s"}
 
 
         event: debug
@@ -1447,7 +1490,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:17+01:00","st":403296,"ps":{"co":"1|0F2BbCcBCAacBDaB2Ffb2c2Aa2B2Ca2BAbcCBCBCgaABEabCdbACE2AaABAaca5A2BAbABAB2aABABCcb2A2BADba","no2":"1|0!44HBkRrbMgJkD2FbZM!-28lAnI2bMkaAaGdCGrDGMk!28rigWOasUtkAGTCdzcQDceNreHUpaLgmCDcLdgcJIBTwgba!27iDJmi","o3":"1|0TAqVhOaeabAciJbnAL2CbIEBACAdEbiB2GCagehCAN2cBbHDAcgjHAGHfEBababCbBlCFHBLgDdGdede2HC2abcACGg","pm10":"1|0ZFIrNjeEAJmCSoL!27LqmdrKBnSlEgIGiAEfeNbg!26rBfFMehGmeBKUbAlqMbdAHbBDGqWRGumAcMphBNDKAvCbdHDcJbA","pm25":"1!54H!30!-40UojNdGnF!30xN!67V!-50!-27eqDboMhBAIFeEAerQCB!35zPwKHcbCzfMJ!40Bcl!-38LeiHDUlaMi!41!45I!-45!-30dg!28!-32tA!37BTh!-38dtFHFLQfJ","so2":"1|0LABaceBCaA2bCbCFDeA2aBa2BbB6A2BABaCbBadDaBAaABaC2A3a2C2AfaAEbaBAbaB2ABA2BA2Ba2BCbAbAbA"},"dh":24,"time":{"span":["2016-04-03T00:00:00Z","2016-04-03T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h0m47.915680282s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m23.239094215s"}
 
 
         event: debug
@@ -1459,7 +1502,7 @@ interactions:
 
         data: {"msg":{"st":401016,"ps":{"co":"1|0E2B2A2aACcABA2B2aBACEcB2aAC2AaAFdcaCAa2ABa3AaCaAabACDacG4AaAba2AaAB2Aa2AB3Aa2AaAaAaDaBb$BaA","no2":"1|0!42VlEiGkIMsdQbCbAnhTLci!27eljfMBgiEcBMBkhCFCJACkpVhCOjqLVfoLcehNJceBjdEKDdBhgIbKcKsELmK2khQbRp$BjJ","o3":"1|0YfdToagHgHFbBAdFBdBefQjIiadGDcibaFCICAaHbBbFe2C2AbfHmCHefMFBcCEgBGAiAaHiIiciSiEaIa2B2aCAlKB$jCG","pm10":"1|0!28IOfncBGKrMake2HghGIDcFlAJModBUKkcfkcAbFaBHcicGAGabkHOlbKhbcAEGCecbIdEcaAeJEdPl2ebgLfdF!33smd$HlC","pm25":"1!66U!43s!-28efJW!-34!28dyoULodHKHpJfgMPthB!43!41!-36lksefAeGdKkagHcFJncP!37!-43GLgqcCJIFjhaQdACfcBQMtZpdrcQjflS!38wpi$Opf","so2":"1|0C3BAB2ABd3AaBAaA2BEbBba3BaAaCa2B2aAaB3ABbaCAaCbBaCAa2Aa2ABaABaABABaBa2AaB2AaB2AaBa2ABAB$aDB"},"dh":24,"time":{"span":["2015-10-01T00:00:00Z","2016-01-03T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19313h2m21.256849214s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m56.580179645s"}
 
 
         event: debug
@@ -1472,7 +1515,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:23+01:00","st":398808,"ps":{"co":"1|0Iaca2AB2aCaC2AFfCaAB2A2aAD2AcbFbABb2BcBAa5ABaCBA2aBbBaBAaAaCAa3AaBA2BAaCAcD2aCBcaCaAa4A3B","no2":"1|0!86pycgOEnDXufHeBMJfibMBeF!-31XCdnGXpCeiNMflHkFfiPpDMICjCdDhJeGDgnDKBaBbhHAcNDhgEGfIZvaKfBClafIb2aVmF","o3":"1|0!69!-32ca2cBDFHmifaEPcFarG2DcCcaEcALgStCabDNenjKdGDdJiDjGQfpBCAECc2bCBcCHha2DIcgDBABjLEjfABEBCea2DgdU","pm10":"1|0!44.2kLiaCaJebgBaDLBhcIe2aFjEAdCKdGkEaCdDBeaBbLFkACFic2BCfEaDAdHkHACcaAcbFKInABDeFDiHdeGAHdj2EDcIOf","pm25":"1!104!-27x!28sbgGeJaeHfDKadiRjbfOpJghBAVdiJdIabda2cg!27T!-30bCMhfCBFkDBDdaKrQcCAiBiaGPQugEAhPbdVewEFGBoACEBU!43s","so2":"1|0FBbBAB2Aa2BaBbAaBAaB3AaA2B2aABAaBbaE2aB2Aa2B3ABaBaABCbAbAabACA2a2AaAC2BaACBbBAc2CbBAb2aBaAaCAB"},"dh":24,"time":{"span":["2015-10-04T00:00:00Z","2015-10-04T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"13866h0m42.54271268s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"6ms"}},"status":"ok","cached":"14169h38m17.866007451s"}
 
 
         event: debug
@@ -1484,7 +1527,7 @@ interactions:
 
         data: {"msg":{"st":396624,"ps":{"co":"1|0EBAaB2A$aAb$A2BabAOCdedC2bBABa4AaBCbBaCBa2A3BabAabBAaB3AaB2A2BcAB2AC2BbaC3aD2AaDA2aCaABacaA","no2":"1|0!35HgdbHE$YD!-30.2EICqBgCOBbMQxrEJQjifcAFLTCyHIfCberKLcn!27roFhJNoNfjJbA!27c!-28cJhMNKqoFWkrBNqLc!39fG!-29BMQJpybh","o3":"1|0!29cfBGAc$aJDBgHAlGFaBbcADbdhHCAabIEcabdLagF2eGIdbeBJqEDGcEAfBACBfHhHEjEFJanaBHpLajHfGHADfhLKY!-28kEd","pm10":"1|0UDaBbFd$!37B!-34bEDGjeBAMagDUxfIBUzDAfAIcBJjFcaFgEdBcbLABfdDcEdCbaHdEJEtBGCdFRmegJbJcgiECAKfcbBIK2kLi","pm25":"1!46JFGeJu$!100e!-79i2JPxm2BRbAH!49!-48pFeJgeHabKfDI!-27LDiEHdDhAgKNdibEeNsIAhJbCLS!-39EHkFO!29jsuScDEBr2BNGdkCDE!36!-27x!28s","so2":"1|0E2A2a2B$aCaA2BAbAa4A2C2aBAB2a2BAB2aAbABAbBa2ACBcEacBbA2BC2aB3AB2bBaACACbaCBcACaBbDB2aABAaBaAB"},"dh":24,"time":{"span":["2015-04-01T00:00:00Z","2015-07-05T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19313h2m19.390412294s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m54.713667123s"}
 
 
         event: debug
@@ -1496,7 +1539,7 @@ interactions:
 
         data: {"msg":{"st":394464,"ps":{"co":"1|0DBAD4ABbCACbBA$AcC2AEeEfDBcAabC2Aa2A2BCA2abCBdD2AaCBABcaba2CbC4AaCc2aADA2aCbADaCcBaABaABAaB","no2":"1|0TIKaGfDBanOAIdCjkCPKhDHwOh2DAbdhLKbjnTfFIkLbkCGmH2EmdPiGRlojQFaHegACLhCioBNbBFLqgQFElJoaEmOHgdb","o3":"1|0YEgmGKAEDadIeAFmiBcAEhCSkImP2bAGnFcDAaGhBEpTCkaHFDeDEa2fcDLEcabgK2ahaCaDEeibOIDfAlGgLBcHcD2cfBG","pm10":"1|0!28kaRdjDcBiIbBACFlDKRkKM!-31No2dcHcDKbImCAQaHaMnvXfoGa2deJbGFbkaBCFEeM2fJKb2hKHUfgaxFdFJtFdeEfHDaBb","pm25":"1!75!-33H!39puCcCtOaCcIBfIUZr!32S!-82TtatEMbeQIDpfVFSbN!29!-28!-46!47j!-37LbkaeHdHcKpbaDFOiVlab!38donPX!52m!-37E!-55k!27lX!-33FArFkQJFGe","so2":"1|0DAaCBa2ABc2BCaBbaABDbaFgDb2BCAabBaAbAa2BDaBa2ABdCB3AC2abDbaCBcDb3AaBAacBDabACaAC2A2Bb2AaB2A2a"},"dh":24,"time":{"span":["2015-01-01T00:00:00Z","2015-04-05T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19313h2m18.233867345s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"2ms"}},"status":"ok","cached":"19616h39m53.557069193s"}
 
 
         event: debug
@@ -1509,7 +1552,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:30+01:00","st":392256,"ps":{"co":"1|0FABcBACac2BaBAaDbaACdB|35GEbCbcAaAbAbABa2ADbACbaD2BaAaACbA","no2":"1|0!36ALtGCKfiDGmADCVkhaLrH|35.2Ek2AaPcfDLkBLDcbEnWeicEcDaBndKjB","o3":"1|0RgLbAcGcDhJADtBHE2CdDe|35lAcAICJ2bkaTiHJbEzTcqOFCdFAFbibGd","pm10":"1|0!34bElcBEaAcabcBNBAgaElKDB2eFIj!26gjgcDJLwDFfecHFDefEVCAfvVk2DCIeifABFCnBIAdcPjDGldaAbDbeFCeO","pm25":"1!69DLveCFAfdECoCXbe2fMuP2GhkLPm!51xylEFT!26!-50GSokCcNKbmI!46Ddt!-36!28kJFcTfrsiPIE!-31bNcdaZqEPwheDcFfhKLlL","so2":"1|0DABcBACAbABaBAaDabACbA|35DCbA2bAaCBAaADAaBAaDA2ab2ABAba2Bb"},"dh":24,"time":{"span":["2014-12-28T00:00:00Z","2014-12-28T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"3ms"}},"status":"ok","cached":"13866h0m35.109868611s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"3ms"}},"status":"ok","cached":"14169h38m10.433045109s"}
 
 
         event: debug
@@ -1522,7 +1565,7 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:34+01:00","st":390048,"ps":{"co":"1|0D2BAa2A2aAB4ABa4Aa2ABAa2AHeC2aB2AaBA$BabCcAEd2ACbA2Bb3A$DCc3ABa3BaAa2ABACBbaA$3AbBC2aABcB","no2":"1|0!48ELi!-46!31cEjFGfiKAMdNmtAiIkOfBdbGTFmAGDcAFk$KBpLdaZ!-27dCSneLfeImjcKXlHaN2gIHhcDmgSajIEiaDjDUbhbNCoALtG","o3":"1|0!29aIboFfbMgdVoFaCbScjfdMBhQlfMcfCbDcABadA$cHiBaKahDaB3CjMjCeADpMJiJdDAfdbIGCjDHAo2GibF2beHaJigLbA","pm10":"1|0QGAanLdCDbAFgACHcJgA2cD2ADfeAFGBedEBabId$bBfCA2bAbEFfaENlGhCgDKcLCNFmgAfMhfaEWACcfwRHmEdcHOfgbElc","pm25":"1!49LEb!-31YiMAfGIpdGLj!29nBeiEaEGmkbMNFklIHdbSl$fbnKbceAgGTtbP!32!-35LnBmK!26lZC!28W!-34wAm!27uiAD!54GElu!-44!39!27!-37oab2YtwDLve","so2":"1|0EB2AbB2Ab2A2BaBABaA2a2A2BABACBab2aC2AaBA$BABD2CjCdBCba2Bb2aABACb3A2BAbBbB$a2Ba2BbCRfj2AbACa2ABcB"},"dh":24,"time":{"span":["2014-10-05T00:00:00Z","2014-10-05T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h0m31.236732747s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h38m6.559876425s"}
 
 
         event: debug
@@ -1534,7 +1577,7 @@ interactions:
 
         data: {"msg":{"st":387864,"ps":{"co":"1|0EB2Aba2ABABDcaCE2aACABaBaAaABA2cACABaBbaAB2aBA$BABbB2bA$DBAa2A2B2aB2ABAb3Aa3ACaABAaA2BabCaC2AaA","no2":"1|0!50bqHijKEKcLkoMaUeufAOKEahaeEHPflgNCDadeiCEDAbaqSKDkaBekJBjIgKhPeE!-31!32hBFbfEalhKcGaFcDIhAGEolXEFLj!-46!32","o3":"1|0RdbP2bBJgACAE2cIdDAdcCAeaLg2ALk2F2GmfACcCbgIAaEShckFAfDnGAcGLfahDaMCAbdbFDhbdHlfOIecD2AdhIDCaIaqG","pm10":"1|0!45SbwqfCALeDFkBaLFqA!30ghfcLmdPIbh2g2GecACeAaBcKB2ALjgcCacABWqAcFb2aiJDhFdCEC2gDFfJeBDaDjGHieHbGAanL","pm25":"1!105!39k!-34!-42hafWiGKsDgQO!-34F!68j!-29hdV!-30g!33Vcr2qPLmfBCfgDIcQHeBZuoeAahbCAThbMcChzWPnLgfGBhvHFfYpGEVk!-30MTvmRALEb!-31Y","so2":"1|0GabFdABaCabB2aACBdA2BDaAa2AaBCAe2BAD2A3aCabBAbC2BaBaA2aACAbABC2BdCAa2BbaBAbCAa4AB2aBCAbBAC2AbA"},"dh":24,"time":{"span":["2014-04-01T00:00:00Z","2014-07-06T23:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
-        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19313h2m16.447497594s"}
+        air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"}],"city":{"name":"London","idx":5724},"timezone":"0.00"},"dt":"3ms"}},"status":"ok","cached":"19616h39m51.770631291s"}
 
 
         event: debug
@@ -1547,16 +1590,18 @@ interactions:
         data: {"msg":{"now":"2020-09-20T08:11:45+01:00","st":385704,"ps":{"co":"1|0EB3AaC2ACBAbA3abBEBd2Aa2BaEHhcBaCABAbA2BdABCabC2bCBaABEfaBaBCBAB$abaC2AcABADbEAaBc2aBABaB2ABca","no2":"1|0XG2a2ABDAOSy2AdcHfa!29gnbKsCMaAEem2CHcHgmCTAiKegIBCikRGnMIDdajhXJbmbzINqOLI!-32CKaHjNsaSCBAcgGFBbqHij","o3":"1|0!29cFdcEAfCimKMiICDnEpOABdNaAcemNEAeJEaACAmHCAFAka2ACEaFbDqIfALdkDNiGE2aqICKCnIaIbDbcbebdQ2bjeaOba","pm10":"1|0QEHicIHfcGNfkDcB2bDRGqeFgbEcbJfiGACDacaBC2aDcBEBDAlHadGbGdgOlbSJke$NjcSQG!-44dLfHagiaHDBIUbgkLSbwqf","pm25":"1!37JDadbAfOL!45p!-37Fh2DcG!40K!-44bDjgGeD!26p!-37MKEBHfhaJCeBcDKCJDyI2fSiIeg!27!-27a!34Nvg$Zqp!48!42J!-95hVoHalsAUHDS!51es!-31X!39k!-34!-42h","so2":"1|0GFh3AaCaDbABAbCAcCDBcaAaAD2bCBbAaCABAbACACab2A2BbaC2aCACaABA2BacAdBAbDAEdBC2AbCbaBaAB4ACacFcA"},"dh":24,"time":{"span":["2014-04-06T00:00:00Z","2014-04-06T00:00:00Z"]},"meta":{"si":{"sources":[{"name":"Citizen
         Weather Observer Program (CWOP/APRS)","url":"http://wxqa.com/","pols":["weather"],"logo":""},{"name":"UK-AIR,
         air quality information resource - Defra, UK","url":"http://uk-air.defra.gov.uk/","pols":null,"logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"name":"London
-        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"13866h0m20.38057462s"}
+        Air Quality Network - Environmental Research Group, King''s College London","url":"https://londonair.org.uk/","pols":null,"logo":"UK-London-Kings-College.png"}],"city":{"name":"London","idx":5724},"timezone":"1.00"},"dt":"5ms"}},"status":"ok","cached":"14169h37m55.703656917s"}
 
 
         event: done
 
-        data: "2.912103ms"
+        data: "1.827834ms"
 
 
         '
     headers:
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
       Access-Control-Allow-Origin:
       - '*'
       Cache-Control:
@@ -1566,7 +1611,7 @@ interactions:
       Content-Type:
       - text/event-stream; charset=UTF-8
       Date:
-      - Thu, 21 Apr 2022 01:12:05 GMT
+      - Tue, 03 May 2022 16:49:40 GMT
       Server:
       - nginx
     status:

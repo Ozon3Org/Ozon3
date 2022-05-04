@@ -24,7 +24,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 22 Apr 2022 17:39:52 GMT
+      - Tue, 03 May 2022 16:52:37 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -32,7 +32,7 @@ interactions:
       Vary:
       - Accept-Encoding
       X-Gen-Time:
-      - "24.849\xC2\xB5s"
+      - "34.031\xC2\xB5s"
       X-Powered-By:
       - rxstreamer-waqi/1.3
       content-length:
