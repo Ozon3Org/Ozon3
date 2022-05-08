@@ -137,7 +137,7 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 ## Contributors
 
-Contributions of any kind are welcome and these are our amazing contributors.
+Contributions of any kind are welcome! These are our amazing contributors :)
 
 <a href="https://github.com/Milind220/Ozone/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Milind220/Ozone" />
