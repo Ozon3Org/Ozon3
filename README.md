@@ -4,27 +4,27 @@
 
 </br>
 
-# Ozone 
+# Ozone
 
 ![SVG of ozone logo](/src/media/ozone_logo.svg)
 
-[![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3)
-<a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
-![GitHub](https://img.shields.io/github/license/Milind220/Ozone)
-[![Complete Documentation](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment)
-[![Dependency Review](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml)
+[![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3) <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a> ![GitHub](https://img.shields.io/github/license/Milind220/Ozone) [![Complete Documentation](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment) [![Dependency Review](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-orange.svg?style=flat)](https://www.buymeacoffee.com/MilindSharma)
 
 ## The simplest AQI API
 
 </div>
 
-Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozone can help you with.  
+Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozone can help you with.
 With Ozone, just 4 lines of code are enough to get you the data you need. And the best part is that you can trust this data to be accurate and reliable, since the package uses the World Air Quality Index's API under the hood! ✅ 📈
 
 Use Ozone to **get real-time air quality data, or historical data from 2014 onwards**, and fetch air quality data **for anywhere in the world** in seconds.
 
-###### You can view our complete documentation [here](https://milind220.github.io/Ozone/)
+
+
+_You can view our complete documentation [here](https://milind220.github.io/Ozone/)_
+
+_Don't forget to star Ozone repository if you found it helpful_
 
 #### Table of Contents
 
@@ -67,7 +67,7 @@ Get your token [here](https://aqicn.org/data-platform/token/#/)!
 import ozone as ooo
 
 o3 = ooo.Ozone('YOUR_PRIVATE_TOKEN')
-data = o3.get_city_air('New Delhi') 
+data = o3.get_city_air('New Delhi')
 ```
 
 for many cities:
@@ -108,8 +108,7 @@ Ozone can fetch the following parameters:
  * `w`: wind speed, a measure of air in motion. It is measured in kilometers per hour (km/h)
 
 Sample output:
-<img width="1065" alt="blehblhe" src="https://user-images.githubusercontent.com/68847270/159113134-e7e2d76d-c64d-4f96-83c4-e85d8c76b503.png">
-
+<img width="1065" alt="blehblhe" src="./src/media/sample-output.png">
 
 ## Contributing and submitting Pull requests
 
@@ -138,7 +137,7 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 ## Contributors
 
-Contributions of any kind are welcome and these are our amazing contributors.
+Contributions of any kind are welcome! These are our amazing contributors :)
 
 <a href="https://github.com/Milind220/Ozone/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Milind220/Ozone" />
