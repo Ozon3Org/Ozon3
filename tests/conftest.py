@@ -17,7 +17,7 @@ def pytest_configure(config):
     config.addinivalue_line("markers", "slow: mark test as slow to run")
 
 
-# Skip slow tests unless --run_slow is given
+# Run slow tests unless --skip_slow is given
 def pytest_collection_modifyitems(config, items):
     if config.getoption("--skip-slow"):
         skip_slow = pytest.mark.skip(reason="skipped due to --skip-slow")
