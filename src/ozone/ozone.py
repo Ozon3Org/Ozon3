@@ -80,8 +80,8 @@ class Ozone:
         Args:
             token (str): The users private API token for the WAQI API.
             output_path (str): The path to the location where
-            file_name (str): Name of output file
                 any output artifacts will be created
+            file_name (str): Name of output file
         """
         self.token: str = token
         self._check_token_validity()
@@ -248,7 +248,8 @@ class Ozone:
                 the API's response.
 
         Returns:
-            pandas.DataFrame: A dataframe containing the data."""
+            pandas.DataFrame: A dataframe containing the data.
+        """
         forecast = data_obj["forecast"]["daily"]
         dict_of_frames = {}
         for pol, lst in forecast.items():
@@ -331,7 +332,7 @@ class Ozone:
             aqi (float): Air Quality Index (AQI) value.
 
         Returns:
-            str: The meaning and health implication of the AQI value.
+            Tuple[str, str]: The meaning and health implication of the AQI value.
         """
 
         if 0 <= aqi <= 50:
@@ -387,7 +388,7 @@ class Ozone:
 
         Returns:
            list: a list of all coordinates located between lower_bound and
-           upper_bound. If API request fails then returns [(-1, -1)].
+               upper_bound.
         """
 
         coordinates_flattened: List[float] = list(
