@@ -6,7 +6,9 @@ setuptools.setup(
     author="Milind Sharma",
     author_email="milindsharma8@gmail.com",
     keywords=["aqi", "air quality", "world air quality", "api", "open source"],
-    description="A package to get air quality data using the WAQI API",
+    description="An open-source package to easily obtain real-time, historical,"
+    "or forecasted air quality data for anywhere in the world. Reliable,"
+    "accurate and simple.",
     license="GPLv3+",
     url="https://github.com/Milind220/Ozone",
     version="2.0.2",
