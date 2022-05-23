@@ -50,8 +50,6 @@ class Ozone:
 
     Attributes:
         token (str): The private API token for the WAQI API service.
-        output_dir_path (str): The path to the directory where
-            any output artifacts will be created
     """
     _search_aqi_url: str = URLs.search_aqi_url
     _find_stations_url: str = URLs.find_stations_url
@@ -78,9 +76,6 @@ class Ozone:
 
         Args:
             token (str): The users private API token for the WAQI API.
-            output_path (str): The path to the location where
-                any output artifacts will be created
-            file_name (str): Name of output file
         """
         self.token: str = token
         self._check_token_validity()
@@ -362,8 +357,6 @@ class Ozone:
         Args:
             lat (float): Latitude
             lon (float): Longitude
-            data_format (str): File format for data. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
@@ -374,7 +367,6 @@ class Ozone:
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
-            (If you selected another data format, this dataframe will be empty)
         """
         if params == [""]:
             params = self._default_params
@@ -398,8 +390,6 @@ class Ozone:
 
         Args:
             city (str): The city to get data for.
-            data_format (str): File format for data. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
@@ -410,7 +400,6 @@ class Ozone:
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
-            (If you selected another data format, this dataframe will be empty)
         """
         if params == [""]:
             params = self._default_params
@@ -434,8 +423,6 @@ class Ozone:
 
         Args:
             locations (list): A list of pair (latitude,longitude) to get data for.
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
@@ -445,8 +432,7 @@ class Ozone:
                 Gets all parameters by default..
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data. (If you
-            selected another data format, this dataframe will be empty)
+            pandas.DataFrame: The dataframe containing the data.
         """
         for loc in locations:
             try:
@@ -477,8 +463,6 @@ class Ozone:
         Args:
             lower_bound (tuple): start coordinate
             upper_bound (tuple): end coordinate
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
             params (List[str], optional): A list of parameters to get data for.
@@ -488,8 +472,7 @@ class Ozone:
                 Gets all parameters by default.
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data. (If you
-            selected another data format, this dataframe will be empty)
+            pandas.DataFrame: The dataframe containing the data.
         """
         locations = self._locate_all_coordinates(
             lower_bound=lower_bound, upper_bound=upper_bound
@@ -508,8 +491,6 @@ class Ozone:
 
         Args:
             cities (list): A list of cities to get data for.
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             params (List[str], optional): A list of parameters to get data for.
                 Choose from the following values:
                 ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
@@ -519,8 +500,7 @@ class Ozone:
                 append the data to.
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data. (If you
-            selected another data format, this dataframe will be empty)
+            pandas.DataFrame: The dataframe containing the data.
         """
         for city in cities:
             try:
@@ -612,8 +592,6 @@ class Ozone:
         """Get historical air quality data for a city
 
         Args:
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             city (str): Name of the city. If given, the argument must be named.
             city_id (int): City ID. If given, the argument must be named.
                 If not given, city argument must not be None.
@@ -674,14 +652,12 @@ class Ozone:
 
         Args:
             city (str): The city to get data for.
-            data_format (str): File format for data. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
-            (If you selected another data format, this dataframe will be empty)"""
+        """
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         data_obj = self._check_and_get_data_obj(r)
 
