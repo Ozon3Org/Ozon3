@@ -53,7 +53,6 @@ class Ozone:
         output_dir_path (str): The path to the directory where
             any output artifacts will be created
     """
-
     _search_aqi_url: str = URLs.search_aqi_url
     _find_stations_url: str = URLs.find_stations_url
     _default_params: List[str] = [
@@ -85,15 +84,6 @@ class Ozone:
         """
         self.token: str = token
         self._check_token_validity()
-
-        self.output_dir_path: Path = Path(output_path, "ozone_output")
-        self.file_name = file_name
-
-        if self.file_name == "air_quality":
-            warnings.warn(
-                "You have not specified a custom save file name. "
-                "Existing files with the same name may be overwritten!"
-            )
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -141,52 +131,6 @@ class Ozone:
         """
         self.token = token
         self._check_token_validity()
-
-    def _format_output(
-        self,
-        data_format: str = "df",
-        df: pandas.DataFrame = pandas.DataFrame(),
-    ) -> pandas.DataFrame:
-        """Format output data
-
-        Args:
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame,): Dataframe object of air quality data.
-
-        Returns:
-            pandas.DataFrame: The dataframe containing the air quality data.
-            None: print the string response of file type created.
-        """
-        if data_format == "df":
-            return df
-
-        if data_format not in ["csv", "xlsx", "json"]:
-            raise Exception(
-                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
-            )
-
-        self.output_dir_path.mkdir(exist_ok=True)
-
-        if data_format == "csv":
-            df.to_csv(Path(self.output_dir_path, f"{self.file_name}.csv"), index=False)
-            print(
-                f"File saved to disk at {self.output_dir_path} as {self.file_name}.csv"
-            )
-        elif data_format == "json":
-            df.to_json(Path(self.output_dir_path, f"{self.file_name}.json"))
-            print(
-                f"File saved to disk at {self.output_dir_path} as {self.file_name}.json"
-            )
-        elif data_format == "xlsx":
-            df.to_excel(
-                Path(self.output_dir_path, f"{self.file_name}.xlsx"),
-            )
-            print(
-                f"File saved to disk at {self.output_dir_path} as {self.file_name}.xlsx"
-            )
-
-        return pandas.DataFrame()
 
     def _extract_live_data(
         self, data_obj: Any, params: List[str] = [""]
@@ -410,7 +354,6 @@ class Ozone:
         self,
         lat: float,
         lon: float,
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ) -> pandas.DataFrame:
@@ -443,12 +386,11 @@ class Ozone:
 
         row = self._extract_live_data(data_obj, params=params)
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_city_air(
         self,
         city: str,
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ) -> pandas.DataFrame:
@@ -480,12 +422,11 @@ class Ozone:
         row["city"] = city
 
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_multiple_coordinate_air(
         self,
         locations: List[Tuple],
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ) -> pandas.DataFrame:
@@ -522,13 +463,12 @@ class Ozone:
                 df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_range_coordinates_air(
         self,
         lower_bound: Tuple[float, float],
         upper_bound: Tuple[float, float],
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ) -> pandas.DataFrame:
@@ -555,13 +495,12 @@ class Ozone:
             lower_bound=lower_bound, upper_bound=upper_bound
         )
         return self.get_multiple_coordinate_air(
-            locations, data_format=data_format, df=df, params=params
+            locations, df=df, params=params
         )
 
     def get_multiple_city_air(
         self,
         cities: List[str],
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
         params: List[str] = [""],
     ) -> pandas.DataFrame:
@@ -596,7 +535,7 @@ class Ozone:
                 df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_specific_parameter(
         self,
@@ -638,7 +577,6 @@ class Ozone:
 
         Returns:
             pandas.DataFrame: Table of stations and their relevant information.
-
         """
         # NOTE, HACK, FIXME:
         # This functionality was born together with historical data feature.
@@ -669,7 +607,7 @@ class Ozone:
         ).sort_values(by=["score"], ascending=False)
 
     def get_historical_data(
-        self, data_format: str = "df", *, city: str = None, city_id: int = None
+        self, *, city: str = None, city_id: int = None
     ) -> pandas.DataFrame:
         """Get historical air quality data for a city
 
@@ -725,12 +663,11 @@ class Ozone:
         # Reset date index and rename the column appropriately
         df = df.reset_index().rename(columns={"index": "date"})
 
-        return self._format_output(data_format, df)
+        return df
 
     def get_city_forecast(
         self,
         city: str,
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Get a city's air quality forecast
@@ -753,7 +690,7 @@ class Ozone:
             # This ensures that pm25 data is labelled correctly.
             df.rename(columns={"pm25": "pm2.5"}, inplace=True)
 
-        return self._format_output(data_format, df)
+        return df
 
 
 if __name__ == "__main__":
