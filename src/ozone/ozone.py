@@ -586,7 +586,7 @@ class Ozone:
         ).sort_values(by=["score"], ascending=False)
 
     def get_historical_data(
-        self, *, city: str = None, city_id: int = None
+        self, city: str = None, city_id: int = None
     ) -> pandas.DataFrame:
         """Get historical air quality data for a city
 
