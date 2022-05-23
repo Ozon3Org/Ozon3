@@ -69,28 +69,6 @@ def test_column_types():
 
 
 @pytest.mark.vcr
-def test_excluded_params():
-    # Param should be really excluded when specified as such
-    custom_params = ["aqi", "pm2.5", "o3"]
-    result = api.get_range_coordinates_air(
-        LOWER_BOUND, UPPER_BOUND, params=custom_params
-    )
-    assert "pm10" not in result
-    assert "pm2.5" in result
-
-
-@pytest.mark.vcr
-def test_nonexistent_requested_params():
-    # Return asked params even when the response does not contain that specific param
-    BAD_PARAM_NAME = "param_that_is_not_in_london_aqi"
-    result = api.get_range_coordinates_air(
-        LOWER_BOUND, UPPER_BOUND, params=[BAD_PARAM_NAME]
-    )
-    param_value = result.at[0, BAD_PARAM_NAME]
-    assert numpy.isnan(param_value)
-
-
-@pytest.mark.vcr
 def test_bad_coordinates():
     with pytest.raises(Exception):
         api.get_range_coordinates_air(lower_bound=("lol", "bruh"), upper_bound=(0, 0))
