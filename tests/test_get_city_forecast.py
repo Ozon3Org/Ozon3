@@ -13,7 +13,7 @@ def test_return_value_and_format():
     result = api.get_city_forecast("london")
 
     assert isinstance(result, pandas.DataFrame)
-    assert len(result) == 8
+    assert len(result) == 7
 
 
 @pytest.mark.vcr

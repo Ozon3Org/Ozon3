@@ -42,4 +42,4 @@ def test_warnings_on_input_combo():
 
 def test_arguments_not_named():
     with pytest.raises(ValueError, match="must be specified"):
-        api.get_historical_data("london")  # type: ignore
+        api.get_historical_data()
