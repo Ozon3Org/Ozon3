@@ -3,12 +3,7 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import (
-    api,
-    DEFAULT_OUTPUT_FOLDER,
-    DEFAULT_OUTPUT_FILE,
-    SUPPORTED_OUTPUT_FORMATS,
-)
+from utils import api
 
 COORDS = [(0, 0), (50, 0), (40, -75)]
 
@@ -96,27 +91,3 @@ def test_bad_coordinates():
     # WAQI supports such operation on their backend
     assert result.at[3, "latitude"] == 50.805778
     assert result.at[3, "longitude"] == 0.271611
-
-
-@pytest.mark.vcr
-def test_output_data_format_bad():
-    with pytest.raises(Exception, match="Invalid file format"):
-        api.get_multiple_coordinate_air(
-            COORDS, data_format="a definitely wrong data format"
-        )
-
-    # Calling wrong data format shouldn't create an output folder
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-
-@pytest.mark.vcr
-@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
-def test_output_data_formats(fmt):
-
-    # Not specifying data format shouldn't create an output directory
-    api.get_multiple_coordinate_air(COORDS)
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-    # Check that output file is made
-    api.get_multiple_coordinate_air(COORDS, data_format=fmt)
-    assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()

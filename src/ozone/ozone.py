@@ -11,7 +11,6 @@ Attributes (module level):
     RATE_LIMIT (int=1): The time period in seconds for the max number of calls is
         1 second.
 """
-
 import itertools
 import json
 import warnings

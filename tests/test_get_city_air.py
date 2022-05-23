@@ -3,12 +3,7 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import (
-    api,
-    DEFAULT_OUTPUT_FOLDER,
-    DEFAULT_OUTPUT_FILE,
-    SUPPORTED_OUTPUT_FORMATS,
-)
+from utils import api
 
 
 @pytest.mark.vcr
@@ -81,23 +76,3 @@ def test_bad_city():
 
     with pytest.raises(Exception):
         api.get_city_air("")
-
-
-@pytest.mark.vcr
-def test_output_data_format_bad():
-    with pytest.raises(Exception, match="Invalid file format"):
-        api.get_city_air("london", data_format="a definitely wrong data format")
-
-    # Calling wrong data format shouldn't create an output folder
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-
-@pytest.mark.vcr
-@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
-def test_output_data_formats(fmt):
-    # Not specifying data format shouldn't create an output directory
-    api.get_city_air("london")
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-    api.get_city_air("london", data_format=fmt)
-    assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()

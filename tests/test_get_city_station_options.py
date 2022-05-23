@@ -2,7 +2,7 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import api, DEFAULT_OUTPUT_FOLDER
+from utils import api
 
 
 @pytest.mark.vcr
@@ -45,11 +45,3 @@ def test_nonexistent_city():
     # ... and with all columns just like usual.
     COLUMNS = ["city_id", "country_code", "station_name", "city_url", "score"]
     assert all([col in result for col in COLUMNS])
-
-
-@pytest.mark.vcr
-def test_no_output_directory():
-    api.get_city_station_options("ukraine")
-
-    # There shouldn't be an output folder after calling this method
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
