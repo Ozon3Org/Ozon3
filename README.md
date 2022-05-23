@@ -79,7 +79,7 @@ data = o3.get_multiple_city_air(['London', 'Hong Kong', 'New York'])     # As ma
 ### Historical data
 
 ```python
-data = o3.get_historical_data(city='Houston', data_format='df')     # data from 2014 onwards!
+data = o3.get_historical_data(city='Houston')     # data from 2014 onwards!
 ```
 
 <hr>
