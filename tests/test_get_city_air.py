@@ -1,4 +1,3 @@
-import numpy
 import pandas
 import pandas.api.types as pd_types
 import pytest
@@ -49,24 +48,6 @@ def test_column_types():
     ]
     assert all([pd_types.is_string_dtype(result[col]) for col in STR_COLUMNS])
     assert all([pd_types.is_float_dtype(result[col]) for col in FLOAT_COLUMNS])
-
-
-@pytest.mark.vcr
-def test_excluded_params():
-    # Param should be really excluded when specified as such
-    custom_params = ["aqi", "pm2.5", "o3"]
-    result = api.get_city_air("london", params=custom_params)
-    assert "pm10" not in result
-    assert "pm2.5" in result
-
-
-@pytest.mark.vcr
-def test_nonexistent_requested_params():
-    # Return asked params even when the response does not contain that specific param
-    BAD_PARAM_NAME = "param_that_is_not_in_london_aqi"
-    result = api.get_city_air("london", params=[BAD_PARAM_NAME])
-    param_value = result.at[0, BAD_PARAM_NAME]
-    assert numpy.isnan(param_value)
 
 
 @pytest.mark.vcr

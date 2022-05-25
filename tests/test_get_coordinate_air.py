@@ -60,34 +60,16 @@ def test_column_types():
 
 
 @pytest.mark.vcr
-def test_excluded_params():
-    # Param should be really excluded when specified as such
-    custom_params = ["aqi", "pm2.5", "o3"]
-    result = api.get_coordinate_air(51.51, -0.13, params=custom_params)
-    assert "pm10" not in result
-    assert "pm2.5" in result
-
-
-@pytest.mark.vcr
-def test_nonexistent_requested_params():
-    # Return asked params even when the response does not contain that specific param
-    BAD_PARAM_NAME = "param_that_is_not_in_london_aqi"
-    result = api.get_coordinate_air(51.51, -0.13, params=[BAD_PARAM_NAME])
-    param_value = result.at[0, BAD_PARAM_NAME]
-    assert numpy.isnan(param_value)
-
-
-@pytest.mark.vcr
 def test_bad_coordinates():
     with pytest.raises(Exception, match="Invalid geo position"):
-        api.get_coordinate_air("not a lat", "not a lon")      # type: ignore
+        api.get_coordinate_air("not a lat", "not a lon")  # type: ignore
 
     with pytest.raises(Exception, match="Invalid geo position"):
-        api.get_coordinate_air(None, None)      # type: ignore
+        api.get_coordinate_air(None, None)  # type: ignore
 
     # Giving coordinates as string of numerics is fine,
     # even though it's not in accordance with Ozone's method definition.
-    api.get_coordinate_air("51.51", "-0.13")      # type: ignore
+    api.get_coordinate_air("51.51", "-0.13")  # type: ignore
 
     # Giving nonsensical coordinates is also fine
     api.get_coordinate_air(5000, 5000)
