@@ -188,21 +188,16 @@ class Ozone:
 
         return pandas.DataFrame()
 
-    def _extract_live_data(
-        self, data_obj: Any, params: List[str] = [""]
-    ) -> Dict[str, Union[str, float]]:
+    def _extract_live_data(self, data_obj: Any) -> Dict[str, Union[str, float]]:
         """Extract live AQI data from API response's 'data' part.
 
         Args:
             data_obj (JSON object returned by json.loads): The 'data' part from
                 the API's response.
-            params (List[str]): The parameters to parse.
 
         Returns:
             dict: Dictionary containing the data.
         """
-        if params == [""]:
-            params = self._default_params
 
         # This dict will become a single row of data for the dataframe.
         row: Dict[str, Union[str, float]] = {}
@@ -219,7 +214,7 @@ class Ozone:
         row["timestamp"] = data_obj["time"]["s"]
         row["timestamp_timezone"] = data_obj["time"]["tz"]
 
-        for param in params:
+        for param in self._default_params:
             try:
                 if param == "aqi":
                     # This is in different part of JSON object.
@@ -412,7 +407,6 @@ class Ozone:
         lon: float,
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""],
     ) -> pandas.DataFrame:
         """Get a location's air quality data by latitude and longitude
 
@@ -423,25 +417,17 @@ class Ozone:
                 Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
-            params (List[str], optional): A list of parameters to get data for.
-                Choose from the following values:
-                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
-                 "p", "t", "w", "wg"]
-                Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
             (If you selected another data format, this dataframe will be empty)
         """
-        if params == [""]:
-            params = self._default_params
-
         r = self._make_api_request(
             f"{self._search_aqi_url}/geo:{lat};{lon}/?token={self.token}"
         )
         data_obj = self._check_and_get_data_obj(r)
 
-        row = self._extract_live_data(data_obj, params=params)
+        row = self._extract_live_data(data_obj)
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
         return self._format_output(data_format, df)
 
@@ -450,7 +436,6 @@ class Ozone:
         city: str,
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""],
     ) -> pandas.DataFrame:
         """Get a city's air quality data
 
@@ -460,23 +445,15 @@ class Ozone:
                 Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
-            params (List[str], optional): A list of parameters to get data for.
-                Choose from the following values:
-                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
-                 "p", "t", "w", "wg"]
-                Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
             (If you selected another data format, this dataframe will be empty)
         """
-        if params == [""]:
-            params = self._default_params
-
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         data_obj = self._check_and_get_data_obj(r, city=city)  # City is for traceback
 
-        row = self._extract_live_data(data_obj, params=params)
+        row = self._extract_live_data(data_obj)
         row["city"] = city
 
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
@@ -487,7 +464,6 @@ class Ozone:
         locations: List[Tuple],
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""],
     ) -> pandas.DataFrame:
         """Get multiple locations air quality data
 
@@ -497,11 +473,6 @@ class Ozone:
                 Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
-            params (List[str], optional): A list of parameters to get data for.
-                Choose from the following values:
-                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
-                 "p", "t", "w", "wg"]
-                Gets all parameters by default..
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
@@ -511,9 +482,7 @@ class Ozone:
             try:
                 # This just makes sure that it's always a returns a pandas.DataFrame.
                 # Makes mypy happy.
-                df = pandas.DataFrame(
-                    self.get_coordinate_air(loc[0], loc[1], df=df, params=params)
-                )
+                df = pandas.DataFrame(self.get_coordinate_air(loc[0], loc[1], df=df))
             except Exception:
                 # NOTE: If we have custom exception we can catch it instead.
                 empty_row = pandas.DataFrame(
@@ -530,7 +499,6 @@ class Ozone:
         upper_bound: Tuple[float, float],
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""],
     ) -> pandas.DataFrame:
         """Get air quality data for range of coordinates between lower_bound and upper_bound
 
@@ -541,11 +509,6 @@ class Ozone:
                 Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
-            params (List[str], optional): A list of parameters to get data for.
-                Choose from the following values:
-                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
-                 "p", "t", "w", "wg"]
-                Gets all parameters by default.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data. (If you
@@ -555,7 +518,7 @@ class Ozone:
             lower_bound=lower_bound, upper_bound=upper_bound
         )
         return self.get_multiple_coordinate_air(
-            locations, data_format=data_format, df=df, params=params
+            locations, data_format=data_format, df=df
         )
 
     def get_multiple_city_air(
@@ -563,7 +526,6 @@ class Ozone:
         cities: List[str],
         data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
-        params: List[str] = [""],
     ) -> pandas.DataFrame:
         """Get multiple cities' air quality data
 
@@ -571,11 +533,6 @@ class Ozone:
             cities (list): A list of cities to get data for.
             data_format (str): File format. Defaults to 'df'.
                 Choose from 'csv', 'json', 'xlsx'.
-            params (List[str], optional): A list of parameters to get data for.
-                Choose from the following values:
-                ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h",
-                 "p", "t", "w", "wg"]
-                Gets all parameters by default.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
@@ -587,9 +544,7 @@ class Ozone:
             try:
                 # This just makes sure that it's always a returns a pandas.DataFrame.
                 # Makes mypy happy.
-                df = pandas.DataFrame(
-                    self.get_city_air(city=city, df=df, params=params)
-                )
+                df = pandas.DataFrame(self.get_city_air(city=city, df=df))
             except Exception:
                 # NOTE: If we have custom exception we can catch it instead.
                 empty_row = pandas.DataFrame({"city": [city]})
@@ -619,7 +574,7 @@ class Ozone:
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         data_obj = self._check_and_get_data_obj(r)
 
-        row = self._extract_live_data(data_obj, [air_param])
+        row = self._extract_live_data(data_obj)
 
         try:
             result = _as_float(row[air_param])
