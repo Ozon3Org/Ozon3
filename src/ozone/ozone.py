@@ -14,7 +14,6 @@ Attributes (module level):
 import itertools
 import json
 import warnings
-from pathlib import Path
 from typing import Any, Dict, List, Tuple, Union
 
 import numpy
@@ -50,6 +49,7 @@ class Ozone:
     Attributes:
         token (str): The private API token for the WAQI API service.
     """
+
     _search_aqi_url: str = URLs.search_aqi_url
     _find_stations_url: str = URLs.find_stations_url
     _default_params: List[str] = [
@@ -476,9 +476,7 @@ class Ozone:
         locations = self._locate_all_coordinates(
             lower_bound=lower_bound, upper_bound=upper_bound
         )
-        return self.get_multiple_coordinate_air(
-            locations, df=df, params=params
-        )
+        return self.get_multiple_coordinate_air(locations, df=df, params=params)
 
     def get_multiple_city_air(
         self,
