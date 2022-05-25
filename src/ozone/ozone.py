@@ -11,11 +11,9 @@ Attributes (module level):
     RATE_LIMIT (int=1): The time period in seconds for the max number of calls is
         1 second.
 """
-
 import itertools
 import json
 import warnings
-from pathlib import Path
 from typing import Any, Dict, List, Tuple, Union
 
 import numpy
@@ -50,8 +48,6 @@ class Ozone:
 
     Attributes:
         token (str): The private API token for the WAQI API service.
-        output_dir_path (str): The path to the directory where
-            any output artifacts will be created
     """
 
     _search_aqi_url: str = URLs.search_aqi_url
@@ -79,21 +75,9 @@ class Ozone:
 
         Args:
             token (str): The users private API token for the WAQI API.
-            output_path (str): The path to the location where
-                any output artifacts will be created
-            file_name (str): Name of output file
         """
         self.token: str = token
         self._check_token_validity()
-
-        self.output_dir_path: Path = Path(output_path, "ozone_output")
-        self.file_name = file_name
-
-        if self.file_name == "air_quality":
-            warnings.warn(
-                "You have not specified a custom save file name. "
-                "Existing files with the same name may be overwritten!"
-            )
 
     def _check_token_validity(self) -> None:
         """Check if the token is valid"""
@@ -141,52 +125,6 @@ class Ozone:
         """
         self.token = token
         self._check_token_validity()
-
-    def _format_output(
-        self,
-        data_format: str = "df",
-        df: pandas.DataFrame = pandas.DataFrame(),
-    ) -> pandas.DataFrame:
-        """Format output data
-
-        Args:
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
-            df (pandas.DataFrame,): Dataframe object of air quality data.
-
-        Returns:
-            pandas.DataFrame: The dataframe containing the air quality data.
-            None: print the string response of file type created.
-        """
-        if data_format == "df":
-            return df
-
-        if data_format not in ["csv", "xlsx", "json"]:
-            raise Exception(
-                f"Invalid file format {data_format}. Use any of: csv, json, xlsx, df"
-            )
-
-        self.output_dir_path.mkdir(exist_ok=True)
-
-        if data_format == "csv":
-            df.to_csv(Path(self.output_dir_path, f"{self.file_name}.csv"), index=False)
-            print(
-                f"File saved to disk at {self.output_dir_path} as {self.file_name}.csv"
-            )
-        elif data_format == "json":
-            df.to_json(Path(self.output_dir_path, f"{self.file_name}.json"))
-            print(
-                f"File saved to disk at {self.output_dir_path} as {self.file_name}.json"
-            )
-        elif data_format == "xlsx":
-            df.to_excel(
-                Path(self.output_dir_path, f"{self.file_name}.xlsx"),
-            )
-            print(
-                f"File saved to disk at {self.output_dir_path} as {self.file_name}.xlsx"
-            )
-
-        return pandas.DataFrame()
 
     def _extract_live_data(self, data_obj: Any) -> Dict[str, Union[str, float]]:
         """Extract live AQI data from API response's 'data' part.
@@ -405,7 +343,6 @@ class Ozone:
         self,
         lat: float,
         lon: float,
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Get a location's air quality data by latitude and longitude
@@ -413,14 +350,11 @@ class Ozone:
         Args:
             lat (float): Latitude
             lon (float): Longitude
-            data_format (str): File format for data. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
-            (If you selected another data format, this dataframe will be empty)
         """
         r = self._make_api_request(
             f"{self._search_aqi_url}/geo:{lat};{lon}/?token={self.token}"
@@ -429,26 +363,22 @@ class Ozone:
 
         row = self._extract_live_data(data_obj)
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_city_air(
         self,
         city: str,
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Get a city's air quality data
 
         Args:
             city (str): The city to get data for.
-            data_format (str): File format for data. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
-            (If you selected another data format, this dataframe will be empty)
         """
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         data_obj = self._check_and_get_data_obj(r, city=city)  # City is for traceback
@@ -457,26 +387,22 @@ class Ozone:
         row["city"] = city
 
         df = pandas.concat([df, pandas.DataFrame([row])], ignore_index=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_multiple_coordinate_air(
         self,
         locations: List[Tuple],
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Get multiple locations air quality data
 
         Args:
             locations (list): A list of pair (latitude,longitude) to get data for.
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data. (If you
-            selected another data format, this dataframe will be empty)
+            pandas.DataFrame: The dataframe containing the data.
         """
         for loc in locations:
             try:
@@ -491,13 +417,12 @@ class Ozone:
                 df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_range_coordinates_air(
         self,
         lower_bound: Tuple[float, float],
         upper_bound: Tuple[float, float],
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Get air quality data for range of coordinates between lower_bound and upper_bound
@@ -505,40 +430,31 @@ class Ozone:
         Args:
             lower_bound (tuple): start coordinate
             upper_bound (tuple): end coordinate
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data. (If you
-            selected another data format, this dataframe will be empty)
+            pandas.DataFrame: The dataframe containing the data.
         """
         locations = self._locate_all_coordinates(
             lower_bound=lower_bound, upper_bound=upper_bound
         )
-        return self.get_multiple_coordinate_air(
-            locations, data_format=data_format, df=df
-        )
+        return self.get_multiple_coordinate_air(locations, df=df)
 
     def get_multiple_city_air(
         self,
         cities: List[str],
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Get multiple cities' air quality data
 
         Args:
             cities (list): A list of cities to get data for.
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
         Returns:
-            pandas.DataFrame: The dataframe containing the data. (If you
-            selected another data format, this dataframe will be empty)
+            pandas.DataFrame: The dataframe containing the data.
         """
         for city in cities:
             try:
@@ -551,7 +467,7 @@ class Ozone:
                 df = pandas.concat([df, empty_row], ignore_index=True)
 
         df.reset_index(inplace=True, drop=True)
-        return self._format_output(data_format, df)
+        return df
 
     def get_specific_parameter(
         self,
@@ -593,7 +509,6 @@ class Ozone:
 
         Returns:
             pandas.DataFrame: Table of stations and their relevant information.
-
         """
         # NOTE, HACK, FIXME:
         # This functionality was born together with historical data feature.
@@ -624,13 +539,11 @@ class Ozone:
         ).sort_values(by=["score"], ascending=False)
 
     def get_historical_data(
-        self, data_format: str = "df", *, city: str = None, city_id: int = None
+        self, city: str = None, city_id: int = None
     ) -> pandas.DataFrame:
         """Get historical air quality data for a city
 
         Args:
-            data_format (str): File format. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             city (str): Name of the city. If given, the argument must be named.
             city_id (int): City ID. If given, the argument must be named.
                 If not given, city argument must not be None.
@@ -680,26 +593,23 @@ class Ozone:
         # Reset date index and rename the column appropriately
         df = df.reset_index().rename(columns={"index": "date"})
 
-        return self._format_output(data_format, df)
+        return df
 
     def get_city_forecast(
         self,
         city: str,
-        data_format: str = "df",
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
         """Get a city's air quality forecast
 
         Args:
             city (str): The city to get data for.
-            data_format (str): File format for data. Defaults to 'df'.
-                Choose from 'csv', 'json', 'xlsx'.
             df (pandas.DataFrame, optional): An existing dataframe to
                 append the data to.
 
         Returns:
             pandas.DataFrame: The dataframe containing the data.
-            (If you selected another data format, this dataframe will be empty)"""
+        """
         r = self._make_api_request(f"{self._search_aqi_url}/{city}/?token={self.token}")
         data_obj = self._check_and_get_data_obj(r)
 
@@ -708,7 +618,7 @@ class Ozone:
             # This ensures that pm25 data is labelled correctly.
             df.rename(columns={"pm25": "pm2.5"}, inplace=True)
 
-        return self._format_output(data_format, df)
+        return df
 
 
 if __name__ == "__main__":

@@ -3,12 +3,7 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import (
-    api,
-    DEFAULT_OUTPUT_FOLDER,
-    DEFAULT_OUTPUT_FILE,
-    SUPPORTED_OUTPUT_FORMATS,
-)
+from utils import api
 
 
 @pytest.mark.vcr
@@ -67,14 +62,14 @@ def test_column_types():
 @pytest.mark.vcr
 def test_bad_coordinates():
     with pytest.raises(Exception, match="Invalid geo position"):
-        api.get_coordinate_air("not a lat", "not a lon")
+        api.get_coordinate_air("not a lat", "not a lon")  # type: ignore
 
     with pytest.raises(Exception, match="Invalid geo position"):
-        api.get_coordinate_air(None, None)
+        api.get_coordinate_air(None, None)  # type: ignore
 
     # Giving coordinates as string of numerics is fine,
     # even though it's not in accordance with Ozone's method definition.
-    api.get_coordinate_air("51.51", "-0.13")
+    api.get_coordinate_air("51.51", "-0.13")  # type: ignore
 
     # Giving nonsensical coordinates is also fine
     api.get_coordinate_air(5000, 5000)
@@ -82,27 +77,3 @@ def test_bad_coordinates():
 
     # Giving nan coordinates is also fine
     api.get_coordinate_air(numpy.nan, numpy.nan)
-
-
-@pytest.mark.vcr
-def test_output_data_format_bad():
-    with pytest.raises(Exception, match="Invalid file format"):
-        api.get_coordinate_air(
-            51.51, -0.13, data_format="a definitely wrong data format"
-        )
-
-    # Calling wrong data format shouldn't create an output folder
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-
-@pytest.mark.vcr
-@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
-def test_output_data_formats(fmt):
-    # Not specifying data format shouldn't create an output directory
-    api.get_coordinate_air(51.51, -0.13)
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-    # Check that output file is made
-    for fmt in ["xlsx", "csv", "json"]:
-        api.get_coordinate_air(51.51, -0.13, data_format=fmt)
-        assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()
