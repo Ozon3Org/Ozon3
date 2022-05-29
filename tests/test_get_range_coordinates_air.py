@@ -3,12 +3,7 @@ import pandas
 import pandas.api.types as pd_types
 import pytest
 
-from utils import (
-    api,
-    DEFAULT_OUTPUT_FOLDER,
-    DEFAULT_OUTPUT_FILE,
-    SUPPORTED_OUTPUT_FORMATS,
-)
+from utils import api
 
 LOWER_BOUND = (51, -0.2)
 UPPER_BOUND = (52, 1)
@@ -69,52 +64,8 @@ def test_column_types():
 
 
 @pytest.mark.vcr
-def test_excluded_params():
-    # Param should be really excluded when specified as such
-    custom_params = ["aqi", "pm2.5", "o3"]
-    result = api.get_range_coordinates_air(
-        LOWER_BOUND, UPPER_BOUND, params=custom_params
-    )
-    assert "pm10" not in result
-    assert "pm2.5" in result
-
-
-@pytest.mark.vcr
-def test_nonexistent_requested_params():
-    # Return asked params even when the response does not contain that specific param
-    BAD_PARAM_NAME = "param_that_is_not_in_london_aqi"
-    result = api.get_range_coordinates_air(
-        LOWER_BOUND, UPPER_BOUND, params=[BAD_PARAM_NAME]
-    )
-    param_value = result.at[0, BAD_PARAM_NAME]
-    assert numpy.isnan(param_value)
-
-
-@pytest.mark.vcr
 def test_bad_coordinates():
     with pytest.raises(Exception):
-        api.get_range_coordinates_air(lower_bound=("lol", "bruh"), upper_bound=(0, 0))
-
-
-@pytest.mark.vcr
-def test_output_data_format_bad():
-    with pytest.raises(Exception, match="Invalid file format"):
         api.get_range_coordinates_air(
-            LOWER_BOUND, UPPER_BOUND, data_format="a definitely wrong data format"
+            lower_bound=("lol", "bruh"), upper_bound=(0, 0)  # type: ignore
         )
-
-    # Calling wrong data format shouldn't create an output folder
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-
-@pytest.mark.vcr
-@pytest.mark.parametrize("fmt", SUPPORTED_OUTPUT_FORMATS)
-def test_output_data_formats(fmt):
-
-    # Not specifying data format shouldn't create an output directory
-    api.get_range_coordinates_air(LOWER_BOUND, UPPER_BOUND)
-    assert not DEFAULT_OUTPUT_FOLDER.exists()
-
-    # Check that output file is made
-    api.get_range_coordinates_air(LOWER_BOUND, UPPER_BOUND, data_format=fmt)
-    assert DEFAULT_OUTPUT_FILE.with_suffix(f".{fmt}").is_file()

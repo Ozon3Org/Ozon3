@@ -79,17 +79,17 @@ data = o3.get_multiple_city_air(['London', 'Hong Kong', 'New York'])     # As ma
 ### Historical data
 
 ```python
-data = o3.get_historical_data(city='Houston', data_format='df')     # data from 2014 onwards!
+data = o3.get_historical_data(city='Houston')     # data from 2014 onwards!
 ```
 
 <hr>
 
 ### Examples In Action 🎬
-![Gif of ozone.get_city_air()](/src/media/ozone_get_city_air.gif)
+![Gif of Ozone.get_city_air()](/src/media/example_get_city_air.gif)
 
-![Gif of ozone.get_multiple_city_air()](/src/media/ozone_get_multiple_city_air_updated.gif)
+![Gif of Ozone.get_multiple_city_air()](/src/media/example_get_multiple_city_air.gif)
 
-![Gif of ozone.get_historical_data()](/src/media/ozone_historical_data.gif)
+![Gif of Ozone.get_historical_data()](/src/media/example_get_historical_data.gif)
 ### Air Quality Parameters
 
 Ozone can fetch the following parameters:

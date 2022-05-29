@@ -21,7 +21,7 @@ interactions:
       Content-Length:
       - '0'
       Date:
-      - Tue, 03 May 2022 16:51:11 GMT
+      - Mon, 23 May 2022 07:10:46 GMT
       Location:
       - /feed/geo:0;0/?token=DUMMY_TOKEN
       Server:
@@ -44,11 +44,11 @@ interactions:
     uri: https://api.waqi.info/feed/geo:0;0/?token=DUMMY_TOKEN
   response:
     body:
-      string: '{"status":"ok","data":{"aqi":38,"idx":12826,"attributions":[{"url":"https://gh.usembassy.gov/","name":"Accra
+      string: '{"status":"ok","data":{"aqi":78,"idx":12826,"attributions":[{"url":"https://gh.usembassy.gov/","name":"Accra
         Air Quality Monitor - US EPA","logo":"US-StateDepartment.png"},{"url":"https://waqi.info/","name":"World
         Air Quality Index Project"}],"city":{"geo":[5.580642,-0.170724],"name":"Accra
-        US Embassy, Ghana","url":"https://aqicn.org/city/ghana/accra/us-embassy","location":""},"dominentpol":"pm25","iaqi":{"dew":{"v":25},"h":{"v":74},"p":{"v":1009},"pm25":{"v":38},"t":{"v":30},"w":{"v":6.1}},"time":{"s":"2022-05-03
-        15:00:00","tz":"+00:00","v":1651590000,"iso":"2022-05-03T15:00:00Z"},"forecast":{"daily":{"o3":[{"avg":3,"day":"2022-05-01","max":8,"min":1},{"avg":5,"day":"2022-05-02","max":13,"min":1},{"avg":9,"day":"2022-05-03","max":24,"min":1},{"avg":5,"day":"2022-05-04","max":14,"min":1},{"avg":5,"day":"2022-05-05","max":17,"min":1},{"avg":3,"day":"2022-05-06","max":13,"min":1},{"avg":2,"day":"2022-05-07","max":6,"min":1},{"avg":2,"day":"2022-05-08","max":2,"min":2}],"pm10":[{"avg":18,"day":"2022-05-01","max":35,"min":7},{"avg":28,"day":"2022-05-02","max":58,"min":9},{"avg":31,"day":"2022-05-03","max":56,"min":12},{"avg":23,"day":"2022-05-04","max":51,"min":9},{"avg":26,"day":"2022-05-05","max":50,"min":10},{"avg":30,"day":"2022-05-06","max":52,"min":11},{"avg":30,"day":"2022-05-07","max":56,"min":7},{"avg":13,"day":"2022-05-08","max":14,"min":13}],"pm25":[{"avg":36,"day":"2022-05-01","max":66,"min":11},{"avg":57,"day":"2022-05-02","max":122,"min":14},{"avg":60,"day":"2022-05-03","max":104,"min":23},{"avg":45,"day":"2022-05-04","max":93,"min":19},{"avg":51,"day":"2022-05-05","max":82,"min":19},{"avg":65,"day":"2022-05-06","max":101,"min":27},{"avg":66,"day":"2022-05-07","max":122,"min":16},{"avg":27,"day":"2022-05-08","max":27,"min":27}]}},"debug":{"sync":"2022-05-04T01:17:58+09:00"}}}'
+        US Embassy, Ghana","url":"https://aqicn.org/city/ghana/accra/us-embassy","location":""},"dominentpol":"pm25","iaqi":{"dew":{"v":23},"h":{"v":94},"p":{"v":1012},"pm25":{"v":78},"t":{"v":24},"w":{"v":4.1}},"time":{"s":"2022-05-23
+        06:00:00","tz":"+00:00","v":1653285600,"iso":"2022-05-23T06:00:00Z"},"forecast":{"daily":{"o3":[{"avg":4,"day":"2022-05-21","max":9,"min":2},{"avg":6,"day":"2022-05-22","max":16,"min":2},{"avg":6,"day":"2022-05-23","max":13,"min":1},{"avg":4,"day":"2022-05-24","max":11,"min":1},{"avg":3,"day":"2022-05-25","max":7,"min":1},{"avg":3,"day":"2022-05-26","max":11,"min":1},{"avg":6,"day":"2022-05-27","max":18,"min":1},{"avg":3,"day":"2022-05-28","max":3,"min":3}],"pm10":[{"avg":23,"day":"2022-05-21","max":43,"min":9},{"avg":23,"day":"2022-05-22","max":30,"min":10},{"avg":25,"day":"2022-05-23","max":34,"min":14},{"avg":34,"day":"2022-05-24","max":62,"min":8},{"avg":24,"day":"2022-05-25","max":42,"min":5},{"avg":30,"day":"2022-05-26","max":43,"min":11},{"avg":38,"day":"2022-05-27","max":71,"min":14},{"avg":20,"day":"2022-05-28","max":20,"min":18}],"pm25":[{"avg":53,"day":"2022-05-21","max":94,"min":21},{"avg":58,"day":"2022-05-22","max":70,"min":25},{"avg":54,"day":"2022-05-23","max":67,"min":33},{"avg":74,"day":"2022-05-24","max":140,"min":17},{"avg":52,"day":"2022-05-25","max":83,"min":10},{"avg":63,"day":"2022-05-26","max":86,"min":29},{"avg":85,"day":"2022-05-27","max":157,"min":34},{"avg":45,"day":"2022-05-28","max":45,"min":39}]}},"debug":{"sync":"2022-05-23T15:53:11+09:00"}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -57,7 +57,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 03 May 2022 16:51:11 GMT
+      - Mon, 23 May 2022 07:10:46 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -65,11 +65,11 @@ interactions:
       Vary:
       - Accept-Encoding
       X-Gen-Time:
-      - "264.215\xC2\xB5s"
+      - "242.785\xC2\xB5s"
       X-Powered-By:
       - rxstreamer-waqi/1.3
       content-length:
-      - '1816'
+      - '1815'
     status:
       code: 200
       message: OK
@@ -95,7 +95,7 @@ interactions:
       Content-Length:
       - '0'
       Date:
-      - Tue, 03 May 2022 16:51:11 GMT
+      - Mon, 23 May 2022 07:10:46 GMT
       Location:
       - /feed/geo:50;0/?token=DUMMY_TOKEN
       Server:
@@ -118,11 +118,11 @@ interactions:
     uri: https://api.waqi.info/feed/geo:50;0/?token=DUMMY_TOKEN
   response:
     body:
-      string: '{"status":"ok","data":{"aqi":42,"idx":8620,"attributions":[{"url":"http://www.airnormand.fr/","name":"Air
+      string: '{"status":"ok","data":{"aqi":38,"idx":8620,"attributions":[{"url":"http://www.airnormand.fr/","name":"Air
         Normand and Air C.O.M.","logo":"France-AirNormand.png"},{"url":"https://waqi.info/","name":"World
         Air Quality Index Project"}],"city":{"geo":[49.5142141381999,0.100861111709392],"name":"Ville-haute
-        EREA Genevoix, Le Havre, France","url":"https://aqicn.org/city/france/le-havre/ville-haute-erea-genevoix","location":""},"dominentpol":"pm25","iaqi":{"dew":{"v":7.5},"h":{"v":60},"no2":{"v":4.6},"o3":{"v":35.4},"p":{"v":1019},"pm10":{"v":14},"pm25":{"v":42},"so2":{"v":0.6},"t":{"v":15},"w":{"v":6.1},"wg":{"v":13.8}},"time":{"s":"2022-05-03
-        18:00:00","tz":"+02:00","v":1651600800,"iso":"2022-05-03T18:00:00+02:00"},"forecast":{"daily":{"o3":[{"avg":30,"day":"2022-05-03","max":38,"min":22},{"avg":23,"day":"2022-05-04","max":41,"min":8},{"avg":26,"day":"2022-05-05","max":35,"min":19},{"avg":25,"day":"2022-05-06","max":28,"min":22},{"avg":25,"day":"2022-05-07","max":25,"min":21}],"pm10":[{"avg":15,"day":"2022-05-03","max":20,"min":10},{"avg":17,"day":"2022-05-04","max":26,"min":8},{"avg":11,"day":"2022-05-05","max":12,"min":8},{"avg":10,"day":"2022-05-06","max":12,"min":6},{"avg":8,"day":"2022-05-07","max":9,"min":8}],"pm25":[{"avg":50,"day":"2022-05-03","max":63,"min":33},{"avg":54,"day":"2022-05-04","max":79,"min":27},{"avg":32,"day":"2022-05-05","max":38,"min":20},{"avg":28,"day":"2022-05-06","max":40,"min":20},{"avg":22,"day":"2022-05-07","max":25,"min":22}],"uvi":[{"avg":1,"day":"2022-05-03","max":5,"min":0},{"avg":1,"day":"2022-05-04","max":5,"min":0},{"avg":1,"day":"2022-05-05","max":5,"min":0},{"avg":1,"day":"2022-05-06","max":5,"min":0},{"avg":1,"day":"2022-05-07","max":5,"min":0},{"avg":0,"day":"2022-05-08","max":0,"min":0}]}},"debug":{"sync":"2022-05-04T01:02:29+09:00"}}}'
+        EREA Genevoix, Le Havre, France","url":"https://aqicn.org/city/france/le-havre/ville-haute-erea-genevoix","location":""},"dominentpol":"o3","iaqi":{"dew":{"v":12.5},"h":{"v":93},"no2":{"v":2.3},"o3":{"v":38.2},"p":{"v":1002.5},"pm10":{"v":10},"pm25":{"v":21},"so2":{"v":0.6},"t":{"v":13.5},"w":{"v":4.3}},"time":{"s":"2022-05-23
+        09:00:00","tz":"+02:00","v":1653296400,"iso":"2022-05-23T09:00:00+02:00"},"forecast":{"daily":{"o3":[{"avg":23,"day":"2022-05-22","max":34,"min":12},{"avg":27,"day":"2022-05-23","max":34,"min":15},{"avg":28,"day":"2022-05-24","max":32,"min":26},{"avg":27,"day":"2022-05-25","max":35,"min":24},{"avg":29,"day":"2022-05-26","max":29,"min":28}],"pm10":[{"avg":12,"day":"2022-05-22","max":13,"min":11},{"avg":9,"day":"2022-05-23","max":12,"min":6},{"avg":7,"day":"2022-05-24","max":8,"min":5},{"avg":7,"day":"2022-05-25","max":9,"min":6},{"avg":9,"day":"2022-05-26","max":12,"min":9}],"pm25":[{"avg":36,"day":"2022-05-22","max":43,"min":29},{"avg":25,"day":"2022-05-23","max":38,"min":12},{"avg":17,"day":"2022-05-24","max":18,"min":14},{"avg":17,"day":"2022-05-25","max":19,"min":15},{"avg":22,"day":"2022-05-26","max":28,"min":22}],"uvi":[{"avg":0,"day":"2022-05-22","max":3,"min":0},{"avg":0,"day":"2022-05-23","max":2,"min":0},{"avg":1,"day":"2022-05-24","max":4,"min":0},{"avg":1,"day":"2022-05-25","max":4,"min":0},{"avg":1,"day":"2022-05-26","max":6,"min":0},{"avg":0,"day":"2022-05-27","max":4,"min":0}]}},"debug":{"sync":"2022-05-23T16:04:11+09:00"}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -131,7 +131,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 03 May 2022 16:51:11 GMT
+      - Mon, 23 May 2022 07:10:46 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -139,11 +139,11 @@ interactions:
       Vary:
       - Accept-Encoding
       X-Gen-Time:
-      - "179.483\xC2\xB5s"
+      - "221.044\xC2\xB5s"
       X-Powered-By:
       - rxstreamer-waqi/1.3
       content-length:
-      - '1805'
+      - '1789'
     status:
       code: 200
       message: OK
@@ -169,7 +169,7 @@ interactions:
       Content-Length:
       - '0'
       Date:
-      - Tue, 03 May 2022 16:51:12 GMT
+      - Mon, 23 May 2022 07:10:47 GMT
       Location:
       - /feed/geo:40;-75/?token=DUMMY_TOKEN
       Server:
@@ -192,12 +192,12 @@ interactions:
     uri: https://api.waqi.info/feed/geo:40;-75/?token=DUMMY_TOKEN
   response:
     body:
-      string: '{"status":"ok","data":{"aqi":28,"idx":10168,"attributions":[{"url":"http://www.nj.gov/dep/daq/","name":"NJDEP/DAQ
+      string: '{"status":"ok","data":{"aqi":58,"idx":10168,"attributions":[{"url":"http://www.nj.gov/dep/daq/","name":"NJDEP/DAQ
         - New Jersey Department of Environmental Protection - Division of Air Quality","logo":"US-NJDEC.png"},{"url":"http://www.airnow.gov/","name":"Air
         Now - US EPA"},{"url":"https://waqi.info/","name":"World Air Quality Index
         Project"}],"city":{"geo":[39.934635,-75.126126],"name":"Camden Spruce St,
-        NewJersey, USA","url":"https://aqicn.org/city/usa/newjersey/camden-spruce-st","location":""},"dominentpol":"o3","iaqi":{"co":{"v":3.4},"h":{"v":61},"no2":{"v":3.8},"o3":{"v":28.1},"p":{"v":1017.5},"pm25":{"v":15},"so2":{"v":1.5},"t":{"v":19.8},"w":{"v":1.8},"wg":{"v":7.6}},"time":{"s":"2022-05-03
-        11:00:00","tz":"-05:00","v":1651575600,"iso":"2022-05-03T11:00:00-05:00"},"forecast":{"daily":{"o3":[{"avg":12,"day":"2022-05-01","max":31,"min":1},{"avg":7,"day":"2022-05-02","max":24,"min":1},{"avg":13,"day":"2022-05-03","max":33,"min":2},{"avg":9,"day":"2022-05-04","max":17,"min":6},{"avg":14,"day":"2022-05-05","max":34,"min":6},{"avg":13,"day":"2022-05-06","max":24,"min":3},{"avg":18,"day":"2022-05-07","max":22,"min":16}],"pm10":[{"avg":13,"day":"2022-05-01","max":19,"min":7},{"avg":14,"day":"2022-05-02","max":28,"min":7},{"avg":12,"day":"2022-05-03","max":24,"min":5},{"avg":8,"day":"2022-05-04","max":13,"min":4},{"avg":11,"day":"2022-05-05","max":21,"min":4},{"avg":15,"day":"2022-05-06","max":22,"min":5},{"avg":13,"day":"2022-05-07","max":30,"min":5}],"pm25":[{"avg":43,"day":"2022-05-01","max":59,"min":26},{"avg":44,"day":"2022-05-02","max":76,"min":22},{"avg":42,"day":"2022-05-03","max":75,"min":14},{"avg":26,"day":"2022-05-04","max":44,"min":10},{"avg":38,"day":"2022-05-05","max":66,"min":14},{"avg":51,"day":"2022-05-06","max":68,"min":21},{"avg":44,"day":"2022-05-07","max":91,"min":18}],"uvi":[{"avg":0,"day":"2022-05-02","max":0,"min":0},{"avg":2,"day":"2022-05-03","max":7,"min":0},{"avg":1,"day":"2022-05-04","max":3,"min":0},{"avg":2,"day":"2022-05-05","max":8,"min":0},{"avg":1,"day":"2022-05-06","max":6,"min":0},{"avg":1,"day":"2022-05-07","max":2,"min":0}]}},"debug":{"sync":"2022-05-04T01:23:17+09:00"}}}'
+        NewJersey, USA","url":"https://aqicn.org/city/usa/newjersey/camden-spruce-st","location":""},"dominentpol":"pm25","iaqi":{"co":{"v":4.5},"h":{"v":75.8},"no2":{"v":2.8},"o3":{"v":23.3},"p":{"v":1014.4},"pm25":{"v":58},"so2":{"v":1.5},"t":{"v":20.9},"w":{"v":6.2},"wg":{"v":16.7}},"time":{"s":"2022-05-23
+        01:00:00","tz":"-05:00","v":1653267600,"iso":"2022-05-23T01:00:00-05:00"},"forecast":{"daily":{"o3":[{"avg":15,"day":"2022-05-21","max":36,"min":8},{"avg":13,"day":"2022-05-22","max":30,"min":5},{"avg":8,"day":"2022-05-23","max":24,"min":2},{"avg":11,"day":"2022-05-24","max":22,"min":1},{"avg":12,"day":"2022-05-25","max":20,"min":7},{"avg":14,"day":"2022-05-26","max":17,"min":12},{"avg":12,"day":"2022-05-27","max":24,"min":5}],"pm10":[{"avg":13,"day":"2022-05-21","max":20,"min":10},{"avg":11,"day":"2022-05-22","max":16,"min":7},{"avg":10,"day":"2022-05-23","max":19,"min":3},{"avg":10,"day":"2022-05-24","max":18,"min":5},{"avg":8,"day":"2022-05-25","max":10,"min":4},{"avg":11,"day":"2022-05-26","max":12,"min":8},{"avg":6,"day":"2022-05-27","max":9,"min":4}],"pm25":[{"avg":46,"day":"2022-05-21","max":64,"min":34},{"avg":41,"day":"2022-05-22","max":57,"min":25},{"avg":32,"day":"2022-05-23","max":59,"min":9},{"avg":34,"day":"2022-05-24","max":58,"min":14},{"avg":19,"day":"2022-05-25","max":24,"min":9},{"avg":24,"day":"2022-05-26","max":33,"min":14},{"avg":18,"day":"2022-05-27","max":28,"min":13}],"uvi":[{"avg":2,"day":"2022-05-22","max":8,"min":0},{"avg":2,"day":"2022-05-23","max":8,"min":0},{"avg":1,"day":"2022-05-24","max":5,"min":0},{"avg":1,"day":"2022-05-25","max":3,"min":0},{"avg":1,"day":"2022-05-26","max":4,"min":0},{"avg":1,"day":"2022-05-27","max":1,"min":0}]}},"debug":{"sync":"2022-05-23T15:32:55+09:00"}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -206,7 +206,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 03 May 2022 16:51:12 GMT
+      - Mon, 23 May 2022 07:10:47 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -214,11 +214,11 @@ interactions:
       Vary:
       - Accept-Encoding
       X-Gen-Time:
-      - "222.523\xC2\xB5s"
+      - "338.406\xC2\xB5s"
       X-Powered-By:
       - rxstreamer-waqi/1.3
       content-length:
-      - '2145'
+      - '2148'
     status:
       code: 200
       message: OK

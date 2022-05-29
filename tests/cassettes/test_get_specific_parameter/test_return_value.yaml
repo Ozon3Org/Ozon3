@@ -21,7 +21,7 @@ interactions:
       Content-Length:
       - '0'
       Date:
-      - Tue, 03 May 2022 16:54:16 GMT
+      - Mon, 23 May 2022 07:12:06 GMT
       Location:
       - /feed/london/?token=DUMMY_TOKEN
       Server:
@@ -44,11 +44,11 @@ interactions:
     uri: https://api.waqi.info/feed/london/?token=DUMMY_TOKEN
   response:
     body:
-      string: '{"status":"ok","data":{"aqi":59,"idx":5724,"attributions":[{"url":"http://uk-air.defra.gov.uk/","name":"UK-AIR,
+      string: '{"status":"ok","data":{"aqi":34,"idx":5724,"attributions":[{"url":"http://uk-air.defra.gov.uk/","name":"UK-AIR,
         air quality information resource - Defra, UK","logo":"UK-Department-for-environment-food-and-rural-affairs.png"},{"url":"https://londonair.org.uk/","name":"London
         Air Quality Network - Environmental Research Group, King''s College London","logo":"UK-London-Kings-College.png"},{"url":"https://waqi.info/","name":"World
-        Air Quality Index Project"}],"city":{"geo":[51.5073509,-0.1277583],"name":"London","url":"https://aqicn.org/city/london","location":""},"dominentpol":"pm25","iaqi":{"co":{"v":0.8},"h":{"v":75.1},"no2":{"v":15.1},"o3":{"v":18.4},"p":{"v":1020.7},"pm10":{"v":24},"pm25":{"v":59},"so2":{"v":0.9},"t":{"v":13.8},"w":{"v":1.4}},"time":{"s":"2022-05-03
-        16:00:00","tz":"+01:00","v":1651593600,"iso":"2022-05-03T16:00:00+01:00"},"forecast":{"daily":{"o3":[{"avg":23,"day":"2022-05-01","max":34,"min":14},{"avg":23,"day":"2022-05-02","max":38,"min":4},{"avg":18,"day":"2022-05-03","max":31,"min":1},{"avg":21,"day":"2022-05-04","max":34,"min":15},{"avg":24,"day":"2022-05-05","max":36,"min":15},{"avg":17,"day":"2022-05-06","max":30,"min":11},{"avg":15,"day":"2022-05-07","max":18,"min":15}],"pm10":[{"avg":16,"day":"2022-05-01","max":21,"min":10},{"avg":20,"day":"2022-05-02","max":23,"min":13},{"avg":22,"day":"2022-05-03","max":29,"min":14},{"avg":15,"day":"2022-05-04","max":24,"min":7},{"avg":14,"day":"2022-05-05","max":17,"min":9},{"avg":11,"day":"2022-05-06","max":15,"min":6},{"avg":11,"day":"2022-05-07","max":11,"min":10}],"pm25":[{"avg":55,"day":"2022-05-01","max":64,"min":38},{"avg":61,"day":"2022-05-02","max":73,"min":51},{"avg":67,"day":"2022-05-03","max":82,"min":50},{"avg":47,"day":"2022-05-04","max":74,"min":23},{"avg":40,"day":"2022-05-05","max":57,"min":25},{"avg":36,"day":"2022-05-06","max":49,"min":19},{"avg":40,"day":"2022-05-07","max":40,"min":31}],"uvi":[{"avg":0,"day":"2022-05-01","max":2,"min":0},{"avg":1,"day":"2022-05-02","max":3,"min":0},{"avg":0,"day":"2022-05-03","max":3,"min":0},{"avg":1,"day":"2022-05-04","max":2,"min":0},{"avg":1,"day":"2022-05-05","max":4,"min":0},{"avg":1,"day":"2022-05-06","max":4,"min":0},{"avg":1,"day":"2022-05-07","max":4,"min":0},{"avg":0,"day":"2022-05-08","max":0,"min":0}]}},"debug":{"sync":"2022-05-04T01:38:20+09:00"}}}'
+        Air Quality Index Project"}],"city":{"geo":[51.5073509,-0.1277583],"name":"London","url":"https://aqicn.org/city/london","location":""},"dominentpol":"pm25","iaqi":{"co":{"v":1.9},"h":{"v":73.5},"no2":{"v":12.4},"o3":{"v":13.9},"p":{"v":1003.7},"pm10":{"v":17},"pm25":{"v":34},"so2":{"v":3.1},"t":{"v":14.7},"w":{"v":1.2}},"time":{"s":"2022-05-23
+        06:00:00","tz":"+01:00","v":1653285600,"iso":"2022-05-23T06:00:00+01:00"},"forecast":{"daily":{"o3":[{"avg":23,"day":"2022-05-21","max":36,"min":15},{"avg":22,"day":"2022-05-22","max":39,"min":2},{"avg":19,"day":"2022-05-23","max":31,"min":2},{"avg":23,"day":"2022-05-24","max":32,"min":14},{"avg":21,"day":"2022-05-25","max":32,"min":12},{"avg":17,"day":"2022-05-26","max":17,"min":15}],"pm10":[{"avg":13,"day":"2022-05-21","max":17,"min":10},{"avg":15,"day":"2022-05-22","max":23,"min":7},{"avg":14,"day":"2022-05-23","max":21,"min":6},{"avg":6,"day":"2022-05-24","max":9,"min":4},{"avg":10,"day":"2022-05-25","max":13,"min":7},{"avg":14,"day":"2022-05-26","max":15,"min":14}],"pm25":[{"avg":32,"day":"2022-05-21","max":38,"min":23},{"avg":40,"day":"2022-05-22","max":63,"min":22},{"avg":42,"day":"2022-05-23","max":66,"min":18},{"avg":20,"day":"2022-05-24","max":28,"min":12},{"avg":25,"day":"2022-05-25","max":35,"min":17},{"avg":44,"day":"2022-05-26","max":44,"min":39}],"uvi":[{"avg":1,"day":"2022-05-21","max":3,"min":0},{"avg":1,"day":"2022-05-22","max":5,"min":0},{"avg":0,"day":"2022-05-23","max":2,"min":0},{"avg":1,"day":"2022-05-24","max":3,"min":0},{"avg":1,"day":"2022-05-25","max":2,"min":0},{"avg":1,"day":"2022-05-26","max":5,"min":0},{"avg":1,"day":"2022-05-27","max":7,"min":0}]}},"debug":{"sync":"2022-05-23T15:40:58+09:00"}}}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
@@ -57,7 +57,7 @@ interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Tue, 03 May 2022 16:54:16 GMT
+      - Mon, 23 May 2022 07:12:06 GMT
       Server:
       - nginx
       Transfer-Encoding:
@@ -65,11 +65,11 @@ interactions:
       Vary:
       - Accept-Encoding
       X-Gen-Time:
-      - "88.002\xC2\xB5s"
+      - "86.801\xC2\xB5s"
       X-Powered-By:
       - rxstreamer-waqi/1.3
       content-length:
-      - '2316'
+      - '2124'
     status:
       code: 200
       message: OK
