@@ -9,9 +9,10 @@ This page goes over all the methods that Ozone offers to fetch air quality data:
 * [get_city_air](#get_city_air) 
 * [get_multiple_city_air](#get_multiple_city_air)
 * [get_coordinate_air](#get_coordinate_air)
+* [get_specific_parameter](#get_specific_parameter)
 * [get_multiple_coordinate_air](#get_multiple_coordinate_air)
 * [get_range_coordinates_air](#get_range_coordinates_air)
-* [get_specific_parameter](#get_specific_parameter)
+* [get city station options](#get_city_station_options)
 * [reset_token](#reset_token)
 
 
@@ -164,6 +165,21 @@ The upper boundary coordinate pair.
 An optional argument to pass in a dataframe that you may have previously retrieved. 
 
 For example:- You previously used this method to get data for Delhi. Now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument as you fetch the new data for London.
+
+---
+
+### get_city_station_options
+
+Get options for air quality measuring stations that Ozone can fetch data from. Pass in the name of the city that you want to fetch data from and Ozone will return a dataframe of options.
+
+#### Usage Example
+
+```python
+get_city_station_options("jakarta")
+```
+#### Arguments
+
+**city** : str
 
 ---
 ## Other methods
