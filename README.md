@@ -4,7 +4,7 @@
 
 </br>
 
-# Ozone
+# Ozon3
 
 ![SVG of ozone logo](/src/media/ozone_logo.svg)
 
@@ -15,16 +15,16 @@
 
 </div>
 
-Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozone can help you with.
-With Ozone, just 4 lines of code are enough to get you the data you need. And the best part is that you can trust this data to be accurate and reliable, since the package uses the World Air Quality Index's API under the hood! ✅ 📈
+Getting air quality data with Python should be easy and straightforward - and that's exactly what Ozon3 can help you with.
+With Ozon3, just 4 lines of code are enough to get you the data you need. And the best part is that you can trust this data to be accurate and reliable, since the package uses the World Air Quality Index's API under the hood! ✅ 📈
 
-Use Ozone to **get real-time air quality data, or historical data from 2014 onwards**, and fetch air quality data **for anywhere in the world** in seconds.
+Use Ozon3 to **get real-time air quality data, or historical data from 2014 onwards**, and fetch air quality data **for anywhere in the world** in seconds.
 
 
 
 _You can view our complete documentation [here](https://milind220.github.io/Ozone/)_
 
-_Don't forget to star Ozone repository if you found it helpful_
+_Don't forget to star Ozon3 repository if you found it helpful_
 
 #### Table of Contents
 
@@ -50,7 +50,7 @@ _Don't forget to star Ozone repository if you found it helpful_
 pip install ozon3
 ```
 
-You can find more information on the PyPI page for Ozone [here](https://pypi.org/project/ozon3/) (called ozon3 on PyPI).
+You can find more information on the PyPI page for Ozon3 [here](https://pypi.org/project/ozon3/)
 
 ## Getting your API token
 
@@ -114,17 +114,17 @@ Sample output:
 
 **We love PR's!**
 
-Take a look at the [CONTRIBUTING.md](https://github.com/Milind220/Ozone/blob/main/CONTRIBUTING.md) file for details on how to go about this!
+Take a look at the [CONTRIBUTING.md](https://github.com/Ozon3Org/Ozon3/blob/main/CONTRIBUTING.md) file for details on how to go about this!
 
 ## Semantic Versioning System
 
-Ozone uses a semantic versioning system to increment its release version number. Using this model, changes in version numbers can help indicate the meaning of modified code for each version.
+Ozon3 uses a semantic versioning system to increment its release version number. Using this model, changes in version numbers can help indicate the meaning of modified code for each version.
 
 See more information on semantic versioning [here](https://github.com/Milind220/Ozone/discussions/26).
 
 ## World Air Quality Index and EPA attribution
 
-This package is a wrapper around an API provided by the World Air Quality Index project. Without them as well as the US EPA, Ozone would not exist. Please consider visiting the WAQI website and contributing to their project if you have time:
+This package is a wrapper around an API provided by the World Air Quality Index project. Without them as well as the US EPA, Ozon3 would not exist. Please consider visiting the WAQI website and contributing to their project if you have time:
 
 [World Air Quality Index](https://aqicn.org/contact/)
 
@@ -132,8 +132,8 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 ## LICENSE and Terms of Services 📰
 
-1. Ozone is licensed under the GNU GENERAL PUBLIC LICENSE v3.0, and so it cannot be used for closed-source software or for monetary gain.
-2. The WAQI API, which Ozone uses to provide data, has it's own [Acceptable Usage Policy](https://aqicn.org/api/tos/). Please refer to it for more details.
+1. Ozon3 is licensed under the GNU GENERAL PUBLIC LICENSE v3.0, and so it cannot be used for closed-source software or for monetary gain.
+2. The WAQI API, which Ozon3 uses to provide data, has it's own [Acceptable Usage Policy](https://aqicn.org/api/tos/). Please refer to it for more details.
 
 ## Contributors
 
@@ -143,7 +143,7 @@ Contributions of any kind are welcome! These are our amazing contributors :)
   <img src="https://contrib.rocks/image?repo=Milind220/Ozone" />
 </a>
 
-Enjoy using Ozone!
+Enjoy using Ozon3!
 🥳 🍾 🚀
 
 #### _Created by [Milind Sharma](https://github.com/Milind220)_
