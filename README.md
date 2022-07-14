@@ -6,9 +6,9 @@
 
 # Ozon3
 
-![SVG of ozone logo](/src/media/ozone_logo.svg)
+![SVG of ozone3 logo](/src/media/ozone3_logo.svg)
 
-[![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3) <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a> ![GitHub](https://img.shields.io/github/license/Milind220/Ozone) [![Complete Documentation](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/pages/pages-build-deployment) [![Dependency Review](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/dependency-review.yml) [![Tests](https://github.com/Milind220/Ozone/actions/workflows/test.yml/badge.svg)](https://github.com/Milind220/Ozone/actions/workflows/test.yml)
+[![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3) <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a> ![GitHub](https://img.shields.io/github/license/Milind220/Ozone3) [![Complete Documentation](https://github.com/Milind220/Ozone3/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Milind220/Ozone3/actions/workflows/pages/pages-build-deployment) [![Dependency Review](https://github.com/Milind220/Ozone3/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Milind220/Ozone3/actions/workflows/dependency-review.yml) [![Tests](https://github.com/Milind220/Ozone3/actions/workflows/test.yml/badge.svg)](https://github.com/Milind220/Ozone3/actions/workflows/test.yml)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-orange.svg?style=flat)](https://www.buymeacoffee.com/MilindSharma)
 
 ## The simplest AQI API
@@ -22,7 +22,7 @@ Use Ozon3 to **get real-time air quality data, or historical data from 2014 onwa
 
 
 
-_You can view our complete documentation [here](https://milind220.github.io/Ozone/)_
+_You can view our complete documentation [here](https://milind220.github.io/Ozone3/)_
 
 _Don't forget to star Ozon3 repository if you found it helpful_
 
@@ -54,7 +54,7 @@ You can find more information on the PyPI page for Ozon3 [here](https://pypi.org
 
 ## Getting your API token
 
-To use Ozone, you must first request and get a your own unique API token 🎫. This is required to access for the underlying API to work 👮🏼‍♂️.
+To use Ozone3, you must first request and get a your own unique API token 🎫. This is required to access for the underlying API to work 👮🏼‍♂️.
 
 This is very easy to do, and takes no time at all as your token is generally emailed to you instantly.
 
@@ -64,9 +64,9 @@ Get your token [here](https://aqicn.org/data-platform/token/#/)!
 
 ### Real-time data
 ```python
-import ozone as ooo
+import ozone3 as ooo
 
-o3 = ooo.Ozone('YOUR_PRIVATE_TOKEN')
+o3 = ooo.Ozone3('YOUR_PRIVATE_TOKEN')
 data = o3.get_city_air('New Delhi')
 ```
 
@@ -85,19 +85,19 @@ data = o3.get_historical_data(city='Houston')     # data from 2014 onwards!
 <hr>
 
 ### Examples In Action 🎬
-![Gif of Ozone.get_city_air()](/src/media/example_get_city_air.gif)
+![Gif of Ozone3.get_city_air()](/src/media/example_get_city_air.gif)
 
-![Gif of Ozone.get_multiple_city_air()](/src/media/example_get_multiple_city_air.gif)
+![Gif of Ozone3.get_multiple_city_air()](/src/media/example_get_multiple_city_air.gif)
 
-![Gif of Ozone.get_historical_data()](/src/media/example_get_historical_data.gif)
+![Gif of Ozone3.get_historical_data()](/src/media/example_get_historical_data.gif)
 ### Air Quality Parameters
 
-Ozone can fetch the following parameters:
+Ozone3 can fetch the following parameters:
 
  * `aqi`: air quality index, a measurement of air quality that tells you how clean or polluted the air is. It is measured in micrograms per cubic meter (µg/m3).
  * `pm25`: fine particulate matter, a measure of 2.5 micrometers or smaller particles in the air. It is measured in micrograms per cubic meter (µg/m3).
  * `pm10`: respirable particulate matter, a measure of 10 micrometers or smaller particles in the air. It is measured in micrograms per cubic meter (µg/m3).
- * `o3`: a measure of ground level ozone concentrations in the air. It is measured in parts per billion (ppb).
+ * `o3`: a measure of ground level ozone3 concentrations in the air. It is measured in parts per billion (ppb).
  * `co`: a measure of carbon monoxide concentrations in the air. It is measured in parts per billion (ppb).
  * `no2`: a measure of nitrogen dioxide concentrations in the air. It is measured in parts per billion (ppb).
  * `so2`: a measure of sulfur dioxide concentrations in the air. It is measured in parts per billion (ppb).
@@ -120,7 +120,7 @@ Take a look at the [CONTRIBUTING.md](https://github.com/Ozon3Org/Ozon3/blob/main
 
 Ozon3 uses a semantic versioning system to increment its release version number. Using this model, changes in version numbers can help indicate the meaning of modified code for each version.
 
-See more information on semantic versioning [here](https://github.com/Milind220/Ozone/discussions/26).
+See more information on semantic versioning [here](https://github.com/Milind220/Ozone3/discussions/26).
 
 ## World Air Quality Index and EPA attribution
 
@@ -139,8 +139,8 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 Contributions of any kind are welcome! These are our amazing contributors :)
 
-<a href="https://github.com/Milind220/Ozone/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Milind220/Ozone" />
+<a href="https://github.com/Milind220/Ozone3/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Milind220/Ozone3" />
 </a>
 
 Enjoy using Ozon3!

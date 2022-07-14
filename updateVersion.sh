@@ -58,4 +58,4 @@ echo "Updated Version: $UPDATED_VERSION"
 
 sed -i "s/version = ${VERSION}/version = ${UPDATED_VERSION}/" setup.cfg
 sed -i "s/^    version=\"${VERSION}\",/    version=\"${UPDATED_VERSION}\",/" setup.py
-sed -i "s/^    download_url=\"https:\/\/github.com\/Milind220\/Ozone\/archive\/refs\/tags\/v${VERSION}.tar.gz\",/    download_url=\"https:\/\/github.com\/Milind220\/Ozone\/archive\/refs\/tags\/v${UPDATED_VERSION}.tar.gz\",/" setup.py
+sed -i "s/^    download_url=\"https:\/\/github.com\/Milind220\/Ozone3\/archive\/refs\/tags\/v${VERSION}.tar.gz\",/    download_url=\"https:\/\/github.com\/Milind220\/Ozone3\/archive\/refs\/tags\/v${UPDATED_VERSION}.tar.gz\",/" setup.py

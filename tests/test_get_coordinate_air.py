@@ -68,7 +68,7 @@ def test_bad_coordinates():
         api.get_coordinate_air(None, None)  # type: ignore
 
     # Giving coordinates as string of numerics is fine,
-    # even though it's not in accordance with Ozone's method definition.
+    # even though it's not in accordance with Ozone3's method definition.
     api.get_coordinate_air("51.51", "-0.13")  # type: ignore
 
     # Giving nonsensical coordinates is also fine

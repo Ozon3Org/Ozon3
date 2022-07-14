@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Workflow to publish Ozone on PyPI and TestPyPI
+name: Workflow to publish Ozone3 on PyPI and TestPyPI
 
 # Controls when the workflow will run
 on:

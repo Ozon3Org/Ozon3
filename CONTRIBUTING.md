@@ -1,10 +1,10 @@
-# Contributing to Ozone
+# Contributing to Ozone3
 
 :tada::+1: First off, thanks for taking the time to contribute! :tada::+1:
 
 It might not be obvious but we appreciate all forms of contribution.
 
-The following is a set of guidelines for contributing to [Ozone](https://github.com/Milind220/Ozone). These are mostly guidelines, not rules. Use your best judgment. Feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to [Ozone3](https://github.com/Milind220/Ozone3). These are mostly guidelines, not rules. Use your best judgment. Feel free to propose changes to this document in a pull request.
 
 > **Important note:** Make sure you make PRs to `dev` branch, not `main`. See [below](#making-a-pull-request) for more information.
 
@@ -36,7 +36,7 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
 
 ### Reporting bugs
 
-1. Before submitting a bug report, make sure to do a cursory search on [issues](https://github.com/Milind220/Ozone/issues) to see if it's already reported. If it's already reported, add a comment under the issue thread instead of opening a new one.
+1. Before submitting a bug report, make sure to do a cursory search on [issues](https://github.com/Milind220/Ozone3/issues) to see if it's already reported. If it's already reported, add a comment under the issue thread instead of opening a new one.
 
 2. Use clear and descriptive title.
 
@@ -45,7 +45,7 @@ The following is a set of guidelines for contributing to [Ozone](https://github.
    - **Expected behavior**: What do you expect should happen?
    - **Actual behavior**: What actually happened and why it's a problem?
    - **Steps to reproduce the problem**. Be very specific. Give example code block. Other contributors want to run it in their device to make sure they see what you saw. Having detailed steps and examples can make it easier to demonstrate and track down a problem.
-   - **Version information**: What version of Python you're using? What version of Ozone? Do you install through `pip` or by cloning the Github repository? What is your OS and what version?
+   - **Version information**: What version of Python you're using? What version of Ozone3? Do you install through `pip` or by cloning the Github repository? What is your OS and what version?
 
    You can include screenshots/GIFs, if relevant.
 
@@ -53,20 +53,20 @@ Additionally, you can also confirm other people's bug report by running their pr
 
 ### Suggesting enhancements/features
 
-1. Before submitting a feature suggestion,  make sure to do a cursory search in [issues](https://github.com/Milind220/Ozone/issues) to see if it's already suggested.
+1. Before submitting a feature suggestion,  make sure to do a cursory search in [issues](https://github.com/Milind220/Ozone3/issues) to see if it's already suggested.
 
 2. Use clear and descriptive title.
 
 3. Lay out the details of your suggestion in the body issue. Make sure to also:
 
    - Describe the current behavior and explain what would you like to see instead.
-   - Explain why your suggestion would be useful for Ozone users.
+   - Explain why your suggestion would be useful for Ozone3 users.
 
 ### Making a pull request
 
 You can also make a pull request to fix an existing bug or add a feature.
 
-Unsure where to begin contributing to Ozone? You can start by looking through these  `first-contribution`, `beginner`, `help-wanted` issues:
+Unsure where to begin contributing to Ozone3? You can start by looking through these  `first-contribution`, `beginner`, `help-wanted` issues:
 
 * `first-contribution` issues should only require a few lines of code or are improvements on the documentation.
 * `beginner` issues are a step up, and may involve a couple of methods/tests.
@@ -99,7 +99,7 @@ Hold my beer, I got this
 4. Set original repository as `upstream` remote.
 
    ```sh
-   git remote add upstream https://github.com/Milind220/Ozone.git
+   git remote add upstream https://github.com/Milind220/Ozone3.git
    ```
 
 5. Pull from original repository to make sure you're synced up.
@@ -145,13 +145,13 @@ Hold my beer, I got this
 
    > It's normal for pre-commit to take some time.
 
-   > When Black reformats a staged file, the pre-commit will fail. It is normal and expected. See [this discussion](https://github.com/Milind220/Ozone/discussions/85). Just stage the file and commit again, it should pass the second time.
+   > When Black reformats a staged file, the pre-commit will fail. It is normal and expected. See [this discussion](https://github.com/Milind220/Ozone3/discussions/85). Just stage the file and commit again, it should pass the second time.
 
 4. Your local development environment is ready to use. Feel free to code away. Make sure to only commit logical changes that are already tested. Don't commit things you just try out and haven't tested.
 
 5. When you're done coding, again, **test out the changes that you've made to the package.** Proceed if all is good.
 
-   > See [next section](#test-suite) for instructions about Ozone's test suite.
+   > See [next section](#test-suite) for instructions about Ozone3's test suite.
 
 ### Pushing changes and opening a pull request
 
@@ -163,7 +163,7 @@ Hold my beer, I got this
 
 ## Test Suite
 
-Ozone has a test suite that lives in `tests/` directory, which has the following structure within:
+Ozone3 has a test suite that lives in `tests/` directory, which has the following structure within:
 
 Directories:
 
@@ -172,7 +172,7 @@ Directories:
 Files:
 
 1. `conftest.py`: Location of pytest global and configuration fixtures.
-2. `utils.py`: Location of global Python helper objects (i.e. constants and `Ozone` instance) to use in tests.
+2. `utils.py`: Location of global Python helper objects (i.e. constants and `Ozone3` instance) to use in tests.
 3. `test_*.py`: Test files, each file is testing one public method.
 
 ### Setting up and running tests
@@ -199,16 +199,16 @@ If any of your tests fail because of a VCR error such as `vcr.errors.CannotOverW
 
 ### Updating tests
 
-Generally, tests should correspond to the necessary specification/expectation of Ozone users. Tests will help us identify if our code is still in line with such expectations.
+Generally, tests should correspond to the necessary specification/expectation of Ozone3 users. Tests will help us identify if our code is still in line with such expectations.
 
 Tests should be updated when e.g.:
-- There is new expectation on how should Ozone behave. In this case, the tests need to be updated accordingly.
+- There is new expectation on how should Ozone3 behave. In this case, the tests need to be updated accordingly.
 - There is a new functionality. In this case, add necessary tests accordingly.
 - There is a new bug or previously unencountered or undocumented behavior. Add them to the existing tests when fixing it, to make sure the same bug will never slip past again in the future.
 
 ### About the cassettes and pytest-recording
 
-This test suite is testing Ozone's functionality, therefore interaction with outside sources are mocked. Ozone uses pytest-recording plugin that uses vcrpy under the hood to record request-response pairs.
+This test suite is testing Ozone3's functionality, therefore interaction with outside sources are mocked. Ozone3 uses pytest-recording plugin that uses vcrpy under the hood to record request-response pairs.
 
 These request-response pairs are stored as `.yaml` files in `tests/cassettes` directory. When an outbound request is made, pytest-recording will look for that request's response in the tests' `.yaml` file instead of actually letting the request go through to WAQI.
 
@@ -260,7 +260,7 @@ After making changes to the cassettes, don't forget to save the cassettes into v
 git commit tests/cassettes -m "test: Re-record cassettes for passing test XXX XXX XXX"
 ```
 
-Note that doing a live request to WAQI requires a token to be supplied. The test suite loads the token from an environment variable. To set this environment variable, you can make a file named `.env` in Ozone root directory with the following content:
+Note that doing a live request to WAQI requires a token to be supplied. The test suite loads the token from an environment variable. To set this environment variable, you can make a file named `.env` in Ozone3 root directory with the following content:
 
 ```
 WAQI_TOKEN=insert_your_token_here
@@ -290,7 +290,7 @@ For more information:
 
 ## World Air Quality Index's API
 
-Ozone uses the World Air Quality Index's API under the hood to fetch its data. We have included some links to information about the API to help during contribution.
+Ozone3 uses the World Air Quality Index's API under the hood to fetch its data. We have included some links to information about the API to help during contribution.
 
 * Find information on the World Air Quality Index website [here](https://waqi.info/)
 * Find information on different APIs used by Air Quality Programs [here](https://aqicn.org/api/)
@@ -312,11 +312,11 @@ Commmits should be made in this format:
 
 * `fix`: To show that a bug fix or patch has been made.
 * `feat`: To show that a new feature/enhancement has been added.
-* `BREAKING CHANGE`: For changes that introduce backward-incompatible updates. Backward-incompatibility happens when code that uses Ozone's **public** API needs to be modified to account for an update. (As opposed to code using Ozone's **private** or **internal-usage** API, which is not meant for public use)
+* `BREAKING CHANGE`: For changes that introduce backward-incompatible updates. Backward-incompatibility happens when code that uses Ozone3's **public** API needs to be modified to account for an update. (As opposed to code using Ozone3's **private** or **internal-usage** API, which is not meant for public use)
 * `refactor`: If you've rearranged/refactored existing code by splitting it into separate files/methods/functions/classes, or by using a slightly different implementation detail, reasonably without changing functionality.
 * `test`: Any modification of tests.
 * `ci/cd`: Any changes related to continuous integration/deployment tasks, such as GitHub actions.
-* `chore`: For behind the scenes stuff that doesn't affect the Ozone's API. This could include things like version bumps, change in dependencies, etc.
+* `chore`: For behind the scenes stuff that doesn't affect the Ozone3's API. This could include things like version bumps, change in dependencies, etc.
 * `docs`: For entirely documentation related changes. README, CONTRIBUTING, CODE_OF_CONDUCT, and even docstrings in methods, all come under this.
 * `style`: For a commit that solely has to do with things like spaces instead of tabs, or " instead of ', etc. This can be used if you've formatted code with black/flake8 and wish to make a commit.
 
@@ -338,6 +338,6 @@ Here are a few other tips:
 
 ## Github Branching Model
 
-Ozone branches are created using a Github branching model. In this branching model, each branch serves a purpose and offers team members a shared undestanding  of the branching system.
+Ozone3 branches are created using a Github branching model. In this branching model, each branch serves a purpose and offers team members a shared undestanding  of the branching system.
 
-See more information on this branching model [here](https://github.com/Milind220/Ozone/discussions/24).
+See more information on this branching model [here](https://github.com/Milind220/Ozone3/discussions/24).

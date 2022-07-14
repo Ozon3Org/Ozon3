@@ -10,9 +10,9 @@ setuptools.setup(
     "or forecasted air quality data for anywhere in the world. Reliable,"
     "accurate and simple.",
     license="GPLv3+",
-    url="https://github.com/Milind220/Ozone",
+    url="https://github.com/Milind220/Ozone3",
     version="3.0.0",
-    download_url="https://github.com/Milind220/Ozone/archive/refs/tags/v3.0.0.tar.gz",
+    download_url="https://github.com/Milind220/Ozone3/archive/refs/tags/v3.0.0.tar.gz",
     packages=setuptools.find_packages(),
     install_requires=[
         "numpy; python_version>='3'",

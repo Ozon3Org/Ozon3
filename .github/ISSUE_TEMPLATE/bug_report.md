@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: 'Create a report to help Ozone improve. Treat this template more as a guide
+about: 'Create a report to help Ozone3 improve. Treat this template more as a guide
   to filing a good issue, rather than something you have to fill completely every time.'
 title: "[BUG]"
 labels: bug
@@ -27,7 +27,7 @@ If applicable, add screenshots to help explain your problem.
 **Environment**
  - OS: [e.g. MacOS]
  - Python version [e.g. 3.9.12]
- - Ozone Version [e.g. 1.7.1]
+ - Ozone3 Version [e.g. 1.7.1]
  - Execution Environment [e.g. Jupyter Notebook]
 
 **Additional context**

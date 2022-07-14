@@ -1,8 +1,8 @@
-"""urls module for the Ozone package.
+"""urls module for the Ozone3 package.
 
 This module contains the URLs dataclass for the package.
 
-It should only be used with the Ozone package and not run directly.
+It should only be used with the Ozone3 package and not run directly.
 """
 
 from dataclasses import dataclass
