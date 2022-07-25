@@ -1,10 +1,10 @@
 # File Structure
-This document is a reference primer on Ozone's files: what, where, and for what.
+This document is a reference primer on Ozon3's files: what, where, and for what.
 
 - [src/](#src)
   - [media/](#media)
-  - [ozone/](#ozone)
-    - [ozone.py](#ozonepy)
+  - [ozon3/](#ozon3)
+    - [ozon3.py](#ozon3py)
     - [urls.py](#urlspy)
     - [historical/](#historical)
       - [relevant_funcs.py](#relevant_funcspy)
@@ -27,19 +27,19 @@ This document is a reference primer on Ozone's files: what, where, and for what.
 
 ## src/
 
-This is the directory where main Ozone source code lives.
+This is the directory where main Ozon3 source code lives.
 
 ### media/
 
-This subdirectory contains media related to Ozone's documentation (README). Included here are demo GIFs and Ozone logo.
+This subdirectory contains media related to Ozon3's documentation (README). Included here are demo GIFs and Ozon3 logo.
 
-### ozone/
+### ozon3/
 
-This module is where core Ozone code lives.
+This module is where core Ozon3 code lives.
 
-#### ozone.py
+#### ozon3.py
 
-Main module that contains Ozone's class definition.
+Main module that contains Ozon3's class definition.
 
 #### urls.py
 
@@ -55,7 +55,7 @@ This file contains relevant JavaScript functions wrapped as one long triple-quot
 
 ##### _reverse_engineered.py
 
-This file contains most of code required to run the JavaScript functions and convert the result back into Python format that can be used by the rest of Ozone.
+This file contains most of code required to run the JavaScript functions and convert the result back into Python format that can be used by the rest of Ozon3.
 
 ## tests/
 
@@ -71,7 +71,7 @@ Pytest global and configuration fixtures are defined here.
 
 ### test_*.py
 
-These are test files. One test file is responsible for testing one of Ozone's public method.
+These are test files. One test file is responsible for testing one of Ozon3's public method.
 
 ### utils.py
 
@@ -91,11 +91,11 @@ Dependency requirement file for development. Non-developing users won't need to 
 
 ## updateVersion.sh
 
-A custom shell script to automatically increment version. This is purely a convenience script so that each time Ozone needs a new release, we won't need to alter the version numbers in multiple places by hand.
+A custom shell script to automatically increment version. This is purely a convenience script so that each time Ozon3 needs a new release, we won't need to alter the version numbers in multiple places by hand.
 
 ## .github/
 
-This folder is related to GitHub repository and not necessarily part of Ozone package.
+This folder is related to GitHub repository and not necessarily part of Ozon3 package.
 
 ### ISSUE_TEMPLATE/
 
