@@ -4,7 +4,7 @@
 
 It might not be obvious but we appreciate all forms of contribution.
 
-The following is a set of guidelines for contributing to [Ozon3](https://github.com/Milind220/Ozon3). These are mostly guidelines, not rules. Use your best judgment. Feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to [Ozon3](https://github.com/Ozon3Org/Ozon3). These are mostly guidelines, not rules. Use your best judgment. Feel free to propose changes to this document in a pull request.
 
 > **Important note:** Make sure you make PRs to `dev` branch, not `main`. See [below](#making-a-pull-request) for more information.
 
@@ -53,7 +53,7 @@ Additionally, you can also confirm other people's bug report by running their pr
 
 ### Suggesting enhancements/features
 
-1. Before submitting a feature suggestion,  make sure to do a cursory search in [issues](https://github.com/Milind220/Ozon3/issues) to see if it's already suggested.
+1. Before submitting a feature suggestion,  make sure to do a cursory search in [issues](https://github.com/Ozon3Org/Ozon3/issues) to see if it's already suggested.
 
 2. Use clear and descriptive title.
 
@@ -99,7 +99,7 @@ Hold my beer, I got this
 4. Set original repository as `upstream` remote.
 
    ```sh
-   git remote add upstream https://github.com/Milind220/Ozon3.git
+   git remote add upstream https://github.com/Ozon3Org/Ozon3.git
    ```
 
 5. Pull from original repository to make sure you're synced up.
@@ -145,7 +145,7 @@ Hold my beer, I got this
 
    > It's normal for pre-commit to take some time.
 
-   > When Black reformats a staged file, the pre-commit will fail. It is normal and expected. See [this discussion](https://github.com/Milind220/Ozon3/discussions/85). Just stage the file and commit again, it should pass the second time.
+   > When Black reformats a staged file, the pre-commit will fail. It is normal and expected. See [this discussion](https://github.com/Ozon3Org/Ozon3/discussions/85). Just stage the file and commit again, it should pass the second time.
 
 4. Your local development environment is ready to use. Feel free to code away. Make sure to only commit logical changes that are already tested. Don't commit things you just try out and haven't tested.
 
@@ -340,4 +340,4 @@ Here are a few other tips:
 
 Ozon3 branches are created using a Github branching model. In this branching model, each branch serves a purpose and offers team members a shared undestanding  of the branching system.
 
-See more information on this branching model [here](https://github.com/Milind220/Ozon3/discussions/24).
+See more information on this branching model [here](https://github.com/Ozon3Org/Ozon3/discussions/24).

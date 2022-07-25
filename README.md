@@ -8,7 +8,7 @@
 
 ![SVG of ozon3 logo](/src/media/ozon3_logo.svg)
 
-[![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3) <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a> ![GitHub](https://img.shields.io/github/license/Milind220/Ozon3) [![Complete Documentation](https://github.com/Milind220/Ozon3/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Milind220/Ozon3/actions/workflows/pages/pages-build-deployment) [![Dependency Review](https://github.com/Milind220/Ozon3/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Milind220/Ozon3/actions/workflows/dependency-review.yml) [![Tests](https://github.com/Milind220/Ozon3/actions/workflows/test.yml/badge.svg)](https://github.com/Milind220/Ozon3/actions/workflows/test.yml)
+[![PyPI version](https://badge.fury.io/py/ozon3.svg)](https://badge.fury.io/py/ozon3) <a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a> ![GitHub](https://img.shields.io/github/license/Ozon3Org/Ozon3) [![Complete Documentation](https://github.com/Ozon3Org/Ozon3/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Ozon3Org/Ozon3/actions/workflows/pages/pages-build-deployment) [![Dependency Review](https://github.com/Ozon3Org/Ozon3/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/Ozon3Org/Ozon3/actions/workflows/dependency-review.yml) [![Tests](https://github.com/Ozon3Org/Ozon3/actions/workflows/test.yml/badge.svg)](https://github.com/Ozon3Org/Ozon3/actions/workflows/test.yml)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-orange.svg?style=flat)](https://www.buymeacoffee.com/MilindSharma)
 
 ## The simplest AQI API
@@ -22,7 +22,7 @@ Use Ozon3 to **get real-time air quality data, or historical data from 2014 onwa
 
 
 
-_You can view our complete documentation [here](https://milind220.github.io/Ozon3/)_
+_You can view our complete documentation [here](https://Ozon3Org.github.io/Ozon3/)_
 
 _Don't forget to star Ozon3 repository if you found it helpful_
 
@@ -120,7 +120,7 @@ Take a look at the [CONTRIBUTING.md](https://github.com/Ozon3Org/Ozon3/blob/main
 
 Ozon3 uses a semantic versioning system to increment its release version number. Using this model, changes in version numbers can help indicate the meaning of modified code for each version.
 
-See more information on semantic versioning [here](https://github.com/Milind220/Ozon3/discussions/26).
+See more information on semantic versioning [here](https://github.com/Ozon3Org/Ozon3/discussions/26).
 
 ## World Air Quality Index and EPA attribution
 
@@ -139,8 +139,8 @@ This package is a wrapper around an API provided by the World Air Quality Index 
 
 Contributions of any kind are welcome! These are our amazing contributors :)
 
-<a href="https://github.com/Milind220/Ozon3/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Milind220/Ozon3" />
+<a href="https://github.com/Ozon3Org/Ozon3/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ozon3Org/Ozon3" />
 </a>
 
 Enjoy using Ozon3!
