@@ -2,7 +2,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, urlencode
 import vcr
 from decouple import config
-from ozone import Ozone
+from ozon3 import Ozon3
 
 
 # Filter out token in response headers
@@ -33,7 +33,7 @@ vcr_kwargs = {
     "decode_compressed_response": True,
 }
 
-# Prepare a global Ozone object
+# Prepare a global Ozon3 object
 WAQI_TOKEN = config("WAQI_TOKEN", default="DUMMY_TOKEN")
-with vcr.use_cassette("tests/cassettes/ozone_init.yaml", **vcr_kwargs):
-    api = Ozone(WAQI_TOKEN)
+with vcr.use_cassette("tests/cassettes/ozon3_init.yaml", **vcr_kwargs):
+    api = Ozon3(WAQI_TOKEN)

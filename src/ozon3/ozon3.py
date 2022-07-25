@@ -1,9 +1,9 @@
-"""Ozone module for the Ozone package.
+"""Ozon3 module for the Ozon3 package.
 
-This module contains the main Ozone class, which is used for all live-data
-collection done by the Ozone package.
+This module contains the main Ozon3 class, which is used for all live-data
+collection done by the Ozon3 package.
 
-This module should be used only as a part of the Ozone package, and should not
+This module should be used only as a part of the Ozon3 package, and should not
 be run directly.
 
 Attributes (module level):
@@ -39,8 +39,8 @@ def _as_float(x: Any) -> float:
         return numpy.nan
 
 
-class Ozone:
-    """Primary class for Ozone API
+class Ozon3:
+    """Primary class for Ozon3 API
 
     This class contains all the methods used for data collection.
     This class should be instantiated, and methods should be called from the
@@ -573,7 +573,7 @@ class Ozone:
                 f'city_id was not supplied. Searching for "{city}" yields '
                 f'city ID {city_id} with station name "{station_name}", '
                 f'with country code "{country_code}". '
-                "Ozone will return air quality data from that station. "
+                "Ozon3 will return air quality data from that station. "
                 "If you know this is not the correct city you intended, "
                 "you can use get_city_station_options method first to "
                 "identify the correct city ID."

@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for a feature/enhancement for Ozone.
+about: Suggest an idea for a feature/enhancement for Ozon3.
 title: '[FEAT]'
 labels: 'enhancement'
 assignees: ''
