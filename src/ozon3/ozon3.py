@@ -425,7 +425,7 @@ class Ozon3:
         upper_bound: Tuple[float, float],
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
-        """Get air quality data for range of coordinates between lower_bound and upper_bound
+        """Get aqi data for range of coordinates b/w lower_bound and upper_bound
 
         Args:
             lower_bound (tuple): start coordinate
