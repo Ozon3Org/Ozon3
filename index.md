@@ -4,7 +4,7 @@ layout: template
 filename: index
 --- 
 
-## Ozone: Getting Started
+## Ozon3: Getting Started
 
 Welcome to Ozon3 ☁️
 
