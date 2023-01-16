@@ -20,7 +20,7 @@ This page goes over all the methods that Ozone offers to fetch air quality data:
 
 ### get_city_air
 
-This method is used to get the air quality for a single city using its name.
+Get the air quality data for a single city using its name.
 
 #### Usage Example
 
@@ -44,7 +44,7 @@ For example:- You previously used this method to get data for Delhi. Now you wan
 
 ### get_multiple_city_air
 
-This method is used to get the air quality for a single city using its name.
+Get the air quality for multiple cities using their names.
 
 #### Usage Example
 
@@ -54,9 +54,9 @@ get_multiple_city_air(cities=['Tokyo', 'Seattle', 'Sydney'])
 
 #### Arguments
 
-**city** : str
+**cities** : List[str]
 
-The name of the city/location for which you want air quality data.
+The name of the cities/locations for which you want air quality data. Pass them in as a list of strings.
 
 **df** : pandas.Dataframe
 
@@ -68,7 +68,7 @@ For example:- You previously used this method to get data for Delhi. Now you wan
 
 ### get_specific_parameter
 
-Get a single air quality parameter (example: CO or PM2.5) for a single city, and have it returned as a float.
+Get a single air quality parameter (example: CO or PM2.5) for a city.
 
 #### Usage Example
 
@@ -81,6 +81,10 @@ get_specific_parameter('Shanghai', 'pm2.5')
 **city** : str
 
 The name of the city that you wish to get air quality data for. This argument is required.
+
+**air_param** : str
+
+The name of the parameter that you wish to fetch. Choose from ["aqi", "pm2.5", "pm10", "o3", "co", "no2", "so2", "dew", "h", "p", "t", "w", "wg"]. Gets all parameters by default.
 
 ---
 ## To get air quality data using geographical coordinates
@@ -109,7 +113,7 @@ The longitude coordinate
 
 An optional argument to pass in a dataframe that you may have previously retrieved. 
 
-For example:- You previously used this method to get data for Delhi. Now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument as you fetch the new data for London.
+For example:- You previously used this method to get data for Delhi, and now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument.
 
 ---
 
@@ -134,7 +138,7 @@ A list of coordinates, entered in tuples in this form (latitude, longitude).
 
 An optional argument to pass in a dataframe that you may have previously retrieved. 
 
-For example:- You previously used this method to get data for Delhi. Now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument as you fetch the new data for London.
+For example:- You previously used this method to get data for Delhi, and now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument.
 
 ---
 
@@ -142,7 +146,7 @@ For example:- You previously used this method to get data for Delhi. Now you wan
 
 Get air quality data for all measuring stations between two latitude-longitude coordinate boundaries. Every station between the latitude bounds, and the longitude bounds will be polled for data.
 
-> **NOTE**: This can be a very large number of stations sometimes and can take quite long - so don't be alarmed if it runs for a bit.
+> **NOTE**: This can be a very large number of stations sometimes and can take quite long - so don't be alarmed if it runs for a while.
 
 #### Usage Example
 
@@ -164,7 +168,7 @@ The upper boundary coordinate pair.
 
 An optional argument to pass in a dataframe that you may have previously retrieved. 
 
-For example:- You previously used this method to get data for Delhi. Now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument as you fetch the new data for London.
+For example:- You previously used this method to get data for Delhi, and now you want to combine this existing dataframe with some new data from London, then you can consolidate both dataframes by passing the old one into this argument.
 
 ---
 
