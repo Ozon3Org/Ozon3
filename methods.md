@@ -32,7 +32,7 @@ data = get_city_air(city='Tokyo')
 
 **city** : str
 
-The name of the city/location for which you want air quality data.
+The names of the city/location for which you want air quality data.
 
 **df** : pandas.Dataframe
 
