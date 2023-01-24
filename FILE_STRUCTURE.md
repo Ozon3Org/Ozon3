@@ -1,5 +1,5 @@
 # File Structure
-This document is a reference primer on Ozon3's files: what, where, and for what.
+This document is a reference primer on Ozon3's files: what, where, and why.
 
 - [src/](#src)
   - [media/](#media)
@@ -17,7 +17,6 @@ This document is a reference primer on Ozon3's files: what, where, and for what.
 - [.pre-commit-config.yaml](#pre-commit-configyaml)
 - [pyproject.toml, setup.py, and setup.cfg](#pyprojecttoml-setuppy-and-setupcfg)
 - [requirements.txt](#requirementstxt)
-- [updateVersion.sh](#updateversionsh)
 - [.github/](#github)
   - [ISSUE_TEMPLATE/](#issue_template)
   - [workflows/](#workflows)
@@ -88,10 +87,6 @@ Files used for purposes of packaging and installation. Also contains package inf
 ## requirements.txt
 
 Dependency requirement file for development. Non-developing users won't need to install packages in this file, as the installation process will install the user requirements automatically.
-
-## updateVersion.sh
-
-A custom shell script to automatically increment version. This is purely a convenience script so that each time Ozon3 needs a new release, we won't need to alter the version numbers in multiple places by hand.
 
 ## .github/
 

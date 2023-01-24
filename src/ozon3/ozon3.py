@@ -425,7 +425,7 @@ class Ozon3:
         upper_bound: Tuple[float, float],
         df: pandas.DataFrame = pandas.DataFrame(),
     ) -> pandas.DataFrame:
-        """Get air quality data for range of coordinates between lower_bound and upper_bound
+        """Get aqi data for range of coordinates b/w lower_bound and upper_bound
 
         Args:
             lower_bound (tuple): start coordinate
@@ -539,7 +539,7 @@ class Ozon3:
         ).sort_values(by=["score"], ascending=False)
 
     def get_historical_data(
-        self, city: str = None, city_id: int = None
+        self, city: str = None, city_id: int = None  # type: ignore
     ) -> pandas.DataFrame:
         """Get historical air quality data for a city
 

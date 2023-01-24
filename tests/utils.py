@@ -1,4 +1,3 @@
-from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, urlencode
 import vcr
 from decouple import config
@@ -36,4 +35,4 @@ vcr_kwargs = {
 # Prepare a global Ozon3 object
 WAQI_TOKEN = config("WAQI_TOKEN", default="DUMMY_TOKEN")
 with vcr.use_cassette("tests/cassettes/ozon3_init.yaml", **vcr_kwargs):
-    api = Ozon3(WAQI_TOKEN)
+    api = Ozon3(WAQI_TOKEN)  # type: ignore
