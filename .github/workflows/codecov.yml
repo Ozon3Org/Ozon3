@@ -7,13 +7,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
+          
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+        
       - name: Run tests and collect coverage
-        run: pytest --cov tests
+        run: pytest --cov
+        
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
