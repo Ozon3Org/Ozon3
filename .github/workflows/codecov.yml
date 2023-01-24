@@ -1,34 +1,21 @@
-name: Codecov workflow
-on:
-  # Triggers the workflow on release publish
-  release:
+
+name: Workflow for Codecov
+on: 
+  release: 
     types: [published]
 jobs:
   run:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-    env:
-      OS: ${{ matrix.os }}
-      PYTHON: '3.9'
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Setup Python
-      uses: actions/setup-python@master
-      with:
-        python-version: 3.9
-    - name: Generate coverage report
-      run: |
-        pip install pytest
-        pip install pytest-cov
-        pytest --cov=./ --cov-report=xml
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3.1.1
-      with:
-        directory: ./coverage/reports/
-        env_vars: OS,PYTHON
-        flags: unittests
-        name: codecov-umbrella
-        path_to_write_report: ./coverage/codecov_report.txt
-        verbose: true
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests and collect coverage
+        run: pytest --cov app
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
