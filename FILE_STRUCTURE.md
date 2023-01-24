@@ -1,5 +1,5 @@
 # File Structure
-This document is a reference primer on Ozon3's files: what, where, and for what.
+This document is a reference primer on Ozon3's files: what, where, and why.
 
 - [src/](#src)
   - [media/](#media)
