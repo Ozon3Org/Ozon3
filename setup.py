@@ -11,8 +11,8 @@ setuptools.setup(
     "accurate and simple.",
     license="GPLv3+",
     url="https://github.com/Ozon3Org/Ozon3",
-    version="4.0.1",
-    download_url="https://github.com/Ozon3Org/Ozon3/archive/refs/tags/v4.0.1.tar.gz",
+    version="4.0.2",
+    download_url="https://github.com/Ozon3Org/Ozon3/archive/refs/tags/v4.0.2.tar.gz",
     packages=setuptools.find_packages(),
     install_requires=[
         "numpy; python_version>='3'",
