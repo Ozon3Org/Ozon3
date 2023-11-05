@@ -90,6 +90,30 @@ data = o3.get_historical_data(city='Houston')     # data from 2014 onwards!
 ![Gif of Ozon3.get_multiple_city_air()](/src/media/example_get_multiple_city_air.gif)
 
 ![Gif of Ozon3.get_historical_data()](/src/media/example_get_historical_data.gif)
+
+### Steps to use Docker for the Application
+
+
+<img width="1440" alt="Screenshot 2023-11-05 at 11 58 03 PM" src="https://github.com/RohanRusta21/Ozon3/assets/110477025/23978e5d-9e17-4dd9-a5de-4bbc257a724b">
+
+
+```shell
+docker build -t <image-name> .
+```
+
+* `Single City`: For Fetching All details of city (eg. London, HongKong, Paris, Delhi, etc)
+
+```shell
+docker run <image-name> python getcityair.py <city_name>
+```
+
+
+* `Specific Parameter`: For Fetching Specific detail of city, For parameter please refer below values (eg. aqi, pm2.5, dew, etc)
+
+```shell
+docker run <image-name> python getspecificparam.py <city_name> <parameter>
+```
+
 ### Air Quality Parameters
 
 Ozon3 can fetch the following parameters:
