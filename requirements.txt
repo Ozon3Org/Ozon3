@@ -10,6 +10,8 @@ mypy
 flake8
 black
 pre-commit
+ozon3
+flask
 
 pytest==7.1.1
 pytest-cov==4.0.0
