@@ -1,0 +1,16 @@
+{
+  "name": "Ozone3 dev container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations":{
+    "vscode": {
+    "extensions": [
+      "ms-python.python",
+      "ms-python.black-formatter"
+    ]
+    }
+  },
+  "postStartCommand": "pip install -e . && pre-commit install"
+}
